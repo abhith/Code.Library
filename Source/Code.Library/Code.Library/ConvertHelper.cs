@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Code.Library
 {
     public static class ConvertHelper
     {
-
-        // funtion for making a datatable from the template data
+        
+        /// <summary>
+        /// funtion for making a datatable from the enitity data
+        /// Author : Sobin
+        /// Date : 17 July 2015
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public static DataTable ToDataTable<T>(IEnumerable<T> data)
         {
             PropertyDescriptorCollection properties = TypeDescriptor.GetProperties(typeof(T));

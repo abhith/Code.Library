@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
+﻿using System.Web;
 
 namespace Code.Library
 {
@@ -15,18 +10,19 @@ namespace Code.Library
         /// Date : 17 July 2015
         /// </summary>
         /// <returns></returns>
-        public static string GetUser_IP()
+        // ReSharper disable once InconsistentNaming
+        public static string GetUserIPAddress()
         {
-            string VisitorsIPAddr = string.Empty;
+            var visitorsIpAddr = string.Empty;
             if (HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"] != null)
             {
-                VisitorsIPAddr = HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"].ToString();
+                visitorsIpAddr = HttpContext.Current.Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
             }
-            else if (HttpContext.Current.Request.UserHostAddress.Length != 0)
+            else if (!string.IsNullOrEmpty(HttpContext.Current.Request.UserHostAddress))
             {
-                VisitorsIPAddr = HttpContext.Current.Request.UserHostAddress;
+                visitorsIpAddr = HttpContext.Current.Request.UserHostAddress;
             }
-            return VisitorsIPAddr;
+            return visitorsIpAddr;
         }
     }
 }
