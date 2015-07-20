@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConvertHelper.cs" />
+    <Compile Include="DropDownHelper.cs" />
     <Compile Include="EmailHelper.cs" />
     <Compile Include="ExceptionHelper.cs" />
     <Compile Include="FileHelper.cs" />
