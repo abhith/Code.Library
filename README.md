@@ -3,5 +3,5 @@ Few custom helper classes for repeated use in web applications
 
 Helpers Included
   <ul>
-  <li>String Helper - <a href="/ReadMe/StringHelper.md">Read More</a></li>
+  <li>String Helper - Read More @ README/StringHelper.md </li>
   </ul>
