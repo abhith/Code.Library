@@ -152,5 +152,21 @@ namespace Code.Library
 
             return sb.ToString();
         }
+
+        /// <summary>
+        /// Truncate string at a word near to the limit specified. Avoid word split.
+        /// Author : Abhith
+        /// Date : 21 July 2015
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static string TruncateAtWord(string input, int length)
+        {
+            if (input == null || input.Length < length)
+                return input;
+            var iNextSpace = input.LastIndexOf(" ", length, StringComparison.Ordinal);
+            return string.Format("{0}", input.Substring(0, (iNextSpace > 0) ? iNextSpace : length).Trim());
+        }
     }
 }
