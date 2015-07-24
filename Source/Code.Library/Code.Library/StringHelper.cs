@@ -160,13 +160,20 @@ namespace Code.Library
         /// </summary>
         /// <param name="input"></param>
         /// <param name="length"></param>
+        /// <param name="appendDots"></param>
         /// <returns></returns>
-        public static string TruncateAtWord(string input, int length)
+        public static string TruncateAtWord(string input, int length, bool appendDots)
         {
             if (input == null || input.Length < length)
                 return input;
             var iNextSpace = input.LastIndexOf(" ", length, StringComparison.Ordinal);
-            return string.Format("{0}", input.Substring(0, (iNextSpace > 0) ? iNextSpace : length).Trim());
+            var trimmedInput= string.Format("{0}", input.Substring(0, (iNextSpace > 0) ? iNextSpace : length).Trim());
+            
+            if (appendDots)
+            {
+                return trimmedInput + "...";
+            }
+            return trimmedInput;
         }
     }
 }
