@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlsHelper.cs" />
     <Compile Include="ConvertHelper.cs" />
-    <Compile Include="DropDownHelper.cs" />
     <Compile Include="EmailHelper.cs" />
     <Compile Include="ExceptionHelper.cs" />
     <Compile Include="FileHelper.cs" />
