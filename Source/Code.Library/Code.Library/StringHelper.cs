@@ -163,8 +163,8 @@ namespace Code.Library
             if (input == null || input.Length < length)
                 return input;
             var iNextSpace = input.LastIndexOf(" ", length, StringComparison.Ordinal);
-            var trimmedInput= string.Format("{0}", input.Substring(0, (iNextSpace > 0) ? iNextSpace : length).Trim());
-            
+            var trimmedInput = string.Format("{0}", input.Substring(0, (iNextSpace > 0) ? iNextSpace : length).Trim());
+
             if (appendDots)
             {
                 return trimmedInput + "...";
@@ -401,6 +401,30 @@ namespace Code.Library
             Byte[] encrypted = s_md5.ComputeHash(newdata);
             return BitConverter.ToString(encrypted).Replace("-", "").ToLower();
         }
+
+        #region extension methods
+
+        /// <summary>
+        /// Replace last occurance in a string
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="find"></param>
+        /// <param name="replace"></param>
+        /// <returns></returns>
+        public static string ReplaceLastOccurrence(this string source, string find, string replace)
+        {
+            var place = source.LastIndexOf(find, StringComparison.Ordinal);
+
+            if (place == -1)
+                return string.Empty;
+
+            var result = source.Remove(place, find.Length).Insert(place, replace);
+            return result;
+        }
+
+        #endregion
+
+
 
     }
 }
