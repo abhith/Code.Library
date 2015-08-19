@@ -11,8 +11,8 @@ Few custom helper classes for repeated use in web applications
   
 
 ### Extension Methods
-###### ReplaceLastOccurrence
-Replace the last occurance in a string.
+> ###### ReplaceLastOccurrence
+> Replace the last occurance in a string.
 
 * ConvertHelper - Convert related operations
 
