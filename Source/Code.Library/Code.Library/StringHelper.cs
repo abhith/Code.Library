@@ -374,11 +374,14 @@ namespace Code.Library
             return (sb.ToString().Normalize(NormalizationForm.FormC));
         }
 
+
+
+        #region extension methods
+
         /// <summary>
         /// Replace \r\n or \n by <br />
         /// from http://weblogs.asp.net/gunnarpeipman/archive/2007/11/18/c-extension-methods.aspx
         /// </summary>
-
         /// <param name="s"></param>
         /// <returns></returns>
         public static string Nl2Br(this string s)
@@ -386,10 +389,10 @@ namespace Code.Library
             return s.Replace("\r\n", "<br />").Replace("\n", "<br />");
         }
 
-        /// <summary>
         static MD5CryptoServiceProvider s_md5 = null;
-
+        /// <summary>
         /// from http://weblogs.asp.net/gunnarpeipman/archive/2007/11/18/c-extension-methods.aspx
+        /// generates MD5
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
@@ -401,8 +404,6 @@ namespace Code.Library
             Byte[] encrypted = s_md5.ComputeHash(newdata);
             return BitConverter.ToString(encrypted).Replace("-", "").ToLower();
         }
-
-        #region extension methods
 
         /// <summary>
         /// Replace last occurance in a string
