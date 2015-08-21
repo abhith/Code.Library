@@ -37,3 +37,5 @@ Few custom helper classes.
 > Log exception to the response
 
 ## ConvertHelper
+**ConvertTo12H**
+> Convert timespan to 12H
