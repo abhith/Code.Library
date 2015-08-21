@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Globalization;
 
 namespace Code.Library
 {
@@ -10,8 +11,6 @@ namespace Code.Library
         
         /// <summary>
         /// funtion for making a datatable from the enitity data
-        /// Author : Sobin
-        /// Date : 17 July 2015
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="data"></param>
@@ -30,6 +29,25 @@ namespace Code.Library
                 table.Rows.Add(row);
             }
             return table;
+        }
+
+        /// <summary>
+        /// Convert timespan to 12H
+        /// </summary>
+        /// <param name="timeSpan"></param>
+        /// <returns></returns>
+        public static string ConvertTo12H(this TimeSpan timeSpan)
+        {
+
+            var dateTime = DateTime.MinValue.Add(timeSpan);
+            var cultureInfo = CultureInfo.InvariantCulture;
+            // optional
+            //CultureInfo cultureInfo = new CultureInfo(CultureInfo.CurrentCulture.Name);
+            //cultureInfo.DateTimeFormat.PMDesignator = "PM";
+
+            var result = dateTime.ToString("hh:mm tt", cultureInfo);
+            return result;
+            //Assert.True(result.StartsWith("11:20 PM"));
         }
     }
 }
