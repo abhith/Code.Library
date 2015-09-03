@@ -39,3 +39,7 @@ Few custom helper classes.
 ## ConvertHelper
 **ConvertTo12H**
 > Convert timespan to 12H
+
+## DebugHelper
+**LogMessage**
+> Log message to the response header
