@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Code.Library;
+using System;
 using System.Globalization;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -119,6 +120,14 @@ namespace Code.Library.Tests
             string expected = "9e107d9d372bb6826bd81d3542a419d6";
             string actual = input.MD5();
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void IsValidEmailTest()
+        {
+            Assert.IsTrue("test@test.com".IsValidEmail());
+            Assert.IsFalse("test".IsValidEmail());
+            Assert.IsTrue("test@test.com.in".IsValidEmail());
         }
     }
 }
