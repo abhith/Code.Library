@@ -423,6 +423,17 @@ namespace Code.Library
             return result;
         }
 
+        /// <summary>
+        /// To check whether the string is valid email.
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        public static bool IsValidEmail(this string email)
+        {
+            bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
+            return isEmail;
+        }
+      
         #endregion
 
 

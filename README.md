@@ -28,6 +28,9 @@ Few custom helper classes.
 **Nl2Br**
 > Replace \r\n or \n by <br />
 
+**IsValidEmail**
+>  To check whether the string is valid email.
+
 ## ControlsHelper 
 **SelectDropDownValue**
 > Select drop down item
