@@ -172,18 +172,7 @@ namespace Code.Library
             return trimmedInput;
         }
 
-        /// <summary>
-        /// true, if is valid email address
-        /// from http://www.codeproject.com/Articles/31050/String-Extension-Collection-for-C
-        /// </summary>
-        /// <param name="s">email address to test</param>
-        /// <returns>true, if is valid email address</returns>
-
-        public static bool IsValidEmailAddress(this string s)
-        {
-            return new Regex(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,6}$").IsMatch(s);
-        }
-
+        
         /// <summary>
         /// Checks if url is valid. 
         /// from http://www.osix.net/modules/article/?id=586
@@ -422,18 +411,6 @@ namespace Code.Library
             var result = source.Remove(place, find.Length).Insert(place, replace);
             return result;
         }
-
-        /// <summary>
-        /// To check whether the string is valid email.
-        /// </summary>
-        /// <param name="email"></param>
-        /// <returns></returns>
-        public static bool IsValidEmail(this string email)
-        {
-            bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
-            return isEmail;
-        }
-      
         #endregion
 
 

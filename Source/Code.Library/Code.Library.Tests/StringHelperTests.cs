@@ -9,15 +9,6 @@ namespace Code.Library.Tests
     [TestClass()]
     public class StringHelperTests
     {
-        [TestMethod()]
-        public void IsValidEmailAddressTest()
-        {
-            Assert.IsTrue("yellowdog@someemail.uk".IsValidEmailAddress());
-            Assert.IsTrue("yellow.444@email4u.co.uk".IsValidEmailAddress());
-            Assert.IsFalse("adfasdf".IsValidEmailAddress());
-            Assert.IsFalse("asd@asdf".IsValidEmailAddress());
-        }
-
         /// <summary>
         ///A test for IsValidUrl
         ///</summary>
@@ -120,14 +111,6 @@ namespace Code.Library.Tests
             string expected = "9e107d9d372bb6826bd81d3542a419d6";
             string actual = input.MD5();
             Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod()]
-        public void IsValidEmailTest()
-        {
-            Assert.IsTrue("test@test.com".IsValidEmail());
-            Assert.IsFalse("test".IsValidEmail());
-            Assert.IsTrue("test@test.com.in".IsValidEmail());
         }
     }
 }
