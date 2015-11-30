@@ -30,7 +30,7 @@ namespace Code.Library
             }
             return table;
         }
-
+        #region Extension Methods
         /// <summary>
         /// Convert timespan to 12H
         /// </summary>
@@ -50,7 +50,6 @@ namespace Code.Library
             //Assert.True(result.StartsWith("11:20 PM"));
         }
 
-        #region Extension Methods
         public static int? ToNullableInt32(this string s)
         {
             int i;
