@@ -1,7 +1,7 @@
-﻿using Code.Library;
-using System;
+﻿using System;
 using System.Globalization;
 using System.Threading;
+using Code.Library;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Code.Library.Tests
@@ -111,6 +111,17 @@ namespace Code.Library.Tests
             string expected = "9e107d9d372bb6826bd81d3542a419d6";
             string actual = input.MD5();
             Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// The to friendly url test.
+        /// </summary>
+        [TestMethod]
+        public void ToFriendlyUrlTest()
+        {
+            var input = "New Text Document";
+            var expected = "new-text-document";
+            Assert.AreEqual(expected, input.ToFriendlyUrl());
         }
     }
 }
