@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ControlsHelper.cs" />
     <Compile Include="ConvertHelper.cs" />
+    <Compile Include="DateTimeHelper.cs" />
     <Compile Include="DebugHelper.cs" />
     <Compile Include="EmailHelper.cs" />
     <Compile Include="ExceptionHelper.cs" />
