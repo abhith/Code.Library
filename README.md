@@ -49,4 +49,4 @@ Few custom helper classes.
 
 ## DateTimeHelper
 **Extensions**
-* NameOfMonth - returns name of month of datetime.
+* **NameOfMonth** - returns name of month of datetime.
