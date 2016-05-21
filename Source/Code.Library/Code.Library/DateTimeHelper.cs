@@ -23,5 +23,19 @@ namespace Code.Library
         {
             return value.ToString("MMM", CultureInfo.InvariantCulture);
         }
+        
+        /// <summary>
+        /// The first day of year.
+        /// </summary>
+        /// <param name="date">
+        /// The date.
+        /// </param>
+        /// <returns>
+        /// The <see cref="DateTime"/>.
+        /// </returns>
+        public static DateTime FirstDayOfYear(this DateTime date)
+        {
+            return new DateTime(date.Year, 1, 1);
+        }
     }
 }
