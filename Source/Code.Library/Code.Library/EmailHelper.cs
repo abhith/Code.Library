@@ -2,7 +2,7 @@
 {
     public static class EmailHelper
     {
-        //public static void SendgridEmail(string destination, string subject, string body)
+        //public static void SendgridEmail(string destination, string subject, string body, bool bccEnabled = true)
         //{
         //    var myMessage = new SendGridMessage();
         //    myMessage.AddTo(destination);
@@ -11,20 +11,30 @@
         //    myMessage.Text = body;
         //    myMessage.Html = body;
 
+        //// bcc
+        //    if (bccEnabled)
+        //    {
+        //        var bccEmail = WebConfigurationManager.AppSettings["email-monitoring-account"];
+        //        if (bccEmail != null)
+        //        {
+        //            myMessage.AddBcc(bccEmail);
+        //        }
+        //    }
+
         //    //Template
         //    //switch (subject)
         //    //{
         //    //    case "\":
         //    //        myMessage.EnableTemplateEngine(WebConfigurationManager.AppSettings["templateId"]);
-        //    //        break;    
+        //    //        break;
         //    //}
 
         //    var credentials = new NetworkCredential("Sendgrid Username","Sendgrid Password");
 
-        //    // Create a Web transport for sending email. 
+        //    // Create a Web transport for sending email.
         //    var transportWeb = new Web(credentials);
 
-        //    // Send the email. 
+        //    // Send the email.
         //    transportWeb.DeliverAsync(myMessage);
         //}
     }
