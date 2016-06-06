@@ -43,15 +43,18 @@
   <ItemGroup>
     <Compile Include="ControlsHelper.cs" />
     <Compile Include="ConvertHelper.cs" />
+    <Compile Include="DateTimeHelper.cs" />
     <Compile Include="DebugHelper.cs" />
     <Compile Include="EmailHelper.cs" />
     <Compile Include="ExceptionHelper.cs" />
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="FileHelper.cs" />
     <Compile Include="ImageHelper.cs" />
     <Compile Include="NetworkHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringHelper.cs" />
     <Compile Include="ThirdPartyHelper.cs" />
+    <Compile Include="ValidationHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

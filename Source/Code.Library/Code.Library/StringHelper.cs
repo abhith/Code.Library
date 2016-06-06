@@ -11,6 +11,8 @@ namespace Code.Library
 {
     public static class StringHelper
     {
+        private static MD5CryptoServiceProvider s_md5 = null;
+
         /// <summary>
         /// Uppercase words. This program defines a method named UppercaseWords that is equivalent to the ucwords function in scripting languages such as PHP. The UppercaseWords method internally converts the string to a character array buffer.
         /// Source : http://www.dotnetperls.com/uppercase-first-letter
@@ -80,34 +82,6 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// Get friendly Url
-        /// Reference : Gist
-        /// </summary>
-        /// <param name="title"></param>
-        /// <returns></returns>
-        public static string GetFriendlyUrl(string title)
-        {
-            // make it all lower case
-            title = title.ToLower();
-            // remove entities
-            title = Regex.Replace(title, @"&\w+;", "");
-            // remove anything that is not letters, numbers, dash, or space
-            title = Regex.Replace(title, @"[^a-z0-9\-\s]", "");
-            // replace spaces
-            title = title.Replace(' ', '-');
-            // collapse dashes
-            title = Regex.Replace(title, @"-{2,}", "-");
-            // trim excessive dashes at the beginning
-            title = title.TrimStart(new[] { '-' });
-            // if it's too long, clip it
-            if (title.Length > 80)
-                title = title.Substring(0, 79);
-            // remove trailing dashes
-            title = title.TrimEnd(new[] { '-' });
-            return title;
-        }
-
-        /// <summary>
         /// The regex strip html.
         /// Reference : Gist
         /// </summary>
@@ -173,23 +147,11 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// true, if is valid email address
-        /// from http://www.codeproject.com/Articles/31050/String-Extension-Collection-for-C
-        /// </summary>
-        /// <param name="s">email address to test</param>
-        /// <returns>true, if is valid email address</returns>
-
-        public static bool IsValidEmailAddress(this string s)
-        {
-            return new Regex(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,6}$").IsMatch(s);
-        }
-
-        /// <summary>
-        /// Checks if url is valid. 
+        /// Checks if url is valid.
         /// from http://www.osix.net/modules/article/?id=586
         /// and changed to match http://localhost
-        /// 
-        /// complete (not only http) url regex can be found 
+        ///
+        /// complete (not only http) url regex can be found
         /// at http://internet.ls-la.net/folklore/url-regexpr.html
         /// </summary>
         /// <param name="text"></param>
@@ -209,8 +171,6 @@ namespace Code.Library
         + "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
             return new Regex(strRegex).IsMatch(url);
         }
-
-
 
         /// <summary>
         /// Check if url (http) is available.
@@ -347,7 +307,7 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// Remove accent from strings 
+        /// Remove accent from strings
         /// </summary>
         /// <example>
         ///  input:  "Příliš žluťoučký kůň úpěl ďábelské ódy."
@@ -374,9 +334,47 @@ namespace Code.Library
             return (sb.ToString().Normalize(NormalizationForm.FormC));
         }
 
-
-
         #region extension methods
+
+        /// <summary>
+        /// The get friendly url.
+        /// </summary>
+        /// <param name="title">
+        /// The title.
+        /// </param>
+        /// <returns>
+        /// The <see cref="string"/>.
+        /// </returns>
+        public static string ToFriendlyUrl(this string title)
+        {
+            // make it all lower case
+            title = title.ToLower();
+
+            // remove entities
+            title = Regex.Replace(title, @"&\w+;", string.Empty);
+
+            // remove anything that is not letters, numbers, dash, or space
+            title = Regex.Replace(title, @"[^a-z0-9\-\s]", string.Empty);
+
+            // replace spaces
+            title = title.Replace(' ', '-');
+
+            // collapse dashes
+            title = Regex.Replace(title, @"-{2,}", "-");
+
+            // trim excessive dashes at the beginning
+            title = title.TrimStart(new[] { '-' });
+
+            // if it's too long, clip it
+            if (title.Length > 80)
+            {
+                title = title.Substring(0, 79);
+            }
+
+            // remove trailing dashes
+            title = title.TrimEnd(new[] { '-' });
+            return title;
+        }
 
         /// <summary>
         /// Replace \r\n or \n by <br />
@@ -389,7 +387,6 @@ namespace Code.Library
             return s.Replace("\r\n", "<br />").Replace("\n", "<br />");
         }
 
-        static MD5CryptoServiceProvider s_md5 = null;
         /// <summary>
         /// from http://weblogs.asp.net/gunnarpeipman/archive/2007/11/18/c-extension-methods.aspx
         /// generates MD5
@@ -423,20 +420,6 @@ namespace Code.Library
             return result;
         }
 
-        /// <summary>
-        /// To check whether the string is valid email.
-        /// </summary>
-        /// <param name="email"></param>
-        /// <returns></returns>
-        public static bool IsValidEmail(this string email)
-        {
-            bool isEmail = Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
-            return isEmail;
-        }
-      
-        #endregion
-
-
-
+        #endregion extension methods
     }
 }
