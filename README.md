@@ -50,3 +50,4 @@ Few custom helper classes.
 ## DateTimeHelper
 **Extensions**
 * **NameOfMonth** - returns name of month of datetime.
+* **GetArabianStandardTime** - returns uae time
