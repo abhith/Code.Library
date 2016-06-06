@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Code.Library
 {
@@ -18,12 +19,12 @@ namespace Code.Library
         {
             return new DateTime(value.Year, value.Month, value.DaysInMonth());
         }
-        
+
         public static string NameOfMonth(this DateTime value)
         {
             return value.ToString("MMM", CultureInfo.InvariantCulture);
         }
-        
+
         /// <summary>
         /// The first day of year.
         /// </summary>
