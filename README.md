@@ -46,3 +46,8 @@ Few custom helper classes.
 ## DebugHelper
 **LogMessage**
 > Log message to the response header
+
+## DateTimeHelper
+**Extensions**
+* **NameOfMonth** - returns name of month of datetime.
+* **GetArabianStandardTime** - returns uae time
