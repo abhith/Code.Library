@@ -10,8 +10,9 @@
 
 namespace Code.Library.Tests.Extensions
 {
-    using Code.Library.Extensions;
-    using Code.Library.Models;
+    using Library.Extensions;
+
+    using Models;
 
     using Shouldly;
 
