@@ -11,8 +11,7 @@
 namespace Code.Library.Tests.Extensions
 {
     using Library.Extensions;
-
-    using Models;
+    using Library.Models;
 
     using Shouldly;
 
