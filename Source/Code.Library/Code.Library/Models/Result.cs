@@ -1,8 +1,16 @@
-﻿using System;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Result.cs" company="*">
+//   *
+// </copyright>
+// <summary>
+//   Defines the ResultCommonLogic type.
+//  Ref : https://github.com/vkhorikov/CSharpFunctionalExtensions
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Code.Library.Models
 {
