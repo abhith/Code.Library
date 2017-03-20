@@ -1,8 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="ResultExtensions.cs" company="*">
+//   *
+// </copyright>
+// <summary>
+//   Defines the ResultExtensions type.
+//  Ref : https://github.com/vkhorikov/CSharpFunctionalExtensions
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+using System;
 
 namespace Code.Library.Extensions
 {
@@ -144,6 +150,18 @@ namespace Code.Library.Extensions
             return result;
         }
 
+        /// <summary>
+        /// The on failure.
+        /// </summary>
+        /// <param name="result">
+        /// The result.
+        /// </param>
+        /// <param name="action">
+        /// The action.
+        /// </param>
+        /// <returns>
+        /// The <see cref="Result"/>.
+        /// </returns>
         public static Result OnFailure(this Result result, Action action)
         {
             if (result.IsFailure)
@@ -154,6 +172,21 @@ namespace Code.Library.Extensions
             return result;
         }
 
+        /// <summary>
+        /// The on failure.
+        /// </summary>
+        /// <param name="result">
+        /// The result.
+        /// </param>
+        /// <param name="action">
+        /// The action.
+        /// </param>
+        /// <typeparam name="T">
+        /// generic type
+        /// </typeparam>
+        /// <returns>
+        /// The <see cref="Result"/>.
+        /// </returns>
         public static Result<T> OnFailure<T>(this Result<T> result, Action<string> action)
         {
             if (result.IsFailure)
@@ -164,6 +197,18 @@ namespace Code.Library.Extensions
             return result;
         }
 
+        /// <summary>
+        /// The on failure.
+        /// </summary>
+        /// <param name="result">
+        /// The result.
+        /// </param>
+        /// <param name="action">
+        /// The action.
+        /// </param>
+        /// <returns>
+        /// The <see cref="Result"/>.
+        /// </returns>
         public static Result OnFailure(this Result result, Action<string> action)
         {
             if (result.IsFailure)
