@@ -82,6 +82,7 @@
   <ItemGroup>
     <Compile Include="DateTimeHelperTests.cs" />
     <Compile Include="DebugHelperTests.cs" />
+    <Compile Include="Models\FailedResultTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Extensions\ResultExtensionsTests.cs" />
     <Compile Include="StringHelperTests.cs" />
