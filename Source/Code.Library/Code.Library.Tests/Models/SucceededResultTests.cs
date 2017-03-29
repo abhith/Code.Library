@@ -10,14 +10,7 @@ namespace Code.Library.Tests.Models
 
     public class SucceededResultTests
     {
-        [Fact]
-        public void Can_create_a_non_generic_version()
-        {
-            Result result = Result.Ok();
-
-            result.IsFailure.ShouldBe(false);
-            result.IsSuccess.ShouldBe(true);
-        }
+        #region Public Methods
 
         [Fact]
         public void Can_create_a_generic_version()
@@ -32,6 +25,15 @@ namespace Code.Library.Tests.Models
         }
 
         [Fact]
+        public void Can_create_a_non_generic_version()
+        {
+            Result result = Result.Ok();
+
+            result.IsFailure.ShouldBe(false);
+            result.IsSuccess.ShouldBe(true);
+        }
+
+        [Fact]
         public void Cannot_create_without_Value()
         {
             Action action = () => { Result.Ok((MyClass)null); };
@@ -39,34 +41,40 @@ namespace Code.Library.Tests.Models
             action.ShouldThrow<ArgumentNullException>(); ;
         }
 
-        [Fact]
-        public void Cannot_access_Error_non_generic_version()
-        {
-            Result result = Result.Ok();
+        #endregion Public Methods
 
-            Action action = () =>
-            {
-                string error = result.Error;
-            };
+        //[Fact]
+        //public void Cannot_access_Error_non_generic_version()
+        //{
+        //    Result result = Result.Ok();
 
-            action.ShouldThrow<InvalidOperationException>();
-        }
+        //    Action action = () =>
+        //    {
+        //        string error = result.Error;
+        //    };
 
-        [Fact]
-        public void Cannot_access_Error_generic_version()
-        {
-            Result<MyClass> result = Result.Ok(new MyClass());
+        //    action.ShouldThrow<InvalidOperationException>();
+        //}
 
-            Action action = () =>
-            {
-                string error = result.Error;
-            };
+        //[Fact]
+        //public void Cannot_access_Error_generic_version()
+        //{
+        //    Result<MyClass> result = Result.Ok(new MyClass());
 
-            action.ShouldThrow<InvalidOperationException>();
-        }
+        //    Action action = () =>
+        //    {
+        //        string error = result.Error;
+        //    };
+
+        //    action.ShouldThrow<InvalidOperationException>();
+        //}
+
+        #region Private Classes
 
         private class MyClass
         {
         }
+
+        #endregion Private Classes
     }
 }

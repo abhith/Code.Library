@@ -23,15 +23,7 @@ namespace Code.Library.Tests.Models
     /// </summary>
     public class FailedResultTests
     {
-        [Fact]
-        public void Can_create_a_non_generic_version()
-        {
-            Result result = Result.Fail("Error message");
-
-            result.Error.ShouldBe("Error message");
-            result.IsFailure.ShouldBe(true);
-            result.IsSuccess.ShouldBe(false);
-        }
+        #region Public Methods
 
         [Fact]
         public void Can_create_a_generic_version()
@@ -44,14 +36,24 @@ namespace Code.Library.Tests.Models
         }
 
         [Fact]
-        public void Cannot_access_Value_property()
+        public void Can_create_a_non_generic_version()
         {
-            Result<MyClass> result = Result.Fail<MyClass>("Error message");
+            Result result = Result.Fail("Error message");
 
-            Action action = () => { MyClass myClass = result.Value; };
-
-            action.ShouldThrow<InvalidOperationException>();
+            result.Error.ShouldBe("Error message");
+            result.IsFailure.ShouldBe(true);
+            result.IsSuccess.ShouldBe(false);
         }
+
+        //[Fact]
+        //public void Cannot_access_Value_property()
+        //{
+        //    Result<MyClass> result = Result.Fail<MyClass>("Error message");
+
+        //    Action action = () => { MyClass myClass = result.Value; };
+
+        //    action.ShouldThrow<InvalidOperationException>();
+        //}
 
         [Fact]
         public void Cannot_create_without_error_message()
@@ -67,8 +69,14 @@ namespace Code.Library.Tests.Models
             action4.ShouldThrow<ArgumentNullException>();
         }
 
+        #endregion Public Methods
+
+        #region Private Classes
+
         private class MyClass
         {
         }
+
+        #endregion Private Classes
     }
 }
