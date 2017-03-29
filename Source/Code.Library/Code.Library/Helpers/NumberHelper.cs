@@ -19,6 +19,30 @@ namespace Code.Library.Helpers
         #region Public Methods
 
         /// <summary>
+        /// The get first n digits.
+        /// </summary>
+        /// <param name="number">
+        /// The number.
+        /// </param>
+        /// <param name="n">
+        /// The n.
+        /// </param>
+        /// <returns>
+        /// The <see cref="int"/>.
+        /// </returns>
+        public static int GetFirstNDigits(this int number, int n)
+        {
+            var x = (int)Math.Pow(10, n);
+
+            while (number >= x)
+            {
+                number /= 10;
+            }
+
+            return number;
+        }
+
+        /// <summary>
         /// The get nth digit.
         /// </summary>
         /// <param name="number">

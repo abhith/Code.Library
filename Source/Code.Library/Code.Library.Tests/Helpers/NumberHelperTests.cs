@@ -11,6 +11,23 @@
         #region Public Methods
 
         /// <summary>
+        /// The get first n digits tests.
+        /// </summary>
+        [Fact]
+        public void GetFirstNDigitsTests()
+        {
+            int number = 7654321;
+
+            var firstDigit = number.GetFirstNDigits(1);
+            var firstTwoDigits = number.GetFirstNDigits(2);
+            var firstFourDigits = number.GetFirstNDigits(4);
+
+            firstDigit.ShouldBe(7);
+            firstTwoDigits.ShouldBe(76);
+            firstFourDigits.ShouldBe(7654);
+        }
+
+        /// <summary>
         /// The get nth digit tests.
         /// </summary>
         [Fact]
