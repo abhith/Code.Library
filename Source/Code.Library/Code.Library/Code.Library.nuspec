@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Code.Library</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Abhith</authors>
+    <owners>Abhith</owners>
+    <licenseUrl>https://github.com/Abhith/Code.Library/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Abhith/Code.Library</projectUrl>    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Few custom helper classes.</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>c#</tags>
+  </metadata>
+</package>
