@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppVersionHelper.cs" />
     <Compile Include="ControlsHelper.cs" />
     <Compile Include="ConvertHelper.cs" />
     <Compile Include="DateTimeHelper.cs" />
