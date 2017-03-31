@@ -10,4 +10,4 @@ build:
   verbosity: minimal
   
 before_build:
-  - nuget restore
+  - cmd: msbuild /t:restore Source\Code.Library\Code.Library.sln
