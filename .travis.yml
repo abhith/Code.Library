@@ -1,0 +1,2 @@
+language: csharp
+solution: "./Source/Code.Library/Code.Library.sln"
