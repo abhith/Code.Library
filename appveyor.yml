@@ -1,0 +1,13 @@
+version: 1.0.{build}
+
+# Build worker image (VM template)
+image: Visual Studio 2015
+
+# build Configuration, i.e. Debug, Release, etc.
+configuration: Release
+
+build:
+  verbosity: minimal
+  
+before_build:
+  - nuget restore Source\Code.Library\Code.Library.sln

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppVersionHelper.cs" />
     <Compile Include="ControlsHelper.cs" />
     <Compile Include="ConvertHelper.cs" />
     <Compile Include="DateTimeHelper.cs" />
@@ -48,8 +49,11 @@
     <Compile Include="EmailHelper.cs" />
     <Compile Include="ExceptionHelper.cs" />
     <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Extensions\ResultExtensions.cs" />
     <Compile Include="FileHelper.cs" />
+    <Compile Include="Helpers\NumberHelper.cs" />
     <Compile Include="ImageHelper.cs" />
+    <Compile Include="Models\Result.cs" />
     <Compile Include="NetworkHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringHelper.cs" />
