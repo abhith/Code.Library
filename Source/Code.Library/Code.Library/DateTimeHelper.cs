@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 
 namespace Code.Library
@@ -49,5 +50,26 @@ namespace Code.Library
             var tst = TimeZoneInfo.FindSystemTimeZoneById("Arabian Standard Time");
             return TimeZoneInfo.ConvertTime(date, TimeZoneInfo.Local, tst);
         }
+
+        /// <summary>
+        /// Gives each  day between start and end date
+        /// </summary>
+        /// <param name="startDate">
+        /// The start date
+        /// </param>
+        /// <param name="endDate">
+        /// The end date
+        /// </param>
+        /// <returns>
+        /// <see cref="IEnumerable{DateTime}"/>
+        /// </returns>
+        public static IEnumerable<DateTime> GetEachDay(this DateTime startDate, DateTime endDate)
+        {
+            for (var day = startDate.Date; day.Date <= endDate.Date; day = day.AddDays(1))
+            {
+                yield return day;
+            }
+        }
+
     }
 }
