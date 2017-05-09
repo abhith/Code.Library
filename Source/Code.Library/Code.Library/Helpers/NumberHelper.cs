@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Code.Library.Helpers
+namespace Code.Library
 {
     using System;
 
