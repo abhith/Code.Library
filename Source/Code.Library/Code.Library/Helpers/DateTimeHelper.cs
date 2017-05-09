@@ -6,24 +6,16 @@ namespace Code.Library
 {
     public static class DateTimeHelper
     {
-        public static DateTime FirstDayOfMonth(this DateTime value)
-        {
-            return new DateTime(value.Year, value.Month, 1);
-        }
+        #region Public Methods
 
         public static int DaysInMonth(this DateTime value)
         {
             return DateTime.DaysInMonth(value.Year, value.Month);
         }
 
-        public static DateTime LastDayOfMonth(this DateTime value)
+        public static DateTime FirstDayOfMonth(this DateTime value)
         {
-            return new DateTime(value.Year, value.Month, value.DaysInMonth());
-        }
-
-        public static string NameOfMonth(this DateTime value)
-        {
-            return value.ToString("MMM", CultureInfo.InvariantCulture);
+            return new DateTime(value.Year, value.Month, 1);
         }
 
         /// <summary>
@@ -38,6 +30,12 @@ namespace Code.Library
         public static DateTime FirstDayOfYear(this DateTime date)
         {
             return new DateTime(date.Year, 1, 1);
+        }
+
+        public static DateTime FromUnixTime(this long value)
+        {
+            var unix = new System.DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+            return unix.AddMilliseconds(value);
         }
 
         /// <summary>
@@ -71,5 +69,26 @@ namespace Code.Library
             }
         }
 
+        public static DateTime LastDayOfMonth(this DateTime value)
+        {
+            return new DateTime(value.Year, value.Month, value.DaysInMonth());
+        }
+
+        public static string NameOfMonth(this DateTime value)
+        {
+            return value.ToString("MMM", CultureInfo.InvariantCulture);
+        }
+
+        public static long ToUnixTime(this DateTime value)
+        {
+            var unix = new System.DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+
+            if (value < unix)
+                throw new ArgumentException("Specified value is lower than the UNIX time.");
+
+            return (long)value.Subtract(unix).TotalMilliseconds;
+        }
+
+        #endregion Public Methods
     }
 }
