@@ -6,7 +6,7 @@ namespace Code.Library
 {
     public static class DateTimeHelper
     {
-        #region Public Methods
+        #region Extension Menthods
 
         public static int DaysInMonth(this DateTime value)
         {
@@ -69,6 +69,11 @@ namespace Code.Library
             }
         }
 
+        public static DateTime Iso8601ToDateTime(this string iso8601text)
+        {
+            return DateTime.Parse(iso8601text, null, DateTimeStyles.RoundtripKind);
+        }
+
         public static DateTime LastDayOfMonth(this DateTime value)
         {
             return new DateTime(value.Year, value.Month, value.DaysInMonth());
@@ -77,6 +82,11 @@ namespace Code.Library
         public static string NameOfMonth(this DateTime value)
         {
             return value.ToString("MMM", CultureInfo.InvariantCulture);
+        }
+
+        public static string ToIso8601(this DateTime date)
+        {
+            return date.ToString("s", CultureInfo.InvariantCulture);
         }
 
         public static long ToUnixTime(this DateTime value)
@@ -89,6 +99,6 @@ namespace Code.Library
             return (long)value.Subtract(unix).TotalMilliseconds;
         }
 
-        #endregion Public Methods
+        #endregion Extension Menthods
     }
 }
