@@ -2,15 +2,15 @@
 <package >
   <metadata>
     <id>Code.Library</id>
-    <version>$version$</version>
+    <version>1.1.0</version>
     <title>$title$</title>
     <authors>Abhith</authors>
     <owners>Abhith</owners>
     <licenseUrl>https://github.com/Abhith/Code.Library/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Abhith/Code.Library</projectUrl>    
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Few custom helper classes.</description>
-    <releaseNotes>First release</releaseNotes>
+    <description>Few custom C# helper classes.</description>
+    <releaseNotes>Datetime helper updated</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>c#</tags>
   </metadata>

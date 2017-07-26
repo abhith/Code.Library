@@ -17,6 +17,33 @@ namespace Code.Library
     /// </summary>
     public static class FileHelper
     {
+        #region Extension Methods
+
+        public static void Clean(this DirectoryInfo directory)
+        {
+            foreach (var file in directory.GetFiles()) file.Delete();
+            foreach (var subDirectory in directory.GetDirectories()) subDirectory.Delete(true);
+        }
+
+        #endregion Extension Methods
+
+        #region Public Methods
+
+        /// <summary>
+        /// The create directory.
+        /// </summary>
+        /// <param name="path">
+        /// The path.
+        /// </param>
+        public static void CreateDirectory(string path)
+        {
+            var exists = Directory.Exists(System.Web.HttpContext.Current.Server.MapPath(path));
+            if (!exists)
+            {
+                Directory.CreateDirectory(System.Web.HttpContext.Current.Server.MapPath(path));
+            }
+        }
+
         /// <summary>
         /// The delete file.
         /// </summary>
@@ -36,20 +63,7 @@ namespace Code.Library
             }
         }
 
-        /// <summary>
-        /// The create directory.
-        /// </summary>
-        /// <param name="path">
-        /// The path.
-        /// </param>
-        public static void CreateDirectory(string path)
-        {
-            var exists = Directory.Exists(System.Web.HttpContext.Current.Server.MapPath(path));
-            if (!exists)
-            {
-                Directory.CreateDirectory(System.Web.HttpContext.Current.Server.MapPath(path));
-            }
-        }
+        #endregion Public Methods
 
         #region FTP
 
