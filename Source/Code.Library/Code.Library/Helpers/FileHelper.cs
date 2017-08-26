@@ -19,6 +19,10 @@ namespace Code.Library
     {
         #region Extension Methods
 
+        /// <summary>
+        /// delete all the files and folders in the specified directory
+        /// </summary>
+        /// <param name="directory"></param>
         public static void Clean(this DirectoryInfo directory)
         {
             foreach (var file in directory.GetFiles()) file.Delete();
@@ -30,7 +34,7 @@ namespace Code.Library
         #region Public Methods
 
         /// <summary>
-        /// The create directory.
+        /// Creates a directory in the specified path.
         /// </summary>
         /// <param name="path">
         /// The path.
@@ -45,7 +49,7 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// The delete file.
+        /// deletes the specified file
         /// </summary>
         /// <param name="fileName">
         /// The file name.
@@ -63,12 +67,8 @@ namespace Code.Library
             }
         }
 
-        #endregion Public Methods
-
-        #region FTP
-
         /// <summary>
-        /// The get file from ftp.
+        /// Gets file via ftp.
         /// </summary>
         /// <param name="downloadTo">
         /// The download to.
@@ -85,7 +85,7 @@ namespace Code.Library
         /// <param name="ftpPassword">
         /// The ftp password.
         /// </param>
-        public static void GetFileFromFTP(string downloadTo, string filename, string ftpAddress, string ftpUsername, string ftpPassword)
+        public static void GetFileViaFTP(string downloadTo, string filename, string ftpAddress, string ftpUsername, string ftpPassword)
         {
             var localPath = downloadTo;
             var fileName = filename;
@@ -117,6 +117,6 @@ namespace Code.Library
             writeStream.Close();
         }
 
-        #endregion FTP
+        #endregion Public Methods
     }
 }
