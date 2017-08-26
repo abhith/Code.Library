@@ -19,7 +19,7 @@ namespace Code.Library
         #region Public Methods
 
         /// <summary>
-        /// The get first n digits.
+        /// Gets the first n digits.
         /// </summary>
         /// <param name="number">
         /// The number.
@@ -43,7 +43,7 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// The get nth digit.
+        /// Gets the nth digit.
         /// </summary>
         /// <param name="number">
         /// The number.
