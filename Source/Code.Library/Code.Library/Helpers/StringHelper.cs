@@ -147,7 +147,7 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// Checks if url is valid.
+        /// Checks if URL is valid.
         /// from http://www.osix.net/modules/article/?id=586
         /// and changed to match http://localhost
         ///
@@ -203,8 +203,7 @@ namespace Code.Library
         }
 
         /// <summary>
-
-        /// Reverse the string
+        /// Reverse the string.
         /// from http://en.wikipedia.org/wiki/Extension_method
         /// </summary>
         /// <param name="input"></param>
@@ -217,55 +216,21 @@ namespace Code.Library
         }
 
         /// <summary>
-
-        /// Reduce string to shorter preview which is optionally ended by some string (...).
-        /// </summary>
-        /// <param name="s">string to reduce</param>
-        /// <param name="count">Length of returned string including endings.</param>
-        /// <param name="endings">optional edings of reduced text</param>
-
-        /// <example>
-        /// string description = "This is very long description of something";
-        /// string preview = description.Reduce(20,"...");
-        /// produce -> "This is very long..."
-        /// </example>
-        /// <returns></returns>
-
-        public static string Reduce(this string s, int count, string endings)
-        {
-            if (count < endings.Length)
-                throw new Exception("Failed to reduce to less then endings length.");
-            int sLength = s.Length;
-            int len = sLength;
-            if (endings != null)
-                len += endings.Length;
-            if (count > sLength)
-                return s; //it's too short to reduce
-            s = s.Substring(0, sLength - len + count);
-            if (endings != null)
-                s += endings;
-            return s;
-        }
-
-        /// <summary>
-        /// remove white space, not line end
+        /// remove white space, not line end.
         /// Useful when parsing user input such phone,
         /// price int.Parse("1 000 000".RemoveSpaces(),.....
         /// </summary>
         /// <param name="s"></param>
-
-        /// <param name="value">string without spaces</param>
         public static string RemoveSpaces(this string s)
         {
             return s.Replace(" ", "");
         }
 
         /// <summary>
-        /// true, if the string can be parse as Double respective Int32
+        /// true, if the string can be parsed as Double respective Int32
         /// Spaces are not considred.
         /// </summary>
         /// <param name="s">input string</param>
-
         /// <param name="floatpoint">true, if Double is considered,
         /// otherwhise Int32 is considered.</param>
         /// <returns>true, if the string contains only digits or float-point</returns>
@@ -282,7 +247,7 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// true, if the string contains only digits or float-point.
+        /// True, if the string contains only digits or float-point.
         /// Spaces are not considred.
         /// </summary>
         /// <param name="s">input string</param>
@@ -307,7 +272,7 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// Remove accent from strings
+        /// Remove accent from strings.
         /// </summary>
         /// <example>
         ///  input:  "Příliš žluťoučký kůň úpěl ďábelské ódy."
