@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Code.Library
 {
     public static class ExtensionMethods
     {
-
         #region IENUMERABLE
 
         /// <summary>
@@ -40,6 +37,6 @@ namespace Code.Library
             return result;
         }
 
-        #endregion
+        #endregion IENUMERABLE
     }
 }
