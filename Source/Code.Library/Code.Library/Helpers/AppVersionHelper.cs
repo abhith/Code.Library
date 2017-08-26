@@ -16,7 +16,7 @@ namespace Code.Library
         /// All project's assembly versions are changed when this value is changed.
         /// It's also shown in the web page.
         /// </summary>
-        public const string Version = "1.1.0.0";
+        public const string Version = "1.1.0";
 
         #endregion Public Fields
 
