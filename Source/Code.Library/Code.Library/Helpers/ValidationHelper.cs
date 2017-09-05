@@ -7,6 +7,16 @@ namespace Code.Library
         #region Extensions
 
         /// <summary>
+        /// To check whether the given string is Arabic.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns>Returns True if Arabic</returns>
+        public static bool IsRtl(this string input)
+        {
+            return Regex.IsMatch(input, @"\p{IsArabic}");
+        }
+
+        /// <summary>
         /// To check whether the string is a valid email.
         /// </summary>
         /// <param name="email"></param>
