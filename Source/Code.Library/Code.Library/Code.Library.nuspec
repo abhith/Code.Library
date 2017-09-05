@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Code.Library</id>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <title>$title$</title>
     <authors>Abhith</authors>
     <owners>Abhith</owners>
@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/Abhith/Code.Library</projectUrl>    
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Few custom C# helper classes.</description>
-    <releaseNotes>Datetime helper updated</releaseNotes>
+    <releaseNotes>Wiki updates and new IsRtl validation helper method</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>c#</tags>
   </metadata>
