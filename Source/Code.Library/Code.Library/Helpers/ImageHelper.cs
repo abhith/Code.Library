@@ -9,10 +9,7 @@ namespace Code.Library
     public static class ImageHelper
     {
         /// <summary>
-        /// Create Thumbnail
-        /// Author : Abhith
-        /// Date : 14 July 2015
-        /// Reference : Sysberries
+        /// Creates Thumbnail in the specified dimension.
         /// </summary>
         /// <param name="imageUrl"></param>
         /// <param name="width"></param>
@@ -50,9 +47,6 @@ namespace Code.Library
 
         /// <summary>
         /// Get Image Format
-        /// Author : Abhith
-        /// Date : 14 July 2015
-        /// Reference : Sysberries
         /// </summary>
         /// <param name="fileName"></param>
         /// <returns></returns>
@@ -82,10 +76,7 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// Resize Image
-        /// Author : Abhith
-        /// Date : 14 July 2015
-        /// Reference : Sysberries
+        /// Resize Image to the specified dimension.
         /// </summary>
         /// <param name="image"></param>
         /// <param name="maxWidth"></param>
@@ -104,7 +95,7 @@ namespace Code.Library
             var newImage = new Bitmap(newWidth, newHeight);
 
             Graphics.FromImage(newImage).DrawImage(image, 0, 0, newWidth, newHeight);
-            Bitmap bmp = new Bitmap(newImage);
+            var bmp = new Bitmap(newImage);
 
             return bmp;
         }

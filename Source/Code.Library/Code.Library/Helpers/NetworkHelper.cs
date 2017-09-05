@@ -5,7 +5,7 @@ namespace Code.Library
     public static class NetworkHelper
     {
         /// <summary>
-        /// function returns the IP address of the current system
+        /// Returns the IP address of the current request.
         /// Author : Jithin
         /// Date : 17 July 2015
         /// </summary>

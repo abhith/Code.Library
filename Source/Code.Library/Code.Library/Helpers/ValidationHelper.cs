@@ -1,38 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace Code.Library
 {
     public static class ValidationHelper
     {
         #region Extensions
+
         /// <summary>
-        /// To check whether the string is valid email.
+        /// To check whether the given string is Arabic.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns>Returns True if Arabic</returns>
+        public static bool IsRtl(this string input)
+        {
+            return Regex.IsMatch(input, @"\p{IsArabic}");
+        }
+
+        /// <summary>
+        /// To check whether the string is a valid email.
         /// </summary>
         /// <param name="email"></param>
         /// <returns></returns>
         public static bool IsValidEmailAddress(this string email)
         {
-           return Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
+            return Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
         }
 
-        ///// <summary>
-        ///// true, if is valid email address
-        ///// from http://www.codeproject.com/Articles/31050/String-Extension-Collection-for-C
-        ///// </summary>
-        ///// <param name="s">email address to test</param>
-        ///// <returns>true, if is valid email address</returns>
-
-        //public static bool IsValidEmailAddressV2(this string s)
-        //{
-        //    return new Regex(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,6}$").IsMatch(s);
-        //}
-        #endregion
-
-
+        #endregion Extensions
     }
 }
