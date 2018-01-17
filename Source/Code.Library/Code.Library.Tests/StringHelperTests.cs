@@ -1,10 +1,17 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Code.Library;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Globalization;
 using System.Threading;
 
 namespace Code.Library.Tests
 {
+    using Shouldly;
+
+    using Xunit;
+
+    using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
+
     [TestClass()]
     public class StringHelperTests
     {
@@ -115,5 +122,24 @@ namespace Code.Library.Tests
         }
 
         #endregion Public Methods
+
+        /// <summary>
+        /// The clean content test.
+        /// </summary>
+        [Fact]
+        public void CleanTest()
+        {
+            var input = "$7.42 billion";
+
+            var output = input.Clean(true);
+
+            output.ShouldBe(input);
+
+            input = "SELECT accountNumber, balance FROM accounts WHERE account_owner_id = 0 OR 1=1";
+
+            output = input.Clean(true);
+
+            output.ShouldNotBe(input);
+        }
     }
 }
