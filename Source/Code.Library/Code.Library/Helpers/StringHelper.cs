@@ -1,14 +1,23 @@
-﻿using System;
-using System.Globalization;
-using System.Linq;
-using System.Net;
-using System.Security.Cryptography;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="StringHelper.cs" company="Abhith">
+//  All rights reserved
+// </copyright>
+// <summary>
+//   Defines the StringHelper type.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace Code.Library
 {
+    using System;
+    using System.Globalization;
+    using System.Linq;
+    using System.Net;
+    using System.Security.Cryptography;
+    using System.Text;
+    using System.Text.RegularExpressions;
+    using System.Threading;
+
     public static class StringHelper
     {
         private static MD5CryptoServiceProvider s_md5 = null;
@@ -82,37 +91,28 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// The regex strip html.
-        /// Reference : Gist
+        /// Clean the content by replacing special characters/HTML tags.
         /// </summary>
-        private static readonly Regex RegexStripHtml = new Regex("<[^>]*>", RegexOptions.Compiled);
-
-        private static string StripHtml(string html)
-        {
-            return string.IsNullOrWhiteSpace(html) ? string.Empty :
-                RegexStripHtml.Replace(html, string.Empty).Trim();
-        }
-
-        public static string CleanContent(string content, bool removeHtml)
+        /// <param name="content">
+        /// The content.
+        /// </param>
+        /// <param name="removeHtml">
+        /// The remove html.
+        /// </param>
+        /// <returns>
+        /// The <see cref="string"/>.
+        /// </returns>
+        public static string Clean(this string content, bool removeHtml)
         {
             if (removeHtml)
             {
                 content = StripHtml(content);
             }
 
-            content =
-                content.Replace("\\", string.Empty).
-                Replace("|", string.Empty).
-                Replace("(", string.Empty).
-                Replace(")", string.Empty).
-                Replace("[", string.Empty).
-                Replace("]", string.Empty).
-                Replace("*", string.Empty).
-                Replace("?", string.Empty).
-                Replace("}", string.Empty).
-                Replace("{", string.Empty).
-                Replace("^", string.Empty).
-                Replace("+", string.Empty);
+            content = content.Replace("\\", string.Empty).Replace("|", string.Empty).Replace("(", string.Empty)
+                .Replace(")", string.Empty).Replace("[", string.Empty).Replace("]", string.Empty)
+                .Replace("*", string.Empty).Replace("?", string.Empty).Replace("}", string.Empty)
+                .Replace("{", string.Empty).Replace("^", string.Empty).Replace("+", string.Empty);
 
             var words = content.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
             var sb = new StringBuilder();
@@ -122,7 +122,7 @@ namespace Code.Library
                 sb.AppendFormat("{0} ", word);
             }
 
-            return sb.ToString();
+            return sb.ToString().Trim();
         }
 
         /// <summary>
@@ -386,5 +386,17 @@ namespace Code.Library
         }
 
         #endregion extension methods
+
+        /// <summary>
+        /// The regex strip html.
+        /// Reference : Gist
+        /// </summary>
+        private static readonly Regex RegexStripHtml = new Regex("<[^>]*>", RegexOptions.Compiled);
+
+        private static string StripHtml(string html)
+        {
+            return string.IsNullOrWhiteSpace(html) ? string.Empty :
+                       RegexStripHtml.Replace(html, string.Empty).Trim();
+        }
     }
 }
