@@ -1,17 +1,21 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>Code.Library</id>
-    <version>1.3.1</version>
-    <title>$title$</title>
+    <version>1.3.2</version>
+    <title>Code.Library</title>
     <authors>Abhith</authors>
     <owners>Abhith</owners>
     <licenseUrl>https://github.com/Abhith/Code.Library/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/Abhith/Code.Library</projectUrl>    
+    <projectUrl>https://github.com/Abhith/Code.Library</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Few C# helper classes.</description>
-    <releaseNotes>Fixed: Clean method removes single letters</releaseNotes>
+    <releaseNotes>Target platforms updated</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>c#</tags>
   </metadata>
+  <files>
+    <file src="bin\Release\Code.Library.dll" target="lib\net45" />
+    <file src="bin\Release\Code.Library.dll" target="lib\net461" />
+  </files>
 </package>
