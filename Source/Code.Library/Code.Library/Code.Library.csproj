@@ -60,6 +60,8 @@
     <Compile Include="Helpers\NumberHelper.cs" />
     <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="Helpers\SecurityHelper.cs" />
+    <Compile Include="Models\Breadcrumb.cs" />
+    <Compile Include="Models\BreadcrumbNode.cs" />
     <Compile Include="Models\Result.cs" />
     <Compile Include="Helpers\NetworkHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
