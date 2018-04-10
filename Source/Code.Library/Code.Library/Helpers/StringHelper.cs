@@ -20,36 +20,47 @@ namespace Code.Library
 
     public static class StringHelper
     {
+        /// <summary>
+        /// The regex strip html.
+        /// Reference : Gist
+        /// </summary>
+        private static readonly Regex RegexStripHtml = new Regex("<[^>]*>", RegexOptions.Compiled);
+
         private static MD5CryptoServiceProvider s_md5 = null;
 
         /// <summary>
-        /// Uppercase words. This program defines a method named UppercaseWords that is equivalent to the ucwords function in scripting languages such as PHP. The UppercaseWords method internally converts the string to a character array buffer.
-        /// Source : http://www.dotnetperls.com/uppercase-first-letter
+        /// Clean the content by replacing special characters/HTML tags.
         /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-        public static string UppercaseWords(string value)
+        /// <param name="content">
+        /// The content.
+        /// </param>
+        /// <param name="removeHtml">
+        /// The remove html.
+        /// </param>
+        /// <returns>
+        /// The <see cref="string"/>.
+        /// </returns>
+        public static string Clean(this string content, bool removeHtml)
         {
-            var array = value.ToCharArray();
-            // Handle the first letter in the string.
-            if (array.Length >= 1)
+            if (removeHtml)
             {
-                if (char.IsLower(array[0]))
-                {
-                    array[0] = char.ToUpper(array[0]);
-                }
+                content = StripHtml(content);
             }
-            // Scan through the letters, checking for spaces.
-            // ... Uppercase the lowercase letters following spaces.
-            for (var i = 1; i < array.Length; i++)
+
+            content = content.Replace("\\", string.Empty).Replace("|", string.Empty).Replace("(", string.Empty)
+                .Replace(")", string.Empty).Replace("[", string.Empty).Replace("]", string.Empty)
+                .Replace("*", string.Empty).Replace("?", string.Empty).Replace("}", string.Empty)
+                .Replace("{", string.Empty).Replace("^", string.Empty).Replace("+", string.Empty);
+
+            var words = content.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            var sb = new StringBuilder();
+            foreach (var word in
+                words.Select(t => t.ToLowerInvariant().Trim()).Where(word => word.Length >= 1))
             {
-                if (array[i - 1] != ' ') continue;
-                if (char.IsLower(array[i]))
-                {
-                    array[i] = char.ToUpper(array[i]);
-                }
+                sb.AppendFormat("{0} ", word);
             }
-            return new string(array);
+
+            return sb.ToString().Trim();
         }
 
         /// <summary>
@@ -91,38 +102,98 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// Clean the content by replacing special characters/HTML tags.
+        /// true, if the string can be parsed as Double respective Int32
+        /// Spaces are not considred.
         /// </summary>
-        /// <param name="content">
-        /// The content.
-        /// </param>
-        /// <param name="removeHtml">
-        /// The remove html.
-        /// </param>
-        /// <returns>
-        /// The <see cref="string"/>.
-        /// </returns>
-        public static string Clean(this string content, bool removeHtml)
+        /// <param name="s">input string</param>
+        /// <param name="floatpoint">true, if Double is considered,
+        /// otherwhise Int32 is considered.</param>
+        /// <returns>true, if the string contains only digits or float-point</returns>
+        public static bool IsNumber(this string s, bool floatpoint)
         {
-            if (removeHtml)
+            int i;
+            double d;
+            string withoutWhiteSpace = s.RemoveSpaces();
+            if (floatpoint)
+                return double.TryParse(withoutWhiteSpace, NumberStyles.Any,
+                    Thread.CurrentThread.CurrentUICulture, out d);
+            else
+                return int.TryParse(withoutWhiteSpace, out i);
+        }
+
+        /// <param name="floatpoint">true, if float-point is considered</param>
+        /// <returns>true, if the string contains only digits or float-point</returns>
+        public static bool IsNumberOnly(this string s, bool floatpoint)
+        {
+            s = s.Trim();
+            if (s.Length == 0)
+                return false;
+            foreach (char c in s)
             {
-                content = StripHtml(content);
+                if (!char.IsDigit(c))
+                {
+                    if (floatpoint && (c == '.' || c == ','))
+                        continue;
+                    return false;
+                }
             }
+            return true;
+        }
 
-            content = content.Replace("\\", string.Empty).Replace("|", string.Empty).Replace("(", string.Empty)
-                .Replace(")", string.Empty).Replace("[", string.Empty).Replace("]", string.Empty)
-                .Replace("*", string.Empty).Replace("?", string.Empty).Replace("}", string.Empty)
-                .Replace("{", string.Empty).Replace("^", string.Empty).Replace("+", string.Empty);
+        /// <returns></returns>
+        public static bool IsValidUrl(this string url)
+        {
+            string strRegex = "^(https?://)"
+        + "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?" //user@
+        + @"(([0-9]{1,3}\.){3}[0-9]{1,3}" // IP- 199.194.52.184
+        + "|" // allows either IP or domain
+        + @"([0-9a-z_!~*'()-]+\.)*" // tertiary domain(s)- www.
+        + @"([0-9a-z][0-9a-z-]{0,61})?[0-9a-z]" // second level domain
+        + @"(\.[a-z]{2,6})?)" // first level domain- .com or .museum is optional
+        + "(:[0-9]{1,5})?" // port number- :80
+        + "((/?)|" // a slash isn't required if there is no file name
+        + "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
+            return new Regex(strRegex).IsMatch(url);
+        }
 
-            var words = content.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
-            var sb = new StringBuilder();
-            foreach (var word in
-                words.Select(t => t.ToLowerInvariant().Trim()).Where(word => word.Length > 1))
+        public static string RemoveDiacritics(this string s)
+        {
+            string stFormD = s.Normalize(NormalizationForm.FormD);
+            StringBuilder sb = new StringBuilder();
+
+            for (int ich = 0; ich < stFormD.Length; ich++)
             {
-                sb.AppendFormat("{0} ", word);
+                UnicodeCategory uc = CharUnicodeInfo.GetUnicodeCategory(stFormD[ich]);
+                if (uc != UnicodeCategory.NonSpacingMark)
+                {
+                    sb.Append(stFormD[ich]);
+                }
             }
+            return (sb.ToString().Normalize(NormalizationForm.FormC));
+        }
 
-            return sb.ToString().Trim();
+        /// <summary>
+        /// remove white space, not line end.
+        /// Useful when parsing user input such phone,
+        /// price int.Parse("1 000 000".RemoveSpaces(),.....
+        /// </summary>
+        /// <param name="s"></param>
+        public static string RemoveSpaces(this string s)
+        {
+            return s.Replace(" ", "");
+        }
+
+        /// <summary>
+        /// Reverse the string.
+        /// from http://en.wikipedia.org/wiki/Extension_method
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string Reverse(this string input)
+        {
+            char[] chars = input.ToCharArray();
+            Array.Reverse(chars);
+            return new String(chars);
         }
 
         /// <summary>
@@ -147,6 +218,36 @@ namespace Code.Library
         }
 
         /// <summary>
+        /// Uppercase words. This program defines a method named UppercaseWords that is equivalent to the ucwords function in scripting languages such as PHP. The UppercaseWords method internally converts the string to a character array buffer.
+        /// Source : http://www.dotnetperls.com/uppercase-first-letter
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static string UppercaseWords(string value)
+        {
+            var array = value.ToCharArray();
+            // Handle the first letter in the string.
+            if (array.Length >= 1)
+            {
+                if (char.IsLower(array[0]))
+                {
+                    array[0] = char.ToUpper(array[0]);
+                }
+            }
+            // Scan through the letters, checking for spaces.
+            // ... Uppercase the lowercase letters following spaces.
+            for (var i = 1; i < array.Length; i++)
+            {
+                if (array[i - 1] != ' ') continue;
+                if (char.IsLower(array[i]))
+                {
+                    array[i] = char.ToUpper(array[i]);
+                }
+            }
+            return new string(array);
+        }
+
+        /// <summary>
         /// Checks if URL is valid.
         /// from http://www.osix.net/modules/article/?id=586
         /// and changed to match http://localhost
@@ -155,23 +256,6 @@ namespace Code.Library
         /// at http://internet.ls-la.net/folklore/url-regexpr.html
         /// </summary>
         /// <param name="text"></param>
-
-        /// <returns></returns>
-        public static bool IsValidUrl(this string url)
-        {
-            string strRegex = "^(https?://)"
-        + "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?" //user@
-        + @"(([0-9]{1,3}\.){3}[0-9]{1,3}" // IP- 199.194.52.184
-        + "|" // allows either IP or domain
-        + @"([0-9a-z_!~*'()-]+\.)*" // tertiary domain(s)- www.
-        + @"([0-9a-z][0-9a-z-]{0,61})?[0-9a-z]" // second level domain
-        + @"(\.[a-z]{2,6})?)" // first level domain- .com or .museum is optional
-        + "(:[0-9]{1,5})?" // port number- :80
-        + "((/?)|" // a slash isn't required if there is no file name
-        + "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
-            return new Regex(strRegex).IsMatch(url);
-        }
-
         /// <summary>
         /// Check if url (http) is available.
         /// </summary>
@@ -203,74 +287,10 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// Reverse the string.
-        /// from http://en.wikipedia.org/wiki/Extension_method
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
-        public static string Reverse(this string input)
-        {
-            char[] chars = input.ToCharArray();
-            Array.Reverse(chars);
-            return new String(chars);
-        }
-
-        /// <summary>
-        /// remove white space, not line end.
-        /// Useful when parsing user input such phone,
-        /// price int.Parse("1 000 000".RemoveSpaces(),.....
-        /// </summary>
-        /// <param name="s"></param>
-        public static string RemoveSpaces(this string s)
-        {
-            return s.Replace(" ", "");
-        }
-
-        /// <summary>
-        /// true, if the string can be parsed as Double respective Int32
-        /// Spaces are not considred.
-        /// </summary>
-        /// <param name="s">input string</param>
-        /// <param name="floatpoint">true, if Double is considered,
-        /// otherwhise Int32 is considered.</param>
-        /// <returns>true, if the string contains only digits or float-point</returns>
-        public static bool IsNumber(this string s, bool floatpoint)
-        {
-            int i;
-            double d;
-            string withoutWhiteSpace = s.RemoveSpaces();
-            if (floatpoint)
-                return double.TryParse(withoutWhiteSpace, NumberStyles.Any,
-                    Thread.CurrentThread.CurrentUICulture, out d);
-            else
-                return int.TryParse(withoutWhiteSpace, out i);
-        }
-
-        /// <summary>
         /// True, if the string contains only digits or float-point.
         /// Spaces are not considred.
         /// </summary>
         /// <param name="s">input string</param>
-
-        /// <param name="floatpoint">true, if float-point is considered</param>
-        /// <returns>true, if the string contains only digits or float-point</returns>
-        public static bool IsNumberOnly(this string s, bool floatpoint)
-        {
-            s = s.Trim();
-            if (s.Length == 0)
-                return false;
-            foreach (char c in s)
-            {
-                if (!char.IsDigit(c))
-                {
-                    if (floatpoint && (c == '.' || c == ','))
-                        continue;
-                    return false;
-                }
-            }
-            return true;
-        }
-
         /// <summary>
         /// Remove accent from strings.
         /// </summary>
@@ -283,23 +303,51 @@ namespace Code.Library
         /// how-do-i-remove-diacritics-accents-from-a-string-in-net</remarks>
         /// <returns>string without accents</returns>
 
-        public static string RemoveDiacritics(this string s)
-        {
-            string stFormD = s.Normalize(NormalizationForm.FormD);
-            StringBuilder sb = new StringBuilder();
+        #region extension methods
 
-            for (int ich = 0; ich < stFormD.Length; ich++)
-            {
-                UnicodeCategory uc = CharUnicodeInfo.GetUnicodeCategory(stFormD[ich]);
-                if (uc != UnicodeCategory.NonSpacingMark)
-                {
-                    sb.Append(stFormD[ich]);
-                }
-            }
-            return (sb.ToString().Normalize(NormalizationForm.FormC));
+        /// <summary>
+        /// from http://weblogs.asp.net/gunnarpeipman/archive/2007/11/18/c-extension-methods.aspx
+        /// generates MD5
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public static string MD5(this string s)
+        {
+            if (s_md5 == null) //creating only when needed
+                s_md5 = new MD5CryptoServiceProvider();
+            Byte[] newdata = Encoding.Default.GetBytes(s);
+            Byte[] encrypted = s_md5.ComputeHash(newdata);
+            return BitConverter.ToString(encrypted).Replace("-", "").ToLower();
         }
 
-        #region extension methods
+        /// <summary>
+        /// Replace \r\n or \n by <br />
+        /// from http://weblogs.asp.net/gunnarpeipman/archive/2007/11/18/c-extension-methods.aspx
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        public static string Nl2Br(this string s)
+        {
+            return s.Replace("\r\n", "<br />").Replace("\n", "<br />");
+        }
+
+        /// <summary>
+        /// Replace last occurance in a string
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="find"></param>
+        /// <param name="replace"></param>
+        /// <returns></returns>
+        public static string ReplaceLastOccurrence(this string source, string find, string replace)
+        {
+            var place = source.LastIndexOf(find, StringComparison.Ordinal);
+
+            if (place == -1)
+                return string.Empty;
+
+            var result = source.Remove(place, find.Length).Insert(place, replace);
+            return result;
+        }
 
         /// <summary>
         /// The get friendly url.
@@ -341,57 +389,7 @@ namespace Code.Library
             return title;
         }
 
-        /// <summary>
-        /// Replace \r\n or \n by <br />
-        /// from http://weblogs.asp.net/gunnarpeipman/archive/2007/11/18/c-extension-methods.aspx
-        /// </summary>
-        /// <param name="s"></param>
-        /// <returns></returns>
-        public static string Nl2Br(this string s)
-        {
-            return s.Replace("\r\n", "<br />").Replace("\n", "<br />");
-        }
-
-        /// <summary>
-        /// from http://weblogs.asp.net/gunnarpeipman/archive/2007/11/18/c-extension-methods.aspx
-        /// generates MD5
-        /// </summary>
-        /// <param name="s"></param>
-        /// <returns></returns>
-        public static string MD5(this string s)
-        {
-            if (s_md5 == null) //creating only when needed
-                s_md5 = new MD5CryptoServiceProvider();
-            Byte[] newdata = Encoding.Default.GetBytes(s);
-            Byte[] encrypted = s_md5.ComputeHash(newdata);
-            return BitConverter.ToString(encrypted).Replace("-", "").ToLower();
-        }
-
-        /// <summary>
-        /// Replace last occurance in a string
-        /// </summary>
-        /// <param name="source"></param>
-        /// <param name="find"></param>
-        /// <param name="replace"></param>
-        /// <returns></returns>
-        public static string ReplaceLastOccurrence(this string source, string find, string replace)
-        {
-            var place = source.LastIndexOf(find, StringComparison.Ordinal);
-
-            if (place == -1)
-                return string.Empty;
-
-            var result = source.Remove(place, find.Length).Insert(place, replace);
-            return result;
-        }
-
         #endregion extension methods
-
-        /// <summary>
-        /// The regex strip html.
-        /// Reference : Gist
-        /// </summary>
-        private static readonly Regex RegexStripHtml = new Regex("<[^>]*>", RegexOptions.Compiled);
 
         private static string StripHtml(string html)
         {
