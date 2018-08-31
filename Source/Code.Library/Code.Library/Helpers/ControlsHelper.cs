@@ -15,7 +15,7 @@ namespace Code.Library
         }
 
         /// <summary>
-        /// Select drop down item 
+        /// Select drop down item by value
         /// </summary>
         /// <param name="dropDownList"></param>
         /// <param name="value"></param>

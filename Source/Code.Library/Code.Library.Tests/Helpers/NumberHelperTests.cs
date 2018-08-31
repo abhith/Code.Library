@@ -1,7 +1,5 @@
 ﻿namespace Code.Library.Tests.Helpers
 {
-    using Code.Library.Helpers;
-
     using Shouldly;
 
     using Xunit;

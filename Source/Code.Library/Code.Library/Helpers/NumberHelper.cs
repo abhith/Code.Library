@@ -7,7 +7,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Code.Library.Helpers
+namespace Code.Library
 {
     using System;
 
@@ -19,7 +19,7 @@ namespace Code.Library.Helpers
         #region Public Methods
 
         /// <summary>
-        /// The get first n digits.
+        /// Gets the first n digits.
         /// </summary>
         /// <param name="number">
         /// The number.
@@ -43,7 +43,7 @@ namespace Code.Library.Helpers
         }
 
         /// <summary>
-        /// The get nth digit.
+        /// Gets the nth digit.
         /// </summary>
         /// <param name="number">
         /// The number.
