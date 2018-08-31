@@ -55,7 +55,7 @@ namespace Code.Library
             var words = content.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
             var sb = new StringBuilder();
             foreach (var word in
-                words.Select(t => t.ToLowerInvariant().Trim()).Where(word => word.Length >= 1))
+                words.Select(t => t.Trim()).Where(word => word.Length >= 1))
             {
                 sb.AppendFormat("{0} ", word);
             }
