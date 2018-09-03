@@ -17,37 +17,26 @@ using System.Threading.Tasks;
 namespace Code.Library.Models
 {
     using System.Diagnostics;
+    using System.Runtime.Serialization;
 
-    public struct Result
+    public struct Result : ISerializable
     {
-        #region Private Fields
-
         private static readonly Result OkResult = new Result(false, null);
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private readonly ResultCommonLogic _logic;
 
-        #endregion Private Fields
-
-        #region Private Constructors
-
         [DebuggerStepThrough]
         private Result(bool isFailure, string error)
         {
-            _logic = new ResultCommonLogic(isFailure, error);
+            _logic = ResultCommonLogic.Create(isFailure, error);
         }
 
-        #endregion Private Constructors
-
-        #region Public Properties
-
         public string Error => _logic.Error;
+
         public bool IsFailure => _logic.IsFailure;
+
         public bool IsSuccess => _logic.IsSuccess;
-
-        #endregion Public Properties
-
-        #region Public Methods
 
         /// <summary>
         /// Returns failure which combined from all failures in the <paramref name="results"/> list. Error messages are separated by <paramref name="errorMessagesSeparator"/>.
@@ -98,6 +87,12 @@ namespace Code.Library.Models
             return new Result<T>(true, default(T), error);
         }
 
+        [DebuggerStepThrough]
+        public static Result<TValue, TError> Fail<TValue, TError>(TError error) where TError : class
+        {
+            return new Result<TValue, TError>(true, default(TValue), error);
+        }
+
         /// <summary>
         /// Returns first failure in the list of <paramref name="results"/>. If there is no failure returns success.
         /// </summary>
@@ -126,22 +121,25 @@ namespace Code.Library.Models
             return new Result<T>(false, value, null);
         }
 
-        #endregion Public Methods
+        [DebuggerStepThrough]
+        public static Result<TValue, TError> Ok<TValue, TError>(TValue value) where TError : class
+        {
+            return new Result<TValue, TError>(false, value, default(TError));
+        }
+
+        void ISerializable.GetObjectData(SerializationInfo oInfo, StreamingContext oContext)
+        {
+            _logic.GetObjectData(oInfo, oContext);
+        }
     }
 
-    public struct Result<T>
+    public struct Result<T> : ISerializable
     {
-        #region Private Fields
-
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private readonly ResultCommonLogic _logic;
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private readonly T _value;
-
-        #endregion Private Fields
-
-        #region Internal Constructors
 
         [DebuggerStepThrough]
         internal Result(bool isFailure, T value, string error)
@@ -149,13 +147,9 @@ namespace Code.Library.Models
             if (!isFailure && value == null)
                 throw new ArgumentNullException(nameof(value));
 
-            _logic = new ResultCommonLogic(isFailure, error);
+            _logic = ResultCommonLogic.Create(isFailure, error);
             _value = value;
         }
-
-        #endregion Internal Constructors
-
-        #region Public Properties
 
         public string Error => _logic.Error;
         public bool IsFailure => _logic.IsFailure;
@@ -176,10 +170,6 @@ namespace Code.Library.Models
             }
         }
 
-        #endregion Public Properties
-
-        #region Public Methods
-
         public static implicit operator Result(Result<T> result)
         {
             if (result.IsSuccess)
@@ -188,43 +178,115 @@ namespace Code.Library.Models
                 return Result.Fail(result.Error);
         }
 
-        #endregion Public Methods
+        void ISerializable.GetObjectData(SerializationInfo oInfo, StreamingContext oContext)
+        {
+            _logic.GetObjectData(oInfo, oContext);
+
+            if (IsSuccess)
+            {
+                oInfo.AddValue("Value", Value);
+            }
+        }
     }
 
-    internal sealed class ResultCommonLogic
+    public struct Result<TValue, TError> : ISerializable where TError : class
     {
-        #region Private Fields
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private readonly ResultCommonLogic<TError> _logic;
 
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-        private readonly string _error;
-
-        #endregion Private Fields
-
-        #region Public Constructors
+        private readonly TValue _value;
 
         [DebuggerStepThrough]
-        public ResultCommonLogic(bool isFailure, string error)
+        internal Result(bool isFailure, TValue value, TError error)
+        {
+            if (!isFailure && value == null)
+                throw new ArgumentNullException(nameof(value));
+
+            _logic = new ResultCommonLogic<TError>(isFailure, error);
+            _value = value;
+        }
+
+        public TError Error => _logic.Error;
+        public bool IsFailure => _logic.IsFailure;
+        public bool IsSuccess => _logic.IsSuccess;
+
+        public TValue Value
+        {
+            [DebuggerStepThrough]
+            get
+            {
+                if (!IsSuccess)
+                    throw new InvalidOperationException("There is no value for failure.");
+
+                return _value;
+            }
+        }
+
+        public static implicit operator Result(Result<TValue, TError> result)
+        {
+            if (result.IsSuccess)
+                return Result.Ok();
+            else
+                return Result.Fail(result.Error.ToString());
+        }
+
+        public static implicit operator Result<TValue>(Result<TValue, TError> result)
+        {
+            if (result.IsSuccess)
+                return Result.Ok(result.Value);
+            else
+                return Result.Fail<TValue>(result.Error.ToString());
+        }
+
+        void ISerializable.GetObjectData(SerializationInfo oInfo, StreamingContext oContext)
+        {
+            _logic.GetObjectData(oInfo, oContext);
+
+            if (IsSuccess)
+            {
+                oInfo.AddValue("Value", Value);
+            }
+        }
+    }
+
+    internal static class ResultMessages
+    {
+        public static readonly string ErrorMessageIsNotProvidedForFailure = "There must be error message for failure.";
+
+        public static readonly string ErrorMessageIsProvidedForSuccess = "There should be no error message for success.";
+
+        public static readonly string ErrorObjectIsNotProvidedForFailure =
+                            "You have tried to create a failure result, but error object appeared to be null, please review the code, generating error object.";
+
+        public static readonly string ErrorObjectIsProvidedForSuccess =
+            "You have tried to create a success result, but error object was also passed to the constructor, please try to review the code, creating a success result.";
+    }
+
+    internal class ResultCommonLogic<TError> where TError : class
+    {
+        [DebuggerBrowsable(DebuggerBrowsableState.Never)]
+        private readonly TError _error;
+
+        [DebuggerStepThrough]
+        public ResultCommonLogic(bool isFailure, TError error)
         {
             if (isFailure)
             {
-                if (string.IsNullOrEmpty(error))
-                    throw new ArgumentNullException(nameof(error), "There must be error message for failure.");
+                if (error == null)
+                    throw new ArgumentNullException(nameof(error), ResultMessages.ErrorObjectIsNotProvidedForFailure);
             }
             else
             {
                 if (error != null)
-                    throw new ArgumentException("There should be no error message for success.", nameof(error));
+                    throw new ArgumentException(ResultMessages.ErrorObjectIsProvidedForSuccess, nameof(error));
             }
 
             IsFailure = isFailure;
             _error = error;
         }
 
-        #endregion Public Constructors
-
-        #region Public Properties
-
-        public string Error
+        public TError Error
         {
             [DebuggerStepThrough]
             get
@@ -240,6 +302,38 @@ namespace Code.Library.Models
         public bool IsFailure { get; }
         public bool IsSuccess => !IsFailure;
 
-        #endregion Public Properties
+        public void GetObjectData(SerializationInfo oInfo, StreamingContext oContext)
+        {
+            oInfo.AddValue("IsFailure", IsFailure);
+            oInfo.AddValue("IsSuccess", IsSuccess);
+            if (IsFailure)
+            {
+                oInfo.AddValue("Error", Error);
+            }
+        }
+    }
+
+    internal sealed class ResultCommonLogic : ResultCommonLogic<string>
+    {
+        public ResultCommonLogic(bool isFailure, string error) : base(isFailure, error)
+        {
+        }
+
+        [DebuggerStepThrough]
+        public static ResultCommonLogic Create(bool isFailure, string error)
+        {
+            if (isFailure)
+            {
+                if (string.IsNullOrEmpty(error))
+                    throw new ArgumentNullException(nameof(error), ResultMessages.ErrorMessageIsNotProvidedForFailure);
+            }
+            else
+            {
+                if (error != null)
+                    throw new ArgumentException(ResultMessages.ErrorMessageIsProvidedForSuccess, nameof(error));
+            }
+
+            return new ResultCommonLogic(isFailure, error);
+        }
     }
 }
