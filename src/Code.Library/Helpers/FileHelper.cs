@@ -34,21 +34,6 @@ namespace Code.Library
         #region Public Methods
 
         /// <summary>
-        /// Creates a directory in the specified path.
-        /// </summary>
-        /// <param name="path">
-        /// The path.
-        /// </param>
-        public static void CreateDirectory(string path)
-        {
-            var exists = Directory.Exists(System.Web.HttpContext.Current.Server.MapPath(path));
-            if (!exists)
-            {
-                Directory.CreateDirectory(System.Web.HttpContext.Current.Server.MapPath(path));
-            }
-        }
-
-        /// <summary>
         /// deletes the specified file
         /// </summary>
         /// <param name="fileName">

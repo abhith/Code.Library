@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.0.0-beta.1</Version>
+    <Authors>abhith</Authors>
+    <Description>Some useful C# helper classes.</Description>
+    <PackageProjectUrl>https://github.com/Abhith/Code.Library</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Abhith/Code.Library</RepositoryUrl>
+    <PackageReleaseNotes>- TargetFramework netstandard2.0</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dtos\AuditedEntityDto.cs" />
+    <Compile Remove="Dtos\CreationAuditedEntityDto.cs" />
+    <Compile Remove="Dtos\FullAuditedEntityDto.cs" />
+    <Compile Remove="Helpers\ControlsHelper.cs" />
+    <Compile Remove="Helpers\DebugHelper.cs" />
+    <Compile Remove="Helpers\ExceptionHelper.cs" />
+    <Compile Remove="Helpers\ImageHelper.cs" />
+    <Compile Remove="Helpers\NetworkHelper.cs" />
+  </ItemGroup>
+
+</Project>
