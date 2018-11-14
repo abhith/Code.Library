@@ -20,4 +20,9 @@ steps:
     command: 'build'
     projects: '**/*.csproj'
     #verbosityRestore: 'detailed' # Options: quiet, minimal, normal, detailed, diagnostic
+- task: DotNetCoreCLI@2
+  inputs:
+    command: test
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
     
