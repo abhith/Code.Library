@@ -1,4 +1,11 @@
-# This is the **HOMEPAGE**.
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
-## Quick Start Notes:
-1. Add images to the *images* folder if the file is referencing an image.
+# **Code.Library**
+
+Some useful C# helper classes.
+
+Explore the helpers and utils [here](api/index.md)
+
+Source code is available on [GitHub](https://github.com/Abhith/Code.Library)
+
+
+> [!NOTE]
+> This is a work in progress docs made with DocFX. 
