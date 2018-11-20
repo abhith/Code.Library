@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Code.Library.Auditing;
+using System;
 
 namespace Code.Library.Dtos
 {

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -12,9 +12,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Dtos\AuditedEntityDto.cs" />
-    <Compile Remove="Dtos\CreationAuditedEntityDto.cs" />
-    <Compile Remove="Dtos\FullAuditedEntityDto.cs" />
     <Compile Remove="Helpers\ControlsHelper.cs" />
     <Compile Remove="Helpers\DebugHelper.cs" />
     <Compile Remove="Helpers\ExceptionHelper.cs" />
