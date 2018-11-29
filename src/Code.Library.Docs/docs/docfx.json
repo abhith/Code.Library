@@ -3,9 +3,9 @@
     {
       "src": [
         {
-          "exclude": [ "**/bin/**", "**/obj/**", "_site/**", "**/Code.Library.Tests/**" ],
-          "files": [ "src/**.csproj" ],
-          "src": "../"
+          "exclude": [ "**/bin/**", "**/obj/**", "**/_site/**", "**/Code.Library.Tests/**", "**/Code.Library.Docs/**" ],
+          "files": [ "**.csproj" ],
+          "src": "../../"
         }
       ],
       "dest": "api"
