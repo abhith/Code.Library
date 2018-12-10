@@ -9,7 +9,6 @@ namespace Code.Library
     /// </summary>
     public class AppVersionHelper
     {
-        
         /// <summary>
         /// Gets release (last build) date of the application.
         /// It's shown in the web page.
@@ -18,6 +17,5 @@ namespace Code.Library
         {
             get { return new FileInfo(typeof(AppVersionHelper).Assembly.Location).LastWriteTime; }
         }
-
     }
 }
