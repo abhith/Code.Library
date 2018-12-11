@@ -60,15 +60,26 @@
         /// <summary>
         /// Cleans string to aid in preventing xss attacks.
         /// </summary>
-        /// <param name="input"></param>
-        /// <param name="ignoreFromClean"></param>
-        /// <returns></returns>
+        /// <param name="input">Input string.</param>
+        /// <param name="ignoreFromClean">Characters to ignore during clean.</param>
+        /// <returns>Cleaned string.</returns>
         public static string CleanForXss(this string input, params char[] ignoreFromClean)
         {
-            //remove any html
+            // remove any html
             input = input.StripHtml();
-            //strip out any potential chars involved with XSS
+
+            // strip out any potential chars involved with XSS
             return input.ExceptChars(new HashSet<char>(CleanForXssChars.Except(ignoreFromClean)));
+        }
+
+        /// <summary>
+        /// returns "safe" URL, stripping anything outside normal charsets for URL
+        /// </summary>
+        /// <param name="url">Input URL string.</param>
+        /// <returns>Safe URL.</returns>
+        public static string SanitizeURL(this string url)
+        {
+            return Regex.Replace(url, @"[^-A-Za-z0-9+&@#/%?=~_|!:,.;\(\)]", string.Empty);
         }
 
         public static string EnsureEndsWith(this string input, char value)
