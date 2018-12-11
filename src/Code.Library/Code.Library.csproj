@@ -23,6 +23,7 @@
     <Compile Remove="Helpers\AppVersionHelper.cs" />
     <Compile Remove="Helpers\ControlsHelper.cs" />
     <Compile Remove="Helpers\DebugHelper.cs" />
+    <Compile Remove="Helpers\EmailHelper.cs" />
     <Compile Remove="Helpers\ExceptionHelper.cs" />
     <Compile Remove="Helpers\ImageHelper.cs" />
     <Compile Remove="Helpers\NetworkHelper.cs" />
