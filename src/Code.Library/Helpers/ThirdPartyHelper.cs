@@ -1,7 +1,10 @@
-﻿using System;
-
-namespace Code.Library
+﻿namespace Code.Library
 {
+    using System;
+
+    /// <summary>
+    /// Some useful methods linked to third party services.
+    /// </summary>
     public static class ThirdPartyHelper
     {
         /// <summary>
@@ -25,7 +28,7 @@ namespace Code.Library
         /// <returns></returns>
         public static string GetQrCodeImageUrl(string url)
         {
-            return string.Format("http://chart.apis.google.com/chart?cht=qr&chs=400x400&chl={0}", url);
+            return string.Format("https://chart.apis.google.com/chart?cht=qr&chs=400x400&chl={0}", url);
         }
     }
 }
