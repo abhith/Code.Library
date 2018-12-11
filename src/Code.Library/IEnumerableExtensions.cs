@@ -15,7 +15,7 @@
         /// </summary>
         /// <typeparam name="T">The element type of the IEnumerable item.</typeparam>
         /// <param name="data">IEnumerable.</param>
-        /// <returns>DataTable</returns>
+        /// <returns>DataTable.</returns>
         public static DataTable ToDataTable<T>(this IEnumerable<T> data)
         {
             var properties = TypeDescriptor.GetProperties(typeof(T));
