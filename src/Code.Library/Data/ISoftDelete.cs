@@ -1,4 +1,4 @@
-﻿namespace Code.Library.Data
+﻿namespace Code.Library
 {
     /// <summary>
     /// Used to standardize soft deleting entities.
