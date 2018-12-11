@@ -12,6 +12,8 @@
     /// </summary>
     public static class StringExtensions
     {
+        private static readonly char[] CleanForXssChars = "*?(){}[];:%<>/\\|&'\"".ToCharArray();
+
         /// <summary>
         /// Returns default value if string is null or whitespace.
         /// </summary>
@@ -23,7 +25,37 @@
             return string.IsNullOrWhiteSpace(str) ? defaultValue : str;
         }
 
-        private static readonly char[] CleanForXssChars = "*?(){}[];:%<>/\\|&'\"".ToCharArray();
+        /// <summary>
+        /// string to nullable int.
+        /// </summary>
+        /// <param name="s">string.</param>
+        /// <returns>integer or null.</returns>
+        public static int? ToNullableInt32(this string s)
+        {
+            int i;
+            if (int.TryParse(s, out i))
+            {
+                return i;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// string to nullable bool.
+        /// </summary>
+        /// <param name="s">Input string.</param>
+        /// <returns>Null or bool.</returns>
+        public static bool? ToNullableBool(this string s)
+        {
+            bool i;
+            if (bool.TryParse(s, out i))
+            {
+                return i;
+            }
+
+            return null;
+        }
 
         /// <summary>
         /// Cleans string to aid in preventing xss attacks.
