@@ -5,7 +5,7 @@
     using System.Globalization;
 
     /// <summary>
-    /// All Date Time extensions.
+    /// All DateTime extensions.
     /// </summary>
     public static class DateTimeExtensions
     {

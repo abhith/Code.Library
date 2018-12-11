@@ -6,7 +6,7 @@
     using System.Data;
 
     /// <summary>
-    /// IEnumerable extensions.
+    /// All IEnumerable extensions.
     /// </summary>
     public static class IEnumerableExtensions
     {

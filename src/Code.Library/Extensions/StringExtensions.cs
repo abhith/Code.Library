@@ -8,7 +8,7 @@
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// String extensions.
+    /// All String extensions.
     /// </summary>
     public static class StringExtensions
     {
