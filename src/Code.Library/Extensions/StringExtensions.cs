@@ -15,49 +15,6 @@
         private static readonly char[] CleanForXssChars = "*?(){}[];:%<>/\\|&'\"".ToCharArray();
 
         /// <summary>
-        /// Returns default value if string is null or whitespace.
-        /// </summary>
-        /// <param name="str">Input string.</param>
-        /// <param name="defaultValue">Default value.</param>
-        /// <returns>Returns default value if string is null or whitespace else return the string itself.</returns>
-        public static string IfNullOrWhiteSpace(this string str, string defaultValue)
-        {
-            return string.IsNullOrWhiteSpace(str) ? defaultValue : str;
-        }
-
-        /// <summary>
-        /// string to nullable int.
-        /// </summary>
-        /// <param name="s">string.</param>
-        /// <returns>integer or null.</returns>
-        public static int? ToNullableInt32(this string s)
-        {
-            int i;
-            if (int.TryParse(s, out i))
-            {
-                return i;
-            }
-
-            return null;
-        }
-
-        /// <summary>
-        /// string to nullable bool.
-        /// </summary>
-        /// <param name="s">Input string.</param>
-        /// <returns>Null or bool.</returns>
-        public static bool? ToNullableBool(this string s)
-        {
-            bool i;
-            if (bool.TryParse(s, out i))
-            {
-                return i;
-            }
-
-            return null;
-        }
-
-        /// <summary>
         /// Cleans string to aid in preventing xss attacks.
         /// </summary>
         /// <param name="input">Input string.</param>
@@ -70,16 +27,6 @@
 
             // strip out any potential chars involved with XSS
             return input.ExceptChars(new HashSet<char>(CleanForXssChars.Except(ignoreFromClean)));
-        }
-
-        /// <summary>
-        /// returns "safe" URL, stripping anything outside normal charsets for URL
-        /// </summary>
-        /// <param name="url">Input URL string.</param>
-        /// <returns>Safe URL.</returns>
-        public static string SanitizeURL(this string url)
-        {
-            return Regex.Replace(url, @"[^-A-Za-z0-9+&@#/%?=~_|!:,.;\(\)]", string.Empty);
         }
 
         public static string EnsureEndsWith(this string input, char value)
@@ -108,6 +55,17 @@
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Returns default value if string is null or whitespace.
+        /// </summary>
+        /// <param name="str">Input string.</param>
+        /// <param name="defaultValue">Default value.</param>
+        /// <returns>Returns default value if string is null or whitespace else return the string itself.</returns>
+        public static string IfNullOrWhiteSpace(this string str, string defaultValue)
+        {
+            return string.IsNullOrWhiteSpace(str) ? defaultValue : str;
+        }
+
         public static bool IsLowerCase(this char ch)
         {
             return ch.ToString(CultureInfo.InvariantCulture) == ch.ToString(CultureInfo.InvariantCulture).ToLowerInvariant();
@@ -123,6 +81,16 @@
             return !string.IsNullOrWhiteSpace(input)
                 ? input
                 : alternative;
+        }
+
+        /// <summary>
+        /// returns "safe" URL, stripping anything outside normal charsets for URL
+        /// </summary>
+        /// <param name="url">Input URL string.</param>
+        /// <returns>Safe URL.</returns>
+        public static string SanitizeURL(this string url)
+        {
+            return Regex.Replace(url, @"[^-A-Za-z0-9+&@#/%?=~_|!:,.;\(\)]", string.Empty);
         }
 
         /// <summary>
@@ -208,6 +176,38 @@
             return string.IsNullOrWhiteSpace(input)
                 ? input
                 : input.Substring(0, 1).ToUpperInvariant() + input.Substring(1);
+        }
+
+        /// <summary>
+        /// string to nullable bool.
+        /// </summary>
+        /// <param name="s">Input string.</param>
+        /// <returns>Null or bool.</returns>
+        public static bool? ToNullableBool(this string s)
+        {
+            bool i;
+            if (bool.TryParse(s, out i))
+            {
+                return i;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// string to nullable int.
+        /// </summary>
+        /// <param name="s">string.</param>
+        /// <returns>integer or null.</returns>
+        public static int? ToNullableInt32(this string s)
+        {
+            int i;
+            if (int.TryParse(s, out i))
+            {
+                return i;
+            }
+
+            return null;
         }
     }
 }
