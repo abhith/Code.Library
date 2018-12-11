@@ -279,155 +279,149 @@ references:
   isSpec: "True"
   fullName: Code.Library.DateTimeExtensions.ConvertTo12H
   nameWithType: DateTimeExtensions.ConvertTo12H
-- uid: Code.Library.DateTimeHelper
-  name: DateTimeHelper
-  href: api/Code.Library.DateTimeHelper.html
-  commentId: T:Code.Library.DateTimeHelper
-  fullName: Code.Library.DateTimeHelper
-  nameWithType: DateTimeHelper
-- uid: Code.Library.DateTimeHelper.DaysInMonth(DateTime)
+- uid: Code.Library.DateTimeExtensions.DaysInMonth(DateTime)
   name: DaysInMonth(DateTime)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_DaysInMonth_DateTime_
-  commentId: M:Code.Library.DateTimeHelper.DaysInMonth(DateTime)
-  fullName: Code.Library.DateTimeHelper.DaysInMonth(DateTime)
-  nameWithType: DateTimeHelper.DaysInMonth(DateTime)
-- uid: Code.Library.DateTimeHelper.DaysInMonth*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_DaysInMonth_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.DaysInMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.DaysInMonth(DateTime)
+  nameWithType: DateTimeExtensions.DaysInMonth(DateTime)
+- uid: Code.Library.DateTimeExtensions.DaysInMonth*
   name: DaysInMonth
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_DaysInMonth_
-  commentId: Overload:Code.Library.DateTimeHelper.DaysInMonth
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_DaysInMonth_
+  commentId: Overload:Code.Library.DateTimeExtensions.DaysInMonth
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.DaysInMonth
-  nameWithType: DateTimeHelper.DaysInMonth
-- uid: Code.Library.DateTimeHelper.FirstDayOfMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.DaysInMonth
+  nameWithType: DateTimeExtensions.DaysInMonth
+- uid: Code.Library.DateTimeExtensions.FirstDayOfMonth(DateTime)
   name: FirstDayOfMonth(DateTime)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_FirstDayOfMonth_DateTime_
-  commentId: M:Code.Library.DateTimeHelper.FirstDayOfMonth(DateTime)
-  fullName: Code.Library.DateTimeHelper.FirstDayOfMonth(DateTime)
-  nameWithType: DateTimeHelper.FirstDayOfMonth(DateTime)
-- uid: Code.Library.DateTimeHelper.FirstDayOfMonth*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FirstDayOfMonth_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.FirstDayOfMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.FirstDayOfMonth(DateTime)
+  nameWithType: DateTimeExtensions.FirstDayOfMonth(DateTime)
+- uid: Code.Library.DateTimeExtensions.FirstDayOfMonth*
   name: FirstDayOfMonth
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_FirstDayOfMonth_
-  commentId: Overload:Code.Library.DateTimeHelper.FirstDayOfMonth
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FirstDayOfMonth_
+  commentId: Overload:Code.Library.DateTimeExtensions.FirstDayOfMonth
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.FirstDayOfMonth
-  nameWithType: DateTimeHelper.FirstDayOfMonth
-- uid: Code.Library.DateTimeHelper.FirstDayOfYear(DateTime)
+  fullName: Code.Library.DateTimeExtensions.FirstDayOfMonth
+  nameWithType: DateTimeExtensions.FirstDayOfMonth
+- uid: Code.Library.DateTimeExtensions.FirstDayOfYear(DateTime)
   name: FirstDayOfYear(DateTime)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_FirstDayOfYear_DateTime_
-  commentId: M:Code.Library.DateTimeHelper.FirstDayOfYear(DateTime)
-  fullName: Code.Library.DateTimeHelper.FirstDayOfYear(DateTime)
-  nameWithType: DateTimeHelper.FirstDayOfYear(DateTime)
-- uid: Code.Library.DateTimeHelper.FirstDayOfYear*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FirstDayOfYear_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.FirstDayOfYear(DateTime)
+  fullName: Code.Library.DateTimeExtensions.FirstDayOfYear(DateTime)
+  nameWithType: DateTimeExtensions.FirstDayOfYear(DateTime)
+- uid: Code.Library.DateTimeExtensions.FirstDayOfYear*
   name: FirstDayOfYear
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_FirstDayOfYear_
-  commentId: Overload:Code.Library.DateTimeHelper.FirstDayOfYear
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FirstDayOfYear_
+  commentId: Overload:Code.Library.DateTimeExtensions.FirstDayOfYear
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.FirstDayOfYear
-  nameWithType: DateTimeHelper.FirstDayOfYear
-- uid: Code.Library.DateTimeHelper.FromUnixTime(System.Int64)
+  fullName: Code.Library.DateTimeExtensions.FirstDayOfYear
+  nameWithType: DateTimeExtensions.FirstDayOfYear
+- uid: Code.Library.DateTimeExtensions.FromUnixTime(System.Int64)
   name: FromUnixTime(Int64)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_FromUnixTime_System_Int64_
-  commentId: M:Code.Library.DateTimeHelper.FromUnixTime(System.Int64)
-  fullName: Code.Library.DateTimeHelper.FromUnixTime(System.Int64)
-  nameWithType: DateTimeHelper.FromUnixTime(Int64)
-- uid: Code.Library.DateTimeHelper.FromUnixTime*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FromUnixTime_System_Int64_
+  commentId: M:Code.Library.DateTimeExtensions.FromUnixTime(System.Int64)
+  fullName: Code.Library.DateTimeExtensions.FromUnixTime(System.Int64)
+  nameWithType: DateTimeExtensions.FromUnixTime(Int64)
+- uid: Code.Library.DateTimeExtensions.FromUnixTime*
   name: FromUnixTime
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_FromUnixTime_
-  commentId: Overload:Code.Library.DateTimeHelper.FromUnixTime
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FromUnixTime_
+  commentId: Overload:Code.Library.DateTimeExtensions.FromUnixTime
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.FromUnixTime
-  nameWithType: DateTimeHelper.FromUnixTime
-- uid: Code.Library.DateTimeHelper.GetArabianStandardTime(DateTime)
+  fullName: Code.Library.DateTimeExtensions.FromUnixTime
+  nameWithType: DateTimeExtensions.FromUnixTime
+- uid: Code.Library.DateTimeExtensions.GetArabianStandardTime(DateTime)
   name: GetArabianStandardTime(DateTime)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_GetArabianStandardTime_DateTime_
-  commentId: M:Code.Library.DateTimeHelper.GetArabianStandardTime(DateTime)
-  fullName: Code.Library.DateTimeHelper.GetArabianStandardTime(DateTime)
-  nameWithType: DateTimeHelper.GetArabianStandardTime(DateTime)
-- uid: Code.Library.DateTimeHelper.GetArabianStandardTime*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_GetArabianStandardTime_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.GetArabianStandardTime(DateTime)
+  fullName: Code.Library.DateTimeExtensions.GetArabianStandardTime(DateTime)
+  nameWithType: DateTimeExtensions.GetArabianStandardTime(DateTime)
+- uid: Code.Library.DateTimeExtensions.GetArabianStandardTime*
   name: GetArabianStandardTime
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_GetArabianStandardTime_
-  commentId: Overload:Code.Library.DateTimeHelper.GetArabianStandardTime
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_GetArabianStandardTime_
+  commentId: Overload:Code.Library.DateTimeExtensions.GetArabianStandardTime
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.GetArabianStandardTime
-  nameWithType: DateTimeHelper.GetArabianStandardTime
-- uid: Code.Library.DateTimeHelper.GetEachDay(DateTime,DateTime)
+  fullName: Code.Library.DateTimeExtensions.GetArabianStandardTime
+  nameWithType: DateTimeExtensions.GetArabianStandardTime
+- uid: Code.Library.DateTimeExtensions.GetEachDay(DateTime,DateTime)
   name: GetEachDay(DateTime, DateTime)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_GetEachDay_DateTime_DateTime_
-  commentId: M:Code.Library.DateTimeHelper.GetEachDay(DateTime,DateTime)
-  fullName: Code.Library.DateTimeHelper.GetEachDay(DateTime, DateTime)
-  nameWithType: DateTimeHelper.GetEachDay(DateTime, DateTime)
-- uid: Code.Library.DateTimeHelper.GetEachDay*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_GetEachDay_DateTime_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.GetEachDay(DateTime,DateTime)
+  fullName: Code.Library.DateTimeExtensions.GetEachDay(DateTime, DateTime)
+  nameWithType: DateTimeExtensions.GetEachDay(DateTime, DateTime)
+- uid: Code.Library.DateTimeExtensions.GetEachDay*
   name: GetEachDay
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_GetEachDay_
-  commentId: Overload:Code.Library.DateTimeHelper.GetEachDay
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_GetEachDay_
+  commentId: Overload:Code.Library.DateTimeExtensions.GetEachDay
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.GetEachDay
-  nameWithType: DateTimeHelper.GetEachDay
-- uid: Code.Library.DateTimeHelper.Iso8601ToDateTime(System.String)
+  fullName: Code.Library.DateTimeExtensions.GetEachDay
+  nameWithType: DateTimeExtensions.GetEachDay
+- uid: Code.Library.DateTimeExtensions.Iso8601ToDateTime(System.String)
   name: Iso8601ToDateTime(String)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_Iso8601ToDateTime_System_String_
-  commentId: M:Code.Library.DateTimeHelper.Iso8601ToDateTime(System.String)
-  fullName: Code.Library.DateTimeHelper.Iso8601ToDateTime(System.String)
-  nameWithType: DateTimeHelper.Iso8601ToDateTime(String)
-- uid: Code.Library.DateTimeHelper.Iso8601ToDateTime*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_Iso8601ToDateTime_System_String_
+  commentId: M:Code.Library.DateTimeExtensions.Iso8601ToDateTime(System.String)
+  fullName: Code.Library.DateTimeExtensions.Iso8601ToDateTime(System.String)
+  nameWithType: DateTimeExtensions.Iso8601ToDateTime(String)
+- uid: Code.Library.DateTimeExtensions.Iso8601ToDateTime*
   name: Iso8601ToDateTime
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_Iso8601ToDateTime_
-  commentId: Overload:Code.Library.DateTimeHelper.Iso8601ToDateTime
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_Iso8601ToDateTime_
+  commentId: Overload:Code.Library.DateTimeExtensions.Iso8601ToDateTime
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.Iso8601ToDateTime
-  nameWithType: DateTimeHelper.Iso8601ToDateTime
-- uid: Code.Library.DateTimeHelper.LastDayOfMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.Iso8601ToDateTime
+  nameWithType: DateTimeExtensions.Iso8601ToDateTime
+- uid: Code.Library.DateTimeExtensions.LastDayOfMonth(DateTime)
   name: LastDayOfMonth(DateTime)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_LastDayOfMonth_DateTime_
-  commentId: M:Code.Library.DateTimeHelper.LastDayOfMonth(DateTime)
-  fullName: Code.Library.DateTimeHelper.LastDayOfMonth(DateTime)
-  nameWithType: DateTimeHelper.LastDayOfMonth(DateTime)
-- uid: Code.Library.DateTimeHelper.LastDayOfMonth*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_LastDayOfMonth_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.LastDayOfMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.LastDayOfMonth(DateTime)
+  nameWithType: DateTimeExtensions.LastDayOfMonth(DateTime)
+- uid: Code.Library.DateTimeExtensions.LastDayOfMonth*
   name: LastDayOfMonth
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_LastDayOfMonth_
-  commentId: Overload:Code.Library.DateTimeHelper.LastDayOfMonth
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_LastDayOfMonth_
+  commentId: Overload:Code.Library.DateTimeExtensions.LastDayOfMonth
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.LastDayOfMonth
-  nameWithType: DateTimeHelper.LastDayOfMonth
-- uid: Code.Library.DateTimeHelper.NameOfMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.LastDayOfMonth
+  nameWithType: DateTimeExtensions.LastDayOfMonth
+- uid: Code.Library.DateTimeExtensions.NameOfMonth(DateTime)
   name: NameOfMonth(DateTime)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_NameOfMonth_DateTime_
-  commentId: M:Code.Library.DateTimeHelper.NameOfMonth(DateTime)
-  fullName: Code.Library.DateTimeHelper.NameOfMonth(DateTime)
-  nameWithType: DateTimeHelper.NameOfMonth(DateTime)
-- uid: Code.Library.DateTimeHelper.NameOfMonth*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_NameOfMonth_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.NameOfMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.NameOfMonth(DateTime)
+  nameWithType: DateTimeExtensions.NameOfMonth(DateTime)
+- uid: Code.Library.DateTimeExtensions.NameOfMonth*
   name: NameOfMonth
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_NameOfMonth_
-  commentId: Overload:Code.Library.DateTimeHelper.NameOfMonth
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_NameOfMonth_
+  commentId: Overload:Code.Library.DateTimeExtensions.NameOfMonth
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.NameOfMonth
-  nameWithType: DateTimeHelper.NameOfMonth
-- uid: Code.Library.DateTimeHelper.ToIso8601(DateTime)
+  fullName: Code.Library.DateTimeExtensions.NameOfMonth
+  nameWithType: DateTimeExtensions.NameOfMonth
+- uid: Code.Library.DateTimeExtensions.ToIso8601(DateTime)
   name: ToIso8601(DateTime)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_ToIso8601_DateTime_
-  commentId: M:Code.Library.DateTimeHelper.ToIso8601(DateTime)
-  fullName: Code.Library.DateTimeHelper.ToIso8601(DateTime)
-  nameWithType: DateTimeHelper.ToIso8601(DateTime)
-- uid: Code.Library.DateTimeHelper.ToIso8601*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_ToIso8601_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.ToIso8601(DateTime)
+  fullName: Code.Library.DateTimeExtensions.ToIso8601(DateTime)
+  nameWithType: DateTimeExtensions.ToIso8601(DateTime)
+- uid: Code.Library.DateTimeExtensions.ToIso8601*
   name: ToIso8601
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_ToIso8601_
-  commentId: Overload:Code.Library.DateTimeHelper.ToIso8601
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_ToIso8601_
+  commentId: Overload:Code.Library.DateTimeExtensions.ToIso8601
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.ToIso8601
-  nameWithType: DateTimeHelper.ToIso8601
-- uid: Code.Library.DateTimeHelper.ToUnixTime(DateTime)
+  fullName: Code.Library.DateTimeExtensions.ToIso8601
+  nameWithType: DateTimeExtensions.ToIso8601
+- uid: Code.Library.DateTimeExtensions.ToUnixTime(DateTime)
   name: ToUnixTime(DateTime)
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_ToUnixTime_DateTime_
-  commentId: M:Code.Library.DateTimeHelper.ToUnixTime(DateTime)
-  fullName: Code.Library.DateTimeHelper.ToUnixTime(DateTime)
-  nameWithType: DateTimeHelper.ToUnixTime(DateTime)
-- uid: Code.Library.DateTimeHelper.ToUnixTime*
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_ToUnixTime_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.ToUnixTime(DateTime)
+  fullName: Code.Library.DateTimeExtensions.ToUnixTime(DateTime)
+  nameWithType: DateTimeExtensions.ToUnixTime(DateTime)
+- uid: Code.Library.DateTimeExtensions.ToUnixTime*
   name: ToUnixTime
-  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_ToUnixTime_
-  commentId: Overload:Code.Library.DateTimeHelper.ToUnixTime
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_ToUnixTime_
+  commentId: Overload:Code.Library.DateTimeExtensions.ToUnixTime
   isSpec: "True"
-  fullName: Code.Library.DateTimeHelper.ToUnixTime
-  nameWithType: DateTimeHelper.ToUnixTime
+  fullName: Code.Library.DateTimeExtensions.ToUnixTime
+  nameWithType: DateTimeExtensions.ToUnixTime
 - uid: Code.Library.Dtos
   name: Code.Library.Dtos
   href: api/Code.Library.Dtos.html
@@ -1076,31 +1070,12 @@ references:
   isSpec: "True"
   fullName: Code.Library.Dtos.PagedResultRequestDto.SkipCount
   nameWithType: PagedResultRequestDto.SkipCount
-- uid: Code.Library.EmailHelper
-  name: EmailHelper
-  href: api/Code.Library.EmailHelper.html
-  commentId: T:Code.Library.EmailHelper
-  fullName: Code.Library.EmailHelper
-  nameWithType: EmailHelper
 - uid: Code.Library.FileHelper
   name: FileHelper
   href: api/Code.Library.FileHelper.html
   commentId: T:Code.Library.FileHelper
   fullName: Code.Library.FileHelper
   nameWithType: FileHelper
-- uid: Code.Library.FileHelper.Clean(DirectoryInfo)
-  name: Clean(DirectoryInfo)
-  href: api/Code.Library.FileHelper.html#Code_Library_FileHelper_Clean_DirectoryInfo_
-  commentId: M:Code.Library.FileHelper.Clean(DirectoryInfo)
-  fullName: Code.Library.FileHelper.Clean(DirectoryInfo)
-  nameWithType: FileHelper.Clean(DirectoryInfo)
-- uid: Code.Library.FileHelper.Clean*
-  name: Clean
-  href: api/Code.Library.FileHelper.html#Code_Library_FileHelper_Clean_
-  commentId: Overload:Code.Library.FileHelper.Clean
-  isSpec: "True"
-  fullName: Code.Library.FileHelper.Clean
-  nameWithType: FileHelper.Clean
 - uid: Code.Library.FileHelper.DeleteFile(System.String)
   name: DeleteFile(String)
   href: api/Code.Library.FileHelper.html#Code_Library_FileHelper_DeleteFile_System_String_
@@ -1127,31 +1102,25 @@ references:
   isSpec: "True"
   fullName: Code.Library.FileHelper.GetFileViaFTP
   nameWithType: FileHelper.GetFileViaFTP
-- uid: Code.Library.Helpers
-  name: Code.Library.Helpers
-  href: api/Code.Library.Helpers.html
-  commentId: N:Code.Library.Helpers
-  fullName: Code.Library.Helpers
-  nameWithType: Code.Library.Helpers
-- uid: Code.Library.Helpers.SecurityHelper
-  name: SecurityHelper
-  href: api/Code.Library.Helpers.SecurityHelper.html
-  commentId: T:Code.Library.Helpers.SecurityHelper
-  fullName: Code.Library.Helpers.SecurityHelper
-  nameWithType: SecurityHelper
-- uid: Code.Library.Helpers.SecurityHelper.SanitizeUrl(System.String)
-  name: SanitizeUrl(String)
-  href: api/Code.Library.Helpers.SecurityHelper.html#Code_Library_Helpers_SecurityHelper_SanitizeUrl_System_String_
-  commentId: M:Code.Library.Helpers.SecurityHelper.SanitizeUrl(System.String)
-  fullName: Code.Library.Helpers.SecurityHelper.SanitizeUrl(System.String)
-  nameWithType: SecurityHelper.SanitizeUrl(String)
-- uid: Code.Library.Helpers.SecurityHelper.SanitizeUrl*
-  name: SanitizeUrl
-  href: api/Code.Library.Helpers.SecurityHelper.html#Code_Library_Helpers_SecurityHelper_SanitizeUrl_
-  commentId: Overload:Code.Library.Helpers.SecurityHelper.SanitizeUrl
+- uid: Code.Library.FileSystemExtensions
+  name: FileSystemExtensions
+  href: api/Code.Library.FileSystemExtensions.html
+  commentId: T:Code.Library.FileSystemExtensions
+  fullName: Code.Library.FileSystemExtensions
+  nameWithType: FileSystemExtensions
+- uid: Code.Library.FileSystemExtensions.Clean(DirectoryInfo)
+  name: Clean(DirectoryInfo)
+  href: api/Code.Library.FileSystemExtensions.html#Code_Library_FileSystemExtensions_Clean_DirectoryInfo_
+  commentId: M:Code.Library.FileSystemExtensions.Clean(DirectoryInfo)
+  fullName: Code.Library.FileSystemExtensions.Clean(DirectoryInfo)
+  nameWithType: FileSystemExtensions.Clean(DirectoryInfo)
+- uid: Code.Library.FileSystemExtensions.Clean*
+  name: Clean
+  href: api/Code.Library.FileSystemExtensions.html#Code_Library_FileSystemExtensions_Clean_
+  commentId: Overload:Code.Library.FileSystemExtensions.Clean
   isSpec: "True"
-  fullName: Code.Library.Helpers.SecurityHelper.SanitizeUrl
-  nameWithType: SecurityHelper.SanitizeUrl
+  fullName: Code.Library.FileSystemExtensions.Clean
+  nameWithType: FileSystemExtensions.Clean
 - uid: Code.Library.IEnumerableExtensions
   name: IEnumerableExtensions
   href: api/Code.Library.IEnumerableExtensions.html
@@ -1627,38 +1596,38 @@ references:
   fullName.vb: Code.Library.Models.Result(Of TValue, TError).Value
   nameWithType: Result<TValue, TError>.Value
   nameWithType.vb: Result(Of TValue, TError).Value
-- uid: Code.Library.NumberHelper
-  name: NumberHelper
-  href: api/Code.Library.NumberHelper.html
-  commentId: T:Code.Library.NumberHelper
-  fullName: Code.Library.NumberHelper
-  nameWithType: NumberHelper
-- uid: Code.Library.NumberHelper.GetFirstNDigits(System.Int32,System.Int32)
+- uid: Code.Library.NumberExtensions
+  name: NumberExtensions
+  href: api/Code.Library.NumberExtensions.html
+  commentId: T:Code.Library.NumberExtensions
+  fullName: Code.Library.NumberExtensions
+  nameWithType: NumberExtensions
+- uid: Code.Library.NumberExtensions.GetFirstNDigits(System.Int32,System.Int32)
   name: GetFirstNDigits(Int32, Int32)
-  href: api/Code.Library.NumberHelper.html#Code_Library_NumberHelper_GetFirstNDigits_System_Int32_System_Int32_
-  commentId: M:Code.Library.NumberHelper.GetFirstNDigits(System.Int32,System.Int32)
-  fullName: Code.Library.NumberHelper.GetFirstNDigits(System.Int32, System.Int32)
-  nameWithType: NumberHelper.GetFirstNDigits(Int32, Int32)
-- uid: Code.Library.NumberHelper.GetFirstNDigits*
+  href: api/Code.Library.NumberExtensions.html#Code_Library_NumberExtensions_GetFirstNDigits_System_Int32_System_Int32_
+  commentId: M:Code.Library.NumberExtensions.GetFirstNDigits(System.Int32,System.Int32)
+  fullName: Code.Library.NumberExtensions.GetFirstNDigits(System.Int32, System.Int32)
+  nameWithType: NumberExtensions.GetFirstNDigits(Int32, Int32)
+- uid: Code.Library.NumberExtensions.GetFirstNDigits*
   name: GetFirstNDigits
-  href: api/Code.Library.NumberHelper.html#Code_Library_NumberHelper_GetFirstNDigits_
-  commentId: Overload:Code.Library.NumberHelper.GetFirstNDigits
+  href: api/Code.Library.NumberExtensions.html#Code_Library_NumberExtensions_GetFirstNDigits_
+  commentId: Overload:Code.Library.NumberExtensions.GetFirstNDigits
   isSpec: "True"
-  fullName: Code.Library.NumberHelper.GetFirstNDigits
-  nameWithType: NumberHelper.GetFirstNDigits
-- uid: Code.Library.NumberHelper.GetNthDigit(System.Int32,System.Int32)
+  fullName: Code.Library.NumberExtensions.GetFirstNDigits
+  nameWithType: NumberExtensions.GetFirstNDigits
+- uid: Code.Library.NumberExtensions.GetNthDigit(System.Int32,System.Int32)
   name: GetNthDigit(Int32, Int32)
-  href: api/Code.Library.NumberHelper.html#Code_Library_NumberHelper_GetNthDigit_System_Int32_System_Int32_
-  commentId: M:Code.Library.NumberHelper.GetNthDigit(System.Int32,System.Int32)
-  fullName: Code.Library.NumberHelper.GetNthDigit(System.Int32, System.Int32)
-  nameWithType: NumberHelper.GetNthDigit(Int32, Int32)
-- uid: Code.Library.NumberHelper.GetNthDigit*
+  href: api/Code.Library.NumberExtensions.html#Code_Library_NumberExtensions_GetNthDigit_System_Int32_System_Int32_
+  commentId: M:Code.Library.NumberExtensions.GetNthDigit(System.Int32,System.Int32)
+  fullName: Code.Library.NumberExtensions.GetNthDigit(System.Int32, System.Int32)
+  nameWithType: NumberExtensions.GetNthDigit(Int32, Int32)
+- uid: Code.Library.NumberExtensions.GetNthDigit*
   name: GetNthDigit
-  href: api/Code.Library.NumberHelper.html#Code_Library_NumberHelper_GetNthDigit_
-  commentId: Overload:Code.Library.NumberHelper.GetNthDigit
+  href: api/Code.Library.NumberExtensions.html#Code_Library_NumberExtensions_GetNthDigit_
+  commentId: Overload:Code.Library.NumberExtensions.GetNthDigit
   isSpec: "True"
-  fullName: Code.Library.NumberHelper.GetNthDigit
-  nameWithType: NumberHelper.GetNthDigit
+  fullName: Code.Library.NumberExtensions.GetNthDigit
+  nameWithType: NumberExtensions.GetNthDigit
 - uid: Code.Library.ResultExtensions
   name: ResultExtensions
   href: api/Code.Library.ResultExtensions.html
@@ -1987,6 +1956,19 @@ references:
   isSpec: "True"
   fullName: Code.Library.StringExtensions.OrIfNullOrWhiteSpace
   nameWithType: StringExtensions.OrIfNullOrWhiteSpace
+- uid: Code.Library.StringExtensions.SanitizeURL(System.String)
+  name: SanitizeURL(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_SanitizeURL_System_String_
+  commentId: M:Code.Library.StringExtensions.SanitizeURL(System.String)
+  fullName: Code.Library.StringExtensions.SanitizeURL(System.String)
+  nameWithType: StringExtensions.SanitizeURL(String)
+- uid: Code.Library.StringExtensions.SanitizeURL*
+  name: SanitizeURL
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_SanitizeURL_
+  commentId: Overload:Code.Library.StringExtensions.SanitizeURL
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.SanitizeURL
+  nameWithType: StringExtensions.SanitizeURL
 - uid: Code.Library.StringExtensions.StripHtml(System.String)
   name: StripHtml(String)
   href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_StripHtml_System_String_

@@ -201,19 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Code.Library.DateTimeExtensions.html",
-          "hash": "aYwwUCD4lmVvJ8Y9KfztXw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Code.Library.DateTimeHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Code.Library.DateTimeHelper.html",
-          "hash": "p7sAXMWGm4MGWTPb1N6JjQ=="
+          "hash": "0UVcYDEYzQm4BvP56xYUHg=="
         }
       },
       "is_incremental": false,
@@ -521,23 +509,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Code.Library.EmailHelper.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Code.Library.EmailHelper.html",
-          "hash": "gnmtfBliUSXtM4ltuEr1/w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Code.Library.FileHelper.yml",
       "output": {
         ".html": {
           "relative_path": "api/Code.Library.FileHelper.html",
-          "hash": "pU1GsP46jonvWHSwgwzokA=="
+          "hash": "ztdNTmrQtq84v+k8H2oBZA=="
         }
       },
       "is_incremental": false,
@@ -545,23 +521,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Code.Library.Helpers.SecurityHelper.yml",
+      "source_relative_path": "api/Code.Library.FileSystemExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Code.Library.Helpers.SecurityHelper.html",
-          "hash": "8IYpK0QyN74/11PWqQccdg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Code.Library.Helpers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Code.Library.Helpers.html",
-          "hash": "hkZJxEuZtIX4dLFTOf8Y3w=="
+          "relative_path": "api/Code.Library.FileSystemExtensions.html",
+          "hash": "Jds+Rct9DHqkQgIQUlHtYA=="
         }
       },
       "is_incremental": false,
@@ -573,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Code.Library.IEnumerableExtensions.html",
-          "hash": "bwFWxnY/sMyw0scx4hgITg=="
+          "hash": "+gZVaVk4J1l6E8aq1KmJtg=="
         }
       },
       "is_incremental": false,
@@ -653,11 +617,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Code.Library.NumberHelper.yml",
+      "source_relative_path": "api/Code.Library.NumberExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Code.Library.NumberHelper.html",
-          "hash": "6F+JJTqo9fvm4G9SqFnpGQ=="
+          "relative_path": "api/Code.Library.NumberExtensions.html",
+          "hash": "iL4fdSlQMoWoOLM1+KkKQA=="
         }
       },
       "is_incremental": false,
@@ -669,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Code.Library.ResultExtensions.html",
-          "hash": "RazrpxWwvYTQilJLgHC6RA=="
+          "hash": "SrFcSZRXjyvooyGiooTtPQ=="
         }
       },
       "is_incremental": false,
@@ -681,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Code.Library.StringExtensions.html",
-          "hash": "yAefJ21Rfuh3hVDVsklcoA=="
+          "hash": "G2+23WRuzfSNKLiwfFvwyQ=="
         }
       },
       "is_incremental": false,
@@ -729,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Code.Library.html",
-          "hash": "LYAO6kgsOT26Zv8uEQJ1Pw=="
+          "hash": "yRcKfVnRlhqmE6JLNh6jzA=="
         }
       },
       "is_incremental": false,
@@ -753,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "sxzr+rooVcK2iQ2aGbYBNw=="
+          "hash": "Wh2H6fD233UorR3020oufw=="
         }
       },
       "is_incremental": false,
@@ -815,17 +779,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
