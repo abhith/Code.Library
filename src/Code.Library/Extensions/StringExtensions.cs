@@ -1,18 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-
-namespace Code.Library.Extensions
+﻿namespace Code.Library
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Globalization;
+    using System.Linq;
+    using System.Text;
+    using System.Text.RegularExpressions;
+
+    /// <summary>
+    /// String extensions.
+    /// </summary>
     public static class StringExtensions
     {
-        //public static string IfNullOrWhiteSpace(this string str, string defaultValue)
-        //{
-        //    return str.IsNullOrWhiteSpace() ? defaultValue : str;
-        //}
+        /// <summary>
+        /// Returns default value if string is null or whitespace.
+        /// </summary>
+        /// <param name="str">Input string.</param>
+        /// <param name="defaultValue">Default value.</param>
+        /// <returns>Returns default value if string is null or whitespace else return the string itself.</returns>
+        public static string IfNullOrWhiteSpace(this string str, string defaultValue)
+        {
+            return string.IsNullOrWhiteSpace(str) ? defaultValue : str;
+        }
 
         private static readonly char[] CleanForXssChars = "*?(){}[];:%<>/\\|&'\"".ToCharArray();
 
