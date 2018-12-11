@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Struct Result&lt;TValue, TError&gt;
+    <title>Struct Result&lt;T&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Struct Result&lt;TValue, TError&gt;
+    <meta name="title" content="Struct Result&lt;T&gt;
    ">
     <meta name="generator" content="docfx 2.40.4.0">
     
@@ -77,10 +77,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Code.Library.Models.Result`2">
+            <article class="content wrap" id="_content" data-uid="Code.Library.Result`1">
   
   
-  <h1 id="Code_Library_Models_Result_2" data-uid="Code.Library.Models.Result`2" class="text-break">Struct Result&lt;TValue, TError&gt;
+  <h1 id="Code_Library_Result_1" data-uid="Code.Library.Result`1" class="text-break">Struct Result&lt;T&gt;
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
@@ -88,11 +88,11 @@
     <h5>Implements</h5>
     <div><span class="xref">ISerializable</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Code.Library.Models.html">Code.Library.Models</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Code.Library.html">Code.Library</a></h6>
   <h6><strong>Assembly</strong>: Code.Library.dll</h6>
-  <h5 id="Code_Library_Models_Result_2_syntax">Syntax</h5>
+  <h5 id="Code_Library_Result_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct Result&lt;TValue, TError&gt; : ISerializable where TError : class</code></pre>
+    <pre><code class="lang-csharp hljs">public struct Result&lt;T&gt; : ISerializable</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -104,11 +104,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TValue</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TError</span></td>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -117,18 +113,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Models_Result_2_Error.md&amp;value=---%0Auid%3A%20Code.Library.Models.Result%602.Error%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Result_1_Error.md&amp;value=---%0Auid%3A%20Code.Library.Result%601.Error%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L210">View Source</a>
+    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L145">View Source</a>
   </span>
-  <a id="Code_Library_Models_Result_2_Error_" data-uid="Code.Library.Models.Result`2.Error*"></a>
-  <h4 id="Code_Library_Models_Result_2_Error" data-uid="Code.Library.Models.Result`2.Error">Error</h4>
+  <a id="Code_Library_Result_1_Error_" data-uid="Code.Library.Result`1.Error*"></a>
+  <h4 id="Code_Library_Result_1_Error" data-uid="Code.Library.Result`1.Error">Error</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TError Error { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Error { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -140,20 +136,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TError</span></td>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Models_Result_2_IsFailure.md&amp;value=---%0Auid%3A%20Code.Library.Models.Result%602.IsFailure%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Result_1_IsFailure.md&amp;value=---%0Auid%3A%20Code.Library.Result%601.IsFailure%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L211">View Source</a>
+    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L146">View Source</a>
   </span>
-  <a id="Code_Library_Models_Result_2_IsFailure_" data-uid="Code.Library.Models.Result`2.IsFailure*"></a>
-  <h4 id="Code_Library_Models_Result_2_IsFailure" data-uid="Code.Library.Models.Result`2.IsFailure">IsFailure</h4>
+  <a id="Code_Library_Result_1_IsFailure_" data-uid="Code.Library.Result`1.IsFailure*"></a>
+  <h4 id="Code_Library_Result_1_IsFailure" data-uid="Code.Library.Result`1.IsFailure">IsFailure</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -177,13 +173,13 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Models_Result_2_IsSuccess.md&amp;value=---%0Auid%3A%20Code.Library.Models.Result%602.IsSuccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Result_1_IsSuccess.md&amp;value=---%0Auid%3A%20Code.Library.Result%601.IsSuccess%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L212">View Source</a>
+    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L147">View Source</a>
   </span>
-  <a id="Code_Library_Models_Result_2_IsSuccess_" data-uid="Code.Library.Models.Result`2.IsSuccess*"></a>
-  <h4 id="Code_Library_Models_Result_2_IsSuccess" data-uid="Code.Library.Models.Result`2.IsSuccess">IsSuccess</h4>
+  <a id="Code_Library_Result_1_IsSuccess_" data-uid="Code.Library.Result`1.IsSuccess*"></a>
+  <h4 id="Code_Library_Result_1_IsSuccess" data-uid="Code.Library.Result`1.IsSuccess">IsSuccess</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -207,18 +203,18 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Models_Result_2_Value.md&amp;value=---%0Auid%3A%20Code.Library.Models.Result%602.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Result_1_Value.md&amp;value=---%0Auid%3A%20Code.Library.Result%601.Value%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L214">View Source</a>
+    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L149">View Source</a>
   </span>
-  <a id="Code_Library_Models_Result_2_Value_" data-uid="Code.Library.Models.Result`2.Value*"></a>
-  <h4 id="Code_Library_Models_Result_2_Value" data-uid="Code.Library.Models.Result`2.Value">Value</h4>
+  <a id="Code_Library_Result_1_Value_" data-uid="Code.Library.Result`1.Value*"></a>
+  <h4 id="Code_Library_Result_1_Value" data-uid="Code.Library.Result`1.Value">Value</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TValue Value { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public T Value { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -230,7 +226,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TValue</span></td>
+        <td><span class="xref">T</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -239,18 +235,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Models_Result_2_op_Implicit_Code_Library_Models_Result__0__1___Code_Library_Models_Result.md&amp;value=---%0Auid%3A%20Code.Library.Models.Result%602.op_Implicit(Code.Library.Models.Result%7B%600%2C%601%7D)~Code.Library.Models.Result%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Result_1_op_Implicit_Code_Library_Result__0___Code_Library_Result.md&amp;value=---%0Auid%3A%20Code.Library.Result%601.op_Implicit(Code.Library.Result%7B%600%7D)~Code.Library.Result%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L226">View Source</a>
+    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L164">View Source</a>
   </span>
-  <a id="Code_Library_Models_Result_2_op_Implicit_" data-uid="Code.Library.Models.Result`2.op_Implicit*"></a>
-  <h4 id="Code_Library_Models_Result_2_op_Implicit_Code_Library_Models_Result__0__1___Code_Library_Models_Result" data-uid="Code.Library.Models.Result`2.op_Implicit(Code.Library.Models.Result{`0,`1})~Code.Library.Models.Result">Implicit(Result&lt;TValue, TError&gt; to Result)</h4>
+  <a id="Code_Library_Result_1_op_Implicit_" data-uid="Code.Library.Result`1.op_Implicit*"></a>
+  <h4 id="Code_Library_Result_1_op_Implicit_Code_Library_Result__0___Code_Library_Result" data-uid="Code.Library.Result`1.op_Implicit(Code.Library.Result{`0})~Code.Library.Result">Implicit(Result&lt;T&gt; to Result)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator Result(Result&lt;TValue, TError&gt; result)</code></pre>
+    <pre><code class="lang-csharp hljs">public static implicit operator Result(Result&lt;T&gt; result)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -263,7 +259,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Code.Library.Models.Result-2.html">Result</a>&lt;TValue, TError&gt;</td>
+        <td><a class="xref" href="Code.Library.Result-1.html">Result</a>&lt;T&gt;</td>
         <td><span class="parametername">result</span></td>
         <td></td>
       </tr>
@@ -279,54 +275,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Code.Library.Models.Result.html">Result</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Models_Result_2_op_Implicit_Code_Library_Models_Result__0__1___Code_Library_Models_Result__0_.md&amp;value=---%0Auid%3A%20Code.Library.Models.Result%602.op_Implicit(Code.Library.Models.Result%7B%600%2C%601%7D)~Code.Library.Models.Result%7B%600%7D%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L234">View Source</a>
-  </span>
-  <a id="Code_Library_Models_Result_2_op_Implicit_" data-uid="Code.Library.Models.Result`2.op_Implicit*"></a>
-  <h4 id="Code_Library_Models_Result_2_op_Implicit_Code_Library_Models_Result__0__1___Code_Library_Models_Result__0_" data-uid="Code.Library.Models.Result`2.op_Implicit(Code.Library.Models.Result{`0,`1})~Code.Library.Models.Result{`0}">Implicit(Result&lt;TValue, TError&gt; to Result&lt;TValue&gt;)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator Result&lt;TValue&gt;(Result&lt;TValue, TError&gt; result)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Code.Library.Models.Result-2.html">Result</a>&lt;TValue, TError&gt;</td>
-        <td><span class="parametername">result</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Code.Library.Models.Result-1.html">Result</a>&lt;TValue&gt;</td>
+        <td><a class="xref" href="Code.Library.Result.html">Result</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -334,6 +283,37 @@
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">ISerializable</span>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_Ensure__1_Code_Library_Result___0__Func___0_System_Boolean__System_String_">ResultExtensions.Ensure&lt;T&gt;(Result&lt;T&gt;, Func&lt;T, Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_Map__2_Code_Library_Result___0__Func___0___1__">ResultExtensions.Map&lt;T, K&gt;(Result&lt;T&gt;, Func&lt;T, K&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnBoth__2_Code_Library_Result___0__Func_Code_Library_Result___0____1__">ResultExtensions.OnBoth&lt;T, K&gt;(Result&lt;T&gt;, Func&lt;Result&lt;T&gt;, K&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnFailure__1_Code_Library_Result___0__Action_">ResultExtensions.OnFailure&lt;T&gt;(Result&lt;T&gt;, Action)</a>
+  </div>
+  <div>
+      <a class="xref" href="Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnFailure__1_Code_Library_Result___0__Action_System_String__">ResultExtensions.OnFailure&lt;T&gt;(Result&lt;T&gt;, Action&lt;String&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__2_Code_Library_Result___0__Func___0___1__">ResultExtensions.OnSuccess&lt;T, K&gt;(Result&lt;T&gt;, Func&lt;T, K&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__2_Code_Library_Result___0__Func___0_Code_Library_Result___1___">ResultExtensions.OnSuccess&lt;T, K&gt;(Result&lt;T&gt;, Func&lt;T, Result&lt;K&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__2_Code_Library_Result___0__Func_Code_Library_Result___1___">ResultExtensions.OnSuccess&lt;T, K&gt;(Result&lt;T&gt;, Func&lt;Result&lt;K&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__1_Code_Library_Result___0__Func___0_Code_Library_Result__">ResultExtensions.OnSuccess&lt;T&gt;(Result&lt;T&gt;, Func&lt;T, Result&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__1_Code_Library_Result___0__Action___0__">ResultExtensions.OnSuccess&lt;T&gt;(Result&lt;T&gt;, Action&lt;T&gt;)</a>
   </div>
 </article>
           </div>
@@ -343,10 +323,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Models_Result_2.md&amp;value=---%0Auid%3A%20Code.Library.Models.Result%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_Result_1.md&amp;value=---%0Auid%3A%20Code.Library.Result%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L192" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Models/Result.cs/#L127" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -82,7 +82,8 @@
   
   <h1 id="Code_Library_DateTimeHelper" data-uid="Code.Library.DateTimeHelper" class="text-break">Class DateTimeHelper
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>All DateTime helper methods.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -99,19 +100,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_DaysInMonth_DateTime_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.DaysInMonth(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_FormatDates_System_Nullable_DateTime__System_Nullable_DateTime__.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.FormatDates(System.Nullable%7BDateTime%7D%2CSystem.Nullable%7BDateTime%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L16">View Source</a>
   </span>
-  <a id="Code_Library_DateTimeHelper_DaysInMonth_" data-uid="Code.Library.DateTimeHelper.DaysInMonth*"></a>
-  <h4 id="Code_Library_DateTimeHelper_DaysInMonth_DateTime_" data-uid="Code.Library.DateTimeHelper.DaysInMonth(DateTime)">DaysInMonth(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Returns the number of days in the month of specified date</p>
+  <a id="Code_Library_DateTimeHelper_FormatDates_" data-uid="Code.Library.DateTimeHelper.FormatDates*"></a>
+  <h4 id="Code_Library_DateTimeHelper_FormatDates_System_Nullable_DateTime__System_Nullable_DateTime__" data-uid="Code.Library.DateTimeHelper.FormatDates(System.Nullable{DateTime},System.Nullable{DateTime})">FormatDates(Nullable&lt;DateTime&gt;, Nullable&lt;DateTime&gt;)</h4>
+  <div class="markdown level1 summary"><p>Format Dates.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int DaysInMonth(this DateTime value)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string FormatDates(DateTime? startDate, DateTime? endDate)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -124,259 +125,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>datetime</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_FirstDayOfMonth_DateTime_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.FirstDayOfMonth(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L26">View Source</a>
-  </span>
-  <a id="Code_Library_DateTimeHelper_FirstDayOfMonth_" data-uid="Code.Library.DateTimeHelper.FirstDayOfMonth*"></a>
-  <h4 id="Code_Library_DateTimeHelper_FirstDayOfMonth_DateTime_" data-uid="Code.Library.DateTimeHelper.FirstDayOfMonth(DateTime)">FirstDayOfMonth(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Returns the first day in the month of specified date</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DateTime FirstDayOfMonth(this DateTime value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_FirstDayOfYear_DateTime_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.FirstDayOfYear(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L40">View Source</a>
-  </span>
-  <a id="Code_Library_DateTimeHelper_FirstDayOfYear_" data-uid="Code.Library.DateTimeHelper.FirstDayOfYear*"></a>
-  <h4 id="Code_Library_DateTimeHelper_FirstDayOfYear_DateTime_" data-uid="Code.Library.DateTimeHelper.FirstDayOfYear(DateTime)">FirstDayOfYear(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Returns the first day in the year of the given date.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DateTime FirstDayOfYear(this DateTime date)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><span class="parametername">date</span></td>
-        <td><p>The date.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><p>The <see cref="!:DateTime"></see>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_FromUnixTime_System_Int64_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.FromUnixTime(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L50">View Source</a>
-  </span>
-  <a id="Code_Library_DateTimeHelper_FromUnixTime_" data-uid="Code.Library.DateTimeHelper.FromUnixTime*"></a>
-  <h4 id="Code_Library_DateTimeHelper_FromUnixTime_System_Int64_" data-uid="Code.Library.DateTimeHelper.FromUnixTime(System.Int64)">FromUnixTime(Int64)</h4>
-  <div class="markdown level1 summary"><p>Converts unix time to datetime</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DateTime FromUnixTime(this long value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td><span class="parametername">value</span></td>
-        <td><p>unix value</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_GetArabianStandardTime_DateTime_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.GetArabianStandardTime(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L61">View Source</a>
-  </span>
-  <a id="Code_Library_DateTimeHelper_GetArabianStandardTime_" data-uid="Code.Library.DateTimeHelper.GetArabianStandardTime*"></a>
-  <h4 id="Code_Library_DateTimeHelper_GetArabianStandardTime_DateTime_" data-uid="Code.Library.DateTimeHelper.GetArabianStandardTime(DateTime)">GetArabianStandardTime(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Returns the Arabian Standard Time</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DateTime GetArabianStandardTime(this DateTime date)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><span class="parametername">date</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_GetEachDay_DateTime_DateTime_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.GetEachDay(DateTime%2CDateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L79">View Source</a>
-  </span>
-  <a id="Code_Library_DateTimeHelper_GetEachDay_" data-uid="Code.Library.DateTimeHelper.GetEachDay*"></a>
-  <h4 id="Code_Library_DateTimeHelper_GetEachDay_DateTime_DateTime_" data-uid="Code.Library.DateTimeHelper.GetEachDay(DateTime,DateTime)">GetEachDay(DateTime, DateTime)</h4>
-  <div class="markdown level1 summary"><p>Gives list of days between start and end date</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;DateTime&gt; GetEachDay(this DateTime startDate, DateTime endDate)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td><span class="parametername">startDate</span></td>
-        <td><p>The start date</p>
+        <td><p>Start Date.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">DateTime</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
         <td><span class="parametername">endDate</span></td>
-        <td><p>The end date</p>
+        <td><p>End Date.</p>
 </td>
       </tr>
     </tbody>
@@ -391,249 +148,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
-        <td><p><see cref="!:IEnumerable&lt;DateTime>"></see></p>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Formatted date string.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_Iso8601ToDateTime_System_String_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.Iso8601ToDateTime(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L92">View Source</a>
-  </span>
-  <a id="Code_Library_DateTimeHelper_Iso8601ToDateTime_" data-uid="Code.Library.DateTimeHelper.Iso8601ToDateTime*"></a>
-  <h4 id="Code_Library_DateTimeHelper_Iso8601ToDateTime_System_String_" data-uid="Code.Library.DateTimeHelper.Iso8601ToDateTime(System.String)">Iso8601ToDateTime(String)</h4>
-  <div class="markdown level1 summary"><p>Converts ISO 8601 time to datetime</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DateTime Iso8601ToDateTime(this string iso8601text)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">iso8601text</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_LastDayOfMonth_DateTime_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.LastDayOfMonth(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L102">View Source</a>
-  </span>
-  <a id="Code_Library_DateTimeHelper_LastDayOfMonth_" data-uid="Code.Library.DateTimeHelper.LastDayOfMonth*"></a>
-  <h4 id="Code_Library_DateTimeHelper_LastDayOfMonth_DateTime_" data-uid="Code.Library.DateTimeHelper.LastDayOfMonth(DateTime)">LastDayOfMonth(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Returns the last day in the month of specified date</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DateTime LastDayOfMonth(this DateTime value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_NameOfMonth_DateTime_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.NameOfMonth(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L112">View Source</a>
-  </span>
-  <a id="Code_Library_DateTimeHelper_NameOfMonth_" data-uid="Code.Library.DateTimeHelper.NameOfMonth*"></a>
-  <h4 id="Code_Library_DateTimeHelper_NameOfMonth_DateTime_" data-uid="Code.Library.DateTimeHelper.NameOfMonth(DateTime)">NameOfMonth(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Returns the name of month of the specified date</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string NameOfMonth(this DateTime value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_ToIso8601_DateTime_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.ToIso8601(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L122">View Source</a>
-  </span>
-  <a id="Code_Library_DateTimeHelper_ToIso8601_" data-uid="Code.Library.DateTimeHelper.ToIso8601*"></a>
-  <h4 id="Code_Library_DateTimeHelper_ToIso8601_DateTime_" data-uid="Code.Library.DateTimeHelper.ToIso8601(DateTime)">ToIso8601(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Returns the Iso 8601 format of the specified date</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ToIso8601(this DateTime date)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><span class="parametername">date</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper_ToUnixTime_DateTime_.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper.ToUnixTime(DateTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L132">View Source</a>
-  </span>
-  <a id="Code_Library_DateTimeHelper_ToUnixTime_" data-uid="Code.Library.DateTimeHelper.ToUnixTime*"></a>
-  <h4 id="Code_Library_DateTimeHelper_ToUnixTime_DateTime_" data-uid="Code.Library.DateTimeHelper.ToUnixTime(DateTime)">ToUnixTime(DateTime)</h4>
-  <div class="markdown level1 summary"><p>Converts datetime value to unix time</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static long ToUnixTime(this DateTime value)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">DateTime</span></td>
-        <td><span class="parametername">value</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int64</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>
@@ -648,7 +165,7 @@
                     <a href="https://github.com/Abhith/Code.Library/new/master/apiSpec/new?filename=Code_Library_DateTimeHelper.md&amp;value=---%0Auid%3A%20Code.Library.DateTimeHelper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Abhith/Code.Library/blob/master/src/Code.Library/Helpers/DateTimeHelper.cs/#L8" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

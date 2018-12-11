@@ -16,7 +16,6 @@
         }
       ],
       "properties": { "TargetFramework": ".netstandard2.0" },
-      "force": true
     }
   ],
   "build": {
