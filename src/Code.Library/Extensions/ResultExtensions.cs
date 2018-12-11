@@ -1,23 +1,13 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="ResultExtensions.cs" company="*">
-//   *
-// </copyright>
-// <summary>
-//   Defines the ResultExtensions type.
-//  Ref : https://github.com/vkhorikov/CSharpFunctionalExtensions
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-using System;
-
-namespace Code.Library.Extensions
+﻿namespace Code.Library
 {
+    using System;
     using Code.Library.Models;
 
+    /// <summary>
+    /// All Result Model extensions. Reference  https://github.com/vkhorikov/CSharpFunctionalExtensions
+    /// </summary>
     public static class ResultExtensions
     {
-        #region Public Methods
-
         public static Result<T> Ensure<T>(this Result<T> result, Func<T, bool> predicate, string errorMessage)
         {
             if (result.IsFailure)
@@ -220,7 +210,5 @@ namespace Code.Library.Extensions
 
             return result;
         }
-
-        #endregion Public Methods
     }
 }
