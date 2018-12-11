@@ -1,23 +1,12 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="NumberHelper.cs" company="*">
-//  *
-// </copyright>
-// <summary>
-//   Defines the NumberHelper type.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Code.Library
+﻿namespace Code.Library
 {
     using System;
 
     /// <summary>
     /// The number helper.
     /// </summary>
-    public static class NumberHelper
+    public static class NumberExtensions
     {
-        #region Public Methods
-
         /// <summary>
         /// Gets the first n digits.
         /// </summary>
@@ -58,7 +47,5 @@ namespace Code.Library
         {
             return (int)((number / Math.Pow(10, n - 1)) % 10);
         }
-
-        #endregion Public Methods
     }
 }
