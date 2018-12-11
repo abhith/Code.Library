@@ -1,24 +1,15 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Result.cs" company="*">
-//   *
-// </copyright>
-// <summary>
-//   Defines the ResultCommonLogic type.
-//  Ref : https://github.com/vkhorikov/CSharpFunctionalExtensions
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Code.Library.Models
+﻿namespace Code.Library
 {
+    using System;
+    using System.Collections.Generic;
     using System.Diagnostics;
+    using System.Linq;
     using System.Runtime.Serialization;
 
+    /// <summary>
+    ///   Defines the ResultCommonLogic type.
+    ///  Ref : https://github.com/vkhorikov/CSharpFunctionalExtensions
+    /// </summary>
     public struct Result : ISerializable
     {
         private static readonly Result OkResult = new Result(false, null);
