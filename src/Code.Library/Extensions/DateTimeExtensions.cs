@@ -10,7 +10,7 @@
     public static class DateTimeExtensions
     {
         /// <summary>
-        /// Convert timespan to 12H format string
+        /// Convert timespan to 12H format string.
         /// </summary>
         /// <param name="timeSpan">Input timespan.</param>
         /// <returns>Tweleve hour format string.</returns>
@@ -59,7 +59,7 @@
         /// <summary>
         /// Converts unix time to datetime.
         /// </summary>
-        /// <param name="value">unix value</param>
+        /// <param name="value">unix value.</param>
         /// <returns>DateTime.</returns>
         public static DateTime FromUnixTime(this long value)
         {
@@ -102,7 +102,7 @@
         /// Converts ISO 8601 time to datetime.
         /// </summary>
         /// <param name="iso8601text">ISO string.</param>
-        /// <returns>DateTime</returns>
+        /// <returns>DateTime.</returns>
         public static DateTime Iso8601ToDateTime(this string iso8601text)
         {
             return DateTime.Parse(iso8601text, null, DateTimeStyles.RoundtripKind);
@@ -119,7 +119,7 @@
         }
 
         /// <summary>
-        /// Returns the name of month of the specified date
+        /// Returns the name of month of the specified date.
         /// </summary>
         /// <param name="value">Input datetime.</param>
         /// <returns>Name of the month.</returns>
@@ -139,7 +139,7 @@
         }
 
         /// <summary>
-        /// Converts datetime value to unix time
+        /// Converts datetime value to unix time.
         /// </summary>
         /// <param name="value">Input datetime.</param>
         /// <returns>UnixTime.</returns>
