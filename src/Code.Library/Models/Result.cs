@@ -7,10 +7,9 @@
     using System.Runtime.Serialization;
 
     /// <summary>
-    ///   Defines the ResultCommonLogic type.
-    ///  Ref : https://github.com/vkhorikov/CSharpFunctionalExtensions
+    /// Ref : https://github.com/vkhorikov/CSharpFunctionalExtensions
     /// </summary>
-    public struct Result : ISerializable
+    public struct Result : IResult, ISerializable
     {
         private static readonly Result OkResult = new Result(false, null);
 
@@ -118,13 +117,26 @@
             return new Result<TValue, TError>(false, value, default(TError));
         }
 
+        public void Deconstruct(out bool isSuccess, out bool isFailure)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure, out string error)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+            error = IsFailure ? Error : null;
+        }
+
         void ISerializable.GetObjectData(SerializationInfo oInfo, StreamingContext oContext)
         {
             _logic.GetObjectData(oInfo, oContext);
         }
     }
 
-    public struct Result<T> : ISerializable
+    public struct Result<T> : IResult, ISerializable
     {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private readonly ResultCommonLogic _logic;
@@ -152,10 +164,7 @@
             get
             {
                 if (!IsSuccess)
-                {
-                    //throw new InvalidOperationException("There is no value for failure.");
-                    return default(T);
-                }
+                    throw new InvalidOperationException("There is no value for failure.");
 
                 return _value;
             }
@@ -169,6 +178,27 @@
                 return Result.Fail(result.Error);
         }
 
+        public void Deconstruct(out bool isSuccess, out bool isFailure)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure, out T value)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+            value = IsSuccess ? Value : default(T);
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure, out T value, out string error)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+            value = IsSuccess ? Value : default(T);
+            error = IsFailure ? Error : null;
+        }
+
         void ISerializable.GetObjectData(SerializationInfo oInfo, StreamingContext oContext)
         {
             _logic.GetObjectData(oInfo, oContext);
@@ -180,7 +210,7 @@
         }
     }
 
-    public struct Result<TValue, TError> : ISerializable where TError : class
+    public struct Result<TValue, TError> : IResult, ISerializable
     {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private readonly ResultCommonLogic<TError> _logic;
@@ -230,6 +260,27 @@
                 return Result.Fail<TValue>(result.Error.ToString());
         }
 
+        public void Deconstruct(out bool isSuccess, out bool isFailure)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure, out TValue value)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+            value = IsSuccess ? Value : default(TValue);
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure, out TValue value, out TError error)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+            value = IsSuccess ? Value : default(TValue);
+            error = IsFailure ? Error : default(TError);
+        }
+
         void ISerializable.GetObjectData(SerializationInfo oInfo, StreamingContext oContext)
         {
             _logic.GetObjectData(oInfo, oContext);
@@ -254,7 +305,7 @@
             "You have tried to create a success result, but error object was also passed to the constructor, please try to review the code, creating a success result.";
     }
 
-    internal class ResultCommonLogic<TError> where TError : class
+    internal class ResultCommonLogic<TError>
     {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private readonly TError _error;
@@ -283,8 +334,7 @@
             get
             {
                 if (IsSuccess)
-                    //throw new InvalidOperationException("There is no error message for success.");
-                    return null;
+                    throw new InvalidOperationException("There is no error message for success.");
 
                 return _error;
             }
