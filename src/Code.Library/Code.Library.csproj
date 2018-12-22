@@ -2,21 +2,21 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
-    <Version>2.0.0-beta.3</Version>
+    <Version>2.0.0-beta.4</Version>
     <Authors>abhith</Authors>
     <Description>Some useful C# helper classes and methods.</Description>
-    <PackageProjectUrl>https://github.com/Abhith/Code.Library</PackageProjectUrl>
+    <PackageProjectUrl>https://code-library.abhith.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Abhith/Code.Library</RepositoryUrl>
     <PackageReleaseNotes></PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
-    <CodeAnalysisRuleSet>Code.Library.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
-    <CodeAnalysisRuleSet>Code.Library.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>

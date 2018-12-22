@@ -164,7 +164,7 @@
             get
             {
                 if (!IsSuccess)
-                    throw new InvalidOperationException("There is no value for failure.");
+                    return default(T);
 
                 return _value;
             }
@@ -238,7 +238,7 @@
             get
             {
                 if (!IsSuccess)
-                    throw new InvalidOperationException("There is no value for failure.");
+                    return default(TValue);
 
                 return _value;
             }
@@ -334,7 +334,7 @@
             get
             {
                 if (IsSuccess)
-                    throw new InvalidOperationException("There is no error message for success.");
+                    return default(TError);
 
                 return _error;
             }
