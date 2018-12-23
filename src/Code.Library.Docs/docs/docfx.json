@@ -12,10 +12,10 @@
             "**/Code.Library.Docs/**"
           ],
           "files": [ "**.csproj" ],
-          "src": "../../",
-          "properties": { "TargetFramework": ".netstandard2.0" }
+          "src": "../../"
         }
-      ]
+      ],
+      "properties": { "TargetFramework": ".netstandard2.0" },
     }
   ],
   "build": {
