@@ -4,7 +4,7 @@
 
     using Xunit;
 
-    public class NumberHelperTests
+    public class NumberExtensionsTests
     {
         #region Public Methods
 
