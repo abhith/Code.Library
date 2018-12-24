@@ -147,9 +147,6 @@
         [DebuggerStepThrough]
         internal Result(bool isFailure, T value, string error)
         {
-            if (!isFailure && value == null)
-                throw new ArgumentNullException(nameof(value));
-
             _logic = ResultCommonLogic.Create(isFailure, error);
             _value = value;
         }
@@ -221,9 +218,6 @@
         [DebuggerStepThrough]
         internal Result(bool isFailure, TValue value, TError error)
         {
-            if (!isFailure && value == null)
-                throw new ArgumentNullException(nameof(value));
-
             _logic = new ResultCommonLogic<TError>(isFailure, error);
             _value = value;
         }
