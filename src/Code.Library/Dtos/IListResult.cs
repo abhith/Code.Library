@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Code.Library.Dtos
+namespace Code.Library
 {
     /// <summary>
     /// This interface is defined to standardize to return a list of items to clients.
