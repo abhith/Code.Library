@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="FileHelper.cs" company="Open Source">
-//   Open Source
-// </copyright>
-// <summary>
-//   The file helper.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Code.Library
+﻿namespace Code.Library
 {
     using System.IO;
     using System.Net;
@@ -17,24 +8,8 @@ namespace Code.Library
     /// </summary>
     public static class FileHelper
     {
-        #region Extension Methods
-
         /// <summary>
-        /// delete all the files and folders in the specified directory
-        /// </summary>
-        /// <param name="directory"></param>
-        public static void Clean(this DirectoryInfo directory)
-        {
-            foreach (var file in directory.GetFiles()) file.Delete();
-            foreach (var subDirectory in directory.GetDirectories()) subDirectory.Delete(true);
-        }
-
-        #endregion Extension Methods
-
-        #region Public Methods
-
-        /// <summary>
-        /// deletes the specified file
+        /// Deletes the specified file.
         /// </summary>
         /// <param name="fileName">
         /// The file name.
@@ -101,7 +76,5 @@ namespace Code.Library
 
             writeStream.Close();
         }
-
-        #endregion Public Methods
     }
 }

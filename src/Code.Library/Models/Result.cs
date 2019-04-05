@@ -1,25 +1,15 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Result.cs" company="*">
-//   *
-// </copyright>
-// <summary>
-//   Defines the ResultCommonLogic type.
-//  Ref : https://github.com/vkhorikov/CSharpFunctionalExtensions
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Code.Library.Models
+﻿namespace Code.Library
 {
+    using System;
+    using System.Collections.Generic;
     using System.Diagnostics;
+    using System.Linq;
     using System.Runtime.Serialization;
 
-    public struct Result : ISerializable
+    /// <summary>
+    /// Ref : https://github.com/vkhorikov/CSharpFunctionalExtensions
+    /// </summary>
+    public struct Result : IResult, ISerializable
     {
         private static readonly Result OkResult = new Result(false, null);
 
@@ -127,13 +117,26 @@ namespace Code.Library.Models
             return new Result<TValue, TError>(false, value, default(TError));
         }
 
+        public void Deconstruct(out bool isSuccess, out bool isFailure)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure, out string error)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+            error = IsFailure ? Error : null;
+        }
+
         void ISerializable.GetObjectData(SerializationInfo oInfo, StreamingContext oContext)
         {
             _logic.GetObjectData(oInfo, oContext);
         }
     }
 
-    public struct Result<T> : ISerializable
+    public struct Result<T> : IResult, ISerializable
     {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private readonly ResultCommonLogic _logic;
@@ -144,9 +147,6 @@ namespace Code.Library.Models
         [DebuggerStepThrough]
         internal Result(bool isFailure, T value, string error)
         {
-            if (!isFailure && value == null)
-                throw new ArgumentNullException(nameof(value));
-
             _logic = ResultCommonLogic.Create(isFailure, error);
             _value = value;
         }
@@ -161,10 +161,7 @@ namespace Code.Library.Models
             get
             {
                 if (!IsSuccess)
-                {
-                    //throw new InvalidOperationException("There is no value for failure.");
                     return default(T);
-                }
 
                 return _value;
             }
@@ -178,6 +175,27 @@ namespace Code.Library.Models
                 return Result.Fail(result.Error);
         }
 
+        public void Deconstruct(out bool isSuccess, out bool isFailure)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure, out T value)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+            value = IsSuccess ? Value : default(T);
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure, out T value, out string error)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+            value = IsSuccess ? Value : default(T);
+            error = IsFailure ? Error : null;
+        }
+
         void ISerializable.GetObjectData(SerializationInfo oInfo, StreamingContext oContext)
         {
             _logic.GetObjectData(oInfo, oContext);
@@ -189,7 +207,7 @@ namespace Code.Library.Models
         }
     }
 
-    public struct Result<TValue, TError> : ISerializable where TError : class
+    public struct Result<TValue, TError> : IResult, ISerializable
     {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private readonly ResultCommonLogic<TError> _logic;
@@ -200,9 +218,6 @@ namespace Code.Library.Models
         [DebuggerStepThrough]
         internal Result(bool isFailure, TValue value, TError error)
         {
-            if (!isFailure && value == null)
-                throw new ArgumentNullException(nameof(value));
-
             _logic = new ResultCommonLogic<TError>(isFailure, error);
             _value = value;
         }
@@ -217,7 +232,7 @@ namespace Code.Library.Models
             get
             {
                 if (!IsSuccess)
-                    throw new InvalidOperationException("There is no value for failure.");
+                    return default(TValue);
 
                 return _value;
             }
@@ -237,6 +252,27 @@ namespace Code.Library.Models
                 return Result.Ok(result.Value);
             else
                 return Result.Fail<TValue>(result.Error.ToString());
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure, out TValue value)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+            value = IsSuccess ? Value : default(TValue);
+        }
+
+        public void Deconstruct(out bool isSuccess, out bool isFailure, out TValue value, out TError error)
+        {
+            isSuccess = IsSuccess;
+            isFailure = IsFailure;
+            value = IsSuccess ? Value : default(TValue);
+            error = IsFailure ? Error : default(TError);
         }
 
         void ISerializable.GetObjectData(SerializationInfo oInfo, StreamingContext oContext)
@@ -263,7 +299,7 @@ namespace Code.Library.Models
             "You have tried to create a success result, but error object was also passed to the constructor, please try to review the code, creating a success result.";
     }
 
-    internal class ResultCommonLogic<TError> where TError : class
+    internal class ResultCommonLogic<TError>
     {
         [DebuggerBrowsable(DebuggerBrowsableState.Never)]
         private readonly TError _error;
@@ -292,8 +328,7 @@ namespace Code.Library.Models
             get
             {
                 if (IsSuccess)
-                    //throw new InvalidOperationException("There is no error message for success.");
-                    return null;
+                    return default(TError);
 
                 return _error;
             }

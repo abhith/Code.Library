@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace Code.Library
+﻿namespace Code.Library
 {
+    using System;
     using System.IO;
 
     /// <summary>
@@ -9,15 +8,14 @@ namespace Code.Library
     /// </summary>
     public class AppVersionHelper
     {
-        
         /// <summary>
         /// Gets release (last build) date of the application.
         /// It's shown in the web page.
         /// </summary>
         public static DateTime ReleaseDate
         {
+            // TODO: Make it generic
             get { return new FileInfo(typeof(AppVersionHelper).Assembly.Location).LastWriteTime; }
         }
-
     }
 }

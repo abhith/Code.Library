@@ -2,18 +2,29 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
-    <Version>2.0.0-beta.1</Version>
+    <Version>2.0.0-beta.5</Version>
     <Authors>abhith</Authors>
-    <Description>Some useful C# helper classes.</Description>
-    <PackageProjectUrl>https://github.com/Abhith/Code.Library</PackageProjectUrl>
+    <Description>Some useful C# helper classes and methods.</Description>
+    <PackageProjectUrl>https://code-library.abhith.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Abhith/Code.Library</RepositoryUrl>
-    <PackageReleaseNotes>- TargetFramework netstandard2.0</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>c#, helper</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <CodeAnalysisRuleSet></CodeAnalysisRuleSet>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Helpers\AppVersionHelper.cs" />
     <Compile Remove="Helpers\ControlsHelper.cs" />
     <Compile Remove="Helpers\DebugHelper.cs" />
+    <Compile Remove="Helpers\EmailHelper.cs" />
     <Compile Remove="Helpers\ExceptionHelper.cs" />
     <Compile Remove="Helpers\ImageHelper.cs" />
     <Compile Remove="Helpers\NetworkHelper.cs" />
