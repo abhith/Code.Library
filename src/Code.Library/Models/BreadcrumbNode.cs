@@ -1,4 +1,4 @@
-﻿namespace Code.Library.Models
+﻿namespace Code.Library
 {
     /// <summary>
     /// The breadcrumb item.

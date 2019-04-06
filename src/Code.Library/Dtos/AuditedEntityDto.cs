@@ -1,7 +1,7 @@
 ﻿using Code.Library.Auditing;
 using System;
 
-namespace Code.Library.Dtos
+namespace Code.Library
 {
     [Serializable]
     public abstract class AuditedEntityDto : CreationAuditedEntityDto, IAuditedObject

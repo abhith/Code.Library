@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Code.Library.Dtos
+namespace Code.Library
 {
     /// <summary>
     /// This class can be inherited by DTO classes to implement <see cref="IFullAuditedObject"/> interface.

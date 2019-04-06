@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Code.Library.Auditing
+namespace Code.Library
 {
     public interface IMayHaveCreator<TCreator>
     {
