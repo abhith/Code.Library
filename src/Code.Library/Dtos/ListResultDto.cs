@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Code.Library.Dtos
+namespace Code.Library
 {
     [Serializable]
     public class ListResultDto<T> : IListResult<T>

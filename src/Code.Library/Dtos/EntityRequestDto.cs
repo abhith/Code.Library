@@ -1,4 +1,4 @@
-﻿namespace Code.Library.Dtos
+﻿namespace Code.Library
 {
     public class EntityRequestDto<TKey>
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Code.Library.Dtos
+namespace Code.Library
 {
     [Serializable]
     public abstract class EntityDto : IEntityDto //TODO: Consider to delete this class

@@ -1,4 +1,4 @@
-﻿namespace Code.Library.Auditing
+﻿namespace Code.Library
 {
     /// <summary>
     /// This interface can be implemented to add standard auditing properties to a class.

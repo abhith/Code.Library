@@ -1,4 +1,4 @@
-﻿namespace Code.Library.Dtos
+﻿namespace Code.Library
 {
     /// <summary>
     /// This interface is defined to standardize to return a page of items to clients.

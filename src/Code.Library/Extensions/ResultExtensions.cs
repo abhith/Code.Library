@@ -1,7 +1,6 @@
 ﻿namespace Code.Library
 {
     using System;
-    using Code.Library.Models;
 
     /// <summary>
     /// All Result Model extensions. Reference  https://github.com/vkhorikov/CSharpFunctionalExtensions.

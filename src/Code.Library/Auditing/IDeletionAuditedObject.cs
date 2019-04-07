@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Code.Library.Auditing
+namespace Code.Library
 {
     /// <summary>
     /// This interface can be implemented to store deletion information (who delete and when deleted).

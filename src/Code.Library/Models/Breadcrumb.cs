@@ -1,4 +1,4 @@
-﻿namespace Code.Library.Models
+﻿namespace Code.Library
 {
     using System.Collections.Generic;
     using System.Text;

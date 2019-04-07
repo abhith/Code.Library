@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Code.Library.Dtos
+namespace Code.Library
 {
     /// <summary>
     /// Implements <see cref="IPagedResult{T}"/>.

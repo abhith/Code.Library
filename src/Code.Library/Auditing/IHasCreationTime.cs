@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Code.Library.Auditing
+namespace Code.Library
 {
     /// <summary>
     /// A standard interface to add CreationTime property.

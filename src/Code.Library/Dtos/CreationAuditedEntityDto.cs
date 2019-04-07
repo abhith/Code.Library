@@ -1,7 +1,6 @@
-﻿using Code.Library.Auditing;
-using System;
+﻿using System;
 
-namespace Code.Library.Dtos
+namespace Code.Library
 {
     /// <summary>
     /// This class can be inherited by DTO classes to implement <see cref="ICreationAuditedObject"/> interface.
