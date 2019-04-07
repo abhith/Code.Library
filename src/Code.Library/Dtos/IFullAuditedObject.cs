@@ -1,6 +1,4 @@
-﻿using Code.Library.Auditing;
-
-namespace Code.Library
+﻿namespace Code.Library
 {
     /// <summary>
     /// This interface adds <see cref="IDeletionAuditedObject"/> to <see cref="IAuditedObject"/>.

@@ -1,5 +1,4 @@
-﻿using Code.Library.Auditing;
-using System;
+﻿using System;
 
 namespace Code.Library
 {
