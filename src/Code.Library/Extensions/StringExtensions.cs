@@ -94,6 +94,12 @@
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Get last N characters from a string
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="numberOfChars"></param>
+        /// <returns></returns>
         public static string GetLast(this string source, int numberOfChars)
         {
             if (numberOfChars >= source.Length)

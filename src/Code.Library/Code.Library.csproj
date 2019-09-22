@@ -2,14 +2,17 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
-    <Version>2.0.0</Version>
+    <Version>2.1.0</Version>
     <Authors>Abhith</Authors>
     <Description>Useful C# helper classes and methods.</Description>
     <PackageProjectUrl>https://code-library.abhith.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Abhith/Code.Library</RepositoryUrl>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes># Added
+
+- Extension method to get last N characters from a string (GetLast(N))</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>c#, helper</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
