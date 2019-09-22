@@ -6,14 +6,30 @@ Code.Library (C#)
 
 
 ## Overview
-Few custom helper classes.
+
+A C# library with commonly used functions, models and more.
 
 ## Install
-**Nuget**
-> Install-Package Code.Library 
+
+Nuget package is available and you can install by
+
+```bash
+Install-Package Code.Library
+```
+
+## Usage
+
+Everything is under one namespace, **Code.Library**.
+
+So you will be able to use all the features by importing just `Code.Library` like given below,
+
+```cs
+using Code.Library;
+...
+```
 
 ## Documentation
-See [here](https://code-library.abhith.net)
+Visit [https://code-library.abhith.net](https://code-library.abhith.net)
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAbhith%2FCode.Library.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FAbhith%2FCode.Library?ref=badge_large)
