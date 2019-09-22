@@ -94,6 +94,13 @@
             return sb.ToString();
         }
 
+        public static string GetLast(this string source, int numberOfChars)
+        {
+            if (numberOfChars >= source.Length)
+                return source;
+            return source.Substring(source.Length - numberOfChars);
+        }
+
         /// <summary>
         /// Returns default value if string is null or whitespace.
         /// </summary>
