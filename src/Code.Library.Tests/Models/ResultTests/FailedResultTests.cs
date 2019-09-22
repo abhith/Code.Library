@@ -12,8 +12,6 @@ using System;
 
 namespace Code.Library.Tests.Models
 {
-    using Code.Library.Models;
-
     using Shouldly;
 
     using Xunit;

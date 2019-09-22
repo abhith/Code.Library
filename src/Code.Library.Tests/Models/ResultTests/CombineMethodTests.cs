@@ -1,36 +1,10 @@
-﻿using Code.Library.Models;
-using Shouldly;
+﻿using Shouldly;
 using Xunit;
 
 namespace Code.Library.Tests.Models
 {
     public class CombineMethodTests
     {
-        [Fact]
-        public void FirstFailureOrSuccess_returns_the_first_failed_result()
-        {
-            Result result1 = Result.Ok();
-            Result result2 = Result.Fail("Failure 1");
-            Result result3 = Result.Fail("Failure 2");
-
-            Result result = Result.FirstFailureOrSuccess(result1, result2, result3);
-
-            result.IsFailure.ShouldBe(true);
-            result.Error.ShouldBe("Failure 1");
-        }
-
-        [Fact]
-        public void FirstFailureOrSuccess_returns_Ok_if_no_failures()
-        {
-            Result result1 = Result.Ok();
-            Result result2 = Result.Ok();
-            Result result3 = Result.Ok();
-
-            Result result = Result.FirstFailureOrSuccess(result1, result2, result3);
-
-            result.IsSuccess.ShouldBeTrue();
-        }
-
         [Fact]
         public void Combine_combines_all_errors_together()
         {
@@ -57,6 +31,16 @@ namespace Code.Library.Tests.Models
         }
 
         [Fact]
+        public void Combine_works_with_array_of_Generic_results_failure()
+        {
+            Result<string>[] results = new Result<string>[] { Result.Ok(""), Result.Fail<string>("m") };
+
+            Result result = Result.Combine(";", results);
+
+            result.IsSuccess.ShouldBeFalse();
+        }
+
+        [Fact]
         public void Combine_works_with_array_of_Generic_results_success()
         {
             Result<string>[] results = new Result<string>[] { Result.Ok(""), Result.Ok("") };
@@ -66,15 +50,29 @@ namespace Code.Library.Tests.Models
             result.IsSuccess.ShouldBeTrue();
         }
 
+        [Fact]
+        public void FirstFailureOrSuccess_returns_Ok_if_no_failures()
+        {
+            Result result1 = Result.Ok();
+            Result result2 = Result.Ok();
+            Result result3 = Result.Ok();
+
+            Result result = Result.FirstFailureOrSuccess(result1, result2, result3);
+
+            result.IsSuccess.ShouldBeTrue();
+        }
 
         [Fact]
-        public void Combine_works_with_array_of_Generic_results_failure()
+        public void FirstFailureOrSuccess_returns_the_first_failed_result()
         {
-            Result<string>[] results = new Result<string>[] { Result.Ok(""), Result.Fail<string>("m") };
+            Result result1 = Result.Ok();
+            Result result2 = Result.Fail("Failure 1");
+            Result result3 = Result.Fail("Failure 2");
 
-            Result result = Result.Combine(";", results);
+            Result result = Result.FirstFailureOrSuccess(result1, result2, result3);
 
-            result.IsSuccess.ShouldBeFalse();
+            result.IsFailure.ShouldBe(true);
+            result.Error.ShouldBe("Failure 1");
         }
     }
 }
