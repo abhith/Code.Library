@@ -1,3 +1,2 @@
-- name: Helpers
-  href: api/
-  homepage: api/index.md
+- name: API Documentation
+  href: api/Code.Library.html
