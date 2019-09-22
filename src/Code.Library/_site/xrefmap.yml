@@ -1,0 +1,2680 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Code.Library
+  name: Code.Library
+  href: api/Code.Library.html
+  commentId: N:Code.Library
+  fullName: Code.Library
+  nameWithType: Code.Library
+- uid: Code.Library.AuditedEntityDto
+  name: AuditedEntityDto
+  href: api/Code.Library.AuditedEntityDto.html
+  commentId: T:Code.Library.AuditedEntityDto
+  fullName: Code.Library.AuditedEntityDto
+  nameWithType: AuditedEntityDto
+- uid: Code.Library.AuditedEntityDto.LastModificationTime
+  name: LastModificationTime
+  href: api/Code.Library.AuditedEntityDto.html#Code_Library_AuditedEntityDto_LastModificationTime
+  commentId: P:Code.Library.AuditedEntityDto.LastModificationTime
+  fullName: Code.Library.AuditedEntityDto.LastModificationTime
+  nameWithType: AuditedEntityDto.LastModificationTime
+- uid: Code.Library.AuditedEntityDto.LastModificationTime*
+  name: LastModificationTime
+  href: api/Code.Library.AuditedEntityDto.html#Code_Library_AuditedEntityDto_LastModificationTime_
+  commentId: Overload:Code.Library.AuditedEntityDto.LastModificationTime
+  isSpec: "True"
+  fullName: Code.Library.AuditedEntityDto.LastModificationTime
+  nameWithType: AuditedEntityDto.LastModificationTime
+- uid: Code.Library.AuditedEntityDto.LastModifierId
+  name: LastModifierId
+  href: api/Code.Library.AuditedEntityDto.html#Code_Library_AuditedEntityDto_LastModifierId
+  commentId: P:Code.Library.AuditedEntityDto.LastModifierId
+  fullName: Code.Library.AuditedEntityDto.LastModifierId
+  nameWithType: AuditedEntityDto.LastModifierId
+- uid: Code.Library.AuditedEntityDto.LastModifierId*
+  name: LastModifierId
+  href: api/Code.Library.AuditedEntityDto.html#Code_Library_AuditedEntityDto_LastModifierId_
+  commentId: Overload:Code.Library.AuditedEntityDto.LastModifierId
+  isSpec: "True"
+  fullName: Code.Library.AuditedEntityDto.LastModifierId
+  nameWithType: AuditedEntityDto.LastModifierId
+- uid: Code.Library.AuditedEntityDto`1
+  name: AuditedEntityDto<TPrimaryKey>
+  href: api/Code.Library.AuditedEntityDto-1.html
+  commentId: T:Code.Library.AuditedEntityDto`1
+  name.vb: AuditedEntityDto(Of TPrimaryKey)
+  fullName: Code.Library.AuditedEntityDto<TPrimaryKey>
+  fullName.vb: Code.Library.AuditedEntityDto(Of TPrimaryKey)
+  nameWithType: AuditedEntityDto<TPrimaryKey>
+  nameWithType.vb: AuditedEntityDto(Of TPrimaryKey)
+- uid: Code.Library.AuditedEntityDto`1.LastModificationTime
+  name: LastModificationTime
+  href: api/Code.Library.AuditedEntityDto-1.html#Code_Library_AuditedEntityDto_1_LastModificationTime
+  commentId: P:Code.Library.AuditedEntityDto`1.LastModificationTime
+  fullName: Code.Library.AuditedEntityDto<TPrimaryKey>.LastModificationTime
+  fullName.vb: Code.Library.AuditedEntityDto(Of TPrimaryKey).LastModificationTime
+  nameWithType: AuditedEntityDto<TPrimaryKey>.LastModificationTime
+  nameWithType.vb: AuditedEntityDto(Of TPrimaryKey).LastModificationTime
+- uid: Code.Library.AuditedEntityDto`1.LastModificationTime*
+  name: LastModificationTime
+  href: api/Code.Library.AuditedEntityDto-1.html#Code_Library_AuditedEntityDto_1_LastModificationTime_
+  commentId: Overload:Code.Library.AuditedEntityDto`1.LastModificationTime
+  isSpec: "True"
+  fullName: Code.Library.AuditedEntityDto<TPrimaryKey>.LastModificationTime
+  fullName.vb: Code.Library.AuditedEntityDto(Of TPrimaryKey).LastModificationTime
+  nameWithType: AuditedEntityDto<TPrimaryKey>.LastModificationTime
+  nameWithType.vb: AuditedEntityDto(Of TPrimaryKey).LastModificationTime
+- uid: Code.Library.AuditedEntityDto`1.LastModifierId
+  name: LastModifierId
+  href: api/Code.Library.AuditedEntityDto-1.html#Code_Library_AuditedEntityDto_1_LastModifierId
+  commentId: P:Code.Library.AuditedEntityDto`1.LastModifierId
+  fullName: Code.Library.AuditedEntityDto<TPrimaryKey>.LastModifierId
+  fullName.vb: Code.Library.AuditedEntityDto(Of TPrimaryKey).LastModifierId
+  nameWithType: AuditedEntityDto<TPrimaryKey>.LastModifierId
+  nameWithType.vb: AuditedEntityDto(Of TPrimaryKey).LastModifierId
+- uid: Code.Library.AuditedEntityDto`1.LastModifierId*
+  name: LastModifierId
+  href: api/Code.Library.AuditedEntityDto-1.html#Code_Library_AuditedEntityDto_1_LastModifierId_
+  commentId: Overload:Code.Library.AuditedEntityDto`1.LastModifierId
+  isSpec: "True"
+  fullName: Code.Library.AuditedEntityDto<TPrimaryKey>.LastModifierId
+  fullName.vb: Code.Library.AuditedEntityDto(Of TPrimaryKey).LastModifierId
+  nameWithType: AuditedEntityDto<TPrimaryKey>.LastModifierId
+  nameWithType.vb: AuditedEntityDto(Of TPrimaryKey).LastModifierId
+- uid: Code.Library.Breadcrumb
+  name: Breadcrumb
+  href: api/Code.Library.Breadcrumb.html
+  commentId: T:Code.Library.Breadcrumb
+  fullName: Code.Library.Breadcrumb
+  nameWithType: Breadcrumb
+- uid: Code.Library.Breadcrumb.#ctor(System.String)
+  name: Breadcrumb(String)
+  href: api/Code.Library.Breadcrumb.html#Code_Library_Breadcrumb__ctor_System_String_
+  commentId: M:Code.Library.Breadcrumb.#ctor(System.String)
+  fullName: Code.Library.Breadcrumb.Breadcrumb(System.String)
+  nameWithType: Breadcrumb.Breadcrumb(String)
+- uid: Code.Library.Breadcrumb.#ctor*
+  name: Breadcrumb
+  href: api/Code.Library.Breadcrumb.html#Code_Library_Breadcrumb__ctor_
+  commentId: Overload:Code.Library.Breadcrumb.#ctor
+  isSpec: "True"
+  fullName: Code.Library.Breadcrumb.Breadcrumb
+  nameWithType: Breadcrumb.Breadcrumb
+- uid: Code.Library.Breadcrumb.Generate(IEnumerable{Code.Library.BreadcrumbNode})
+  name: Generate(IEnumerable<BreadcrumbNode>)
+  href: api/Code.Library.Breadcrumb.html#Code_Library_Breadcrumb_Generate_IEnumerable_Code_Library_BreadcrumbNode__
+  commentId: M:Code.Library.Breadcrumb.Generate(IEnumerable{Code.Library.BreadcrumbNode})
+  name.vb: Generate(IEnumerable(Of BreadcrumbNode))
+  fullName: Code.Library.Breadcrumb.Generate(IEnumerable<Code.Library.BreadcrumbNode>)
+  fullName.vb: Code.Library.Breadcrumb.Generate(IEnumerable(Of Code.Library.BreadcrumbNode))
+  nameWithType: Breadcrumb.Generate(IEnumerable<BreadcrumbNode>)
+  nameWithType.vb: Breadcrumb.Generate(IEnumerable(Of BreadcrumbNode))
+- uid: Code.Library.Breadcrumb.Generate*
+  name: Generate
+  href: api/Code.Library.Breadcrumb.html#Code_Library_Breadcrumb_Generate_
+  commentId: Overload:Code.Library.Breadcrumb.Generate
+  isSpec: "True"
+  fullName: Code.Library.Breadcrumb.Generate
+  nameWithType: Breadcrumb.Generate
+- uid: Code.Library.BreadcrumbNode
+  name: BreadcrumbNode
+  href: api/Code.Library.BreadcrumbNode.html
+  commentId: T:Code.Library.BreadcrumbNode
+  fullName: Code.Library.BreadcrumbNode
+  nameWithType: BreadcrumbNode
+- uid: Code.Library.BreadcrumbNode.#ctor(System.String,System.String)
+  name: BreadcrumbNode(String, String)
+  href: api/Code.Library.BreadcrumbNode.html#Code_Library_BreadcrumbNode__ctor_System_String_System_String_
+  commentId: M:Code.Library.BreadcrumbNode.#ctor(System.String,System.String)
+  fullName: Code.Library.BreadcrumbNode.BreadcrumbNode(System.String, System.String)
+  nameWithType: BreadcrumbNode.BreadcrumbNode(String, String)
+- uid: Code.Library.BreadcrumbNode.#ctor*
+  name: BreadcrumbNode
+  href: api/Code.Library.BreadcrumbNode.html#Code_Library_BreadcrumbNode__ctor_
+  commentId: Overload:Code.Library.BreadcrumbNode.#ctor
+  isSpec: "True"
+  fullName: Code.Library.BreadcrumbNode.BreadcrumbNode
+  nameWithType: BreadcrumbNode.BreadcrumbNode
+- uid: Code.Library.BreadcrumbNode.Title
+  name: Title
+  href: api/Code.Library.BreadcrumbNode.html#Code_Library_BreadcrumbNode_Title
+  commentId: P:Code.Library.BreadcrumbNode.Title
+  fullName: Code.Library.BreadcrumbNode.Title
+  nameWithType: BreadcrumbNode.Title
+- uid: Code.Library.BreadcrumbNode.Title*
+  name: Title
+  href: api/Code.Library.BreadcrumbNode.html#Code_Library_BreadcrumbNode_Title_
+  commentId: Overload:Code.Library.BreadcrumbNode.Title
+  isSpec: "True"
+  fullName: Code.Library.BreadcrumbNode.Title
+  nameWithType: BreadcrumbNode.Title
+- uid: Code.Library.BreadcrumbNode.URL
+  name: URL
+  href: api/Code.Library.BreadcrumbNode.html#Code_Library_BreadcrumbNode_URL
+  commentId: P:Code.Library.BreadcrumbNode.URL
+  fullName: Code.Library.BreadcrumbNode.URL
+  nameWithType: BreadcrumbNode.URL
+- uid: Code.Library.BreadcrumbNode.URL*
+  name: URL
+  href: api/Code.Library.BreadcrumbNode.html#Code_Library_BreadcrumbNode_URL_
+  commentId: Overload:Code.Library.BreadcrumbNode.URL
+  isSpec: "True"
+  fullName: Code.Library.BreadcrumbNode.URL
+  nameWithType: BreadcrumbNode.URL
+- uid: Code.Library.CreationAuditedEntityDto
+  name: CreationAuditedEntityDto
+  href: api/Code.Library.CreationAuditedEntityDto.html
+  commentId: T:Code.Library.CreationAuditedEntityDto
+  fullName: Code.Library.CreationAuditedEntityDto
+  nameWithType: CreationAuditedEntityDto
+- uid: Code.Library.CreationAuditedEntityDto.CreationTime
+  name: CreationTime
+  href: api/Code.Library.CreationAuditedEntityDto.html#Code_Library_CreationAuditedEntityDto_CreationTime
+  commentId: P:Code.Library.CreationAuditedEntityDto.CreationTime
+  fullName: Code.Library.CreationAuditedEntityDto.CreationTime
+  nameWithType: CreationAuditedEntityDto.CreationTime
+- uid: Code.Library.CreationAuditedEntityDto.CreationTime*
+  name: CreationTime
+  href: api/Code.Library.CreationAuditedEntityDto.html#Code_Library_CreationAuditedEntityDto_CreationTime_
+  commentId: Overload:Code.Library.CreationAuditedEntityDto.CreationTime
+  isSpec: "True"
+  fullName: Code.Library.CreationAuditedEntityDto.CreationTime
+  nameWithType: CreationAuditedEntityDto.CreationTime
+- uid: Code.Library.CreationAuditedEntityDto.CreatorId
+  name: CreatorId
+  href: api/Code.Library.CreationAuditedEntityDto.html#Code_Library_CreationAuditedEntityDto_CreatorId
+  commentId: P:Code.Library.CreationAuditedEntityDto.CreatorId
+  fullName: Code.Library.CreationAuditedEntityDto.CreatorId
+  nameWithType: CreationAuditedEntityDto.CreatorId
+- uid: Code.Library.CreationAuditedEntityDto.CreatorId*
+  name: CreatorId
+  href: api/Code.Library.CreationAuditedEntityDto.html#Code_Library_CreationAuditedEntityDto_CreatorId_
+  commentId: Overload:Code.Library.CreationAuditedEntityDto.CreatorId
+  isSpec: "True"
+  fullName: Code.Library.CreationAuditedEntityDto.CreatorId
+  nameWithType: CreationAuditedEntityDto.CreatorId
+- uid: Code.Library.CreationAuditedEntityDto`1
+  name: CreationAuditedEntityDto<TPrimaryKey>
+  href: api/Code.Library.CreationAuditedEntityDto-1.html
+  commentId: T:Code.Library.CreationAuditedEntityDto`1
+  name.vb: CreationAuditedEntityDto(Of TPrimaryKey)
+  fullName: Code.Library.CreationAuditedEntityDto<TPrimaryKey>
+  fullName.vb: Code.Library.CreationAuditedEntityDto(Of TPrimaryKey)
+  nameWithType: CreationAuditedEntityDto<TPrimaryKey>
+  nameWithType.vb: CreationAuditedEntityDto(Of TPrimaryKey)
+- uid: Code.Library.CreationAuditedEntityDto`1.CreationTime
+  name: CreationTime
+  href: api/Code.Library.CreationAuditedEntityDto-1.html#Code_Library_CreationAuditedEntityDto_1_CreationTime
+  commentId: P:Code.Library.CreationAuditedEntityDto`1.CreationTime
+  fullName: Code.Library.CreationAuditedEntityDto<TPrimaryKey>.CreationTime
+  fullName.vb: Code.Library.CreationAuditedEntityDto(Of TPrimaryKey).CreationTime
+  nameWithType: CreationAuditedEntityDto<TPrimaryKey>.CreationTime
+  nameWithType.vb: CreationAuditedEntityDto(Of TPrimaryKey).CreationTime
+- uid: Code.Library.CreationAuditedEntityDto`1.CreationTime*
+  name: CreationTime
+  href: api/Code.Library.CreationAuditedEntityDto-1.html#Code_Library_CreationAuditedEntityDto_1_CreationTime_
+  commentId: Overload:Code.Library.CreationAuditedEntityDto`1.CreationTime
+  isSpec: "True"
+  fullName: Code.Library.CreationAuditedEntityDto<TPrimaryKey>.CreationTime
+  fullName.vb: Code.Library.CreationAuditedEntityDto(Of TPrimaryKey).CreationTime
+  nameWithType: CreationAuditedEntityDto<TPrimaryKey>.CreationTime
+  nameWithType.vb: CreationAuditedEntityDto(Of TPrimaryKey).CreationTime
+- uid: Code.Library.CreationAuditedEntityDto`1.CreatorId
+  name: CreatorId
+  href: api/Code.Library.CreationAuditedEntityDto-1.html#Code_Library_CreationAuditedEntityDto_1_CreatorId
+  commentId: P:Code.Library.CreationAuditedEntityDto`1.CreatorId
+  fullName: Code.Library.CreationAuditedEntityDto<TPrimaryKey>.CreatorId
+  fullName.vb: Code.Library.CreationAuditedEntityDto(Of TPrimaryKey).CreatorId
+  nameWithType: CreationAuditedEntityDto<TPrimaryKey>.CreatorId
+  nameWithType.vb: CreationAuditedEntityDto(Of TPrimaryKey).CreatorId
+- uid: Code.Library.CreationAuditedEntityDto`1.CreatorId*
+  name: CreatorId
+  href: api/Code.Library.CreationAuditedEntityDto-1.html#Code_Library_CreationAuditedEntityDto_1_CreatorId_
+  commentId: Overload:Code.Library.CreationAuditedEntityDto`1.CreatorId
+  isSpec: "True"
+  fullName: Code.Library.CreationAuditedEntityDto<TPrimaryKey>.CreatorId
+  fullName.vb: Code.Library.CreationAuditedEntityDto(Of TPrimaryKey).CreatorId
+  nameWithType: CreationAuditedEntityDto<TPrimaryKey>.CreatorId
+  nameWithType.vb: CreationAuditedEntityDto(Of TPrimaryKey).CreatorId
+- uid: Code.Library.DateTimeExtensions
+  name: DateTimeExtensions
+  href: api/Code.Library.DateTimeExtensions.html
+  commentId: T:Code.Library.DateTimeExtensions
+  fullName: Code.Library.DateTimeExtensions
+  nameWithType: DateTimeExtensions
+- uid: Code.Library.DateTimeExtensions.ConvertTo12H(TimeSpan)
+  name: ConvertTo12H(TimeSpan)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_ConvertTo12H_TimeSpan_
+  commentId: M:Code.Library.DateTimeExtensions.ConvertTo12H(TimeSpan)
+  fullName: Code.Library.DateTimeExtensions.ConvertTo12H(TimeSpan)
+  nameWithType: DateTimeExtensions.ConvertTo12H(TimeSpan)
+- uid: Code.Library.DateTimeExtensions.ConvertTo12H*
+  name: ConvertTo12H
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_ConvertTo12H_
+  commentId: Overload:Code.Library.DateTimeExtensions.ConvertTo12H
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.ConvertTo12H
+  nameWithType: DateTimeExtensions.ConvertTo12H
+- uid: Code.Library.DateTimeExtensions.DaysInMonth(DateTime)
+  name: DaysInMonth(DateTime)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_DaysInMonth_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.DaysInMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.DaysInMonth(DateTime)
+  nameWithType: DateTimeExtensions.DaysInMonth(DateTime)
+- uid: Code.Library.DateTimeExtensions.DaysInMonth*
+  name: DaysInMonth
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_DaysInMonth_
+  commentId: Overload:Code.Library.DateTimeExtensions.DaysInMonth
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.DaysInMonth
+  nameWithType: DateTimeExtensions.DaysInMonth
+- uid: Code.Library.DateTimeExtensions.FirstDayOfMonth(DateTime)
+  name: FirstDayOfMonth(DateTime)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FirstDayOfMonth_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.FirstDayOfMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.FirstDayOfMonth(DateTime)
+  nameWithType: DateTimeExtensions.FirstDayOfMonth(DateTime)
+- uid: Code.Library.DateTimeExtensions.FirstDayOfMonth*
+  name: FirstDayOfMonth
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FirstDayOfMonth_
+  commentId: Overload:Code.Library.DateTimeExtensions.FirstDayOfMonth
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.FirstDayOfMonth
+  nameWithType: DateTimeExtensions.FirstDayOfMonth
+- uid: Code.Library.DateTimeExtensions.FirstDayOfYear(DateTime)
+  name: FirstDayOfYear(DateTime)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FirstDayOfYear_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.FirstDayOfYear(DateTime)
+  fullName: Code.Library.DateTimeExtensions.FirstDayOfYear(DateTime)
+  nameWithType: DateTimeExtensions.FirstDayOfYear(DateTime)
+- uid: Code.Library.DateTimeExtensions.FirstDayOfYear*
+  name: FirstDayOfYear
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FirstDayOfYear_
+  commentId: Overload:Code.Library.DateTimeExtensions.FirstDayOfYear
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.FirstDayOfYear
+  nameWithType: DateTimeExtensions.FirstDayOfYear
+- uid: Code.Library.DateTimeExtensions.FromUnixTime(System.Int64)
+  name: FromUnixTime(Int64)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FromUnixTime_System_Int64_
+  commentId: M:Code.Library.DateTimeExtensions.FromUnixTime(System.Int64)
+  fullName: Code.Library.DateTimeExtensions.FromUnixTime(System.Int64)
+  nameWithType: DateTimeExtensions.FromUnixTime(Int64)
+- uid: Code.Library.DateTimeExtensions.FromUnixTime*
+  name: FromUnixTime
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_FromUnixTime_
+  commentId: Overload:Code.Library.DateTimeExtensions.FromUnixTime
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.FromUnixTime
+  nameWithType: DateTimeExtensions.FromUnixTime
+- uid: Code.Library.DateTimeExtensions.GetArabianStandardTime(DateTime)
+  name: GetArabianStandardTime(DateTime)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_GetArabianStandardTime_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.GetArabianStandardTime(DateTime)
+  fullName: Code.Library.DateTimeExtensions.GetArabianStandardTime(DateTime)
+  nameWithType: DateTimeExtensions.GetArabianStandardTime(DateTime)
+- uid: Code.Library.DateTimeExtensions.GetArabianStandardTime*
+  name: GetArabianStandardTime
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_GetArabianStandardTime_
+  commentId: Overload:Code.Library.DateTimeExtensions.GetArabianStandardTime
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.GetArabianStandardTime
+  nameWithType: DateTimeExtensions.GetArabianStandardTime
+- uid: Code.Library.DateTimeExtensions.GetEachDay(DateTime,DateTime)
+  name: GetEachDay(DateTime, DateTime)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_GetEachDay_DateTime_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.GetEachDay(DateTime,DateTime)
+  fullName: Code.Library.DateTimeExtensions.GetEachDay(DateTime, DateTime)
+  nameWithType: DateTimeExtensions.GetEachDay(DateTime, DateTime)
+- uid: Code.Library.DateTimeExtensions.GetEachDay*
+  name: GetEachDay
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_GetEachDay_
+  commentId: Overload:Code.Library.DateTimeExtensions.GetEachDay
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.GetEachDay
+  nameWithType: DateTimeExtensions.GetEachDay
+- uid: Code.Library.DateTimeExtensions.Iso8601ToDateTime(System.String)
+  name: Iso8601ToDateTime(String)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_Iso8601ToDateTime_System_String_
+  commentId: M:Code.Library.DateTimeExtensions.Iso8601ToDateTime(System.String)
+  fullName: Code.Library.DateTimeExtensions.Iso8601ToDateTime(System.String)
+  nameWithType: DateTimeExtensions.Iso8601ToDateTime(String)
+- uid: Code.Library.DateTimeExtensions.Iso8601ToDateTime*
+  name: Iso8601ToDateTime
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_Iso8601ToDateTime_
+  commentId: Overload:Code.Library.DateTimeExtensions.Iso8601ToDateTime
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.Iso8601ToDateTime
+  nameWithType: DateTimeExtensions.Iso8601ToDateTime
+- uid: Code.Library.DateTimeExtensions.LastDayOfMonth(DateTime)
+  name: LastDayOfMonth(DateTime)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_LastDayOfMonth_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.LastDayOfMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.LastDayOfMonth(DateTime)
+  nameWithType: DateTimeExtensions.LastDayOfMonth(DateTime)
+- uid: Code.Library.DateTimeExtensions.LastDayOfMonth*
+  name: LastDayOfMonth
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_LastDayOfMonth_
+  commentId: Overload:Code.Library.DateTimeExtensions.LastDayOfMonth
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.LastDayOfMonth
+  nameWithType: DateTimeExtensions.LastDayOfMonth
+- uid: Code.Library.DateTimeExtensions.NameOfMonth(DateTime)
+  name: NameOfMonth(DateTime)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_NameOfMonth_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.NameOfMonth(DateTime)
+  fullName: Code.Library.DateTimeExtensions.NameOfMonth(DateTime)
+  nameWithType: DateTimeExtensions.NameOfMonth(DateTime)
+- uid: Code.Library.DateTimeExtensions.NameOfMonth*
+  name: NameOfMonth
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_NameOfMonth_
+  commentId: Overload:Code.Library.DateTimeExtensions.NameOfMonth
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.NameOfMonth
+  nameWithType: DateTimeExtensions.NameOfMonth
+- uid: Code.Library.DateTimeExtensions.ToIso8601(DateTime)
+  name: ToIso8601(DateTime)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_ToIso8601_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.ToIso8601(DateTime)
+  fullName: Code.Library.DateTimeExtensions.ToIso8601(DateTime)
+  nameWithType: DateTimeExtensions.ToIso8601(DateTime)
+- uid: Code.Library.DateTimeExtensions.ToIso8601*
+  name: ToIso8601
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_ToIso8601_
+  commentId: Overload:Code.Library.DateTimeExtensions.ToIso8601
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.ToIso8601
+  nameWithType: DateTimeExtensions.ToIso8601
+- uid: Code.Library.DateTimeExtensions.ToUnixTime(DateTime)
+  name: ToUnixTime(DateTime)
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_ToUnixTime_DateTime_
+  commentId: M:Code.Library.DateTimeExtensions.ToUnixTime(DateTime)
+  fullName: Code.Library.DateTimeExtensions.ToUnixTime(DateTime)
+  nameWithType: DateTimeExtensions.ToUnixTime(DateTime)
+- uid: Code.Library.DateTimeExtensions.ToUnixTime*
+  name: ToUnixTime
+  href: api/Code.Library.DateTimeExtensions.html#Code_Library_DateTimeExtensions_ToUnixTime_
+  commentId: Overload:Code.Library.DateTimeExtensions.ToUnixTime
+  isSpec: "True"
+  fullName: Code.Library.DateTimeExtensions.ToUnixTime
+  nameWithType: DateTimeExtensions.ToUnixTime
+- uid: Code.Library.DateTimeHelper
+  name: DateTimeHelper
+  href: api/Code.Library.DateTimeHelper.html
+  commentId: T:Code.Library.DateTimeHelper
+  fullName: Code.Library.DateTimeHelper
+  nameWithType: DateTimeHelper
+- uid: Code.Library.DateTimeHelper.FormatDates(System.Nullable{DateTime},System.Nullable{DateTime})
+  name: FormatDates(Nullable<DateTime>, Nullable<DateTime>)
+  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_FormatDates_System_Nullable_DateTime__System_Nullable_DateTime__
+  commentId: M:Code.Library.DateTimeHelper.FormatDates(System.Nullable{DateTime},System.Nullable{DateTime})
+  name.vb: FormatDates(Nullable(Of DateTime), Nullable(Of DateTime))
+  fullName: Code.Library.DateTimeHelper.FormatDates(System.Nullable<DateTime>, System.Nullable<DateTime>)
+  fullName.vb: Code.Library.DateTimeHelper.FormatDates(System.Nullable(Of DateTime), System.Nullable(Of DateTime))
+  nameWithType: DateTimeHelper.FormatDates(Nullable<DateTime>, Nullable<DateTime>)
+  nameWithType.vb: DateTimeHelper.FormatDates(Nullable(Of DateTime), Nullable(Of DateTime))
+- uid: Code.Library.DateTimeHelper.FormatDates*
+  name: FormatDates
+  href: api/Code.Library.DateTimeHelper.html#Code_Library_DateTimeHelper_FormatDates_
+  commentId: Overload:Code.Library.DateTimeHelper.FormatDates
+  isSpec: "True"
+  fullName: Code.Library.DateTimeHelper.FormatDates
+  nameWithType: DateTimeHelper.FormatDates
+- uid: Code.Library.EntityDto
+  name: EntityDto
+  href: api/Code.Library.EntityDto.html
+  commentId: T:Code.Library.EntityDto
+  fullName: Code.Library.EntityDto
+  nameWithType: EntityDto
+- uid: Code.Library.EntityDto.ToString
+  name: ToString()
+  href: api/Code.Library.EntityDto.html#Code_Library_EntityDto_ToString
+  commentId: M:Code.Library.EntityDto.ToString
+  fullName: Code.Library.EntityDto.ToString()
+  nameWithType: EntityDto.ToString()
+- uid: Code.Library.EntityDto.ToString*
+  name: ToString
+  href: api/Code.Library.EntityDto.html#Code_Library_EntityDto_ToString_
+  commentId: Overload:Code.Library.EntityDto.ToString
+  isSpec: "True"
+  fullName: Code.Library.EntityDto.ToString
+  nameWithType: EntityDto.ToString
+- uid: Code.Library.EntityDto`1
+  name: EntityDto<TKey>
+  href: api/Code.Library.EntityDto-1.html
+  commentId: T:Code.Library.EntityDto`1
+  name.vb: EntityDto(Of TKey)
+  fullName: Code.Library.EntityDto<TKey>
+  fullName.vb: Code.Library.EntityDto(Of TKey)
+  nameWithType: EntityDto<TKey>
+  nameWithType.vb: EntityDto(Of TKey)
+- uid: Code.Library.EntityDto`1.Id
+  name: Id
+  href: api/Code.Library.EntityDto-1.html#Code_Library_EntityDto_1_Id
+  commentId: P:Code.Library.EntityDto`1.Id
+  fullName: Code.Library.EntityDto<TKey>.Id
+  fullName.vb: Code.Library.EntityDto(Of TKey).Id
+  nameWithType: EntityDto<TKey>.Id
+  nameWithType.vb: EntityDto(Of TKey).Id
+- uid: Code.Library.EntityDto`1.Id*
+  name: Id
+  href: api/Code.Library.EntityDto-1.html#Code_Library_EntityDto_1_Id_
+  commentId: Overload:Code.Library.EntityDto`1.Id
+  isSpec: "True"
+  fullName: Code.Library.EntityDto<TKey>.Id
+  fullName.vb: Code.Library.EntityDto(Of TKey).Id
+  nameWithType: EntityDto<TKey>.Id
+  nameWithType.vb: EntityDto(Of TKey).Id
+- uid: Code.Library.EntityDto`1.ToString
+  name: ToString()
+  href: api/Code.Library.EntityDto-1.html#Code_Library_EntityDto_1_ToString
+  commentId: M:Code.Library.EntityDto`1.ToString
+  fullName: Code.Library.EntityDto<TKey>.ToString()
+  fullName.vb: Code.Library.EntityDto(Of TKey).ToString()
+  nameWithType: EntityDto<TKey>.ToString()
+  nameWithType.vb: EntityDto(Of TKey).ToString()
+- uid: Code.Library.EntityDto`1.ToString*
+  name: ToString
+  href: api/Code.Library.EntityDto-1.html#Code_Library_EntityDto_1_ToString_
+  commentId: Overload:Code.Library.EntityDto`1.ToString
+  isSpec: "True"
+  fullName: Code.Library.EntityDto<TKey>.ToString
+  fullName.vb: Code.Library.EntityDto(Of TKey).ToString
+  nameWithType: EntityDto<TKey>.ToString
+  nameWithType.vb: EntityDto(Of TKey).ToString
+- uid: Code.Library.EntityRequestDto`1
+  name: EntityRequestDto<TKey>
+  href: api/Code.Library.EntityRequestDto-1.html
+  commentId: T:Code.Library.EntityRequestDto`1
+  name.vb: EntityRequestDto(Of TKey)
+  fullName: Code.Library.EntityRequestDto<TKey>
+  fullName.vb: Code.Library.EntityRequestDto(Of TKey)
+  nameWithType: EntityRequestDto<TKey>
+  nameWithType.vb: EntityRequestDto(Of TKey)
+- uid: Code.Library.EntityRequestDto`1.Id
+  name: Id
+  href: api/Code.Library.EntityRequestDto-1.html#Code_Library_EntityRequestDto_1_Id
+  commentId: P:Code.Library.EntityRequestDto`1.Id
+  fullName: Code.Library.EntityRequestDto<TKey>.Id
+  fullName.vb: Code.Library.EntityRequestDto(Of TKey).Id
+  nameWithType: EntityRequestDto<TKey>.Id
+  nameWithType.vb: EntityRequestDto(Of TKey).Id
+- uid: Code.Library.EntityRequestDto`1.Id*
+  name: Id
+  href: api/Code.Library.EntityRequestDto-1.html#Code_Library_EntityRequestDto_1_Id_
+  commentId: Overload:Code.Library.EntityRequestDto`1.Id
+  isSpec: "True"
+  fullName: Code.Library.EntityRequestDto<TKey>.Id
+  fullName.vb: Code.Library.EntityRequestDto(Of TKey).Id
+  nameWithType: EntityRequestDto<TKey>.Id
+  nameWithType.vb: EntityRequestDto(Of TKey).Id
+- uid: Code.Library.FileHelper
+  name: FileHelper
+  href: api/Code.Library.FileHelper.html
+  commentId: T:Code.Library.FileHelper
+  fullName: Code.Library.FileHelper
+  nameWithType: FileHelper
+- uid: Code.Library.FileHelper.DeleteFile(System.String)
+  name: DeleteFile(String)
+  href: api/Code.Library.FileHelper.html#Code_Library_FileHelper_DeleteFile_System_String_
+  commentId: M:Code.Library.FileHelper.DeleteFile(System.String)
+  fullName: Code.Library.FileHelper.DeleteFile(System.String)
+  nameWithType: FileHelper.DeleteFile(String)
+- uid: Code.Library.FileHelper.DeleteFile*
+  name: DeleteFile
+  href: api/Code.Library.FileHelper.html#Code_Library_FileHelper_DeleteFile_
+  commentId: Overload:Code.Library.FileHelper.DeleteFile
+  isSpec: "True"
+  fullName: Code.Library.FileHelper.DeleteFile
+  nameWithType: FileHelper.DeleteFile
+- uid: Code.Library.FileHelper.GetFileViaFTP(System.String,System.String,System.String,System.String,System.String)
+  name: GetFileViaFTP(String, String, String, String, String)
+  href: api/Code.Library.FileHelper.html#Code_Library_FileHelper_GetFileViaFTP_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:Code.Library.FileHelper.GetFileViaFTP(System.String,System.String,System.String,System.String,System.String)
+  fullName: Code.Library.FileHelper.GetFileViaFTP(System.String, System.String, System.String, System.String, System.String)
+  nameWithType: FileHelper.GetFileViaFTP(String, String, String, String, String)
+- uid: Code.Library.FileHelper.GetFileViaFTP*
+  name: GetFileViaFTP
+  href: api/Code.Library.FileHelper.html#Code_Library_FileHelper_GetFileViaFTP_
+  commentId: Overload:Code.Library.FileHelper.GetFileViaFTP
+  isSpec: "True"
+  fullName: Code.Library.FileHelper.GetFileViaFTP
+  nameWithType: FileHelper.GetFileViaFTP
+- uid: Code.Library.FileSystemExtensions
+  name: FileSystemExtensions
+  href: api/Code.Library.FileSystemExtensions.html
+  commentId: T:Code.Library.FileSystemExtensions
+  fullName: Code.Library.FileSystemExtensions
+  nameWithType: FileSystemExtensions
+- uid: Code.Library.FileSystemExtensions.Clean(DirectoryInfo)
+  name: Clean(DirectoryInfo)
+  href: api/Code.Library.FileSystemExtensions.html#Code_Library_FileSystemExtensions_Clean_DirectoryInfo_
+  commentId: M:Code.Library.FileSystemExtensions.Clean(DirectoryInfo)
+  fullName: Code.Library.FileSystemExtensions.Clean(DirectoryInfo)
+  nameWithType: FileSystemExtensions.Clean(DirectoryInfo)
+- uid: Code.Library.FileSystemExtensions.Clean*
+  name: Clean
+  href: api/Code.Library.FileSystemExtensions.html#Code_Library_FileSystemExtensions_Clean_
+  commentId: Overload:Code.Library.FileSystemExtensions.Clean
+  isSpec: "True"
+  fullName: Code.Library.FileSystemExtensions.Clean
+  nameWithType: FileSystemExtensions.Clean
+- uid: Code.Library.FullAuditedEntityDto
+  name: FullAuditedEntityDto
+  href: api/Code.Library.FullAuditedEntityDto.html
+  commentId: T:Code.Library.FullAuditedEntityDto
+  fullName: Code.Library.FullAuditedEntityDto
+  nameWithType: FullAuditedEntityDto
+- uid: Code.Library.FullAuditedEntityDto.DeleterId
+  name: DeleterId
+  href: api/Code.Library.FullAuditedEntityDto.html#Code_Library_FullAuditedEntityDto_DeleterId
+  commentId: P:Code.Library.FullAuditedEntityDto.DeleterId
+  fullName: Code.Library.FullAuditedEntityDto.DeleterId
+  nameWithType: FullAuditedEntityDto.DeleterId
+- uid: Code.Library.FullAuditedEntityDto.DeleterId*
+  name: DeleterId
+  href: api/Code.Library.FullAuditedEntityDto.html#Code_Library_FullAuditedEntityDto_DeleterId_
+  commentId: Overload:Code.Library.FullAuditedEntityDto.DeleterId
+  isSpec: "True"
+  fullName: Code.Library.FullAuditedEntityDto.DeleterId
+  nameWithType: FullAuditedEntityDto.DeleterId
+- uid: Code.Library.FullAuditedEntityDto.DeletionTime
+  name: DeletionTime
+  href: api/Code.Library.FullAuditedEntityDto.html#Code_Library_FullAuditedEntityDto_DeletionTime
+  commentId: P:Code.Library.FullAuditedEntityDto.DeletionTime
+  fullName: Code.Library.FullAuditedEntityDto.DeletionTime
+  nameWithType: FullAuditedEntityDto.DeletionTime
+- uid: Code.Library.FullAuditedEntityDto.DeletionTime*
+  name: DeletionTime
+  href: api/Code.Library.FullAuditedEntityDto.html#Code_Library_FullAuditedEntityDto_DeletionTime_
+  commentId: Overload:Code.Library.FullAuditedEntityDto.DeletionTime
+  isSpec: "True"
+  fullName: Code.Library.FullAuditedEntityDto.DeletionTime
+  nameWithType: FullAuditedEntityDto.DeletionTime
+- uid: Code.Library.FullAuditedEntityDto.IsDeleted
+  name: IsDeleted
+  href: api/Code.Library.FullAuditedEntityDto.html#Code_Library_FullAuditedEntityDto_IsDeleted
+  commentId: P:Code.Library.FullAuditedEntityDto.IsDeleted
+  fullName: Code.Library.FullAuditedEntityDto.IsDeleted
+  nameWithType: FullAuditedEntityDto.IsDeleted
+- uid: Code.Library.FullAuditedEntityDto.IsDeleted*
+  name: IsDeleted
+  href: api/Code.Library.FullAuditedEntityDto.html#Code_Library_FullAuditedEntityDto_IsDeleted_
+  commentId: Overload:Code.Library.FullAuditedEntityDto.IsDeleted
+  isSpec: "True"
+  fullName: Code.Library.FullAuditedEntityDto.IsDeleted
+  nameWithType: FullAuditedEntityDto.IsDeleted
+- uid: Code.Library.FullAuditedEntityDto`1
+  name: FullAuditedEntityDto<TPrimaryKey>
+  href: api/Code.Library.FullAuditedEntityDto-1.html
+  commentId: T:Code.Library.FullAuditedEntityDto`1
+  name.vb: FullAuditedEntityDto(Of TPrimaryKey)
+  fullName: Code.Library.FullAuditedEntityDto<TPrimaryKey>
+  fullName.vb: Code.Library.FullAuditedEntityDto(Of TPrimaryKey)
+  nameWithType: FullAuditedEntityDto<TPrimaryKey>
+  nameWithType.vb: FullAuditedEntityDto(Of TPrimaryKey)
+- uid: Code.Library.FullAuditedEntityDto`1.DeleterId
+  name: DeleterId
+  href: api/Code.Library.FullAuditedEntityDto-1.html#Code_Library_FullAuditedEntityDto_1_DeleterId
+  commentId: P:Code.Library.FullAuditedEntityDto`1.DeleterId
+  fullName: Code.Library.FullAuditedEntityDto<TPrimaryKey>.DeleterId
+  fullName.vb: Code.Library.FullAuditedEntityDto(Of TPrimaryKey).DeleterId
+  nameWithType: FullAuditedEntityDto<TPrimaryKey>.DeleterId
+  nameWithType.vb: FullAuditedEntityDto(Of TPrimaryKey).DeleterId
+- uid: Code.Library.FullAuditedEntityDto`1.DeleterId*
+  name: DeleterId
+  href: api/Code.Library.FullAuditedEntityDto-1.html#Code_Library_FullAuditedEntityDto_1_DeleterId_
+  commentId: Overload:Code.Library.FullAuditedEntityDto`1.DeleterId
+  isSpec: "True"
+  fullName: Code.Library.FullAuditedEntityDto<TPrimaryKey>.DeleterId
+  fullName.vb: Code.Library.FullAuditedEntityDto(Of TPrimaryKey).DeleterId
+  nameWithType: FullAuditedEntityDto<TPrimaryKey>.DeleterId
+  nameWithType.vb: FullAuditedEntityDto(Of TPrimaryKey).DeleterId
+- uid: Code.Library.FullAuditedEntityDto`1.DeletionTime
+  name: DeletionTime
+  href: api/Code.Library.FullAuditedEntityDto-1.html#Code_Library_FullAuditedEntityDto_1_DeletionTime
+  commentId: P:Code.Library.FullAuditedEntityDto`1.DeletionTime
+  fullName: Code.Library.FullAuditedEntityDto<TPrimaryKey>.DeletionTime
+  fullName.vb: Code.Library.FullAuditedEntityDto(Of TPrimaryKey).DeletionTime
+  nameWithType: FullAuditedEntityDto<TPrimaryKey>.DeletionTime
+  nameWithType.vb: FullAuditedEntityDto(Of TPrimaryKey).DeletionTime
+- uid: Code.Library.FullAuditedEntityDto`1.DeletionTime*
+  name: DeletionTime
+  href: api/Code.Library.FullAuditedEntityDto-1.html#Code_Library_FullAuditedEntityDto_1_DeletionTime_
+  commentId: Overload:Code.Library.FullAuditedEntityDto`1.DeletionTime
+  isSpec: "True"
+  fullName: Code.Library.FullAuditedEntityDto<TPrimaryKey>.DeletionTime
+  fullName.vb: Code.Library.FullAuditedEntityDto(Of TPrimaryKey).DeletionTime
+  nameWithType: FullAuditedEntityDto<TPrimaryKey>.DeletionTime
+  nameWithType.vb: FullAuditedEntityDto(Of TPrimaryKey).DeletionTime
+- uid: Code.Library.FullAuditedEntityDto`1.IsDeleted
+  name: IsDeleted
+  href: api/Code.Library.FullAuditedEntityDto-1.html#Code_Library_FullAuditedEntityDto_1_IsDeleted
+  commentId: P:Code.Library.FullAuditedEntityDto`1.IsDeleted
+  fullName: Code.Library.FullAuditedEntityDto<TPrimaryKey>.IsDeleted
+  fullName.vb: Code.Library.FullAuditedEntityDto(Of TPrimaryKey).IsDeleted
+  nameWithType: FullAuditedEntityDto<TPrimaryKey>.IsDeleted
+  nameWithType.vb: FullAuditedEntityDto(Of TPrimaryKey).IsDeleted
+- uid: Code.Library.FullAuditedEntityDto`1.IsDeleted*
+  name: IsDeleted
+  href: api/Code.Library.FullAuditedEntityDto-1.html#Code_Library_FullAuditedEntityDto_1_IsDeleted_
+  commentId: Overload:Code.Library.FullAuditedEntityDto`1.IsDeleted
+  isSpec: "True"
+  fullName: Code.Library.FullAuditedEntityDto<TPrimaryKey>.IsDeleted
+  fullName.vb: Code.Library.FullAuditedEntityDto(Of TPrimaryKey).IsDeleted
+  nameWithType: FullAuditedEntityDto<TPrimaryKey>.IsDeleted
+  nameWithType.vb: FullAuditedEntityDto(Of TPrimaryKey).IsDeleted
+- uid: Code.Library.IAuditedObject
+  name: IAuditedObject
+  href: api/Code.Library.IAuditedObject.html
+  commentId: T:Code.Library.IAuditedObject
+  fullName: Code.Library.IAuditedObject
+  nameWithType: IAuditedObject
+- uid: Code.Library.IAuditedObject`1
+  name: IAuditedObject<TUser>
+  href: api/Code.Library.IAuditedObject-1.html
+  commentId: T:Code.Library.IAuditedObject`1
+  name.vb: IAuditedObject(Of TUser)
+  fullName: Code.Library.IAuditedObject<TUser>
+  fullName.vb: Code.Library.IAuditedObject(Of TUser)
+  nameWithType: IAuditedObject<TUser>
+  nameWithType.vb: IAuditedObject(Of TUser)
+- uid: Code.Library.ICreationAuditedObject
+  name: ICreationAuditedObject
+  href: api/Code.Library.ICreationAuditedObject.html
+  commentId: T:Code.Library.ICreationAuditedObject
+  fullName: Code.Library.ICreationAuditedObject
+  nameWithType: ICreationAuditedObject
+- uid: Code.Library.ICreationAuditedObject`1
+  name: ICreationAuditedObject<TCreator>
+  href: api/Code.Library.ICreationAuditedObject-1.html
+  commentId: T:Code.Library.ICreationAuditedObject`1
+  name.vb: ICreationAuditedObject(Of TCreator)
+  fullName: Code.Library.ICreationAuditedObject<TCreator>
+  fullName.vb: Code.Library.ICreationAuditedObject(Of TCreator)
+  nameWithType: ICreationAuditedObject<TCreator>
+  nameWithType.vb: ICreationAuditedObject(Of TCreator)
+- uid: Code.Library.IDeletionAuditedObject
+  name: IDeletionAuditedObject
+  href: api/Code.Library.IDeletionAuditedObject.html
+  commentId: T:Code.Library.IDeletionAuditedObject
+  fullName: Code.Library.IDeletionAuditedObject
+  nameWithType: IDeletionAuditedObject
+- uid: Code.Library.IDeletionAuditedObject.DeleterId
+  name: DeleterId
+  href: api/Code.Library.IDeletionAuditedObject.html#Code_Library_IDeletionAuditedObject_DeleterId
+  commentId: P:Code.Library.IDeletionAuditedObject.DeleterId
+  fullName: Code.Library.IDeletionAuditedObject.DeleterId
+  nameWithType: IDeletionAuditedObject.DeleterId
+- uid: Code.Library.IDeletionAuditedObject.DeleterId*
+  name: DeleterId
+  href: api/Code.Library.IDeletionAuditedObject.html#Code_Library_IDeletionAuditedObject_DeleterId_
+  commentId: Overload:Code.Library.IDeletionAuditedObject.DeleterId
+  isSpec: "True"
+  fullName: Code.Library.IDeletionAuditedObject.DeleterId
+  nameWithType: IDeletionAuditedObject.DeleterId
+- uid: Code.Library.IDeletionAuditedObject`1
+  name: IDeletionAuditedObject<TUser>
+  href: api/Code.Library.IDeletionAuditedObject-1.html
+  commentId: T:Code.Library.IDeletionAuditedObject`1
+  name.vb: IDeletionAuditedObject(Of TUser)
+  fullName: Code.Library.IDeletionAuditedObject<TUser>
+  fullName.vb: Code.Library.IDeletionAuditedObject(Of TUser)
+  nameWithType: IDeletionAuditedObject<TUser>
+  nameWithType.vb: IDeletionAuditedObject(Of TUser)
+- uid: Code.Library.IDeletionAuditedObject`1.Deleter
+  name: Deleter
+  href: api/Code.Library.IDeletionAuditedObject-1.html#Code_Library_IDeletionAuditedObject_1_Deleter
+  commentId: P:Code.Library.IDeletionAuditedObject`1.Deleter
+  fullName: Code.Library.IDeletionAuditedObject<TUser>.Deleter
+  fullName.vb: Code.Library.IDeletionAuditedObject(Of TUser).Deleter
+  nameWithType: IDeletionAuditedObject<TUser>.Deleter
+  nameWithType.vb: IDeletionAuditedObject(Of TUser).Deleter
+- uid: Code.Library.IDeletionAuditedObject`1.Deleter*
+  name: Deleter
+  href: api/Code.Library.IDeletionAuditedObject-1.html#Code_Library_IDeletionAuditedObject_1_Deleter_
+  commentId: Overload:Code.Library.IDeletionAuditedObject`1.Deleter
+  isSpec: "True"
+  fullName: Code.Library.IDeletionAuditedObject<TUser>.Deleter
+  fullName.vb: Code.Library.IDeletionAuditedObject(Of TUser).Deleter
+  nameWithType: IDeletionAuditedObject<TUser>.Deleter
+  nameWithType.vb: IDeletionAuditedObject(Of TUser).Deleter
+- uid: Code.Library.IEntityDto
+  name: IEntityDto
+  href: api/Code.Library.IEntityDto.html
+  commentId: T:Code.Library.IEntityDto
+  fullName: Code.Library.IEntityDto
+  nameWithType: IEntityDto
+- uid: Code.Library.IEntityDto`1
+  name: IEntityDto<TKey>
+  href: api/Code.Library.IEntityDto-1.html
+  commentId: T:Code.Library.IEntityDto`1
+  name.vb: IEntityDto(Of TKey)
+  fullName: Code.Library.IEntityDto<TKey>
+  fullName.vb: Code.Library.IEntityDto(Of TKey)
+  nameWithType: IEntityDto<TKey>
+  nameWithType.vb: IEntityDto(Of TKey)
+- uid: Code.Library.IEntityDto`1.Id
+  name: Id
+  href: api/Code.Library.IEntityDto-1.html#Code_Library_IEntityDto_1_Id
+  commentId: P:Code.Library.IEntityDto`1.Id
+  fullName: Code.Library.IEntityDto<TKey>.Id
+  fullName.vb: Code.Library.IEntityDto(Of TKey).Id
+  nameWithType: IEntityDto<TKey>.Id
+  nameWithType.vb: IEntityDto(Of TKey).Id
+- uid: Code.Library.IEntityDto`1.Id*
+  name: Id
+  href: api/Code.Library.IEntityDto-1.html#Code_Library_IEntityDto_1_Id_
+  commentId: Overload:Code.Library.IEntityDto`1.Id
+  isSpec: "True"
+  fullName: Code.Library.IEntityDto<TKey>.Id
+  fullName.vb: Code.Library.IEntityDto(Of TKey).Id
+  nameWithType: IEntityDto<TKey>.Id
+  nameWithType.vb: IEntityDto(Of TKey).Id
+- uid: Code.Library.IEnumerableExtensions
+  name: IEnumerableExtensions
+  href: api/Code.Library.IEnumerableExtensions.html
+  commentId: T:Code.Library.IEnumerableExtensions
+  fullName: Code.Library.IEnumerableExtensions
+  nameWithType: IEnumerableExtensions
+- uid: Code.Library.IEnumerableExtensions.ToDataTable*
+  name: ToDataTable
+  href: api/Code.Library.IEnumerableExtensions.html#Code_Library_IEnumerableExtensions_ToDataTable_
+  commentId: Overload:Code.Library.IEnumerableExtensions.ToDataTable
+  isSpec: "True"
+  fullName: Code.Library.IEnumerableExtensions.ToDataTable
+  nameWithType: IEnumerableExtensions.ToDataTable
+- uid: Code.Library.IEnumerableExtensions.ToDataTable``1(IEnumerable{``0})
+  name: ToDataTable<T>(IEnumerable<T>)
+  href: api/Code.Library.IEnumerableExtensions.html#Code_Library_IEnumerableExtensions_ToDataTable__1_IEnumerable___0__
+  commentId: M:Code.Library.IEnumerableExtensions.ToDataTable``1(IEnumerable{``0})
+  name.vb: ToDataTable(Of T)(IEnumerable(Of T))
+  fullName: Code.Library.IEnumerableExtensions.ToDataTable<T>(IEnumerable<T>)
+  fullName.vb: Code.Library.IEnumerableExtensions.ToDataTable(Of T)(IEnumerable(Of T))
+  nameWithType: IEnumerableExtensions.ToDataTable<T>(IEnumerable<T>)
+  nameWithType.vb: IEnumerableExtensions.ToDataTable(Of T)(IEnumerable(Of T))
+- uid: Code.Library.IFullAuditedObject
+  name: IFullAuditedObject
+  href: api/Code.Library.IFullAuditedObject.html
+  commentId: T:Code.Library.IFullAuditedObject
+  fullName: Code.Library.IFullAuditedObject
+  nameWithType: IFullAuditedObject
+- uid: Code.Library.IFullAuditedObject`1
+  name: IFullAuditedObject<TUser>
+  href: api/Code.Library.IFullAuditedObject-1.html
+  commentId: T:Code.Library.IFullAuditedObject`1
+  name.vb: IFullAuditedObject(Of TUser)
+  fullName: Code.Library.IFullAuditedObject<TUser>
+  fullName.vb: Code.Library.IFullAuditedObject(Of TUser)
+  nameWithType: IFullAuditedObject<TUser>
+  nameWithType.vb: IFullAuditedObject(Of TUser)
+- uid: Code.Library.IHasCreationTime
+  name: IHasCreationTime
+  href: api/Code.Library.IHasCreationTime.html
+  commentId: T:Code.Library.IHasCreationTime
+  fullName: Code.Library.IHasCreationTime
+  nameWithType: IHasCreationTime
+- uid: Code.Library.IHasCreationTime.CreationTime
+  name: CreationTime
+  href: api/Code.Library.IHasCreationTime.html#Code_Library_IHasCreationTime_CreationTime
+  commentId: P:Code.Library.IHasCreationTime.CreationTime
+  fullName: Code.Library.IHasCreationTime.CreationTime
+  nameWithType: IHasCreationTime.CreationTime
+- uid: Code.Library.IHasCreationTime.CreationTime*
+  name: CreationTime
+  href: api/Code.Library.IHasCreationTime.html#Code_Library_IHasCreationTime_CreationTime_
+  commentId: Overload:Code.Library.IHasCreationTime.CreationTime
+  isSpec: "True"
+  fullName: Code.Library.IHasCreationTime.CreationTime
+  nameWithType: IHasCreationTime.CreationTime
+- uid: Code.Library.IHasDeletionTime
+  name: IHasDeletionTime
+  href: api/Code.Library.IHasDeletionTime.html
+  commentId: T:Code.Library.IHasDeletionTime
+  fullName: Code.Library.IHasDeletionTime
+  nameWithType: IHasDeletionTime
+- uid: Code.Library.IHasDeletionTime.DeletionTime
+  name: DeletionTime
+  href: api/Code.Library.IHasDeletionTime.html#Code_Library_IHasDeletionTime_DeletionTime
+  commentId: P:Code.Library.IHasDeletionTime.DeletionTime
+  fullName: Code.Library.IHasDeletionTime.DeletionTime
+  nameWithType: IHasDeletionTime.DeletionTime
+- uid: Code.Library.IHasDeletionTime.DeletionTime*
+  name: DeletionTime
+  href: api/Code.Library.IHasDeletionTime.html#Code_Library_IHasDeletionTime_DeletionTime_
+  commentId: Overload:Code.Library.IHasDeletionTime.DeletionTime
+  isSpec: "True"
+  fullName: Code.Library.IHasDeletionTime.DeletionTime
+  nameWithType: IHasDeletionTime.DeletionTime
+- uid: Code.Library.IHasModificationTime
+  name: IHasModificationTime
+  href: api/Code.Library.IHasModificationTime.html
+  commentId: T:Code.Library.IHasModificationTime
+  fullName: Code.Library.IHasModificationTime
+  nameWithType: IHasModificationTime
+- uid: Code.Library.IHasModificationTime.LastModificationTime
+  name: LastModificationTime
+  href: api/Code.Library.IHasModificationTime.html#Code_Library_IHasModificationTime_LastModificationTime
+  commentId: P:Code.Library.IHasModificationTime.LastModificationTime
+  fullName: Code.Library.IHasModificationTime.LastModificationTime
+  nameWithType: IHasModificationTime.LastModificationTime
+- uid: Code.Library.IHasModificationTime.LastModificationTime*
+  name: LastModificationTime
+  href: api/Code.Library.IHasModificationTime.html#Code_Library_IHasModificationTime_LastModificationTime_
+  commentId: Overload:Code.Library.IHasModificationTime.LastModificationTime
+  isSpec: "True"
+  fullName: Code.Library.IHasModificationTime.LastModificationTime
+  nameWithType: IHasModificationTime.LastModificationTime
+- uid: Code.Library.IHasTotalCount
+  name: IHasTotalCount
+  href: api/Code.Library.IHasTotalCount.html
+  commentId: T:Code.Library.IHasTotalCount
+  fullName: Code.Library.IHasTotalCount
+  nameWithType: IHasTotalCount
+- uid: Code.Library.IHasTotalCount.TotalCount
+  name: TotalCount
+  href: api/Code.Library.IHasTotalCount.html#Code_Library_IHasTotalCount_TotalCount
+  commentId: P:Code.Library.IHasTotalCount.TotalCount
+  fullName: Code.Library.IHasTotalCount.TotalCount
+  nameWithType: IHasTotalCount.TotalCount
+- uid: Code.Library.IHasTotalCount.TotalCount*
+  name: TotalCount
+  href: api/Code.Library.IHasTotalCount.html#Code_Library_IHasTotalCount_TotalCount_
+  commentId: Overload:Code.Library.IHasTotalCount.TotalCount
+  isSpec: "True"
+  fullName: Code.Library.IHasTotalCount.TotalCount
+  nameWithType: IHasTotalCount.TotalCount
+- uid: Code.Library.ILimitedResultRequest
+  name: ILimitedResultRequest
+  href: api/Code.Library.ILimitedResultRequest.html
+  commentId: T:Code.Library.ILimitedResultRequest
+  fullName: Code.Library.ILimitedResultRequest
+  nameWithType: ILimitedResultRequest
+- uid: Code.Library.ILimitedResultRequest.MaxResultCount
+  name: MaxResultCount
+  href: api/Code.Library.ILimitedResultRequest.html#Code_Library_ILimitedResultRequest_MaxResultCount
+  commentId: P:Code.Library.ILimitedResultRequest.MaxResultCount
+  fullName: Code.Library.ILimitedResultRequest.MaxResultCount
+  nameWithType: ILimitedResultRequest.MaxResultCount
+- uid: Code.Library.ILimitedResultRequest.MaxResultCount*
+  name: MaxResultCount
+  href: api/Code.Library.ILimitedResultRequest.html#Code_Library_ILimitedResultRequest_MaxResultCount_
+  commentId: Overload:Code.Library.ILimitedResultRequest.MaxResultCount
+  isSpec: "True"
+  fullName: Code.Library.ILimitedResultRequest.MaxResultCount
+  nameWithType: ILimitedResultRequest.MaxResultCount
+- uid: Code.Library.IListResult`1
+  name: IListResult<T>
+  href: api/Code.Library.IListResult-1.html
+  commentId: T:Code.Library.IListResult`1
+  name.vb: IListResult(Of T)
+  fullName: Code.Library.IListResult<T>
+  fullName.vb: Code.Library.IListResult(Of T)
+  nameWithType: IListResult<T>
+  nameWithType.vb: IListResult(Of T)
+- uid: Code.Library.IListResult`1.Items
+  name: Items
+  href: api/Code.Library.IListResult-1.html#Code_Library_IListResult_1_Items
+  commentId: P:Code.Library.IListResult`1.Items
+  fullName: Code.Library.IListResult<T>.Items
+  fullName.vb: Code.Library.IListResult(Of T).Items
+  nameWithType: IListResult<T>.Items
+  nameWithType.vb: IListResult(Of T).Items
+- uid: Code.Library.IListResult`1.Items*
+  name: Items
+  href: api/Code.Library.IListResult-1.html#Code_Library_IListResult_1_Items_
+  commentId: Overload:Code.Library.IListResult`1.Items
+  isSpec: "True"
+  fullName: Code.Library.IListResult<T>.Items
+  fullName.vb: Code.Library.IListResult(Of T).Items
+  nameWithType: IListResult<T>.Items
+  nameWithType.vb: IListResult(Of T).Items
+- uid: Code.Library.IMayHaveCreator
+  name: IMayHaveCreator
+  href: api/Code.Library.IMayHaveCreator.html
+  commentId: T:Code.Library.IMayHaveCreator
+  fullName: Code.Library.IMayHaveCreator
+  nameWithType: IMayHaveCreator
+- uid: Code.Library.IMayHaveCreator.CreatorId
+  name: CreatorId
+  href: api/Code.Library.IMayHaveCreator.html#Code_Library_IMayHaveCreator_CreatorId
+  commentId: P:Code.Library.IMayHaveCreator.CreatorId
+  fullName: Code.Library.IMayHaveCreator.CreatorId
+  nameWithType: IMayHaveCreator.CreatorId
+- uid: Code.Library.IMayHaveCreator.CreatorId*
+  name: CreatorId
+  href: api/Code.Library.IMayHaveCreator.html#Code_Library_IMayHaveCreator_CreatorId_
+  commentId: Overload:Code.Library.IMayHaveCreator.CreatorId
+  isSpec: "True"
+  fullName: Code.Library.IMayHaveCreator.CreatorId
+  nameWithType: IMayHaveCreator.CreatorId
+- uid: Code.Library.IMayHaveCreator`1
+  name: IMayHaveCreator<TCreator>
+  href: api/Code.Library.IMayHaveCreator-1.html
+  commentId: T:Code.Library.IMayHaveCreator`1
+  name.vb: IMayHaveCreator(Of TCreator)
+  fullName: Code.Library.IMayHaveCreator<TCreator>
+  fullName.vb: Code.Library.IMayHaveCreator(Of TCreator)
+  nameWithType: IMayHaveCreator<TCreator>
+  nameWithType.vb: IMayHaveCreator(Of TCreator)
+- uid: Code.Library.IMayHaveCreator`1.Creator
+  name: Creator
+  href: api/Code.Library.IMayHaveCreator-1.html#Code_Library_IMayHaveCreator_1_Creator
+  commentId: P:Code.Library.IMayHaveCreator`1.Creator
+  fullName: Code.Library.IMayHaveCreator<TCreator>.Creator
+  fullName.vb: Code.Library.IMayHaveCreator(Of TCreator).Creator
+  nameWithType: IMayHaveCreator<TCreator>.Creator
+  nameWithType.vb: IMayHaveCreator(Of TCreator).Creator
+- uid: Code.Library.IMayHaveCreator`1.Creator*
+  name: Creator
+  href: api/Code.Library.IMayHaveCreator-1.html#Code_Library_IMayHaveCreator_1_Creator_
+  commentId: Overload:Code.Library.IMayHaveCreator`1.Creator
+  isSpec: "True"
+  fullName: Code.Library.IMayHaveCreator<TCreator>.Creator
+  fullName.vb: Code.Library.IMayHaveCreator(Of TCreator).Creator
+  nameWithType: IMayHaveCreator<TCreator>.Creator
+  nameWithType.vb: IMayHaveCreator(Of TCreator).Creator
+- uid: Code.Library.IModificationAuditedObject
+  name: IModificationAuditedObject
+  href: api/Code.Library.IModificationAuditedObject.html
+  commentId: T:Code.Library.IModificationAuditedObject
+  fullName: Code.Library.IModificationAuditedObject
+  nameWithType: IModificationAuditedObject
+- uid: Code.Library.IModificationAuditedObject.LastModifierId
+  name: LastModifierId
+  href: api/Code.Library.IModificationAuditedObject.html#Code_Library_IModificationAuditedObject_LastModifierId
+  commentId: P:Code.Library.IModificationAuditedObject.LastModifierId
+  fullName: Code.Library.IModificationAuditedObject.LastModifierId
+  nameWithType: IModificationAuditedObject.LastModifierId
+- uid: Code.Library.IModificationAuditedObject.LastModifierId*
+  name: LastModifierId
+  href: api/Code.Library.IModificationAuditedObject.html#Code_Library_IModificationAuditedObject_LastModifierId_
+  commentId: Overload:Code.Library.IModificationAuditedObject.LastModifierId
+  isSpec: "True"
+  fullName: Code.Library.IModificationAuditedObject.LastModifierId
+  nameWithType: IModificationAuditedObject.LastModifierId
+- uid: Code.Library.IModificationAuditedObject`1
+  name: IModificationAuditedObject<TUser>
+  href: api/Code.Library.IModificationAuditedObject-1.html
+  commentId: T:Code.Library.IModificationAuditedObject`1
+  name.vb: IModificationAuditedObject(Of TUser)
+  fullName: Code.Library.IModificationAuditedObject<TUser>
+  fullName.vb: Code.Library.IModificationAuditedObject(Of TUser)
+  nameWithType: IModificationAuditedObject<TUser>
+  nameWithType.vb: IModificationAuditedObject(Of TUser)
+- uid: Code.Library.IModificationAuditedObject`1.LastModifier
+  name: LastModifier
+  href: api/Code.Library.IModificationAuditedObject-1.html#Code_Library_IModificationAuditedObject_1_LastModifier
+  commentId: P:Code.Library.IModificationAuditedObject`1.LastModifier
+  fullName: Code.Library.IModificationAuditedObject<TUser>.LastModifier
+  fullName.vb: Code.Library.IModificationAuditedObject(Of TUser).LastModifier
+  nameWithType: IModificationAuditedObject<TUser>.LastModifier
+  nameWithType.vb: IModificationAuditedObject(Of TUser).LastModifier
+- uid: Code.Library.IModificationAuditedObject`1.LastModifier*
+  name: LastModifier
+  href: api/Code.Library.IModificationAuditedObject-1.html#Code_Library_IModificationAuditedObject_1_LastModifier_
+  commentId: Overload:Code.Library.IModificationAuditedObject`1.LastModifier
+  isSpec: "True"
+  fullName: Code.Library.IModificationAuditedObject<TUser>.LastModifier
+  fullName.vb: Code.Library.IModificationAuditedObject(Of TUser).LastModifier
+  nameWithType: IModificationAuditedObject<TUser>.LastModifier
+  nameWithType.vb: IModificationAuditedObject(Of TUser).LastModifier
+- uid: Code.Library.IPagedAndSortedResultRequest
+  name: IPagedAndSortedResultRequest
+  href: api/Code.Library.IPagedAndSortedResultRequest.html
+  commentId: T:Code.Library.IPagedAndSortedResultRequest
+  fullName: Code.Library.IPagedAndSortedResultRequest
+  nameWithType: IPagedAndSortedResultRequest
+- uid: Code.Library.IPagedResult`1
+  name: IPagedResult<T>
+  href: api/Code.Library.IPagedResult-1.html
+  commentId: T:Code.Library.IPagedResult`1
+  name.vb: IPagedResult(Of T)
+  fullName: Code.Library.IPagedResult<T>
+  fullName.vb: Code.Library.IPagedResult(Of T)
+  nameWithType: IPagedResult<T>
+  nameWithType.vb: IPagedResult(Of T)
+- uid: Code.Library.IPagedResultRequest
+  name: IPagedResultRequest
+  href: api/Code.Library.IPagedResultRequest.html
+  commentId: T:Code.Library.IPagedResultRequest
+  fullName: Code.Library.IPagedResultRequest
+  nameWithType: IPagedResultRequest
+- uid: Code.Library.IPagedResultRequest.SkipCount
+  name: SkipCount
+  href: api/Code.Library.IPagedResultRequest.html#Code_Library_IPagedResultRequest_SkipCount
+  commentId: P:Code.Library.IPagedResultRequest.SkipCount
+  fullName: Code.Library.IPagedResultRequest.SkipCount
+  nameWithType: IPagedResultRequest.SkipCount
+- uid: Code.Library.IPagedResultRequest.SkipCount*
+  name: SkipCount
+  href: api/Code.Library.IPagedResultRequest.html#Code_Library_IPagedResultRequest_SkipCount_
+  commentId: Overload:Code.Library.IPagedResultRequest.SkipCount
+  isSpec: "True"
+  fullName: Code.Library.IPagedResultRequest.SkipCount
+  nameWithType: IPagedResultRequest.SkipCount
+- uid: Code.Library.IResult
+  name: IResult
+  href: api/Code.Library.IResult.html
+  commentId: T:Code.Library.IResult
+  fullName: Code.Library.IResult
+  nameWithType: IResult
+- uid: Code.Library.IResult.IsFailure
+  name: IsFailure
+  href: api/Code.Library.IResult.html#Code_Library_IResult_IsFailure
+  commentId: P:Code.Library.IResult.IsFailure
+  fullName: Code.Library.IResult.IsFailure
+  nameWithType: IResult.IsFailure
+- uid: Code.Library.IResult.IsFailure*
+  name: IsFailure
+  href: api/Code.Library.IResult.html#Code_Library_IResult_IsFailure_
+  commentId: Overload:Code.Library.IResult.IsFailure
+  isSpec: "True"
+  fullName: Code.Library.IResult.IsFailure
+  nameWithType: IResult.IsFailure
+- uid: Code.Library.IResult.IsSuccess
+  name: IsSuccess
+  href: api/Code.Library.IResult.html#Code_Library_IResult_IsSuccess
+  commentId: P:Code.Library.IResult.IsSuccess
+  fullName: Code.Library.IResult.IsSuccess
+  nameWithType: IResult.IsSuccess
+- uid: Code.Library.IResult.IsSuccess*
+  name: IsSuccess
+  href: api/Code.Library.IResult.html#Code_Library_IResult_IsSuccess_
+  commentId: Overload:Code.Library.IResult.IsSuccess
+  isSpec: "True"
+  fullName: Code.Library.IResult.IsSuccess
+  nameWithType: IResult.IsSuccess
+- uid: Code.Library.ISoftDelete
+  name: ISoftDelete
+  href: api/Code.Library.ISoftDelete.html
+  commentId: T:Code.Library.ISoftDelete
+  fullName: Code.Library.ISoftDelete
+  nameWithType: ISoftDelete
+- uid: Code.Library.ISoftDelete.IsDeleted
+  name: IsDeleted
+  href: api/Code.Library.ISoftDelete.html#Code_Library_ISoftDelete_IsDeleted
+  commentId: P:Code.Library.ISoftDelete.IsDeleted
+  fullName: Code.Library.ISoftDelete.IsDeleted
+  nameWithType: ISoftDelete.IsDeleted
+- uid: Code.Library.ISoftDelete.IsDeleted*
+  name: IsDeleted
+  href: api/Code.Library.ISoftDelete.html#Code_Library_ISoftDelete_IsDeleted_
+  commentId: Overload:Code.Library.ISoftDelete.IsDeleted
+  isSpec: "True"
+  fullName: Code.Library.ISoftDelete.IsDeleted
+  nameWithType: ISoftDelete.IsDeleted
+- uid: Code.Library.ISortedResultRequest
+  name: ISortedResultRequest
+  href: api/Code.Library.ISortedResultRequest.html
+  commentId: T:Code.Library.ISortedResultRequest
+  fullName: Code.Library.ISortedResultRequest
+  nameWithType: ISortedResultRequest
+- uid: Code.Library.ISortedResultRequest.Sorting
+  name: Sorting
+  href: api/Code.Library.ISortedResultRequest.html#Code_Library_ISortedResultRequest_Sorting
+  commentId: P:Code.Library.ISortedResultRequest.Sorting
+  fullName: Code.Library.ISortedResultRequest.Sorting
+  nameWithType: ISortedResultRequest.Sorting
+- uid: Code.Library.ISortedResultRequest.Sorting*
+  name: Sorting
+  href: api/Code.Library.ISortedResultRequest.html#Code_Library_ISortedResultRequest_Sorting_
+  commentId: Overload:Code.Library.ISortedResultRequest.Sorting
+  isSpec: "True"
+  fullName: Code.Library.ISortedResultRequest.Sorting
+  nameWithType: ISortedResultRequest.Sorting
+- uid: Code.Library.LimitedResultRequestDto
+  name: LimitedResultRequestDto
+  href: api/Code.Library.LimitedResultRequestDto.html
+  commentId: T:Code.Library.LimitedResultRequestDto
+  fullName: Code.Library.LimitedResultRequestDto
+  nameWithType: LimitedResultRequestDto
+- uid: Code.Library.LimitedResultRequestDto.MaxResultCount
+  name: MaxResultCount
+  href: api/Code.Library.LimitedResultRequestDto.html#Code_Library_LimitedResultRequestDto_MaxResultCount
+  commentId: P:Code.Library.LimitedResultRequestDto.MaxResultCount
+  fullName: Code.Library.LimitedResultRequestDto.MaxResultCount
+  nameWithType: LimitedResultRequestDto.MaxResultCount
+- uid: Code.Library.LimitedResultRequestDto.MaxResultCount*
+  name: MaxResultCount
+  href: api/Code.Library.LimitedResultRequestDto.html#Code_Library_LimitedResultRequestDto_MaxResultCount_
+  commentId: Overload:Code.Library.LimitedResultRequestDto.MaxResultCount
+  isSpec: "True"
+  fullName: Code.Library.LimitedResultRequestDto.MaxResultCount
+  nameWithType: LimitedResultRequestDto.MaxResultCount
+- uid: Code.Library.ListResultDto`1
+  name: ListResultDto<T>
+  href: api/Code.Library.ListResultDto-1.html
+  commentId: T:Code.Library.ListResultDto`1
+  name.vb: ListResultDto(Of T)
+  fullName: Code.Library.ListResultDto<T>
+  fullName.vb: Code.Library.ListResultDto(Of T)
+  nameWithType: ListResultDto<T>
+  nameWithType.vb: ListResultDto(Of T)
+- uid: Code.Library.ListResultDto`1.#ctor
+  name: ListResultDto()
+  href: api/Code.Library.ListResultDto-1.html#Code_Library_ListResultDto_1__ctor
+  commentId: M:Code.Library.ListResultDto`1.#ctor
+  fullName: Code.Library.ListResultDto<T>.ListResultDto()
+  fullName.vb: Code.Library.ListResultDto(Of T).ListResultDto()
+  nameWithType: ListResultDto<T>.ListResultDto()
+  nameWithType.vb: ListResultDto(Of T).ListResultDto()
+- uid: Code.Library.ListResultDto`1.#ctor(IReadOnlyList{`0})
+  name: ListResultDto(IReadOnlyList<T>)
+  href: api/Code.Library.ListResultDto-1.html#Code_Library_ListResultDto_1__ctor_IReadOnlyList__0__
+  commentId: M:Code.Library.ListResultDto`1.#ctor(IReadOnlyList{`0})
+  name.vb: ListResultDto(IReadOnlyList(Of T))
+  fullName: Code.Library.ListResultDto<T>.ListResultDto(IReadOnlyList<T>)
+  fullName.vb: Code.Library.ListResultDto(Of T).ListResultDto(IReadOnlyList(Of T))
+  nameWithType: ListResultDto<T>.ListResultDto(IReadOnlyList<T>)
+  nameWithType.vb: ListResultDto(Of T).ListResultDto(IReadOnlyList(Of T))
+- uid: Code.Library.ListResultDto`1.#ctor*
+  name: ListResultDto
+  href: api/Code.Library.ListResultDto-1.html#Code_Library_ListResultDto_1__ctor_
+  commentId: Overload:Code.Library.ListResultDto`1.#ctor
+  isSpec: "True"
+  fullName: Code.Library.ListResultDto<T>.ListResultDto
+  fullName.vb: Code.Library.ListResultDto(Of T).ListResultDto
+  nameWithType: ListResultDto<T>.ListResultDto
+  nameWithType.vb: ListResultDto(Of T).ListResultDto
+- uid: Code.Library.ListResultDto`1.Items
+  name: Items
+  href: api/Code.Library.ListResultDto-1.html#Code_Library_ListResultDto_1_Items
+  commentId: P:Code.Library.ListResultDto`1.Items
+  fullName: Code.Library.ListResultDto<T>.Items
+  fullName.vb: Code.Library.ListResultDto(Of T).Items
+  nameWithType: ListResultDto<T>.Items
+  nameWithType.vb: ListResultDto(Of T).Items
+- uid: Code.Library.ListResultDto`1.Items*
+  name: Items
+  href: api/Code.Library.ListResultDto-1.html#Code_Library_ListResultDto_1_Items_
+  commentId: Overload:Code.Library.ListResultDto`1.Items
+  isSpec: "True"
+  fullName: Code.Library.ListResultDto<T>.Items
+  fullName.vb: Code.Library.ListResultDto(Of T).Items
+  nameWithType: ListResultDto<T>.Items
+  nameWithType.vb: ListResultDto(Of T).Items
+- uid: Code.Library.NumberExtensions
+  name: NumberExtensions
+  href: api/Code.Library.NumberExtensions.html
+  commentId: T:Code.Library.NumberExtensions
+  fullName: Code.Library.NumberExtensions
+  nameWithType: NumberExtensions
+- uid: Code.Library.NumberExtensions.GetFirstNDigits(System.Int32,System.Int32)
+  name: GetFirstNDigits(Int32, Int32)
+  href: api/Code.Library.NumberExtensions.html#Code_Library_NumberExtensions_GetFirstNDigits_System_Int32_System_Int32_
+  commentId: M:Code.Library.NumberExtensions.GetFirstNDigits(System.Int32,System.Int32)
+  fullName: Code.Library.NumberExtensions.GetFirstNDigits(System.Int32, System.Int32)
+  nameWithType: NumberExtensions.GetFirstNDigits(Int32, Int32)
+- uid: Code.Library.NumberExtensions.GetFirstNDigits*
+  name: GetFirstNDigits
+  href: api/Code.Library.NumberExtensions.html#Code_Library_NumberExtensions_GetFirstNDigits_
+  commentId: Overload:Code.Library.NumberExtensions.GetFirstNDigits
+  isSpec: "True"
+  fullName: Code.Library.NumberExtensions.GetFirstNDigits
+  nameWithType: NumberExtensions.GetFirstNDigits
+- uid: Code.Library.NumberExtensions.GetNthDigit(System.Int32,System.Int32)
+  name: GetNthDigit(Int32, Int32)
+  href: api/Code.Library.NumberExtensions.html#Code_Library_NumberExtensions_GetNthDigit_System_Int32_System_Int32_
+  commentId: M:Code.Library.NumberExtensions.GetNthDigit(System.Int32,System.Int32)
+  fullName: Code.Library.NumberExtensions.GetNthDigit(System.Int32, System.Int32)
+  nameWithType: NumberExtensions.GetNthDigit(Int32, Int32)
+- uid: Code.Library.NumberExtensions.GetNthDigit*
+  name: GetNthDigit
+  href: api/Code.Library.NumberExtensions.html#Code_Library_NumberExtensions_GetNthDigit_
+  commentId: Overload:Code.Library.NumberExtensions.GetNthDigit
+  isSpec: "True"
+  fullName: Code.Library.NumberExtensions.GetNthDigit
+  nameWithType: NumberExtensions.GetNthDigit
+- uid: Code.Library.PagedAndSortedResultRequestDto
+  name: PagedAndSortedResultRequestDto
+  href: api/Code.Library.PagedAndSortedResultRequestDto.html
+  commentId: T:Code.Library.PagedAndSortedResultRequestDto
+  fullName: Code.Library.PagedAndSortedResultRequestDto
+  nameWithType: PagedAndSortedResultRequestDto
+- uid: Code.Library.PagedAndSortedResultRequestDto.Sorting
+  name: Sorting
+  href: api/Code.Library.PagedAndSortedResultRequestDto.html#Code_Library_PagedAndSortedResultRequestDto_Sorting
+  commentId: P:Code.Library.PagedAndSortedResultRequestDto.Sorting
+  fullName: Code.Library.PagedAndSortedResultRequestDto.Sorting
+  nameWithType: PagedAndSortedResultRequestDto.Sorting
+- uid: Code.Library.PagedAndSortedResultRequestDto.Sorting*
+  name: Sorting
+  href: api/Code.Library.PagedAndSortedResultRequestDto.html#Code_Library_PagedAndSortedResultRequestDto_Sorting_
+  commentId: Overload:Code.Library.PagedAndSortedResultRequestDto.Sorting
+  isSpec: "True"
+  fullName: Code.Library.PagedAndSortedResultRequestDto.Sorting
+  nameWithType: PagedAndSortedResultRequestDto.Sorting
+- uid: Code.Library.PagedResultDto`1
+  name: PagedResultDto<T>
+  href: api/Code.Library.PagedResultDto-1.html
+  commentId: T:Code.Library.PagedResultDto`1
+  name.vb: PagedResultDto(Of T)
+  fullName: Code.Library.PagedResultDto<T>
+  fullName.vb: Code.Library.PagedResultDto(Of T)
+  nameWithType: PagedResultDto<T>
+  nameWithType.vb: PagedResultDto(Of T)
+- uid: Code.Library.PagedResultDto`1.#ctor
+  name: PagedResultDto()
+  href: api/Code.Library.PagedResultDto-1.html#Code_Library_PagedResultDto_1__ctor
+  commentId: M:Code.Library.PagedResultDto`1.#ctor
+  fullName: Code.Library.PagedResultDto<T>.PagedResultDto()
+  fullName.vb: Code.Library.PagedResultDto(Of T).PagedResultDto()
+  nameWithType: PagedResultDto<T>.PagedResultDto()
+  nameWithType.vb: PagedResultDto(Of T).PagedResultDto()
+- uid: Code.Library.PagedResultDto`1.#ctor(System.Int64,IReadOnlyList{`0})
+  name: PagedResultDto(Int64, IReadOnlyList<T>)
+  href: api/Code.Library.PagedResultDto-1.html#Code_Library_PagedResultDto_1__ctor_System_Int64_IReadOnlyList__0__
+  commentId: M:Code.Library.PagedResultDto`1.#ctor(System.Int64,IReadOnlyList{`0})
+  name.vb: PagedResultDto(Int64, IReadOnlyList(Of T))
+  fullName: Code.Library.PagedResultDto<T>.PagedResultDto(System.Int64, IReadOnlyList<T>)
+  fullName.vb: Code.Library.PagedResultDto(Of T).PagedResultDto(System.Int64, IReadOnlyList(Of T))
+  nameWithType: PagedResultDto<T>.PagedResultDto(Int64, IReadOnlyList<T>)
+  nameWithType.vb: PagedResultDto(Of T).PagedResultDto(Int64, IReadOnlyList(Of T))
+- uid: Code.Library.PagedResultDto`1.#ctor*
+  name: PagedResultDto
+  href: api/Code.Library.PagedResultDto-1.html#Code_Library_PagedResultDto_1__ctor_
+  commentId: Overload:Code.Library.PagedResultDto`1.#ctor
+  isSpec: "True"
+  fullName: Code.Library.PagedResultDto<T>.PagedResultDto
+  fullName.vb: Code.Library.PagedResultDto(Of T).PagedResultDto
+  nameWithType: PagedResultDto<T>.PagedResultDto
+  nameWithType.vb: PagedResultDto(Of T).PagedResultDto
+- uid: Code.Library.PagedResultDto`1.TotalCount
+  name: TotalCount
+  href: api/Code.Library.PagedResultDto-1.html#Code_Library_PagedResultDto_1_TotalCount
+  commentId: P:Code.Library.PagedResultDto`1.TotalCount
+  fullName: Code.Library.PagedResultDto<T>.TotalCount
+  fullName.vb: Code.Library.PagedResultDto(Of T).TotalCount
+  nameWithType: PagedResultDto<T>.TotalCount
+  nameWithType.vb: PagedResultDto(Of T).TotalCount
+- uid: Code.Library.PagedResultDto`1.TotalCount*
+  name: TotalCount
+  href: api/Code.Library.PagedResultDto-1.html#Code_Library_PagedResultDto_1_TotalCount_
+  commentId: Overload:Code.Library.PagedResultDto`1.TotalCount
+  isSpec: "True"
+  fullName: Code.Library.PagedResultDto<T>.TotalCount
+  fullName.vb: Code.Library.PagedResultDto(Of T).TotalCount
+  nameWithType: PagedResultDto<T>.TotalCount
+  nameWithType.vb: PagedResultDto(Of T).TotalCount
+- uid: Code.Library.PagedResultRequestDto
+  name: PagedResultRequestDto
+  href: api/Code.Library.PagedResultRequestDto.html
+  commentId: T:Code.Library.PagedResultRequestDto
+  fullName: Code.Library.PagedResultRequestDto
+  nameWithType: PagedResultRequestDto
+- uid: Code.Library.PagedResultRequestDto.SkipCount
+  name: SkipCount
+  href: api/Code.Library.PagedResultRequestDto.html#Code_Library_PagedResultRequestDto_SkipCount
+  commentId: P:Code.Library.PagedResultRequestDto.SkipCount
+  fullName: Code.Library.PagedResultRequestDto.SkipCount
+  nameWithType: PagedResultRequestDto.SkipCount
+- uid: Code.Library.PagedResultRequestDto.SkipCount*
+  name: SkipCount
+  href: api/Code.Library.PagedResultRequestDto.html#Code_Library_PagedResultRequestDto_SkipCount_
+  commentId: Overload:Code.Library.PagedResultRequestDto.SkipCount
+  isSpec: "True"
+  fullName: Code.Library.PagedResultRequestDto.SkipCount
+  nameWithType: PagedResultRequestDto.SkipCount
+- uid: Code.Library.Result
+  name: Result
+  href: api/Code.Library.Result.html
+  commentId: T:Code.Library.Result
+  fullName: Code.Library.Result
+  nameWithType: Result
+- uid: Code.Library.Result.Combine(Code.Library.Result[])
+  name: Combine(Result[])
+  href: api/Code.Library.Result.html#Code_Library_Result_Combine_Code_Library_Result___
+  commentId: M:Code.Library.Result.Combine(Code.Library.Result[])
+  name.vb: Combine(Result())
+  fullName: Code.Library.Result.Combine(Code.Library.Result[])
+  fullName.vb: Code.Library.Result.Combine(Code.Library.Result())
+  nameWithType: Result.Combine(Result[])
+  nameWithType.vb: Result.Combine(Result())
+- uid: Code.Library.Result.Combine(System.String,Code.Library.Result[])
+  name: Combine(String, Result[])
+  href: api/Code.Library.Result.html#Code_Library_Result_Combine_System_String_Code_Library_Result___
+  commentId: M:Code.Library.Result.Combine(System.String,Code.Library.Result[])
+  name.vb: Combine(String, Result())
+  fullName: Code.Library.Result.Combine(System.String, Code.Library.Result[])
+  fullName.vb: Code.Library.Result.Combine(System.String, Code.Library.Result())
+  nameWithType: Result.Combine(String, Result[])
+  nameWithType.vb: Result.Combine(String, Result())
+- uid: Code.Library.Result.Combine*
+  name: Combine
+  href: api/Code.Library.Result.html#Code_Library_Result_Combine_
+  commentId: Overload:Code.Library.Result.Combine
+  isSpec: "True"
+  fullName: Code.Library.Result.Combine
+  nameWithType: Result.Combine
+- uid: Code.Library.Result.Combine``1(Code.Library.Result{``0}[])
+  name: Combine<T>(Result<T>[])
+  href: api/Code.Library.Result.html#Code_Library_Result_Combine__1_Code_Library_Result___0____
+  commentId: M:Code.Library.Result.Combine``1(Code.Library.Result{``0}[])
+  name.vb: Combine(Of T)(Result(Of T)())
+  fullName: Code.Library.Result.Combine<T>(Code.Library.Result<T>[])
+  fullName.vb: Code.Library.Result.Combine(Of T)(Code.Library.Result(Of T)())
+  nameWithType: Result.Combine<T>(Result<T>[])
+  nameWithType.vb: Result.Combine(Of T)(Result(Of T)())
+- uid: Code.Library.Result.Combine``1(System.String,Code.Library.Result{``0}[])
+  name: Combine<T>(String, Result<T>[])
+  href: api/Code.Library.Result.html#Code_Library_Result_Combine__1_System_String_Code_Library_Result___0____
+  commentId: M:Code.Library.Result.Combine``1(System.String,Code.Library.Result{``0}[])
+  name.vb: Combine(Of T)(String, Result(Of T)())
+  fullName: Code.Library.Result.Combine<T>(System.String, Code.Library.Result<T>[])
+  fullName.vb: Code.Library.Result.Combine(Of T)(System.String, Code.Library.Result(Of T)())
+  nameWithType: Result.Combine<T>(String, Result<T>[])
+  nameWithType.vb: Result.Combine(Of T)(String, Result(Of T)())
+- uid: Code.Library.Result.Create(Func{System.Boolean},System.String)
+  name: Create(Func<Boolean>, String)
+  href: api/Code.Library.Result.html#Code_Library_Result_Create_Func_System_Boolean__System_String_
+  commentId: M:Code.Library.Result.Create(Func{System.Boolean},System.String)
+  name.vb: Create(Func(Of Boolean), String)
+  fullName: Code.Library.Result.Create(Func<System.Boolean>, System.String)
+  fullName.vb: Code.Library.Result.Create(Func(Of System.Boolean), System.String)
+  nameWithType: Result.Create(Func<Boolean>, String)
+  nameWithType.vb: Result.Create(Func(Of Boolean), String)
+- uid: Code.Library.Result.Create(Func{Task{System.Boolean}},System.String)
+  name: Create(Func<Task<Boolean>>, String)
+  href: api/Code.Library.Result.html#Code_Library_Result_Create_Func_Task_System_Boolean___System_String_
+  commentId: M:Code.Library.Result.Create(Func{Task{System.Boolean}},System.String)
+  name.vb: Create(Func(Of Task(Of Boolean)), String)
+  fullName: Code.Library.Result.Create(Func<Task<System.Boolean>>, System.String)
+  fullName.vb: Code.Library.Result.Create(Func(Of Task(Of System.Boolean)), System.String)
+  nameWithType: Result.Create(Func<Task<Boolean>>, String)
+  nameWithType.vb: Result.Create(Func(Of Task(Of Boolean)), String)
+- uid: Code.Library.Result.Create(System.Boolean,System.String)
+  name: Create(Boolean, String)
+  href: api/Code.Library.Result.html#Code_Library_Result_Create_System_Boolean_System_String_
+  commentId: M:Code.Library.Result.Create(System.Boolean,System.String)
+  fullName: Code.Library.Result.Create(System.Boolean, System.String)
+  nameWithType: Result.Create(Boolean, String)
+- uid: Code.Library.Result.Create*
+  name: Create
+  href: api/Code.Library.Result.html#Code_Library_Result_Create_
+  commentId: Overload:Code.Library.Result.Create
+  isSpec: "True"
+  fullName: Code.Library.Result.Create
+  nameWithType: Result.Create
+- uid: Code.Library.Result.Create``1(Func{System.Boolean},``0,System.String)
+  name: Create<T>(Func<Boolean>, T, String)
+  href: api/Code.Library.Result.html#Code_Library_Result_Create__1_Func_System_Boolean____0_System_String_
+  commentId: M:Code.Library.Result.Create``1(Func{System.Boolean},``0,System.String)
+  name.vb: Create(Of T)(Func(Of Boolean), T, String)
+  fullName: Code.Library.Result.Create<T>(Func<System.Boolean>, T, System.String)
+  fullName.vb: Code.Library.Result.Create(Of T)(Func(Of System.Boolean), T, System.String)
+  nameWithType: Result.Create<T>(Func<Boolean>, T, String)
+  nameWithType.vb: Result.Create(Of T)(Func(Of Boolean), T, String)
+- uid: Code.Library.Result.Create``1(Func{Task{System.Boolean}},``0,System.String)
+  name: Create<T>(Func<Task<Boolean>>, T, String)
+  href: api/Code.Library.Result.html#Code_Library_Result_Create__1_Func_Task_System_Boolean_____0_System_String_
+  commentId: M:Code.Library.Result.Create``1(Func{Task{System.Boolean}},``0,System.String)
+  name.vb: Create(Of T)(Func(Of Task(Of Boolean)), T, String)
+  fullName: Code.Library.Result.Create<T>(Func<Task<System.Boolean>>, T, System.String)
+  fullName.vb: Code.Library.Result.Create(Of T)(Func(Of Task(Of System.Boolean)), T, System.String)
+  nameWithType: Result.Create<T>(Func<Task<Boolean>>, T, String)
+  nameWithType.vb: Result.Create(Of T)(Func(Of Task(Of Boolean)), T, String)
+- uid: Code.Library.Result.Create``1(System.Boolean,``0,System.String)
+  name: Create<T>(Boolean, T, String)
+  href: api/Code.Library.Result.html#Code_Library_Result_Create__1_System_Boolean___0_System_String_
+  commentId: M:Code.Library.Result.Create``1(System.Boolean,``0,System.String)
+  name.vb: Create(Of T)(Boolean, T, String)
+  fullName: Code.Library.Result.Create<T>(System.Boolean, T, System.String)
+  fullName.vb: Code.Library.Result.Create(Of T)(System.Boolean, T, System.String)
+  nameWithType: Result.Create<T>(Boolean, T, String)
+  nameWithType.vb: Result.Create(Of T)(Boolean, T, String)
+- uid: Code.Library.Result.Create``2(Func{System.Boolean},``0,``1)
+  name: Create<T, E>(Func<Boolean>, T, E)
+  href: api/Code.Library.Result.html#Code_Library_Result_Create__2_Func_System_Boolean____0___1_
+  commentId: M:Code.Library.Result.Create``2(Func{System.Boolean},``0,``1)
+  name.vb: Create(Of T, E)(Func(Of Boolean), T, E)
+  fullName: Code.Library.Result.Create<T, E>(Func<System.Boolean>, T, E)
+  fullName.vb: Code.Library.Result.Create(Of T, E)(Func(Of System.Boolean), T, E)
+  nameWithType: Result.Create<T, E>(Func<Boolean>, T, E)
+  nameWithType.vb: Result.Create(Of T, E)(Func(Of Boolean), T, E)
+- uid: Code.Library.Result.Create``2(Func{Task{System.Boolean}},``0,``1)
+  name: Create<T, E>(Func<Task<Boolean>>, T, E)
+  href: api/Code.Library.Result.html#Code_Library_Result_Create__2_Func_Task_System_Boolean_____0___1_
+  commentId: M:Code.Library.Result.Create``2(Func{Task{System.Boolean}},``0,``1)
+  name.vb: Create(Of T, E)(Func(Of Task(Of Boolean)), T, E)
+  fullName: Code.Library.Result.Create<T, E>(Func<Task<System.Boolean>>, T, E)
+  fullName.vb: Code.Library.Result.Create(Of T, E)(Func(Of Task(Of System.Boolean)), T, E)
+  nameWithType: Result.Create<T, E>(Func<Task<Boolean>>, T, E)
+  nameWithType.vb: Result.Create(Of T, E)(Func(Of Task(Of Boolean)), T, E)
+- uid: Code.Library.Result.Create``2(System.Boolean,``0,``1)
+  name: Create<T, E>(Boolean, T, E)
+  href: api/Code.Library.Result.html#Code_Library_Result_Create__2_System_Boolean___0___1_
+  commentId: M:Code.Library.Result.Create``2(System.Boolean,``0,``1)
+  name.vb: Create(Of T, E)(Boolean, T, E)
+  fullName: Code.Library.Result.Create<T, E>(System.Boolean, T, E)
+  fullName.vb: Code.Library.Result.Create(Of T, E)(System.Boolean, T, E)
+  nameWithType: Result.Create<T, E>(Boolean, T, E)
+  nameWithType.vb: Result.Create(Of T, E)(Boolean, T, E)
+- uid: Code.Library.Result.Deconstruct(System.Boolean@,System.Boolean@)
+  name: Deconstruct(out Boolean, out Boolean)
+  href: api/Code.Library.Result.html#Code_Library_Result_Deconstruct_System_Boolean__System_Boolean__
+  commentId: M:Code.Library.Result.Deconstruct(System.Boolean@,System.Boolean@)
+  name.vb: Deconstruct(ByRef Boolean, ByRef Boolean)
+  fullName: Code.Library.Result.Deconstruct(out System.Boolean, out System.Boolean)
+  fullName.vb: Code.Library.Result.Deconstruct(ByRef System.Boolean, ByRef System.Boolean)
+  nameWithType: Result.Deconstruct(out Boolean, out Boolean)
+  nameWithType.vb: Result.Deconstruct(ByRef Boolean, ByRef Boolean)
+- uid: Code.Library.Result.Deconstruct(System.Boolean@,System.Boolean@,System.String@)
+  name: Deconstruct(out Boolean, out Boolean, out String)
+  href: api/Code.Library.Result.html#Code_Library_Result_Deconstruct_System_Boolean__System_Boolean__System_String__
+  commentId: M:Code.Library.Result.Deconstruct(System.Boolean@,System.Boolean@,System.String@)
+  name.vb: Deconstruct(ByRef Boolean, ByRef Boolean, ByRef String)
+  fullName: Code.Library.Result.Deconstruct(out System.Boolean, out System.Boolean, out System.String)
+  fullName.vb: Code.Library.Result.Deconstruct(ByRef System.Boolean, ByRef System.Boolean, ByRef System.String)
+  nameWithType: Result.Deconstruct(out Boolean, out Boolean, out String)
+  nameWithType.vb: Result.Deconstruct(ByRef Boolean, ByRef Boolean, ByRef String)
+- uid: Code.Library.Result.Deconstruct*
+  name: Deconstruct
+  href: api/Code.Library.Result.html#Code_Library_Result_Deconstruct_
+  commentId: Overload:Code.Library.Result.Deconstruct
+  isSpec: "True"
+  fullName: Code.Library.Result.Deconstruct
+  nameWithType: Result.Deconstruct
+- uid: Code.Library.Result.DefaultConfigureAwait
+  name: DefaultConfigureAwait
+  href: api/Code.Library.Result.html#Code_Library_Result_DefaultConfigureAwait
+  commentId: F:Code.Library.Result.DefaultConfigureAwait
+  fullName: Code.Library.Result.DefaultConfigureAwait
+  nameWithType: Result.DefaultConfigureAwait
+- uid: Code.Library.Result.Error
+  name: Error
+  href: api/Code.Library.Result.html#Code_Library_Result_Error
+  commentId: P:Code.Library.Result.Error
+  fullName: Code.Library.Result.Error
+  nameWithType: Result.Error
+- uid: Code.Library.Result.Error*
+  name: Error
+  href: api/Code.Library.Result.html#Code_Library_Result_Error_
+  commentId: Overload:Code.Library.Result.Error
+  isSpec: "True"
+  fullName: Code.Library.Result.Error
+  nameWithType: Result.Error
+- uid: Code.Library.Result.ErrorMessagesSeparator
+  name: ErrorMessagesSeparator
+  href: api/Code.Library.Result.html#Code_Library_Result_ErrorMessagesSeparator
+  commentId: F:Code.Library.Result.ErrorMessagesSeparator
+  fullName: Code.Library.Result.ErrorMessagesSeparator
+  nameWithType: Result.ErrorMessagesSeparator
+- uid: Code.Library.Result.Fail(System.String)
+  name: Fail(String)
+  href: api/Code.Library.Result.html#Code_Library_Result_Fail_System_String_
+  commentId: M:Code.Library.Result.Fail(System.String)
+  fullName: Code.Library.Result.Fail(System.String)
+  nameWithType: Result.Fail(String)
+- uid: Code.Library.Result.Fail*
+  name: Fail
+  href: api/Code.Library.Result.html#Code_Library_Result_Fail_
+  commentId: Overload:Code.Library.Result.Fail
+  isSpec: "True"
+  fullName: Code.Library.Result.Fail
+  nameWithType: Result.Fail
+- uid: Code.Library.Result.Fail``1(System.String)
+  name: Fail<T>(String)
+  href: api/Code.Library.Result.html#Code_Library_Result_Fail__1_System_String_
+  commentId: M:Code.Library.Result.Fail``1(System.String)
+  name.vb: Fail(Of T)(String)
+  fullName: Code.Library.Result.Fail<T>(System.String)
+  fullName.vb: Code.Library.Result.Fail(Of T)(System.String)
+  nameWithType: Result.Fail<T>(String)
+  nameWithType.vb: Result.Fail(Of T)(String)
+- uid: Code.Library.Result.Fail``2(``1)
+  name: Fail<T, E>(E)
+  href: api/Code.Library.Result.html#Code_Library_Result_Fail__2___1_
+  commentId: M:Code.Library.Result.Fail``2(``1)
+  name.vb: Fail(Of T, E)(E)
+  fullName: Code.Library.Result.Fail<T, E>(E)
+  fullName.vb: Code.Library.Result.Fail(Of T, E)(E)
+  nameWithType: Result.Fail<T, E>(E)
+  nameWithType.vb: Result.Fail(Of T, E)(E)
+- uid: Code.Library.Result.FirstFailureOrSuccess(Code.Library.Result[])
+  name: FirstFailureOrSuccess(Result[])
+  href: api/Code.Library.Result.html#Code_Library_Result_FirstFailureOrSuccess_Code_Library_Result___
+  commentId: M:Code.Library.Result.FirstFailureOrSuccess(Code.Library.Result[])
+  name.vb: FirstFailureOrSuccess(Result())
+  fullName: Code.Library.Result.FirstFailureOrSuccess(Code.Library.Result[])
+  fullName.vb: Code.Library.Result.FirstFailureOrSuccess(Code.Library.Result())
+  nameWithType: Result.FirstFailureOrSuccess(Result[])
+  nameWithType.vb: Result.FirstFailureOrSuccess(Result())
+- uid: Code.Library.Result.FirstFailureOrSuccess*
+  name: FirstFailureOrSuccess
+  href: api/Code.Library.Result.html#Code_Library_Result_FirstFailureOrSuccess_
+  commentId: Overload:Code.Library.Result.FirstFailureOrSuccess
+  isSpec: "True"
+  fullName: Code.Library.Result.FirstFailureOrSuccess
+  nameWithType: Result.FirstFailureOrSuccess
+- uid: Code.Library.Result.IsFailure
+  name: IsFailure
+  href: api/Code.Library.Result.html#Code_Library_Result_IsFailure
+  commentId: P:Code.Library.Result.IsFailure
+  fullName: Code.Library.Result.IsFailure
+  nameWithType: Result.IsFailure
+- uid: Code.Library.Result.IsFailure*
+  name: IsFailure
+  href: api/Code.Library.Result.html#Code_Library_Result_IsFailure_
+  commentId: Overload:Code.Library.Result.IsFailure
+  isSpec: "True"
+  fullName: Code.Library.Result.IsFailure
+  nameWithType: Result.IsFailure
+- uid: Code.Library.Result.IsSuccess
+  name: IsSuccess
+  href: api/Code.Library.Result.html#Code_Library_Result_IsSuccess
+  commentId: P:Code.Library.Result.IsSuccess
+  fullName: Code.Library.Result.IsSuccess
+  nameWithType: Result.IsSuccess
+- uid: Code.Library.Result.IsSuccess*
+  name: IsSuccess
+  href: api/Code.Library.Result.html#Code_Library_Result_IsSuccess_
+  commentId: Overload:Code.Library.Result.IsSuccess
+  isSpec: "True"
+  fullName: Code.Library.Result.IsSuccess
+  nameWithType: Result.IsSuccess
+- uid: Code.Library.Result.Ok
+  name: Ok()
+  href: api/Code.Library.Result.html#Code_Library_Result_Ok
+  commentId: M:Code.Library.Result.Ok
+  fullName: Code.Library.Result.Ok()
+  nameWithType: Result.Ok()
+- uid: Code.Library.Result.Ok*
+  name: Ok
+  href: api/Code.Library.Result.html#Code_Library_Result_Ok_
+  commentId: Overload:Code.Library.Result.Ok
+  isSpec: "True"
+  fullName: Code.Library.Result.Ok
+  nameWithType: Result.Ok
+- uid: Code.Library.Result.Ok``1(``0)
+  name: Ok<T>(T)
+  href: api/Code.Library.Result.html#Code_Library_Result_Ok__1___0_
+  commentId: M:Code.Library.Result.Ok``1(``0)
+  name.vb: Ok(Of T)(T)
+  fullName: Code.Library.Result.Ok<T>(T)
+  fullName.vb: Code.Library.Result.Ok(Of T)(T)
+  nameWithType: Result.Ok<T>(T)
+  nameWithType.vb: Result.Ok(Of T)(T)
+- uid: Code.Library.Result.Ok``2(``0)
+  name: Ok<T, E>(T)
+  href: api/Code.Library.Result.html#Code_Library_Result_Ok__2___0_
+  commentId: M:Code.Library.Result.Ok``2(``0)
+  name.vb: Ok(Of T, E)(T)
+  fullName: Code.Library.Result.Ok<T, E>(T)
+  fullName.vb: Code.Library.Result.Ok(Of T, E)(T)
+  nameWithType: Result.Ok<T, E>(T)
+  nameWithType.vb: Result.Ok(Of T, E)(T)
+- uid: Code.Library.Result.Try(Action,Func{Exception,System.String})
+  name: Try(Action, Func<Exception, String>)
+  href: api/Code.Library.Result.html#Code_Library_Result_Try_Action_Func_Exception_System_String__
+  commentId: M:Code.Library.Result.Try(Action,Func{Exception,System.String})
+  name.vb: Try(Action, Func(Of Exception, String))
+  fullName: Code.Library.Result.Try(Action, Func<Exception, System.String>)
+  fullName.vb: Code.Library.Result.Try(Action, Func(Of Exception, System.String))
+  nameWithType: Result.Try(Action, Func<Exception, String>)
+  nameWithType.vb: Result.Try(Action, Func(Of Exception, String))
+- uid: Code.Library.Result.Try*
+  name: Try
+  href: api/Code.Library.Result.html#Code_Library_Result_Try_
+  commentId: Overload:Code.Library.Result.Try
+  isSpec: "True"
+  fullName: Code.Library.Result.Try
+  nameWithType: Result.Try
+- uid: Code.Library.Result.Try``1(Func{``0},Func{Exception,System.String})
+  name: Try<T>(Func<T>, Func<Exception, String>)
+  href: api/Code.Library.Result.html#Code_Library_Result_Try__1_Func___0__Func_Exception_System_String__
+  commentId: M:Code.Library.Result.Try``1(Func{``0},Func{Exception,System.String})
+  name.vb: Try(Of T)(Func(Of T), Func(Of Exception, String))
+  fullName: Code.Library.Result.Try<T>(Func<T>, Func<Exception, System.String>)
+  fullName.vb: Code.Library.Result.Try(Of T)(Func(Of T), Func(Of Exception, System.String))
+  nameWithType: Result.Try<T>(Func<T>, Func<Exception, String>)
+  nameWithType.vb: Result.Try(Of T)(Func(Of T), Func(Of Exception, String))
+- uid: Code.Library.Result.Try``1(Func{Task{``0}},Func{Exception,System.String})
+  name: Try<T>(Func<Task<T>>, Func<Exception, String>)
+  href: api/Code.Library.Result.html#Code_Library_Result_Try__1_Func_Task___0___Func_Exception_System_String__
+  commentId: M:Code.Library.Result.Try``1(Func{Task{``0}},Func{Exception,System.String})
+  name.vb: Try(Of T)(Func(Of Task(Of T)), Func(Of Exception, String))
+  fullName: Code.Library.Result.Try<T>(Func<Task<T>>, Func<Exception, System.String>)
+  fullName.vb: Code.Library.Result.Try(Of T)(Func(Of Task(Of T)), Func(Of Exception, System.String))
+  nameWithType: Result.Try<T>(Func<Task<T>>, Func<Exception, String>)
+  nameWithType.vb: Result.Try(Of T)(Func(Of Task(Of T)), Func(Of Exception, String))
+- uid: Code.Library.Result.Try``2(Func{``0},Func{Exception,``1})
+  name: Try<T, E>(Func<T>, Func<Exception, E>)
+  href: api/Code.Library.Result.html#Code_Library_Result_Try__2_Func___0__Func_Exception___1__
+  commentId: M:Code.Library.Result.Try``2(Func{``0},Func{Exception,``1})
+  name.vb: Try(Of T, E)(Func(Of T), Func(Of Exception, E))
+  fullName: Code.Library.Result.Try<T, E>(Func<T>, Func<Exception, E>)
+  fullName.vb: Code.Library.Result.Try(Of T, E)(Func(Of T), Func(Of Exception, E))
+  nameWithType: Result.Try<T, E>(Func<T>, Func<Exception, E>)
+  nameWithType.vb: Result.Try(Of T, E)(Func(Of T), Func(Of Exception, E))
+- uid: Code.Library.Result.Try``2(Func{Task{``0}},Func{Exception,``1})
+  name: Try<T, E>(Func<Task<T>>, Func<Exception, E>)
+  href: api/Code.Library.Result.html#Code_Library_Result_Try__2_Func_Task___0___Func_Exception___1__
+  commentId: M:Code.Library.Result.Try``2(Func{Task{``0}},Func{Exception,``1})
+  name.vb: Try(Of T, E)(Func(Of Task(Of T)), Func(Of Exception, E))
+  fullName: Code.Library.Result.Try<T, E>(Func<Task<T>>, Func<Exception, E>)
+  fullName.vb: Code.Library.Result.Try(Of T, E)(Func(Of Task(Of T)), Func(Of Exception, E))
+  nameWithType: Result.Try<T, E>(Func<Task<T>>, Func<Exception, E>)
+  nameWithType.vb: Result.Try(Of T, E)(Func(Of Task(Of T)), Func(Of Exception, E))
+- uid: Code.Library.Result`1
+  name: Result<T>
+  href: api/Code.Library.Result-1.html
+  commentId: T:Code.Library.Result`1
+  name.vb: Result(Of T)
+  fullName: Code.Library.Result<T>
+  fullName.vb: Code.Library.Result(Of T)
+  nameWithType: Result<T>
+  nameWithType.vb: Result(Of T)
+- uid: Code.Library.Result`1.Deconstruct(System.Boolean@,System.Boolean@)
+  name: Deconstruct(out Boolean, out Boolean)
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_Deconstruct_System_Boolean__System_Boolean__
+  commentId: M:Code.Library.Result`1.Deconstruct(System.Boolean@,System.Boolean@)
+  name.vb: Deconstruct(ByRef Boolean, ByRef Boolean)
+  fullName: Code.Library.Result<T>.Deconstruct(out System.Boolean, out System.Boolean)
+  fullName.vb: Code.Library.Result(Of T).Deconstruct(ByRef System.Boolean, ByRef System.Boolean)
+  nameWithType: Result<T>.Deconstruct(out Boolean, out Boolean)
+  nameWithType.vb: Result(Of T).Deconstruct(ByRef Boolean, ByRef Boolean)
+- uid: Code.Library.Result`1.Deconstruct(System.Boolean@,System.Boolean@,`0@)
+  name: Deconstruct(out Boolean, out Boolean, out T)
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_Deconstruct_System_Boolean__System_Boolean___0__
+  commentId: M:Code.Library.Result`1.Deconstruct(System.Boolean@,System.Boolean@,`0@)
+  name.vb: Deconstruct(ByRef Boolean, ByRef Boolean, ByRef T)
+  fullName: Code.Library.Result<T>.Deconstruct(out System.Boolean, out System.Boolean, out T)
+  fullName.vb: Code.Library.Result(Of T).Deconstruct(ByRef System.Boolean, ByRef System.Boolean, ByRef T)
+  nameWithType: Result<T>.Deconstruct(out Boolean, out Boolean, out T)
+  nameWithType.vb: Result(Of T).Deconstruct(ByRef Boolean, ByRef Boolean, ByRef T)
+- uid: Code.Library.Result`1.Deconstruct(System.Boolean@,System.Boolean@,`0@,System.String@)
+  name: Deconstruct(out Boolean, out Boolean, out T, out String)
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_Deconstruct_System_Boolean__System_Boolean___0__System_String__
+  commentId: M:Code.Library.Result`1.Deconstruct(System.Boolean@,System.Boolean@,`0@,System.String@)
+  name.vb: Deconstruct(ByRef Boolean, ByRef Boolean, ByRef T, ByRef String)
+  fullName: Code.Library.Result<T>.Deconstruct(out System.Boolean, out System.Boolean, out T, out System.String)
+  fullName.vb: Code.Library.Result(Of T).Deconstruct(ByRef System.Boolean, ByRef System.Boolean, ByRef T, ByRef System.String)
+  nameWithType: Result<T>.Deconstruct(out Boolean, out Boolean, out T, out String)
+  nameWithType.vb: Result(Of T).Deconstruct(ByRef Boolean, ByRef Boolean, ByRef T, ByRef String)
+- uid: Code.Library.Result`1.Deconstruct*
+  name: Deconstruct
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_Deconstruct_
+  commentId: Overload:Code.Library.Result`1.Deconstruct
+  isSpec: "True"
+  fullName: Code.Library.Result<T>.Deconstruct
+  fullName.vb: Code.Library.Result(Of T).Deconstruct
+  nameWithType: Result<T>.Deconstruct
+  nameWithType.vb: Result(Of T).Deconstruct
+- uid: Code.Library.Result`1.Error
+  name: Error
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_Error
+  commentId: P:Code.Library.Result`1.Error
+  fullName: Code.Library.Result<T>.Error
+  fullName.vb: Code.Library.Result(Of T).Error
+  nameWithType: Result<T>.Error
+  nameWithType.vb: Result(Of T).Error
+- uid: Code.Library.Result`1.Error*
+  name: Error
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_Error_
+  commentId: Overload:Code.Library.Result`1.Error
+  isSpec: "True"
+  fullName: Code.Library.Result<T>.Error
+  fullName.vb: Code.Library.Result(Of T).Error
+  nameWithType: Result<T>.Error
+  nameWithType.vb: Result(Of T).Error
+- uid: Code.Library.Result`1.IsFailure
+  name: IsFailure
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_IsFailure
+  commentId: P:Code.Library.Result`1.IsFailure
+  fullName: Code.Library.Result<T>.IsFailure
+  fullName.vb: Code.Library.Result(Of T).IsFailure
+  nameWithType: Result<T>.IsFailure
+  nameWithType.vb: Result(Of T).IsFailure
+- uid: Code.Library.Result`1.IsFailure*
+  name: IsFailure
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_IsFailure_
+  commentId: Overload:Code.Library.Result`1.IsFailure
+  isSpec: "True"
+  fullName: Code.Library.Result<T>.IsFailure
+  fullName.vb: Code.Library.Result(Of T).IsFailure
+  nameWithType: Result<T>.IsFailure
+  nameWithType.vb: Result(Of T).IsFailure
+- uid: Code.Library.Result`1.IsSuccess
+  name: IsSuccess
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_IsSuccess
+  commentId: P:Code.Library.Result`1.IsSuccess
+  fullName: Code.Library.Result<T>.IsSuccess
+  fullName.vb: Code.Library.Result(Of T).IsSuccess
+  nameWithType: Result<T>.IsSuccess
+  nameWithType.vb: Result(Of T).IsSuccess
+- uid: Code.Library.Result`1.IsSuccess*
+  name: IsSuccess
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_IsSuccess_
+  commentId: Overload:Code.Library.Result`1.IsSuccess
+  isSpec: "True"
+  fullName: Code.Library.Result<T>.IsSuccess
+  fullName.vb: Code.Library.Result(Of T).IsSuccess
+  nameWithType: Result<T>.IsSuccess
+  nameWithType.vb: Result(Of T).IsSuccess
+- uid: Code.Library.Result`1.op_Implicit(Code.Library.Result{`0})~Code.Library.Result
+  name: Implicit(Result<T> to Result)
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_op_Implicit_Code_Library_Result__0___Code_Library_Result
+  commentId: M:Code.Library.Result`1.op_Implicit(Code.Library.Result{`0})~Code.Library.Result
+  name.vb: Widening(Result(Of T) to Result)
+  fullName: Code.Library.Result<T>.Implicit(Code.Library.Result<T> to Code.Library.Result)
+  fullName.vb: Code.Library.Result(Of T).Widening(Code.Library.Result(Of T) to Code.Library.Result)
+  nameWithType: Result<T>.Implicit(Result<T> to Result)
+  nameWithType.vb: Result(Of T).Widening(Result(Of T) to Result)
+- uid: Code.Library.Result`1.op_Implicit*
+  name: Implicit
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_op_Implicit_
+  commentId: Overload:Code.Library.Result`1.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Code.Library.Result<T>.Implicit
+  fullName.vb: Code.Library.Result(Of T).Widening
+  nameWithType: Result<T>.Implicit
+  nameWithType.vb: Result(Of T).Widening
+- uid: Code.Library.Result`1.Value
+  name: Value
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_Value
+  commentId: P:Code.Library.Result`1.Value
+  fullName: Code.Library.Result<T>.Value
+  fullName.vb: Code.Library.Result(Of T).Value
+  nameWithType: Result<T>.Value
+  nameWithType.vb: Result(Of T).Value
+- uid: Code.Library.Result`1.Value*
+  name: Value
+  href: api/Code.Library.Result-1.html#Code_Library_Result_1_Value_
+  commentId: Overload:Code.Library.Result`1.Value
+  isSpec: "True"
+  fullName: Code.Library.Result<T>.Value
+  fullName.vb: Code.Library.Result(Of T).Value
+  nameWithType: Result<T>.Value
+  nameWithType.vb: Result(Of T).Value
+- uid: Code.Library.Result`2
+  name: Result<T, E>
+  href: api/Code.Library.Result-2.html
+  commentId: T:Code.Library.Result`2
+  name.vb: Result(Of T, E)
+  fullName: Code.Library.Result<T, E>
+  fullName.vb: Code.Library.Result(Of T, E)
+  nameWithType: Result<T, E>
+  nameWithType.vb: Result(Of T, E)
+- uid: Code.Library.Result`2.Deconstruct(System.Boolean@,System.Boolean@)
+  name: Deconstruct(out Boolean, out Boolean)
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_Deconstruct_System_Boolean__System_Boolean__
+  commentId: M:Code.Library.Result`2.Deconstruct(System.Boolean@,System.Boolean@)
+  name.vb: Deconstruct(ByRef Boolean, ByRef Boolean)
+  fullName: Code.Library.Result<T, E>.Deconstruct(out System.Boolean, out System.Boolean)
+  fullName.vb: Code.Library.Result(Of T, E).Deconstruct(ByRef System.Boolean, ByRef System.Boolean)
+  nameWithType: Result<T, E>.Deconstruct(out Boolean, out Boolean)
+  nameWithType.vb: Result(Of T, E).Deconstruct(ByRef Boolean, ByRef Boolean)
+- uid: Code.Library.Result`2.Deconstruct(System.Boolean@,System.Boolean@,`0@)
+  name: Deconstruct(out Boolean, out Boolean, out T)
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_Deconstruct_System_Boolean__System_Boolean___0__
+  commentId: M:Code.Library.Result`2.Deconstruct(System.Boolean@,System.Boolean@,`0@)
+  name.vb: Deconstruct(ByRef Boolean, ByRef Boolean, ByRef T)
+  fullName: Code.Library.Result<T, E>.Deconstruct(out System.Boolean, out System.Boolean, out T)
+  fullName.vb: Code.Library.Result(Of T, E).Deconstruct(ByRef System.Boolean, ByRef System.Boolean, ByRef T)
+  nameWithType: Result<T, E>.Deconstruct(out Boolean, out Boolean, out T)
+  nameWithType.vb: Result(Of T, E).Deconstruct(ByRef Boolean, ByRef Boolean, ByRef T)
+- uid: Code.Library.Result`2.Deconstruct(System.Boolean@,System.Boolean@,`0@,`1@)
+  name: Deconstruct(out Boolean, out Boolean, out T, out E)
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_Deconstruct_System_Boolean__System_Boolean___0___1__
+  commentId: M:Code.Library.Result`2.Deconstruct(System.Boolean@,System.Boolean@,`0@,`1@)
+  name.vb: Deconstruct(ByRef Boolean, ByRef Boolean, ByRef T, ByRef E)
+  fullName: Code.Library.Result<T, E>.Deconstruct(out System.Boolean, out System.Boolean, out T, out E)
+  fullName.vb: Code.Library.Result(Of T, E).Deconstruct(ByRef System.Boolean, ByRef System.Boolean, ByRef T, ByRef E)
+  nameWithType: Result<T, E>.Deconstruct(out Boolean, out Boolean, out T, out E)
+  nameWithType.vb: Result(Of T, E).Deconstruct(ByRef Boolean, ByRef Boolean, ByRef T, ByRef E)
+- uid: Code.Library.Result`2.Deconstruct*
+  name: Deconstruct
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_Deconstruct_
+  commentId: Overload:Code.Library.Result`2.Deconstruct
+  isSpec: "True"
+  fullName: Code.Library.Result<T, E>.Deconstruct
+  fullName.vb: Code.Library.Result(Of T, E).Deconstruct
+  nameWithType: Result<T, E>.Deconstruct
+  nameWithType.vb: Result(Of T, E).Deconstruct
+- uid: Code.Library.Result`2.Error
+  name: Error
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_Error
+  commentId: P:Code.Library.Result`2.Error
+  fullName: Code.Library.Result<T, E>.Error
+  fullName.vb: Code.Library.Result(Of T, E).Error
+  nameWithType: Result<T, E>.Error
+  nameWithType.vb: Result(Of T, E).Error
+- uid: Code.Library.Result`2.Error*
+  name: Error
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_Error_
+  commentId: Overload:Code.Library.Result`2.Error
+  isSpec: "True"
+  fullName: Code.Library.Result<T, E>.Error
+  fullName.vb: Code.Library.Result(Of T, E).Error
+  nameWithType: Result<T, E>.Error
+  nameWithType.vb: Result(Of T, E).Error
+- uid: Code.Library.Result`2.IsFailure
+  name: IsFailure
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_IsFailure
+  commentId: P:Code.Library.Result`2.IsFailure
+  fullName: Code.Library.Result<T, E>.IsFailure
+  fullName.vb: Code.Library.Result(Of T, E).IsFailure
+  nameWithType: Result<T, E>.IsFailure
+  nameWithType.vb: Result(Of T, E).IsFailure
+- uid: Code.Library.Result`2.IsFailure*
+  name: IsFailure
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_IsFailure_
+  commentId: Overload:Code.Library.Result`2.IsFailure
+  isSpec: "True"
+  fullName: Code.Library.Result<T, E>.IsFailure
+  fullName.vb: Code.Library.Result(Of T, E).IsFailure
+  nameWithType: Result<T, E>.IsFailure
+  nameWithType.vb: Result(Of T, E).IsFailure
+- uid: Code.Library.Result`2.IsSuccess
+  name: IsSuccess
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_IsSuccess
+  commentId: P:Code.Library.Result`2.IsSuccess
+  fullName: Code.Library.Result<T, E>.IsSuccess
+  fullName.vb: Code.Library.Result(Of T, E).IsSuccess
+  nameWithType: Result<T, E>.IsSuccess
+  nameWithType.vb: Result(Of T, E).IsSuccess
+- uid: Code.Library.Result`2.IsSuccess*
+  name: IsSuccess
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_IsSuccess_
+  commentId: Overload:Code.Library.Result`2.IsSuccess
+  isSpec: "True"
+  fullName: Code.Library.Result<T, E>.IsSuccess
+  fullName.vb: Code.Library.Result(Of T, E).IsSuccess
+  nameWithType: Result<T, E>.IsSuccess
+  nameWithType.vb: Result(Of T, E).IsSuccess
+- uid: Code.Library.Result`2.op_Implicit(Code.Library.Result{`0,`1})~Code.Library.Result
+  name: Implicit(Result<T, E> to Result)
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_op_Implicit_Code_Library_Result__0__1___Code_Library_Result
+  commentId: M:Code.Library.Result`2.op_Implicit(Code.Library.Result{`0,`1})~Code.Library.Result
+  name.vb: Widening(Result(Of T, E) to Result)
+  fullName: Code.Library.Result<T, E>.Implicit(Code.Library.Result<T, E> to Code.Library.Result)
+  fullName.vb: Code.Library.Result(Of T, E).Widening(Code.Library.Result(Of T, E) to Code.Library.Result)
+  nameWithType: Result<T, E>.Implicit(Result<T, E> to Result)
+  nameWithType.vb: Result(Of T, E).Widening(Result(Of T, E) to Result)
+- uid: Code.Library.Result`2.op_Implicit(Code.Library.Result{`0,`1})~Code.Library.Result{`0}
+  name: Implicit(Result<T, E> to Result<T>)
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_op_Implicit_Code_Library_Result__0__1___Code_Library_Result__0_
+  commentId: M:Code.Library.Result`2.op_Implicit(Code.Library.Result{`0,`1})~Code.Library.Result{`0}
+  name.vb: Widening(Result(Of T, E) to Result(Of T))
+  fullName: Code.Library.Result<T, E>.Implicit(Code.Library.Result<T, E> to Code.Library.Result<T>)
+  fullName.vb: Code.Library.Result(Of T, E).Widening(Code.Library.Result(Of T, E) to Code.Library.Result(Of T))
+  nameWithType: Result<T, E>.Implicit(Result<T, E> to Result<T>)
+  nameWithType.vb: Result(Of T, E).Widening(Result(Of T, E) to Result(Of T))
+- uid: Code.Library.Result`2.op_Implicit*
+  name: Implicit
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_op_Implicit_
+  commentId: Overload:Code.Library.Result`2.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Code.Library.Result<T, E>.Implicit
+  fullName.vb: Code.Library.Result(Of T, E).Widening
+  nameWithType: Result<T, E>.Implicit
+  nameWithType.vb: Result(Of T, E).Widening
+- uid: Code.Library.Result`2.Value
+  name: Value
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_Value
+  commentId: P:Code.Library.Result`2.Value
+  fullName: Code.Library.Result<T, E>.Value
+  fullName.vb: Code.Library.Result(Of T, E).Value
+  nameWithType: Result<T, E>.Value
+  nameWithType.vb: Result(Of T, E).Value
+- uid: Code.Library.Result`2.Value*
+  name: Value
+  href: api/Code.Library.Result-2.html#Code_Library_Result_2_Value_
+  commentId: Overload:Code.Library.Result`2.Value
+  isSpec: "True"
+  fullName: Code.Library.Result<T, E>.Value
+  fullName.vb: Code.Library.Result(Of T, E).Value
+  nameWithType: Result<T, E>.Value
+  nameWithType.vb: Result(Of T, E).Value
+- uid: Code.Library.ResultExtensions
+  name: ResultExtensions
+  href: api/Code.Library.ResultExtensions.html
+  commentId: T:Code.Library.ResultExtensions
+  fullName: Code.Library.ResultExtensions
+  nameWithType: ResultExtensions
+- uid: Code.Library.ResultExtensions.Ensure(Code.Library.Result,Func{System.Boolean},System.String)
+  name: Ensure(Result, Func<Boolean>, String)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_Ensure_Code_Library_Result_Func_System_Boolean__System_String_
+  commentId: M:Code.Library.ResultExtensions.Ensure(Code.Library.Result,Func{System.Boolean},System.String)
+  name.vb: Ensure(Result, Func(Of Boolean), String)
+  fullName: Code.Library.ResultExtensions.Ensure(Code.Library.Result, Func<System.Boolean>, System.String)
+  fullName.vb: Code.Library.ResultExtensions.Ensure(Code.Library.Result, Func(Of System.Boolean), System.String)
+  nameWithType: ResultExtensions.Ensure(Result, Func<Boolean>, String)
+  nameWithType.vb: ResultExtensions.Ensure(Result, Func(Of Boolean), String)
+- uid: Code.Library.ResultExtensions.Ensure*
+  name: Ensure
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_Ensure_
+  commentId: Overload:Code.Library.ResultExtensions.Ensure
+  isSpec: "True"
+  fullName: Code.Library.ResultExtensions.Ensure
+  nameWithType: ResultExtensions.Ensure
+- uid: Code.Library.ResultExtensions.Ensure``1(Code.Library.Result{``0},Func{``0,System.Boolean},System.String)
+  name: Ensure<T>(Result<T>, Func<T, Boolean>, String)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_Ensure__1_Code_Library_Result___0__Func___0_System_Boolean__System_String_
+  commentId: M:Code.Library.ResultExtensions.Ensure``1(Code.Library.Result{``0},Func{``0,System.Boolean},System.String)
+  name.vb: Ensure(Of T)(Result(Of T), Func(Of T, Boolean), String)
+  fullName: Code.Library.ResultExtensions.Ensure<T>(Code.Library.Result<T>, Func<T, System.Boolean>, System.String)
+  fullName.vb: Code.Library.ResultExtensions.Ensure(Of T)(Code.Library.Result(Of T), Func(Of T, System.Boolean), System.String)
+  nameWithType: ResultExtensions.Ensure<T>(Result<T>, Func<T, Boolean>, String)
+  nameWithType.vb: ResultExtensions.Ensure(Of T)(Result(Of T), Func(Of T, Boolean), String)
+- uid: Code.Library.ResultExtensions.Map*
+  name: Map
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_Map_
+  commentId: Overload:Code.Library.ResultExtensions.Map
+  isSpec: "True"
+  fullName: Code.Library.ResultExtensions.Map
+  nameWithType: ResultExtensions.Map
+- uid: Code.Library.ResultExtensions.Map``1(Code.Library.Result,Func{``0})
+  name: Map<T>(Result, Func<T>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_Map__1_Code_Library_Result_Func___0__
+  commentId: M:Code.Library.ResultExtensions.Map``1(Code.Library.Result,Func{``0})
+  name.vb: Map(Of T)(Result, Func(Of T))
+  fullName: Code.Library.ResultExtensions.Map<T>(Code.Library.Result, Func<T>)
+  fullName.vb: Code.Library.ResultExtensions.Map(Of T)(Code.Library.Result, Func(Of T))
+  nameWithType: ResultExtensions.Map<T>(Result, Func<T>)
+  nameWithType.vb: ResultExtensions.Map(Of T)(Result, Func(Of T))
+- uid: Code.Library.ResultExtensions.Map``2(Code.Library.Result{``0},Func{``0,``1})
+  name: Map<T, K>(Result<T>, Func<T, K>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_Map__2_Code_Library_Result___0__Func___0___1__
+  commentId: M:Code.Library.ResultExtensions.Map``2(Code.Library.Result{``0},Func{``0,``1})
+  name.vb: Map(Of T, K)(Result(Of T), Func(Of T, K))
+  fullName: Code.Library.ResultExtensions.Map<T, K>(Code.Library.Result<T>, Func<T, K>)
+  fullName.vb: Code.Library.ResultExtensions.Map(Of T, K)(Code.Library.Result(Of T), Func(Of T, K))
+  nameWithType: ResultExtensions.Map<T, K>(Result<T>, Func<T, K>)
+  nameWithType.vb: ResultExtensions.Map(Of T, K)(Result(Of T), Func(Of T, K))
+- uid: Code.Library.ResultExtensions.OnBoth*
+  name: OnBoth
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnBoth_
+  commentId: Overload:Code.Library.ResultExtensions.OnBoth
+  isSpec: "True"
+  fullName: Code.Library.ResultExtensions.OnBoth
+  nameWithType: ResultExtensions.OnBoth
+- uid: Code.Library.ResultExtensions.OnBoth``1(Code.Library.Result,Func{Code.Library.Result,``0})
+  name: OnBoth<T>(Result, Func<Result, T>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnBoth__1_Code_Library_Result_Func_Code_Library_Result___0__
+  commentId: M:Code.Library.ResultExtensions.OnBoth``1(Code.Library.Result,Func{Code.Library.Result,``0})
+  name.vb: OnBoth(Of T)(Result, Func(Of Result, T))
+  fullName: Code.Library.ResultExtensions.OnBoth<T>(Code.Library.Result, Func<Code.Library.Result, T>)
+  fullName.vb: Code.Library.ResultExtensions.OnBoth(Of T)(Code.Library.Result, Func(Of Code.Library.Result, T))
+  nameWithType: ResultExtensions.OnBoth<T>(Result, Func<Result, T>)
+  nameWithType.vb: ResultExtensions.OnBoth(Of T)(Result, Func(Of Result, T))
+- uid: Code.Library.ResultExtensions.OnBoth``2(Code.Library.Result{``0},Func{Code.Library.Result{``0},``1})
+  name: OnBoth<T, K>(Result<T>, Func<Result<T>, K>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnBoth__2_Code_Library_Result___0__Func_Code_Library_Result___0____1__
+  commentId: M:Code.Library.ResultExtensions.OnBoth``2(Code.Library.Result{``0},Func{Code.Library.Result{``0},``1})
+  name.vb: OnBoth(Of T, K)(Result(Of T), Func(Of Result(Of T), K))
+  fullName: Code.Library.ResultExtensions.OnBoth<T, K>(Code.Library.Result<T>, Func<Code.Library.Result<T>, K>)
+  fullName.vb: Code.Library.ResultExtensions.OnBoth(Of T, K)(Code.Library.Result(Of T), Func(Of Code.Library.Result(Of T), K))
+  nameWithType: ResultExtensions.OnBoth<T, K>(Result<T>, Func<Result<T>, K>)
+  nameWithType.vb: ResultExtensions.OnBoth(Of T, K)(Result(Of T), Func(Of Result(Of T), K))
+- uid: Code.Library.ResultExtensions.OnFailure(Code.Library.Result,Action)
+  name: OnFailure(Result, Action)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnFailure_Code_Library_Result_Action_
+  commentId: M:Code.Library.ResultExtensions.OnFailure(Code.Library.Result,Action)
+  fullName: Code.Library.ResultExtensions.OnFailure(Code.Library.Result, Action)
+  nameWithType: ResultExtensions.OnFailure(Result, Action)
+- uid: Code.Library.ResultExtensions.OnFailure(Code.Library.Result,Action{System.String})
+  name: OnFailure(Result, Action<String>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnFailure_Code_Library_Result_Action_System_String__
+  commentId: M:Code.Library.ResultExtensions.OnFailure(Code.Library.Result,Action{System.String})
+  name.vb: OnFailure(Result, Action(Of String))
+  fullName: Code.Library.ResultExtensions.OnFailure(Code.Library.Result, Action<System.String>)
+  fullName.vb: Code.Library.ResultExtensions.OnFailure(Code.Library.Result, Action(Of System.String))
+  nameWithType: ResultExtensions.OnFailure(Result, Action<String>)
+  nameWithType.vb: ResultExtensions.OnFailure(Result, Action(Of String))
+- uid: Code.Library.ResultExtensions.OnFailure*
+  name: OnFailure
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnFailure_
+  commentId: Overload:Code.Library.ResultExtensions.OnFailure
+  isSpec: "True"
+  fullName: Code.Library.ResultExtensions.OnFailure
+  nameWithType: ResultExtensions.OnFailure
+- uid: Code.Library.ResultExtensions.OnFailure``1(Code.Library.Result{``0},Action)
+  name: OnFailure<T>(Result<T>, Action)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnFailure__1_Code_Library_Result___0__Action_
+  commentId: M:Code.Library.ResultExtensions.OnFailure``1(Code.Library.Result{``0},Action)
+  name.vb: OnFailure(Of T)(Result(Of T), Action)
+  fullName: Code.Library.ResultExtensions.OnFailure<T>(Code.Library.Result<T>, Action)
+  fullName.vb: Code.Library.ResultExtensions.OnFailure(Of T)(Code.Library.Result(Of T), Action)
+  nameWithType: ResultExtensions.OnFailure<T>(Result<T>, Action)
+  nameWithType.vb: ResultExtensions.OnFailure(Of T)(Result(Of T), Action)
+- uid: Code.Library.ResultExtensions.OnFailure``1(Code.Library.Result{``0},Action{System.String})
+  name: OnFailure<T>(Result<T>, Action<String>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnFailure__1_Code_Library_Result___0__Action_System_String__
+  commentId: M:Code.Library.ResultExtensions.OnFailure``1(Code.Library.Result{``0},Action{System.String})
+  name.vb: OnFailure(Of T)(Result(Of T), Action(Of String))
+  fullName: Code.Library.ResultExtensions.OnFailure<T>(Code.Library.Result<T>, Action<System.String>)
+  fullName.vb: Code.Library.ResultExtensions.OnFailure(Of T)(Code.Library.Result(Of T), Action(Of System.String))
+  nameWithType: ResultExtensions.OnFailure<T>(Result<T>, Action<String>)
+  nameWithType.vb: ResultExtensions.OnFailure(Of T)(Result(Of T), Action(Of String))
+- uid: Code.Library.ResultExtensions.OnSuccess(Code.Library.Result,Action)
+  name: OnSuccess(Result, Action)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess_Code_Library_Result_Action_
+  commentId: M:Code.Library.ResultExtensions.OnSuccess(Code.Library.Result,Action)
+  fullName: Code.Library.ResultExtensions.OnSuccess(Code.Library.Result, Action)
+  nameWithType: ResultExtensions.OnSuccess(Result, Action)
+- uid: Code.Library.ResultExtensions.OnSuccess(Code.Library.Result,Func{Code.Library.Result})
+  name: OnSuccess(Result, Func<Result>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess_Code_Library_Result_Func_Code_Library_Result__
+  commentId: M:Code.Library.ResultExtensions.OnSuccess(Code.Library.Result,Func{Code.Library.Result})
+  name.vb: OnSuccess(Result, Func(Of Result))
+  fullName: Code.Library.ResultExtensions.OnSuccess(Code.Library.Result, Func<Code.Library.Result>)
+  fullName.vb: Code.Library.ResultExtensions.OnSuccess(Code.Library.Result, Func(Of Code.Library.Result))
+  nameWithType: ResultExtensions.OnSuccess(Result, Func<Result>)
+  nameWithType.vb: ResultExtensions.OnSuccess(Result, Func(Of Result))
+- uid: Code.Library.ResultExtensions.OnSuccess*
+  name: OnSuccess
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess_
+  commentId: Overload:Code.Library.ResultExtensions.OnSuccess
+  isSpec: "True"
+  fullName: Code.Library.ResultExtensions.OnSuccess
+  nameWithType: ResultExtensions.OnSuccess
+- uid: Code.Library.ResultExtensions.OnSuccess``1(Code.Library.Result,Func{``0})
+  name: OnSuccess<T>(Result, Func<T>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__1_Code_Library_Result_Func___0__
+  commentId: M:Code.Library.ResultExtensions.OnSuccess``1(Code.Library.Result,Func{``0})
+  name.vb: OnSuccess(Of T)(Result, Func(Of T))
+  fullName: Code.Library.ResultExtensions.OnSuccess<T>(Code.Library.Result, Func<T>)
+  fullName.vb: Code.Library.ResultExtensions.OnSuccess(Of T)(Code.Library.Result, Func(Of T))
+  nameWithType: ResultExtensions.OnSuccess<T>(Result, Func<T>)
+  nameWithType.vb: ResultExtensions.OnSuccess(Of T)(Result, Func(Of T))
+- uid: Code.Library.ResultExtensions.OnSuccess``1(Code.Library.Result,Func{Code.Library.Result{``0}})
+  name: OnSuccess<T>(Result, Func<Result<T>>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__1_Code_Library_Result_Func_Code_Library_Result___0___
+  commentId: M:Code.Library.ResultExtensions.OnSuccess``1(Code.Library.Result,Func{Code.Library.Result{``0}})
+  name.vb: OnSuccess(Of T)(Result, Func(Of Result(Of T)))
+  fullName: Code.Library.ResultExtensions.OnSuccess<T>(Code.Library.Result, Func<Code.Library.Result<T>>)
+  fullName.vb: Code.Library.ResultExtensions.OnSuccess(Of T)(Code.Library.Result, Func(Of Code.Library.Result(Of T)))
+  nameWithType: ResultExtensions.OnSuccess<T>(Result, Func<Result<T>>)
+  nameWithType.vb: ResultExtensions.OnSuccess(Of T)(Result, Func(Of Result(Of T)))
+- uid: Code.Library.ResultExtensions.OnSuccess``1(Code.Library.Result{``0},Action{``0})
+  name: OnSuccess<T>(Result<T>, Action<T>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__1_Code_Library_Result___0__Action___0__
+  commentId: M:Code.Library.ResultExtensions.OnSuccess``1(Code.Library.Result{``0},Action{``0})
+  name.vb: OnSuccess(Of T)(Result(Of T), Action(Of T))
+  fullName: Code.Library.ResultExtensions.OnSuccess<T>(Code.Library.Result<T>, Action<T>)
+  fullName.vb: Code.Library.ResultExtensions.OnSuccess(Of T)(Code.Library.Result(Of T), Action(Of T))
+  nameWithType: ResultExtensions.OnSuccess<T>(Result<T>, Action<T>)
+  nameWithType.vb: ResultExtensions.OnSuccess(Of T)(Result(Of T), Action(Of T))
+- uid: Code.Library.ResultExtensions.OnSuccess``1(Code.Library.Result{``0},Func{``0,Code.Library.Result})
+  name: OnSuccess<T>(Result<T>, Func<T, Result>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__1_Code_Library_Result___0__Func___0_Code_Library_Result__
+  commentId: M:Code.Library.ResultExtensions.OnSuccess``1(Code.Library.Result{``0},Func{``0,Code.Library.Result})
+  name.vb: OnSuccess(Of T)(Result(Of T), Func(Of T, Result))
+  fullName: Code.Library.ResultExtensions.OnSuccess<T>(Code.Library.Result<T>, Func<T, Code.Library.Result>)
+  fullName.vb: Code.Library.ResultExtensions.OnSuccess(Of T)(Code.Library.Result(Of T), Func(Of T, Code.Library.Result))
+  nameWithType: ResultExtensions.OnSuccess<T>(Result<T>, Func<T, Result>)
+  nameWithType.vb: ResultExtensions.OnSuccess(Of T)(Result(Of T), Func(Of T, Result))
+- uid: Code.Library.ResultExtensions.OnSuccess``2(Code.Library.Result{``0},Func{``0,``1})
+  name: OnSuccess<T, K>(Result<T>, Func<T, K>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__2_Code_Library_Result___0__Func___0___1__
+  commentId: M:Code.Library.ResultExtensions.OnSuccess``2(Code.Library.Result{``0},Func{``0,``1})
+  name.vb: OnSuccess(Of T, K)(Result(Of T), Func(Of T, K))
+  fullName: Code.Library.ResultExtensions.OnSuccess<T, K>(Code.Library.Result<T>, Func<T, K>)
+  fullName.vb: Code.Library.ResultExtensions.OnSuccess(Of T, K)(Code.Library.Result(Of T), Func(Of T, K))
+  nameWithType: ResultExtensions.OnSuccess<T, K>(Result<T>, Func<T, K>)
+  nameWithType.vb: ResultExtensions.OnSuccess(Of T, K)(Result(Of T), Func(Of T, K))
+- uid: Code.Library.ResultExtensions.OnSuccess``2(Code.Library.Result{``0},Func{``0,Code.Library.Result{``1}})
+  name: OnSuccess<T, K>(Result<T>, Func<T, Result<K>>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__2_Code_Library_Result___0__Func___0_Code_Library_Result___1___
+  commentId: M:Code.Library.ResultExtensions.OnSuccess``2(Code.Library.Result{``0},Func{``0,Code.Library.Result{``1}})
+  name.vb: OnSuccess(Of T, K)(Result(Of T), Func(Of T, Result(Of K)))
+  fullName: Code.Library.ResultExtensions.OnSuccess<T, K>(Code.Library.Result<T>, Func<T, Code.Library.Result<K>>)
+  fullName.vb: Code.Library.ResultExtensions.OnSuccess(Of T, K)(Code.Library.Result(Of T), Func(Of T, Code.Library.Result(Of K)))
+  nameWithType: ResultExtensions.OnSuccess<T, K>(Result<T>, Func<T, Result<K>>)
+  nameWithType.vb: ResultExtensions.OnSuccess(Of T, K)(Result(Of T), Func(Of T, Result(Of K)))
+- uid: Code.Library.ResultExtensions.OnSuccess``2(Code.Library.Result{``0},Func{Code.Library.Result{``1}})
+  name: OnSuccess<T, K>(Result<T>, Func<Result<K>>)
+  href: api/Code.Library.ResultExtensions.html#Code_Library_ResultExtensions_OnSuccess__2_Code_Library_Result___0__Func_Code_Library_Result___1___
+  commentId: M:Code.Library.ResultExtensions.OnSuccess``2(Code.Library.Result{``0},Func{Code.Library.Result{``1}})
+  name.vb: OnSuccess(Of T, K)(Result(Of T), Func(Of Result(Of K)))
+  fullName: Code.Library.ResultExtensions.OnSuccess<T, K>(Code.Library.Result<T>, Func<Code.Library.Result<K>>)
+  fullName.vb: Code.Library.ResultExtensions.OnSuccess(Of T, K)(Code.Library.Result(Of T), Func(Of Code.Library.Result(Of K)))
+  nameWithType: ResultExtensions.OnSuccess<T, K>(Result<T>, Func<Result<K>>)
+  nameWithType.vb: ResultExtensions.OnSuccess(Of T, K)(Result(Of T), Func(Of Result(Of K)))
+- uid: Code.Library.ResultFailureException
+  name: ResultFailureException
+  href: api/Code.Library.ResultFailureException.html
+  commentId: T:Code.Library.ResultFailureException
+  fullName: Code.Library.ResultFailureException
+  nameWithType: ResultFailureException
+- uid: Code.Library.ResultFailureException.Error
+  name: Error
+  href: api/Code.Library.ResultFailureException.html#Code_Library_ResultFailureException_Error
+  commentId: P:Code.Library.ResultFailureException.Error
+  fullName: Code.Library.ResultFailureException.Error
+  nameWithType: ResultFailureException.Error
+- uid: Code.Library.ResultFailureException.Error*
+  name: Error
+  href: api/Code.Library.ResultFailureException.html#Code_Library_ResultFailureException_Error_
+  commentId: Overload:Code.Library.ResultFailureException.Error
+  isSpec: "True"
+  fullName: Code.Library.ResultFailureException.Error
+  nameWithType: ResultFailureException.Error
+- uid: Code.Library.ResultFailureException`1
+  name: ResultFailureException<E>
+  href: api/Code.Library.ResultFailureException-1.html
+  commentId: T:Code.Library.ResultFailureException`1
+  name.vb: ResultFailureException(Of E)
+  fullName: Code.Library.ResultFailureException<E>
+  fullName.vb: Code.Library.ResultFailureException(Of E)
+  nameWithType: ResultFailureException<E>
+  nameWithType.vb: ResultFailureException(Of E)
+- uid: Code.Library.ResultFailureException`1.Error
+  name: Error
+  href: api/Code.Library.ResultFailureException-1.html#Code_Library_ResultFailureException_1_Error
+  commentId: P:Code.Library.ResultFailureException`1.Error
+  fullName: Code.Library.ResultFailureException<E>.Error
+  fullName.vb: Code.Library.ResultFailureException(Of E).Error
+  nameWithType: ResultFailureException<E>.Error
+  nameWithType.vb: ResultFailureException(Of E).Error
+- uid: Code.Library.ResultFailureException`1.Error*
+  name: Error
+  href: api/Code.Library.ResultFailureException-1.html#Code_Library_ResultFailureException_1_Error_
+  commentId: Overload:Code.Library.ResultFailureException`1.Error
+  isSpec: "True"
+  fullName: Code.Library.ResultFailureException<E>.Error
+  fullName.vb: Code.Library.ResultFailureException(Of E).Error
+  nameWithType: ResultFailureException<E>.Error
+  nameWithType.vb: ResultFailureException(Of E).Error
+- uid: Code.Library.ResultSuccessException
+  name: ResultSuccessException
+  href: api/Code.Library.ResultSuccessException.html
+  commentId: T:Code.Library.ResultSuccessException
+  fullName: Code.Library.ResultSuccessException
+  nameWithType: ResultSuccessException
+- uid: Code.Library.StringExtensions
+  name: StringExtensions
+  href: api/Code.Library.StringExtensions.html
+  commentId: T:Code.Library.StringExtensions
+  fullName: Code.Library.StringExtensions
+  nameWithType: StringExtensions
+- uid: Code.Library.StringExtensions.Clean(System.String,System.Boolean)
+  name: Clean(String, Boolean)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_Clean_System_String_System_Boolean_
+  commentId: M:Code.Library.StringExtensions.Clean(System.String,System.Boolean)
+  fullName: Code.Library.StringExtensions.Clean(System.String, System.Boolean)
+  nameWithType: StringExtensions.Clean(String, Boolean)
+- uid: Code.Library.StringExtensions.Clean*
+  name: Clean
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_Clean_
+  commentId: Overload:Code.Library.StringExtensions.Clean
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.Clean
+  nameWithType: StringExtensions.Clean
+- uid: Code.Library.StringExtensions.CleanForXss(System.String,System.Char[])
+  name: CleanForXss(String, Char[])
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_CleanForXss_System_String_System_Char___
+  commentId: M:Code.Library.StringExtensions.CleanForXss(System.String,System.Char[])
+  name.vb: CleanForXss(String, Char())
+  fullName: Code.Library.StringExtensions.CleanForXss(System.String, System.Char[])
+  fullName.vb: Code.Library.StringExtensions.CleanForXss(System.String, System.Char())
+  nameWithType: StringExtensions.CleanForXss(String, Char[])
+  nameWithType.vb: StringExtensions.CleanForXss(String, Char())
+- uid: Code.Library.StringExtensions.CleanForXss*
+  name: CleanForXss
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_CleanForXss_
+  commentId: Overload:Code.Library.StringExtensions.CleanForXss
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.CleanForXss
+  nameWithType: StringExtensions.CleanForXss
+- uid: Code.Library.StringExtensions.EnsureEndsWith(System.String,System.Char)
+  name: EnsureEndsWith(String, Char)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_EnsureEndsWith_System_String_System_Char_
+  commentId: M:Code.Library.StringExtensions.EnsureEndsWith(System.String,System.Char)
+  fullName: Code.Library.StringExtensions.EnsureEndsWith(System.String, System.Char)
+  nameWithType: StringExtensions.EnsureEndsWith(String, Char)
+- uid: Code.Library.StringExtensions.EnsureEndsWith(System.String,System.String)
+  name: EnsureEndsWith(String, String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_EnsureEndsWith_System_String_System_String_
+  commentId: M:Code.Library.StringExtensions.EnsureEndsWith(System.String,System.String)
+  fullName: Code.Library.StringExtensions.EnsureEndsWith(System.String, System.String)
+  nameWithType: StringExtensions.EnsureEndsWith(String, String)
+- uid: Code.Library.StringExtensions.EnsureEndsWith*
+  name: EnsureEndsWith
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_EnsureEndsWith_
+  commentId: Overload:Code.Library.StringExtensions.EnsureEndsWith
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.EnsureEndsWith
+  nameWithType: StringExtensions.EnsureEndsWith
+- uid: Code.Library.StringExtensions.EnsureStartsWith(System.String,System.Char)
+  name: EnsureStartsWith(String, Char)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_EnsureStartsWith_System_String_System_Char_
+  commentId: M:Code.Library.StringExtensions.EnsureStartsWith(System.String,System.Char)
+  fullName: Code.Library.StringExtensions.EnsureStartsWith(System.String, System.Char)
+  nameWithType: StringExtensions.EnsureStartsWith(String, Char)
+- uid: Code.Library.StringExtensions.EnsureStartsWith*
+  name: EnsureStartsWith
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_EnsureStartsWith_
+  commentId: Overload:Code.Library.StringExtensions.EnsureStartsWith
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.EnsureStartsWith
+  nameWithType: StringExtensions.EnsureStartsWith
+- uid: Code.Library.StringExtensions.ExceptChars(System.String,HashSet{System.Char})
+  name: ExceptChars(String, HashSet<Char>)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ExceptChars_System_String_HashSet_System_Char__
+  commentId: M:Code.Library.StringExtensions.ExceptChars(System.String,HashSet{System.Char})
+  name.vb: ExceptChars(String, HashSet(Of Char))
+  fullName: Code.Library.StringExtensions.ExceptChars(System.String, HashSet<System.Char>)
+  fullName.vb: Code.Library.StringExtensions.ExceptChars(System.String, HashSet(Of System.Char))
+  nameWithType: StringExtensions.ExceptChars(String, HashSet<Char>)
+  nameWithType.vb: StringExtensions.ExceptChars(String, HashSet(Of Char))
+- uid: Code.Library.StringExtensions.ExceptChars*
+  name: ExceptChars
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ExceptChars_
+  commentId: Overload:Code.Library.StringExtensions.ExceptChars
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.ExceptChars
+  nameWithType: StringExtensions.ExceptChars
+- uid: Code.Library.StringExtensions.GetLast(System.String,System.Int32)
+  name: GetLast(String, Int32)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_GetLast_System_String_System_Int32_
+  commentId: M:Code.Library.StringExtensions.GetLast(System.String,System.Int32)
+  fullName: Code.Library.StringExtensions.GetLast(System.String, System.Int32)
+  nameWithType: StringExtensions.GetLast(String, Int32)
+- uid: Code.Library.StringExtensions.GetLast*
+  name: GetLast
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_GetLast_
+  commentId: Overload:Code.Library.StringExtensions.GetLast
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.GetLast
+  nameWithType: StringExtensions.GetLast
+- uid: Code.Library.StringExtensions.IfNullOrWhiteSpace(System.String,System.String)
+  name: IfNullOrWhiteSpace(String, String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IfNullOrWhiteSpace_System_String_System_String_
+  commentId: M:Code.Library.StringExtensions.IfNullOrWhiteSpace(System.String,System.String)
+  fullName: Code.Library.StringExtensions.IfNullOrWhiteSpace(System.String, System.String)
+  nameWithType: StringExtensions.IfNullOrWhiteSpace(String, String)
+- uid: Code.Library.StringExtensions.IfNullOrWhiteSpace*
+  name: IfNullOrWhiteSpace
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IfNullOrWhiteSpace_
+  commentId: Overload:Code.Library.StringExtensions.IfNullOrWhiteSpace
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.IfNullOrWhiteSpace
+  nameWithType: StringExtensions.IfNullOrWhiteSpace
+- uid: Code.Library.StringExtensions.IsLowerCase(System.Char)
+  name: IsLowerCase(Char)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsLowerCase_System_Char_
+  commentId: M:Code.Library.StringExtensions.IsLowerCase(System.Char)
+  fullName: Code.Library.StringExtensions.IsLowerCase(System.Char)
+  nameWithType: StringExtensions.IsLowerCase(Char)
+- uid: Code.Library.StringExtensions.IsLowerCase*
+  name: IsLowerCase
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsLowerCase_
+  commentId: Overload:Code.Library.StringExtensions.IsLowerCase
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.IsLowerCase
+  nameWithType: StringExtensions.IsLowerCase
+- uid: Code.Library.StringExtensions.IsNumber(System.String,System.Boolean)
+  name: IsNumber(String, Boolean)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsNumber_System_String_System_Boolean_
+  commentId: M:Code.Library.StringExtensions.IsNumber(System.String,System.Boolean)
+  fullName: Code.Library.StringExtensions.IsNumber(System.String, System.Boolean)
+  nameWithType: StringExtensions.IsNumber(String, Boolean)
+- uid: Code.Library.StringExtensions.IsNumber*
+  name: IsNumber
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsNumber_
+  commentId: Overload:Code.Library.StringExtensions.IsNumber
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.IsNumber
+  nameWithType: StringExtensions.IsNumber
+- uid: Code.Library.StringExtensions.IsNumberOnly(System.String,System.Boolean)
+  name: IsNumberOnly(String, Boolean)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsNumberOnly_System_String_System_Boolean_
+  commentId: M:Code.Library.StringExtensions.IsNumberOnly(System.String,System.Boolean)
+  fullName: Code.Library.StringExtensions.IsNumberOnly(System.String, System.Boolean)
+  nameWithType: StringExtensions.IsNumberOnly(String, Boolean)
+- uid: Code.Library.StringExtensions.IsNumberOnly*
+  name: IsNumberOnly
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsNumberOnly_
+  commentId: Overload:Code.Library.StringExtensions.IsNumberOnly
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.IsNumberOnly
+  nameWithType: StringExtensions.IsNumberOnly
+- uid: Code.Library.StringExtensions.IsRtl(System.String)
+  name: IsRtl(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsRtl_System_String_
+  commentId: M:Code.Library.StringExtensions.IsRtl(System.String)
+  fullName: Code.Library.StringExtensions.IsRtl(System.String)
+  nameWithType: StringExtensions.IsRtl(String)
+- uid: Code.Library.StringExtensions.IsRtl*
+  name: IsRtl
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsRtl_
+  commentId: Overload:Code.Library.StringExtensions.IsRtl
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.IsRtl
+  nameWithType: StringExtensions.IsRtl
+- uid: Code.Library.StringExtensions.IsUpperCase(System.Char)
+  name: IsUpperCase(Char)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsUpperCase_System_Char_
+  commentId: M:Code.Library.StringExtensions.IsUpperCase(System.Char)
+  fullName: Code.Library.StringExtensions.IsUpperCase(System.Char)
+  nameWithType: StringExtensions.IsUpperCase(Char)
+- uid: Code.Library.StringExtensions.IsUpperCase*
+  name: IsUpperCase
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsUpperCase_
+  commentId: Overload:Code.Library.StringExtensions.IsUpperCase
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.IsUpperCase
+  nameWithType: StringExtensions.IsUpperCase
+- uid: Code.Library.StringExtensions.IsValidEmailAddress(System.String)
+  name: IsValidEmailAddress(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsValidEmailAddress_System_String_
+  commentId: M:Code.Library.StringExtensions.IsValidEmailAddress(System.String)
+  fullName: Code.Library.StringExtensions.IsValidEmailAddress(System.String)
+  nameWithType: StringExtensions.IsValidEmailAddress(String)
+- uid: Code.Library.StringExtensions.IsValidEmailAddress*
+  name: IsValidEmailAddress
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsValidEmailAddress_
+  commentId: Overload:Code.Library.StringExtensions.IsValidEmailAddress
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.IsValidEmailAddress
+  nameWithType: StringExtensions.IsValidEmailAddress
+- uid: Code.Library.StringExtensions.IsValidUrl(System.String)
+  name: IsValidUrl(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsValidUrl_System_String_
+  commentId: M:Code.Library.StringExtensions.IsValidUrl(System.String)
+  fullName: Code.Library.StringExtensions.IsValidUrl(System.String)
+  nameWithType: StringExtensions.IsValidUrl(String)
+- uid: Code.Library.StringExtensions.IsValidUrl*
+  name: IsValidUrl
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_IsValidUrl_
+  commentId: Overload:Code.Library.StringExtensions.IsValidUrl
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.IsValidUrl
+  nameWithType: StringExtensions.IsValidUrl
+- uid: Code.Library.StringExtensions.MD5(System.String)
+  name: MD5(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_MD5_System_String_
+  commentId: M:Code.Library.StringExtensions.MD5(System.String)
+  fullName: Code.Library.StringExtensions.MD5(System.String)
+  nameWithType: StringExtensions.MD5(String)
+- uid: Code.Library.StringExtensions.MD5*
+  name: MD5
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_MD5_
+  commentId: Overload:Code.Library.StringExtensions.MD5
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.MD5
+  nameWithType: StringExtensions.MD5
+- uid: Code.Library.StringExtensions.Nl2Br(System.String)
+  name: Nl2Br(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_Nl2Br_System_String_
+  commentId: M:Code.Library.StringExtensions.Nl2Br(System.String)
+  fullName: Code.Library.StringExtensions.Nl2Br(System.String)
+  nameWithType: StringExtensions.Nl2Br(String)
+- uid: Code.Library.StringExtensions.Nl2Br*
+  name: Nl2Br
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_Nl2Br_
+  commentId: Overload:Code.Library.StringExtensions.Nl2Br
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.Nl2Br
+  nameWithType: StringExtensions.Nl2Br
+- uid: Code.Library.StringExtensions.OrIfNullOrWhiteSpace(System.String,System.String)
+  name: OrIfNullOrWhiteSpace(String, String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_OrIfNullOrWhiteSpace_System_String_System_String_
+  commentId: M:Code.Library.StringExtensions.OrIfNullOrWhiteSpace(System.String,System.String)
+  fullName: Code.Library.StringExtensions.OrIfNullOrWhiteSpace(System.String, System.String)
+  nameWithType: StringExtensions.OrIfNullOrWhiteSpace(String, String)
+- uid: Code.Library.StringExtensions.OrIfNullOrWhiteSpace*
+  name: OrIfNullOrWhiteSpace
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_OrIfNullOrWhiteSpace_
+  commentId: Overload:Code.Library.StringExtensions.OrIfNullOrWhiteSpace
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.OrIfNullOrWhiteSpace
+  nameWithType: StringExtensions.OrIfNullOrWhiteSpace
+- uid: Code.Library.StringExtensions.RemoveDiacritics(System.String)
+  name: RemoveDiacritics(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_RemoveDiacritics_System_String_
+  commentId: M:Code.Library.StringExtensions.RemoveDiacritics(System.String)
+  fullName: Code.Library.StringExtensions.RemoveDiacritics(System.String)
+  nameWithType: StringExtensions.RemoveDiacritics(String)
+- uid: Code.Library.StringExtensions.RemoveDiacritics*
+  name: RemoveDiacritics
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_RemoveDiacritics_
+  commentId: Overload:Code.Library.StringExtensions.RemoveDiacritics
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.RemoveDiacritics
+  nameWithType: StringExtensions.RemoveDiacritics
+- uid: Code.Library.StringExtensions.RemoveSpaces(System.String)
+  name: RemoveSpaces(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_RemoveSpaces_System_String_
+  commentId: M:Code.Library.StringExtensions.RemoveSpaces(System.String)
+  fullName: Code.Library.StringExtensions.RemoveSpaces(System.String)
+  nameWithType: StringExtensions.RemoveSpaces(String)
+- uid: Code.Library.StringExtensions.RemoveSpaces*
+  name: RemoveSpaces
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_RemoveSpaces_
+  commentId: Overload:Code.Library.StringExtensions.RemoveSpaces
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.RemoveSpaces
+  nameWithType: StringExtensions.RemoveSpaces
+- uid: Code.Library.StringExtensions.ReplaceLastOccurrence(System.String,System.String,System.String)
+  name: ReplaceLastOccurrence(String, String, String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ReplaceLastOccurrence_System_String_System_String_System_String_
+  commentId: M:Code.Library.StringExtensions.ReplaceLastOccurrence(System.String,System.String,System.String)
+  fullName: Code.Library.StringExtensions.ReplaceLastOccurrence(System.String, System.String, System.String)
+  nameWithType: StringExtensions.ReplaceLastOccurrence(String, String, String)
+- uid: Code.Library.StringExtensions.ReplaceLastOccurrence*
+  name: ReplaceLastOccurrence
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ReplaceLastOccurrence_
+  commentId: Overload:Code.Library.StringExtensions.ReplaceLastOccurrence
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.ReplaceLastOccurrence
+  nameWithType: StringExtensions.ReplaceLastOccurrence
+- uid: Code.Library.StringExtensions.Reverse(System.String)
+  name: Reverse(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_Reverse_System_String_
+  commentId: M:Code.Library.StringExtensions.Reverse(System.String)
+  fullName: Code.Library.StringExtensions.Reverse(System.String)
+  nameWithType: StringExtensions.Reverse(String)
+- uid: Code.Library.StringExtensions.Reverse*
+  name: Reverse
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_Reverse_
+  commentId: Overload:Code.Library.StringExtensions.Reverse
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.Reverse
+  nameWithType: StringExtensions.Reverse
+- uid: Code.Library.StringExtensions.SanitizeURL(System.String)
+  name: SanitizeURL(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_SanitizeURL_System_String_
+  commentId: M:Code.Library.StringExtensions.SanitizeURL(System.String)
+  fullName: Code.Library.StringExtensions.SanitizeURL(System.String)
+  nameWithType: StringExtensions.SanitizeURL(String)
+- uid: Code.Library.StringExtensions.SanitizeURL*
+  name: SanitizeURL
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_SanitizeURL_
+  commentId: Overload:Code.Library.StringExtensions.SanitizeURL
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.SanitizeURL
+  nameWithType: StringExtensions.SanitizeURL
+- uid: Code.Library.StringExtensions.StripHtml(System.String)
+  name: StripHtml(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_StripHtml_System_String_
+  commentId: M:Code.Library.StringExtensions.StripHtml(System.String)
+  fullName: Code.Library.StringExtensions.StripHtml(System.String)
+  nameWithType: StringExtensions.StripHtml(String)
+- uid: Code.Library.StringExtensions.StripHtml*
+  name: StripHtml
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_StripHtml_
+  commentId: Overload:Code.Library.StringExtensions.StripHtml
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.StripHtml
+  nameWithType: StringExtensions.StripHtml
+- uid: Code.Library.StringExtensions.ToFirstLower(System.String)
+  name: ToFirstLower(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFirstLower_System_String_
+  commentId: M:Code.Library.StringExtensions.ToFirstLower(System.String)
+  fullName: Code.Library.StringExtensions.ToFirstLower(System.String)
+  nameWithType: StringExtensions.ToFirstLower(String)
+- uid: Code.Library.StringExtensions.ToFirstLower(System.String,CultureInfo)
+  name: ToFirstLower(String, CultureInfo)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFirstLower_System_String_CultureInfo_
+  commentId: M:Code.Library.StringExtensions.ToFirstLower(System.String,CultureInfo)
+  fullName: Code.Library.StringExtensions.ToFirstLower(System.String, CultureInfo)
+  nameWithType: StringExtensions.ToFirstLower(String, CultureInfo)
+- uid: Code.Library.StringExtensions.ToFirstLower*
+  name: ToFirstLower
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFirstLower_
+  commentId: Overload:Code.Library.StringExtensions.ToFirstLower
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.ToFirstLower
+  nameWithType: StringExtensions.ToFirstLower
+- uid: Code.Library.StringExtensions.ToFirstLowerInvariant(System.String)
+  name: ToFirstLowerInvariant(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFirstLowerInvariant_System_String_
+  commentId: M:Code.Library.StringExtensions.ToFirstLowerInvariant(System.String)
+  fullName: Code.Library.StringExtensions.ToFirstLowerInvariant(System.String)
+  nameWithType: StringExtensions.ToFirstLowerInvariant(String)
+- uid: Code.Library.StringExtensions.ToFirstLowerInvariant*
+  name: ToFirstLowerInvariant
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFirstLowerInvariant_
+  commentId: Overload:Code.Library.StringExtensions.ToFirstLowerInvariant
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.ToFirstLowerInvariant
+  nameWithType: StringExtensions.ToFirstLowerInvariant
+- uid: Code.Library.StringExtensions.ToFirstUpper(System.String)
+  name: ToFirstUpper(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFirstUpper_System_String_
+  commentId: M:Code.Library.StringExtensions.ToFirstUpper(System.String)
+  fullName: Code.Library.StringExtensions.ToFirstUpper(System.String)
+  nameWithType: StringExtensions.ToFirstUpper(String)
+- uid: Code.Library.StringExtensions.ToFirstUpper(System.String,CultureInfo)
+  name: ToFirstUpper(String, CultureInfo)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFirstUpper_System_String_CultureInfo_
+  commentId: M:Code.Library.StringExtensions.ToFirstUpper(System.String,CultureInfo)
+  fullName: Code.Library.StringExtensions.ToFirstUpper(System.String, CultureInfo)
+  nameWithType: StringExtensions.ToFirstUpper(String, CultureInfo)
+- uid: Code.Library.StringExtensions.ToFirstUpper*
+  name: ToFirstUpper
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFirstUpper_
+  commentId: Overload:Code.Library.StringExtensions.ToFirstUpper
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.ToFirstUpper
+  nameWithType: StringExtensions.ToFirstUpper
+- uid: Code.Library.StringExtensions.ToFirstUpperInvariant(System.String)
+  name: ToFirstUpperInvariant(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFirstUpperInvariant_System_String_
+  commentId: M:Code.Library.StringExtensions.ToFirstUpperInvariant(System.String)
+  fullName: Code.Library.StringExtensions.ToFirstUpperInvariant(System.String)
+  nameWithType: StringExtensions.ToFirstUpperInvariant(String)
+- uid: Code.Library.StringExtensions.ToFirstUpperInvariant*
+  name: ToFirstUpperInvariant
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFirstUpperInvariant_
+  commentId: Overload:Code.Library.StringExtensions.ToFirstUpperInvariant
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.ToFirstUpperInvariant
+  nameWithType: StringExtensions.ToFirstUpperInvariant
+- uid: Code.Library.StringExtensions.ToFriendlyUrl(System.String)
+  name: ToFriendlyUrl(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFriendlyUrl_System_String_
+  commentId: M:Code.Library.StringExtensions.ToFriendlyUrl(System.String)
+  fullName: Code.Library.StringExtensions.ToFriendlyUrl(System.String)
+  nameWithType: StringExtensions.ToFriendlyUrl(String)
+- uid: Code.Library.StringExtensions.ToFriendlyUrl*
+  name: ToFriendlyUrl
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToFriendlyUrl_
+  commentId: Overload:Code.Library.StringExtensions.ToFriendlyUrl
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.ToFriendlyUrl
+  nameWithType: StringExtensions.ToFriendlyUrl
+- uid: Code.Library.StringExtensions.ToNullableBool(System.String)
+  name: ToNullableBool(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToNullableBool_System_String_
+  commentId: M:Code.Library.StringExtensions.ToNullableBool(System.String)
+  fullName: Code.Library.StringExtensions.ToNullableBool(System.String)
+  nameWithType: StringExtensions.ToNullableBool(String)
+- uid: Code.Library.StringExtensions.ToNullableBool*
+  name: ToNullableBool
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToNullableBool_
+  commentId: Overload:Code.Library.StringExtensions.ToNullableBool
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.ToNullableBool
+  nameWithType: StringExtensions.ToNullableBool
+- uid: Code.Library.StringExtensions.ToNullableInt32(System.String)
+  name: ToNullableInt32(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToNullableInt32_System_String_
+  commentId: M:Code.Library.StringExtensions.ToNullableInt32(System.String)
+  fullName: Code.Library.StringExtensions.ToNullableInt32(System.String)
+  nameWithType: StringExtensions.ToNullableInt32(String)
+- uid: Code.Library.StringExtensions.ToNullableInt32*
+  name: ToNullableInt32
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_ToNullableInt32_
+  commentId: Overload:Code.Library.StringExtensions.ToNullableInt32
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.ToNullableInt32
+  nameWithType: StringExtensions.ToNullableInt32
+- uid: Code.Library.StringExtensions.TruncateAtWord(System.String,System.Int32,System.Boolean)
+  name: TruncateAtWord(String, Int32, Boolean)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_TruncateAtWord_System_String_System_Int32_System_Boolean_
+  commentId: M:Code.Library.StringExtensions.TruncateAtWord(System.String,System.Int32,System.Boolean)
+  fullName: Code.Library.StringExtensions.TruncateAtWord(System.String, System.Int32, System.Boolean)
+  nameWithType: StringExtensions.TruncateAtWord(String, Int32, Boolean)
+- uid: Code.Library.StringExtensions.TruncateAtWord*
+  name: TruncateAtWord
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_TruncateAtWord_
+  commentId: Overload:Code.Library.StringExtensions.TruncateAtWord
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.TruncateAtWord
+  nameWithType: StringExtensions.TruncateAtWord
+- uid: Code.Library.StringExtensions.UppercaseWords(System.String)
+  name: UppercaseWords(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_UppercaseWords_System_String_
+  commentId: M:Code.Library.StringExtensions.UppercaseWords(System.String)
+  fullName: Code.Library.StringExtensions.UppercaseWords(System.String)
+  nameWithType: StringExtensions.UppercaseWords(String)
+- uid: Code.Library.StringExtensions.UppercaseWords*
+  name: UppercaseWords
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_UppercaseWords_
+  commentId: Overload:Code.Library.StringExtensions.UppercaseWords
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.UppercaseWords
+  nameWithType: StringExtensions.UppercaseWords
+- uid: Code.Library.StringExtensions.UrlAvailable(System.String)
+  name: UrlAvailable(String)
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_UrlAvailable_System_String_
+  commentId: M:Code.Library.StringExtensions.UrlAvailable(System.String)
+  fullName: Code.Library.StringExtensions.UrlAvailable(System.String)
+  nameWithType: StringExtensions.UrlAvailable(String)
+- uid: Code.Library.StringExtensions.UrlAvailable*
+  name: UrlAvailable
+  href: api/Code.Library.StringExtensions.html#Code_Library_StringExtensions_UrlAvailable_
+  commentId: Overload:Code.Library.StringExtensions.UrlAvailable
+  isSpec: "True"
+  fullName: Code.Library.StringExtensions.UrlAvailable
+  nameWithType: StringExtensions.UrlAvailable
+- uid: Code.Library.ThirdPartyHelper
+  name: ThirdPartyHelper
+  href: api/Code.Library.ThirdPartyHelper.html
+  commentId: T:Code.Library.ThirdPartyHelper
+  fullName: Code.Library.ThirdPartyHelper
+  nameWithType: ThirdPartyHelper
+- uid: Code.Library.ThirdPartyHelper.GetAddToGoogleCalendarUrl(System.String,DateTime,DateTime,System.String,System.String)
+  name: GetAddToGoogleCalendarUrl(String, DateTime, DateTime, String, String)
+  href: api/Code.Library.ThirdPartyHelper.html#Code_Library_ThirdPartyHelper_GetAddToGoogleCalendarUrl_System_String_DateTime_DateTime_System_String_System_String_
+  commentId: M:Code.Library.ThirdPartyHelper.GetAddToGoogleCalendarUrl(System.String,DateTime,DateTime,System.String,System.String)
+  fullName: Code.Library.ThirdPartyHelper.GetAddToGoogleCalendarUrl(System.String, DateTime, DateTime, System.String, System.String)
+  nameWithType: ThirdPartyHelper.GetAddToGoogleCalendarUrl(String, DateTime, DateTime, String, String)
+- uid: Code.Library.ThirdPartyHelper.GetAddToGoogleCalendarUrl*
+  name: GetAddToGoogleCalendarUrl
+  href: api/Code.Library.ThirdPartyHelper.html#Code_Library_ThirdPartyHelper_GetAddToGoogleCalendarUrl_
+  commentId: Overload:Code.Library.ThirdPartyHelper.GetAddToGoogleCalendarUrl
+  isSpec: "True"
+  fullName: Code.Library.ThirdPartyHelper.GetAddToGoogleCalendarUrl
+  nameWithType: ThirdPartyHelper.GetAddToGoogleCalendarUrl
+- uid: Code.Library.ThirdPartyHelper.GetQrCodeImageUrl(System.String)
+  name: GetQrCodeImageUrl(String)
+  href: api/Code.Library.ThirdPartyHelper.html#Code_Library_ThirdPartyHelper_GetQrCodeImageUrl_System_String_
+  commentId: M:Code.Library.ThirdPartyHelper.GetQrCodeImageUrl(System.String)
+  fullName: Code.Library.ThirdPartyHelper.GetQrCodeImageUrl(System.String)
+  nameWithType: ThirdPartyHelper.GetQrCodeImageUrl(String)
+- uid: Code.Library.ThirdPartyHelper.GetQrCodeImageUrl*
+  name: GetQrCodeImageUrl
+  href: api/Code.Library.ThirdPartyHelper.html#Code_Library_ThirdPartyHelper_GetQrCodeImageUrl_
+  commentId: Overload:Code.Library.ThirdPartyHelper.GetQrCodeImageUrl
+  isSpec: "True"
+  fullName: Code.Library.ThirdPartyHelper.GetQrCodeImageUrl
+  nameWithType: ThirdPartyHelper.GetQrCodeImageUrl
