@@ -10,9 +10,6 @@
 
 namespace Code.Library.Tests.Extensions
 {
-    using Library.Extensions;
-    using Library.Models;
-
     using Shouldly;
 
     using Xunit;

@@ -11,8 +11,8 @@ Few custom helper classes.
 **Nuget**
 > Install-Package Code.Library 
 
-## Features
-See wiki [here](https://github.com/Abhith/Code.Library/wiki)
+## Documentation
+See [here](https://code-library.abhith.net)
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAbhith%2FCode.Library.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FAbhith%2FCode.Library?ref=badge_large)
