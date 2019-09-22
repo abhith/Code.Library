@@ -9,11 +9,6 @@ namespace Code.Library.Extensions
 {
     public static class StringExtensions
     {
-        //public static string IfNullOrWhiteSpace(this string str, string defaultValue)
-        //{
-        //    return str.IsNullOrWhiteSpace() ? defaultValue : str;
-        //}
-
         private static readonly char[] CleanForXssChars = "*?(){}[];:%<>/\\|&'\"".ToCharArray();
 
         /// <summary>
@@ -55,11 +50,19 @@ namespace Code.Library.Extensions
             return sb.ToString();
         }
 
-        //public static string EnsureStartsWith(this string input, string toStartWith)
-        //{
-        //    if (input.StartsWith(toStartWith)) return input;
-        //    return toStartWith + input.TrimStart(toStartWith);
-        //}
+        /// <summary>
+        /// Get last N chars of the string.
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="numberOfChars"></param>
+        /// <returns></returns>
+        public static string GetLast(this string source, int numberOfChars)
+        {
+            if (numberOfChars >= source.Length)
+                return source;
+            return source.Substring(source.Length - numberOfChars);
+        }
+
         public static bool IsLowerCase(this char ch)
         {
             return ch.ToString(CultureInfo.InvariantCulture) == ch.ToString(CultureInfo.InvariantCulture).ToLowerInvariant();
@@ -77,16 +80,6 @@ namespace Code.Library.Extensions
                 : alternative;
         }
 
-        ///// <summary>
-        ///// Splits a Pascal cased string into a phrase separated by spaces.
-        ///// </summary>
-        ///// <param name="phrase">The text to split.</param>
-        ///// <returns>The splitted text.</returns>
-        //public static string SplitPascalCasing(this string phrase)
-        //{
-        //    return ShortStringHelper.SplitPascalCasing(phrase, ' ');
-        //}
-
         /// <summary>
         /// Strips all html from a string.
         /// </summary>
@@ -97,85 +90,6 @@ namespace Code.Library.Extensions
             const string pattern = @"<(.|\n)*?>";
             return Regex.Replace(text, pattern, String.Empty);
         }
-
-        ///// <summary>
-        ///// Truncates the specified text string.
-        ///// </summary>
-        ///// <param name="text">The text.</param>
-        ///// <param name="maxLength">Length of the max.</param>
-        ///// <param name="suffix">The suffix.</param>
-        ///// <returns></returns>
-        //public static string Truncate(this string text, int maxLength, string suffix = "...")
-        //{
-        //    // replaces the truncated string to a ...
-        //    var truncatedString = text;
-
-        //    if (maxLength <= 0) return truncatedString;
-        //    var strLength = maxLength - suffix.Length;
-
-        //    if (strLength <= 0) return truncatedString;
-
-        //    if (text == null || text.Length <= maxLength) return truncatedString;
-
-        //    truncatedString = text.Substring(0, strLength);
-        //    truncatedString = truncatedString.TrimEnd();
-        //    truncatedString += suffix;
-
-        //    return truncatedString;
-        //}
-        ///// <summary>
-        ///// Cleans a string.
-        ///// </summary>
-        ///// <param name="text">The text to clean.</param>
-        ///// <param name="stringType">A flag indicating the target casing and encoding of the string. By default,
-        ///// strings are cleaned up to camelCase and Ascii.</param>
-        ///// <returns>The clean string.</returns>
-        ///// <remarks>The string is cleaned in the context of the IShortStringHelper default culture.</remarks>
-        //public static string ToCleanString(this string text, CleanStringType stringType)
-        //{
-        //    return ShortStringHelper.CleanString(text, stringType);
-        //}
-
-        ///// <summary>
-        ///// Cleans a string, using a specified separator.
-        ///// </summary>
-        ///// <param name="text">The text to clean.</param>
-        ///// <param name="stringType">A flag indicating the target casing and encoding of the string. By default,
-        ///// strings are cleaned up to camelCase and Ascii.</param>
-        ///// <param name="separator">The separator.</param>
-        ///// <returns>The clean string.</returns>
-        ///// <remarks>The string is cleaned in the context of the IShortStringHelper default culture.</remarks>
-        //public static string ToCleanString(this string text, CleanStringType stringType, char separator)
-        //{
-        //    return ShortStringHelper.CleanString(text, stringType, separator);
-        //}
-
-        ///// <summary>
-        ///// Cleans a string in the context of a specified culture.
-        ///// </summary>
-        ///// <param name="text">The text to clean.</param>
-        ///// <param name="stringType">A flag indicating the target casing and encoding of the string. By default,
-        ///// strings are cleaned up to camelCase and Ascii.</param>
-        ///// <param name="culture">The culture.</param>
-        ///// <returns>The clean string.</returns>
-        //public static string ToCleanString(this string text, CleanStringType stringType, CultureInfo culture)
-        //{
-        //    return ShortStringHelper.CleanString(text, stringType, culture);
-        //}
-
-        ///// <summary>
-        ///// Cleans a string in the context of a specified culture, using a specified separator.
-        ///// </summary>
-        ///// <param name="text">The text to clean.</param>
-        ///// <param name="stringType">A flag indicating the target casing and encoding of the string. By default,
-        ///// strings are cleaned up to camelCase and Ascii.</param>
-        ///// <param name="separator">The separator.</param>
-        ///// <param name="culture">The culture.</param>
-        ///// <returns>The clean string.</returns>
-        //public static string ToCleanString(this string text, CleanStringType stringType, char separator, CultureInfo culture)
-        //{
-        //    return ShortStringHelper.CleanString(text, stringType, separator, culture);
-        //}
 
         /// <summary>
         /// Returns a copy of the string with the first character converted to lowercase.
@@ -250,49 +164,5 @@ namespace Code.Library.Extensions
                 ? input
                 : input.Substring(0, 1).ToUpperInvariant() + input.Substring(1);
         }
-
-        ///// <summary>
-        ///// Cleans a string, in the context of the invariant culture, to produce a string that can safely be used as a filename,
-        ///// both internally (on disk) and externally (as a url).
-        ///// </summary>
-        ///// <param name="text">The text to filter.</param>
-        ///// <returns>The safe filename.</returns>
-        //public static string ToSafeFileName(this string text)
-        //{
-        //    return ShortStringHelper.CleanStringForSafeFileName(text);
-        //}
-
-        ///// <summary>
-        ///// Cleans a string, in the context of the invariant culture, to produce a string that can safely be used as a filename,
-        ///// both internally (on disk) and externally (as a url).
-        ///// </summary>
-        ///// <param name="text">The text to filter.</param>
-        ///// <param name="culture">The culture.</param>
-        ///// <returns>The safe filename.</returns>
-        //public static string ToSafeFileName(this string text, CultureInfo culture)
-        //{
-        //    return ShortStringHelper.CleanStringForSafeFileName(text, culture);
-        //}
-
-        ///// <summary>
-        ///// Cleans a string to produce a string that can safely be used in an url segment.
-        ///// </summary>
-        ///// <param name="text">The text to filter.</param>
-        ///// <returns>The safe url segment.</returns>
-        //public static string ToUrlSegment(this string text)
-        //{
-        //    return ShortStringHelper.CleanStringForUrlSegment(text);
-        //}
-
-        ///// <summary>
-        ///// Cleans a string, in the context of a specified culture, to produce a string that can safely be used in an url segment.
-        ///// </summary>
-        ///// <param name="text">The text to filter.</param>
-        ///// <param name="culture">The culture.</param>
-        ///// <returns>The safe url segment.</returns>
-        //public static string ToUrlSegment(this string text, CultureInfo culture)
-        //{
-        //    return ShortStringHelper.CleanStringForUrlSegment(text, culture);
-        //}
     }
 }
