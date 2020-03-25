@@ -22,16 +22,15 @@ namespace Code.Library.AspNetCore
             }
 
             diagnosticContext.Set("ContentType", httpContext.Response.ContentType);
-
             diagnosticContext.Set("UserAgent", httpContext.Request.Headers["User-Agent"].ToString());
             diagnosticContext.Set("ClientIP", httpContext.Connection.RemoteIpAddress);
             diagnosticContext.Set("UserName", httpContext.User.Identity.Name == null ? "(anonymous)" : httpContext.User.Identity.Name);
 
-            //var endpoint = httpContext.GetEndpoint();
-            //if (endpoint is object)
-            //{
-            //    diagnosticContext.Set("EndpointName", endpoint.DisplayName);
-            //}
+            var clientIdClaim = httpContext.User.FindFirst("client_id");
+            if (clientIdClaim != null)
+            {
+                diagnosticContext.Set("OAuthClientId", clientIdClaim.Value);
+            }
         }
 
         /// <summary>
