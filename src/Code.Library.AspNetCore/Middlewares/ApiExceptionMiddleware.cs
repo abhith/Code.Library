@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
-using Newtonsoft.Json;
+﻿using Hellang.Middleware.ProblemDetails;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Serilog;
 using System;
 using System.Net;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Code.Library.AspNetCore.Middlewares
@@ -32,21 +34,23 @@ namespace Code.Library.AspNetCore.Middlewares
 
         private static Task HandleExceptionAsync(HttpContext context, Exception exception, ApiExceptionOptions opts)
         {
-            var error = new ApiError
+            var nid = opts.Nid ?? Assembly.GetEntryAssembly().GetName().Name.ToLowerInvariant();
+            var instance = $"urn:{nid}:error:{Guid.NewGuid()}";
+
+            var problemDetails = new ProblemDetails
             {
-                Id = Guid.NewGuid().ToString(),
+                Type = "https://httpstatuses.com/500",
+                Title = "An unexpected error occurred!",
                 Status = (short)HttpStatusCode.InternalServerError,
-                Title = "Some kind of error occurred in the API.  Please use the id and contact our support team if the problem persists."
+                Detail = "Please use the instance value and contact our support team if the problem persists.",
+                Instance = instance
             };
 
-            opts.AddResponseDetails?.Invoke(context, exception, error);
+            opts.AddResponseDetails?.Invoke(context, exception, problemDetails);
 
-            Log.Error(exception, "An exception was caught in the API request pipeline");
+            Log.Error(exception, "{Instance} | An exception was caught in the API request pipeline", instance);
 
-            var result = JsonConvert.SerializeObject(error);
-            context.Response.ContentType = "application/json";
-            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-            return context.Response.WriteAsync(result);
+            throw new ProblemDetailsException(problemDetails);
         }
     }
 }
