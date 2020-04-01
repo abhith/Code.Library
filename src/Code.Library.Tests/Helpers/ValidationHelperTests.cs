@@ -1,25 +1,18 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Code.Library.Extensions;
+using FluentAssertions;
+using Xunit;
 
-namespace Code.Library.Tests
+namespace Code.Library.Tests.Helpers
 {
-    [TestClass()]
     public class ValidationHelperTests
     {
-        //[TestMethod()]
-        //public void IsValidEmailTest()
-        //{
-        //    Assert.IsTrue("test@test.com".IsValidEmailAddress());
-        //    Assert.IsFalse("test".IsValidEmailAddress());
-        //    Assert.IsTrue("test@test.com.in".IsValidEmailAddress());
-        //}
-
-        [TestMethod()]
+        [Fact]
         public void IsValidEmailAddressTest()
         {
-            Assert.IsTrue("yellowdog@someemail.uk".IsValidEmailAddress());
-            Assert.IsTrue("yellow.444@email4u.co.uk".IsValidEmailAddress());
-            Assert.IsFalse("adfasdf".IsValidEmailAddress());
-            Assert.IsFalse("asd@asdf".IsValidEmailAddress());
+            "yellowdog@someemail.uk".IsValidEmailAddress().Should().BeTrue();
+            "yellow.444@email4u.co.uk".IsValidEmailAddress().Should().BeTrue();
+            "adfasdf".IsValidEmailAddress().Should().BeFalse();
+            "asd@asdf".IsValidEmailAddress().Should().BeFalse();
         }
     }
 }

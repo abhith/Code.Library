@@ -1,7 +1,7 @@
-﻿using Shouldly;
+﻿using FluentAssertions;
 using Xunit;
 
-namespace Code.Library.Tests.Models
+namespace Code.Library.Tests.Models.ResultTests
 {
     public class CombineMethodTests
     {
@@ -14,8 +14,8 @@ namespace Code.Library.Tests.Models
 
             Result result = Result.Combine(";", result1, result2, result3);
 
-            result.IsSuccess.ShouldBeFalse();
-            result.Error.ShouldBe("Failure 1;Failure 2");
+            result.IsSuccess.Should().BeFalse();
+            result.Error.Should().Be("Failure 1;Failure 2");
         }
 
         [Fact]
@@ -27,7 +27,7 @@ namespace Code.Library.Tests.Models
 
             Result result = Result.Combine(";", result1, result2, result3);
 
-            result.IsSuccess.ShouldBeTrue();
+            result.IsSuccess.Should().BeTrue();
         }
 
         [Fact]
@@ -37,7 +37,7 @@ namespace Code.Library.Tests.Models
 
             Result result = Result.Combine(";", results);
 
-            result.IsSuccess.ShouldBeFalse();
+            result.IsSuccess.Should().BeFalse();
         }
 
         [Fact]
@@ -47,7 +47,7 @@ namespace Code.Library.Tests.Models
 
             Result result = Result.Combine(";", results);
 
-            result.IsSuccess.ShouldBeTrue();
+            result.IsSuccess.Should().BeTrue();
         }
 
         [Fact]
@@ -59,7 +59,7 @@ namespace Code.Library.Tests.Models
 
             Result result = Result.FirstFailureOrSuccess(result1, result2, result3);
 
-            result.IsSuccess.ShouldBeTrue();
+            result.IsSuccess.Should().BeTrue();
         }
 
         [Fact]
@@ -71,8 +71,8 @@ namespace Code.Library.Tests.Models
 
             Result result = Result.FirstFailureOrSuccess(result1, result2, result3);
 
-            result.IsFailure.ShouldBe(true);
-            result.Error.ShouldBe("Failure 1");
+            result.IsFailure.Should().Be(true);
+            result.Error.Should().Be("Failure 1");
         }
     }
 }

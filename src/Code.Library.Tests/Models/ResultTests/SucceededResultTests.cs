@@ -1,24 +1,11 @@
 ﻿using System;
+using FluentAssertions;
+using Xunit;
 
-namespace Code.Library.Tests.Models
+namespace Code.Library.Tests.Models.ResultTests
 {
-    using FluentAssertions;
-
-    using Shouldly;
-
-    using Xunit;
-
     public class SucceededResultTests
     {
-        [Fact]
-        public void Can_create_a_non_generic_version()
-        {
-            Result result = Result.Ok();
-
-            result.IsFailure.Should().Be(false);
-            result.IsSuccess.Should().Be(true);
-        }
-
         [Fact]
         public void Can_create_a_generic_version()
         {
@@ -44,38 +31,21 @@ namespace Code.Library.Tests.Models
         }
 
         [Fact]
+        public void Can_create_a_non_generic_version()
+        {
+            Result result = Result.Ok();
+
+            result.IsFailure.Should().Be(false);
+            result.IsSuccess.Should().Be(true);
+        }
+
+        [Fact]
         public void Can_create_without_Value()
         {
             Result<MyClass> result = Result.Ok((MyClass)null);
 
             result.IsSuccess.Should().BeTrue();
             result.Value.Should().BeNull();
-        }
-
-        [Fact]
-        public void Cannot_access_Error_non_generic_version()
-        {
-            Result result = Result.Ok();
-
-            Action action = () =>
-            {
-                string error = result.Error;
-            };
-
-            action.ShouldThrow<ResultSuccessException>();
-        }
-
-        [Fact]
-        public void Cannot_access_Error_generic_version()
-        {
-            Result<MyClass> result = Result.Ok(new MyClass());
-
-            Action action = () =>
-            {
-                string error = result.Error;
-            };
-
-            action.ShouldThrow<ResultSuccessException>();
         }
 
         [Fact]
@@ -88,7 +58,33 @@ namespace Code.Library.Tests.Models
                 MyErrorClass error = result.Error;
             };
 
-            action.ShouldThrow<ResultSuccessException>();
+            action.Should().Throw<ResultSuccessException>();
+        }
+
+        [Fact]
+        public void Cannot_access_Error_generic_version()
+        {
+            Result<MyClass> result = Result.Ok(new MyClass());
+
+            Action action = () =>
+            {
+                string error = result.Error;
+            };
+
+            action.Should().Throw<ResultSuccessException>();
+        }
+
+        [Fact]
+        public void Cannot_access_Error_non_generic_version()
+        {
+            Result result = Result.Ok();
+
+            Action action = () =>
+            {
+                string error = result.Error;
+            };
+
+            action.Should().Throw<ResultSuccessException>();
         }
 
         private class MyClass

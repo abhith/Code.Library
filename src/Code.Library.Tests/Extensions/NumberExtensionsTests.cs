@@ -1,13 +1,10 @@
-﻿namespace Code.Library.Tests.Helpers
+﻿using FluentAssertions;
+using Xunit;
+
+namespace Code.Library.Tests.Extensions
 {
-    using Shouldly;
-
-    using Xunit;
-
     public class NumberExtensionsTests
     {
-        #region Public Methods
-
         /// <summary>
         /// The get first n digits tests.
         /// </summary>
@@ -20,9 +17,9 @@
             var firstTwoDigits = number.GetFirstNDigits(2);
             var firstFourDigits = number.GetFirstNDigits(4);
 
-            firstDigit.ShouldBe(7);
-            firstTwoDigits.ShouldBe(76);
-            firstFourDigits.ShouldBe(7654);
+            firstDigit.Should().Be(7);
+            firstTwoDigits.Should().Be(76);
+            firstFourDigits.Should().Be(7654);
         }
 
         /// <summary>
@@ -38,20 +35,18 @@
             var sixthDigit = number.GetNthDigit(6);
             var seventhDigit = number.GetNthDigit(7);
 
-            firstDigit.ShouldBe(1);
-            thirdDigit.ShouldBe(3);
-            sixthDigit.ShouldBe(6);
-            seventhDigit.ShouldBe(7);
+            firstDigit.Should().Be(1);
+            thirdDigit.Should().Be(3);
+            sixthDigit.Should().Be(6);
+            seventhDigit.Should().Be(7);
 
             number = 10;
 
             firstDigit = number.GetNthDigit(1);
             var secondDigit = number.GetNthDigit(2);
 
-            firstDigit.ShouldBe(0);
-            secondDigit.ShouldBe(1);
+            firstDigit.Should().Be(0);
+            secondDigit.Should().Be(1);
         }
-
-        #endregion Public Methods
     }
 }

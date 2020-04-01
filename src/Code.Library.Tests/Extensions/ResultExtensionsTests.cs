@@ -8,10 +8,10 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using FluentAssertions;
+
 namespace Code.Library.Tests.Extensions
 {
-    using Shouldly;
-
     using Xunit;
 
     /// <summary>
@@ -35,7 +35,7 @@ namespace Code.Library.Tests.Extensions
             Result myResult = Result.Fail(ErrorMessage);
             myResult.OnFailure(() => myBool = true);
 
-            myBool.ShouldBe(true);
+            myBool.Should().Be(true);
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Code.Library.Tests.Extensions
             Result<MyClass> myResult = Result.Fail<MyClass>(ErrorMessage);
             myResult.OnFailure(() => myBool = true);
 
-            myBool.ShouldBe(true);
+            myBool.Should().Be(true);
         }
 
         /// <summary>
@@ -63,7 +63,7 @@ namespace Code.Library.Tests.Extensions
             Result<MyClass> myResult = Result.Fail<MyClass>(ErrorMessage);
             myResult.OnFailure(error => myError = error);
 
-            myError.ShouldBe(ErrorMessage);
+            myError.Should().Be(ErrorMessage);
         }
 
         /// <summary>

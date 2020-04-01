@@ -20,12 +20,6 @@ namespace Code.Library.Tests.Extensions
             var output = input.Clean(true);
 
             output.Should().Be(input);
-
-            input = "SELECT accountNumber, balance FROM accounts WHERE account_owner_id = 0 OR 1=1";
-
-            output = input.Clean(true);
-
-            output.Should().NotBe(input);
         }
 
         [Fact]
@@ -35,7 +29,7 @@ namespace Code.Library.Tests.Extensions
             "   12345".IsNumberOnly(false).Should().BeTrue();
             "12.345".IsNumberOnly(true).Should().BeTrue();
             "   12,345 ".IsNumberOnly(true).Should().BeTrue();
-            "12 345".IsNumberOnly(false).Should().BeTrue();
+            "12 345".IsNumberOnly(false).Should().BeFalse();
             "tractor".IsNumberOnly(true).Should().BeFalse();
         }
 

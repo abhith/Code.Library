@@ -9,11 +9,10 @@
 // --------------------------------------------------------------------------------------------------------------------
 
 using System;
+using FluentAssertions;
 
 namespace Code.Library.Tests.Models
 {
-    using Shouldly;
-
     using Xunit;
 
     /// <summary>
@@ -21,16 +20,14 @@ namespace Code.Library.Tests.Models
     /// </summary>
     public class FailedResultTests
     {
-        #region Public Methods
-
         [Fact]
         public void Can_create_a_generic_version()
         {
             Result<MyClass> result = Result.Fail<MyClass>("Error message");
 
-            result.Error.ShouldBe("Error message");
-            result.IsFailure.ShouldBe(true);
-            result.IsSuccess.ShouldBe(false);
+            result.Error.Should().Be("Error message");
+            result.IsFailure.Should().Be(true);
+            result.IsSuccess.Should().Be(false);
         }
 
         [Fact]
@@ -38,20 +35,10 @@ namespace Code.Library.Tests.Models
         {
             Result result = Result.Fail("Error message");
 
-            result.Error.ShouldBe("Error message");
-            result.IsFailure.ShouldBe(true);
-            result.IsSuccess.ShouldBe(false);
+            result.Error.Should().Be("Error message");
+            result.IsFailure.Should().Be(true);
+            result.IsSuccess.Should().Be(false);
         }
-
-        //[Fact]
-        //public void Cannot_access_Value_property()
-        //{
-        //    Result<MyClass> result = Result.Fail<MyClass>("Error message");
-
-        //    Action action = () => { MyClass myClass = result.Value; };
-
-        //    action.ShouldThrow<InvalidOperationException>();
-        //}
 
         [Fact]
         public void Cannot_create_without_error_message()
@@ -61,13 +48,11 @@ namespace Code.Library.Tests.Models
             Action action3 = () => { Result.Fail<MyClass>(null); };
             Action action4 = () => { Result.Fail<MyClass>(string.Empty); };
 
-            action1.ShouldThrow<ArgumentNullException>();
-            action2.ShouldThrow<ArgumentNullException>();
-            action3.ShouldThrow<ArgumentNullException>();
-            action4.ShouldThrow<ArgumentNullException>();
+            action1.Should().Throw<ArgumentNullException>();
+            action2.Should().Throw<ArgumentNullException>();
+            action3.Should().Throw<ArgumentNullException>();
+            action4.Should().Throw<ArgumentNullException>();
         }
-
-        #endregion Public Methods
 
         #region Private Classes
 
