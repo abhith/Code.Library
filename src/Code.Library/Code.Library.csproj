@@ -10,7 +10,6 @@
     <PackageReleaseNotes># Added
 
 - Extension method to get last N characters from a string (GetLast(N))</PackageReleaseNotes>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>c#, helper</PackageTags>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
