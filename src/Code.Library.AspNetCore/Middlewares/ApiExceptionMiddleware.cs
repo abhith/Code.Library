@@ -1,4 +1,5 @@
-﻿using Hellang.Middleware.ProblemDetails;
+﻿using Code.Library.Domain.Exceptions;
+using Hellang.Middleware.ProblemDetails;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
@@ -37,6 +38,21 @@ namespace Code.Library.AspNetCore.Middlewares
             var nid = opts.Nid ?? Assembly.GetEntryAssembly().GetName().Name.ToLowerInvariant();
             var instance = $"urn:{nid}:error:{Guid.NewGuid()}";
 
+            Log.Error(exception, "{Instance} | An exception was caught in the API request pipeline", instance);
+
+            if (exception.GetType() == typeof(DomainException))
+            {
+                var domainProblemDetails = new ValidationProblemDetails()
+                {
+                    Instance = instance,
+                    Status = StatusCodes.Status400BadRequest,
+                    Detail = "Please refer to the errors property for additional details."
+                };
+
+                domainProblemDetails.Errors.Add("DomainValidations", new string[] { exception.Message });
+                throw new ProblemDetailsException(domainProblemDetails);
+            }
+
             var problemDetails = new ProblemDetails
             {
                 Type = "https://httpstatuses.com/500",
@@ -47,9 +63,6 @@ namespace Code.Library.AspNetCore.Middlewares
             };
 
             opts.AddResponseDetails?.Invoke(context, exception, problemDetails);
-
-            Log.Error(exception, "{Instance} | An exception was caught in the API request pipeline", instance);
-
             throw new ProblemDetailsException(problemDetails);
         }
     }
