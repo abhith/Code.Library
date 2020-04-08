@@ -1,4 +1,4 @@
-﻿namespace Code.Library
+﻿namespace Code.Library.Dtos
 {
     /// <summary>
     /// This interface is defined to standardize to request a sorted result.

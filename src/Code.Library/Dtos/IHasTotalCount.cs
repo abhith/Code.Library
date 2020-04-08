@@ -1,4 +1,4 @@
-﻿namespace Code.Library
+﻿namespace Code.Library.Dtos
 {
     /// <summary>
     /// This interface is defined to standardize to set "Total Count of Items" to a DTO.
