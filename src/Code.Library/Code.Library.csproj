@@ -11,7 +11,7 @@
 
 - Extension method to get last N characters from a string (GetLast(N))</PackageReleaseNotes>
     <PackageTags>c#, helper</PackageTags>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">

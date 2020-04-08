@@ -6,7 +6,7 @@
     <Authors>Abhith</Authors>
     <Company>Abhith</Company>
     <Description>Useful C# helper classes and methods for ASP.NET Core.</Description>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://code-library.abhith.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Abhith/Code.Library</RepositoryUrl>
     <PackageTags>c#, helpers</PackageTags>
