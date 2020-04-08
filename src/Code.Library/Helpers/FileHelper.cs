@@ -1,4 +1,4 @@
-﻿namespace Code.Library
+﻿namespace Code.Library.Helpers
 {
     using System.IO;
     using System.Net;
