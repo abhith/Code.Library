@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Code.Library
+namespace Code.Library.Dtos
 {
     [Serializable]
     public abstract class AuditedEntityDto : CreationAuditedEntityDto, IAuditedObject
