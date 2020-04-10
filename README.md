@@ -13,6 +13,7 @@
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Abhith_Code.Library&metric=security_rating)](https://sonarcloud.io/dashboard?id=Abhith_Code.Library)
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Abhith_Code.Library&metric=sqale_index)](https://sonarcloud.io/dashboard?id=Abhith_Code.Library)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Abhith_Code.Library&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=Abhith_Code.Library)
+![Discord](https://img.shields.io/discord/698213379206283385)
 
 ## Overview
 
