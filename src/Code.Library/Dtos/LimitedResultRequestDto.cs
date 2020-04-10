@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Code.Library
+namespace Code.Library.Dtos
 {
     /// <summary>
     /// Simply implements <see cref="ILimitedResultRequest"/>.

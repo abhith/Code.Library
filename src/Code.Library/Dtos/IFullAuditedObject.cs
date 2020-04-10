@@ -1,4 +1,4 @@
-﻿namespace Code.Library
+﻿namespace Code.Library.Dtos
 {
     /// <summary>
     /// This interface adds <see cref="IDeletionAuditedObject"/> to <see cref="IAuditedObject"/>.
