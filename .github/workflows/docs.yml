@@ -25,10 +25,10 @@ jobs:
       name: Build Documentation
 
     - uses: netlify/actions/cli@master
-        env:
+      env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        with:
-          # 5. "gatsby build" creates "public" folder, which is what we are deploying
-          args: deploy --dir=_site --prod
-          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+      with:
+        # 5. "gatsby build" creates "public" folder, which is what we are deploying
+        args: deploy --dir=_site --prod
+        secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
