@@ -22,6 +22,8 @@ Source code is available on [GitHub](https://github.com/Abhith/Code.Library)
 
 ## Install
 
+![Nuget](https://img.shields.io/nuget/v/Code.Library.AspNetCore)
+
 NuGet packages are available and you can install them by
 
 ```bash

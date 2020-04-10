@@ -20,6 +20,8 @@ C# utils libraries contains growing number of reusable models, helper methods an
 
 ## Install
 
+![Nuget](https://img.shields.io/nuget/v/Code.Library.AspNetCore)
+
 NuGet packages are available and you can install them by
 
 ```bash
