@@ -44,7 +44,11 @@
     "disableGitFeatures": false,
     "globalMetadata": {
       "_appTitle": "Code.Library",
-      "_enableSearch": true
+      "_enableSearch": true,
+      "_gitContribute": {
+        "branch": "master",
+        "apiSpecFolder": "docs/docs-ref-overwrite"
+      }
     }
   }
 }
