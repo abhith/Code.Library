@@ -6,20 +6,22 @@
 
 ## Overview
 
-A C# utils library contains growing number of reusable models, helper methods and extensions.
+C# utils libraries contains growing number of reusable models, helper methods and extensions.
 
 ## Install
 
-NuGet package is available and you can install by
+NuGet packages are available and you can install them by
 
 ```bash
 Install-Package Code.Library
+Install-Package Code.Library.AspNetCore
 ```
 
 ## Usage
 
 ```cs
 using Code.Library;
+using Code.Library.AspNetCore;
 ...
 ```
 
