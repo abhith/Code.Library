@@ -1,8 +1,6 @@
 # **Code.Library**
 
-Some useful C# helper classes.
-
-Explore the helpers and utils [here](api/index.md)
+A C# utils library contains growing number of reusable C# models, helper methods and extensions.
 
 Source code is available on [GitHub](https://github.com/Abhith/Code.Library)
 

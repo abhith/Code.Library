@@ -3,36 +3,48 @@
     {
       "src": [
         {
-          "files": ["**/*.sln"],
-          "exclude": ["**/bin/**", "**/obj/**"],
-          "src": "src"
+          "files": ["**.csproj"],
+          "src": "src",
+          "exclude": ["Code.Library.Tests/**"]
         }
       ],
-      "dest": "obj/api"
+      "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
     }
   ],
   "build": {
     "content": [
       {
-        "files": ["**/*.yml"],
-        "src": "obj/api",
-        "dest": "api"
+        "files": ["api/**.yml", "api/index.md"]
       },
       {
-        "files": ["articles/**/*.md", "*.md", "toc.yml", "restapi/**"]
+        "files": ["articles/**.md", "articles/**/toc.yml", "toc.yml", "*.md"]
       }
     ],
     "resource": [
       {
-        "files": ["articles/images/**"]
+        "files": ["images/**"]
       }
     ],
+    "overwrite": [
+      {
+        "files": ["apidoc/**.md"],
+        "exclude": ["obj/**", "_site/**"]
+      }
+    ],
+    "dest": "_site",
+    "fileMetadataFiles": [],
+    "template": ["default", "_exported_templates/default"],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false,
     "globalMetadata": {
       "_appTitle": "Code.Library",
       "_enableSearch": true
-    },
-    "markdownEngineName": "markdig",
-    "dest": "_site",
-    "template": ["default", "_exported_templates/default"]
+    }
   }
 }

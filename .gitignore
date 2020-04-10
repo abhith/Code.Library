@@ -197,3 +197,14 @@ FakesAssemblies/
 *.ncrunchproject
 *.ncrunchsolution
 src/Code.Library/log.txt
+
+
+###############
+#    folder   #
+###############
+/**/DROP/
+/**/TEMP/
+/**/packages/
+/**/bin/
+/**/obj/
+_site
