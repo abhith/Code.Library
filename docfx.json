@@ -19,7 +19,12 @@
         "files": ["api/**.yml", "api/index.md"]
       },
       {
-        "files": ["articles/**.md", "articles/**/toc.yml", "toc.yml", "*.md"]
+        "files": [
+          "docs/articles/**.md",
+          "docs/articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
       }
     ],
     "resource": [
