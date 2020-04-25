@@ -16,7 +16,7 @@
     <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="3.1.0" />
     <PackageReference Include="AspNetMonsters.ApplicationInsights.AspNetCore" Version="1.1.24" />
     <PackageReference Include="Flurl.Http" Version="2.4.2" />
-    <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="4.4.0" />
+    <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="4.5.0" />
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.13.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
     <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
