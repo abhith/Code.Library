@@ -61,26 +61,32 @@ public class Program
 
 > You don't need to install **Serilog** via **NuGet** since it's a dependency for **Code.Library.AspNetCore** and will get installed automatically when you add **Code.Library.AspNetCore** via **NuGet**.
 
-By doing so, it will generate logs under "Logs" folder in the root directory. And a sample log looks like,
+By doing so, it will generate logs under "logs" folder in the root directory. And a sample log looks like,
 
 ```json
 {
-  "@t": "2020-04-11T07:56:11.3447207Z",
-  "@mt": "{HostingRequestFinishedLog:l}",
-  "@r": ["Request finished in 35.4764ms 404 "],
-  "ElapsedMilliseconds": 35.4764,
-  "StatusCode": 404,
-  "ContentType": null,
-  "HostingRequestFinishedLog": "Request finished in 35.4764ms 404 ",
-  "EventId": { "Id": 2 },
-  "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
-  "RequestId": "0HLUTTN5TMP4U:00000003",
-  "RequestPath": "/favicon.ico",
-  "SpanId": "1d6a0ce5f93a7642",
-  "TraceId": "4436b8b32132c7468170c4e1defa84a9",
+  "@t": "2020-04-25T13:55:20.3908717Z",
+  "@m": "HTTP \"GET\" \"/liveness\" responded 200 in 5.5626 ms",
+  "@i": "62d0885c",
+  "Host": "localhost:5015",
+  "Protocol": "HTTP/1.1",
+  "Scheme": "http",
+  "ContentType": "text/plain",
+  "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.113 Safari/537.36",
+  "ClientIP": "::1",
+  "UserName": "(anonymous)",
+  "RequestMethod": "GET",
+  "RequestPath": "/liveness",
+  "StatusCode": 200,
+  "Elapsed": 5.5626,
+  "SourceContext": "Serilog.AspNetCore.RequestLoggingMiddleware",
+  "RequestId": "0HLV93VUMSS33:00000002",
+  "SpanId": "7b3e3dd92277ae4c",
+  "TraceId": "81595b40301ed846b6e9a9b3fbac85d5",
   "ParentId": "0000000000000000",
-  "MachineName": "DESKTOP-MPFENH3",
-  "Assembly": "AspNetCore.Microservice.API",
+  "ConnectionId": "0HLV93VUMSS33",
+  "MachineName": "WORKSTN1",
+  "Assembly": "Projet.Name.API",
   "Version": "1.0.0.0"
 }
 ```
@@ -114,3 +120,21 @@ We don't need the default **Logging** configuration in the **appsettings.json** 
 ```
 
 > Also, remember to exclude the logs directory from version control.
+
+## Request logging
+
+Under `Startup.cs` Configure method,
+
+```cs
+app.UseRequestLogging();
+```
+
+Which internally use Serilog's default request logging along with the enrichers.
+
+## Flurl request logging
+
+To enable logging requests made by Flurl, add following under `ConfigureServices`
+
+```cs
+ services.AddFlurlTelemetry();
+```
