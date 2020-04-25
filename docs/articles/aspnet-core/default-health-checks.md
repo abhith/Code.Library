@@ -21,7 +21,7 @@ Most of our apps have health checks and following are common among all,
 
 ```
 
-We can replace the above with the below single line of code,
+We can replace the above with the below code,
 
 ```cs
  app.UseEndpoints(endpoints =>

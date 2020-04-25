@@ -1,4 +1,4 @@
-# ASP.NET Core API Exception Handling
+# ASP.NET Core - API Exception Handling
 
 Under **Startup.cs** `Configure` method,
 
@@ -9,11 +9,10 @@ app.UseApiExceptionHandler();
 and in the `ConfigureServices` method,
 
 ```cs
- services
-    .AddApiExceptionHandler();
+ services.AddApiExceptionHandler();
 ```
 
-This will catch any unhandled exceptions and return a internal server error problem details exception.
+This will catch any unhandled exceptions and return a internal server error problem details response.
 
 ```json
 {

@@ -1,4 +1,4 @@
-# ASP.NET Core Logging
+# ASP.NET Core - Logging
 
 ## Enriched Logging with Serilog
 
@@ -123,13 +123,13 @@ We don't need the default **Logging** configuration in the **appsettings.json** 
 
 ## Request logging
 
-Under `Startup.cs` Configure method,
+Under **Startup.cs** `Configure` method,
 
 ```cs
 app.UseRequestLogging();
 ```
 
-Which internally use Serilog's default request logging along with the enrichers.
+Which internally uses Serilog's default request logging along with the enrichers.
 
 ## Flurl request logging
 

@@ -1,0 +1,8 @@
+- name: API Exception Handling
+  href: api-exception-handling.md
+- name: Application Insights with Cloud Role Name
+  href: appinsights.md
+- name: Default Health Checks
+  href: default-health-checks.md
+- name: Logging
+  href: logging.md
