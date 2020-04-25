@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <Version>0.6.0</Version>
     <Authors>Abhith</Authors>
     <Company>Abhith</Company>
@@ -13,6 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="3.1.0" />
     <PackageReference Include="AspNetMonsters.ApplicationInsights.AspNetCore" Version="1.1.24" />
     <PackageReference Include="Flurl.Http" Version="2.4.2" />
     <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="4.4.0" />
@@ -28,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Code.Library\Code.Library.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
 </Project>
