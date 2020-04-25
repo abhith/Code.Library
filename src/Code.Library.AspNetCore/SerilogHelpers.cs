@@ -49,9 +49,8 @@ namespace Code.Library.AspNetCore
                 .Enrich.WithMachineName()
                 .Enrich.WithProperty("Assembly", $"{name.Name}")
                 .Enrich.WithProperty("Version", $"{name.Version}")
-                .WriteTo.File(new CompactJsonFormatter(),
-                    @"Logs\log.clef", rollingInterval: RollingInterval.Day)
-                //.WriteTo.File(@"Logs\log.txt", rollingInterval: RollingInterval.Day)
+                .WriteTo.File(new RenderedCompactJsonFormatter(),
+                    @"logs\log.ndjson", rollingInterval: RollingInterval.Day)
                 .WriteTo.ApplicationInsights(TelemetryConfiguration.Active, TelemetryConverter.Traces);
         }
     }
