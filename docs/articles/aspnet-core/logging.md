@@ -25,7 +25,7 @@ To
 
 ```cs
 using Serilog;
-using Code.Library.AspNetCore;
+using Code.Library.AspNetCore.Helpers;
 public class Program
 {
     public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -41,13 +41,11 @@ public class Program
         try
         {
             CreateHostBuilder(args).Build().Run();
-
             return 0;
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Host terminated unexpectedly");
-            Console.Write(ex.ToString());
+            Log.Fatal(ex, "Host terminated unexpectedly");
             return 1;
         }
         finally
@@ -103,9 +101,12 @@ Refine the logs by adding the below to the **appsettings.json**,
         "IdentityServer4": "Information",
         "Orleans": "Warning"
       }
-    }
-  }
+    },
+    "SeqServerUrl": null
+}
 ```
+
+If `SeqServerUrl` is provided (ex. "http://localhost:5341/"), then seq sink gets attached to the Serilog. It's very useful in case of local development.
 
 We don't need the default **Logging** configuration in the **appsettings.json** anymore, remove it.
 
