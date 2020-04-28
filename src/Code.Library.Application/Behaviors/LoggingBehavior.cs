@@ -1,10 +1,10 @@
-﻿using Code.Library.Extensions;
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Code.Library.Extensions;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using System.Threading;
-using System.Threading.Tasks;
 
-namespace Code.Library.AspNetCore.Application.Behaviors
+namespace Code.Library.Application.Behaviors
 {
     public class LoggingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     {

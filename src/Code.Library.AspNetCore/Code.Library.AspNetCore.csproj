@@ -5,7 +5,8 @@
     <Version>0.6.0</Version>
     <Authors>Abhith</Authors>
     <Company>Abhith</Company>
-    <Description>Useful C# helper classes and methods for ASP.NET Core.</Description>
+    <Description>C# utils libraries contain a collection of reusable models, helper methods and extensions.
+Specific to ASP.NET Core project.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://code-library.abhith.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Abhith/Code.Library</RepositoryUrl>

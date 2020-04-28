@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Version>2.2.0</Version>
-    <Authors>Abhith</Authors>
-    <Description>Useful C# helper classes and methods.</Description>
+    <Authors>Abhith Rajan</Authors>
+    <Description>C# utils libraries contain a collection of reusable models, helper methods and extensions.</Description>
     <PackageProjectUrl>https://code-library.abhith.net</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Abhith/Code.Library</RepositoryUrl>
     <PackageReleaseNotes># Added
