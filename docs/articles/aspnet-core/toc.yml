@@ -6,3 +6,5 @@
   href: default-health-checks.md
 - name: Logging
   href: logging.md
+- name: MediatR
+  href: mediatr.md
