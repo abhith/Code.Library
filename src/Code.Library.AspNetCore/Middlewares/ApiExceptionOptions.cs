@@ -9,7 +9,7 @@ namespace Code.Library.AspNetCore.Middlewares
         public Action<HttpContext, Exception, ProblemDetails> AddResponseDetails { get; set; }
 
         /// <summary>
-        /// <NID> is the namespace identifier, and may include letters, digits, and -
+        /// NID is the namespace identifier, and may include letters, digits, and -
         /// Ref: https://en.wikipedia.org/wiki/Uniform_Resource_Name
         /// </summary>
         public string Nid { get; set; }
