@@ -124,7 +124,7 @@ namespace Code.Library.Tests.Extensions
         [Fact]
         public void UrlAvailableTest()
         {
-            "www.codeproject.com".UrlAvailable().Should().BeTrue();
+            "www.abhith.net".UrlAvailable().Should().BeTrue();
             "www.asjdfalskdfjalskdf.com".UrlAvailable().Should().BeFalse();
         }
     }
