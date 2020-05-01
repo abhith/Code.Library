@@ -6,6 +6,12 @@ using Microsoft.Extensions.Logging;
 
 namespace Code.Library.Application.Behaviors
 {
+    /// <summary>
+    /// It wraps the request generated logs, the **handling** request log will have the request params and **handled** request log will have the response.
+    /// </summary>
+    /// <typeparam name="TRequest"></typeparam>
+    /// <typeparam name="TResponse"></typeparam>
+    /// <remarks>Credits: https://github.com/dotnet-architecture/eShopOnContainers</remarks>
     public class LoggingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     {
         private readonly ILogger<LoggingBehavior<TRequest, TResponse>> _logger;
