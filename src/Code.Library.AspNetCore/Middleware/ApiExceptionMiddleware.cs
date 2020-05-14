@@ -8,7 +8,7 @@ using System.Net;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace Code.Library.AspNetCore.Middlewares
+namespace Code.Library.AspNetCore.Middleware
 {
     public class ApiExceptionMiddleware
     {

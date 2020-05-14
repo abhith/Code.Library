@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace Code.Library.AspNetCore.Middlewares
+namespace Code.Library.AspNetCore.Middleware
 {
     public class ApiExceptionOptions
     {

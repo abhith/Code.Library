@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using System;
 
-namespace Code.Library.AspNetCore.Middlewares
+namespace Code.Library.AspNetCore.Middleware
 {
     public static class ApiExceptionMiddlewareExtensions
     {
