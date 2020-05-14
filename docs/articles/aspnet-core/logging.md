@@ -122,6 +122,22 @@ We don't need the default **Logging** configuration in the **appsettings.json** 
 
 > Also, remember to exclude the logs directory from version control.
 
+## HTTP Request Response Logging
+
+Under **Startup.cs** `Configure` method,
+
+```cs
+app.UseRequestResponseLogging();
+```
+
+This will produce log in the following format for each request.
+
+```txt
+----- Handled HTTP Request "http://orderin...00:00.0000885\",\"status\":\"Healthy\"}}}")
+HTTP "GET" "/hc" responded 200 in 1.3573 ms
+----- Handling HTTP Request "http://ordering.api.test.empay.ae/hc" ("")
+```
+
 ## Request logging
 
 Under **Startup.cs** `Configure` method,
