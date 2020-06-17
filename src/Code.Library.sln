@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Library.AspNetCore", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Library.Tests", "Code.Library.Tests\Code.Library.Tests.csproj", "{3AAB4958-8860-402C-B2BA-7CD92BC04A64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code.Library.Application", "Code.Library.Application\Code.Library.Application.csproj", "{A93936F7-3FAA-4B53-8D36-627AD1F9BE99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Library.Application", "Code.Library.Application\Code.Library.Application.csproj", "{A93936F7-3FAA-4B53-8D36-627AD1F9BE99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DAC44C37-148D-48FB-BF4C-B7CB9A80E347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreApp", "..\Samples\AspNetCoreApp\AspNetCoreApp.csproj", "{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,16 @@ Global
 		{A93936F7-3FAA-4B53-8D36-627AD1F9BE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A93936F7-3FAA-4B53-8D36-627AD1F9BE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A93936F7-3FAA-4B53-8D36-627AD1F9BE99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8} = {DAC44C37-148D-48FB-BF4C-B7CB9A80E347}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99057C9F-D5BF-42A8-975F-A800668AF79C}
