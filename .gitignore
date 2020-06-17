@@ -208,3 +208,4 @@ src/Code.Library/log.txt
 /**/bin/
 /**/obj/
 _site
+Samples/AspNetCoreApp/logs
