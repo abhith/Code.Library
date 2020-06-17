@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Library.Tests", "Code.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Code.Library.Application", "Code.Library.Application\Code.Library.Application.csproj", "{A93936F7-3FAA-4B53-8D36-627AD1F9BE99}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DAC44C37-148D-48FB-BF4C-B7CB9A80E347}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{DAC44C37-148D-48FB-BF4C-B7CB9A80E347}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreApp", "..\Samples\AspNetCoreApp\AspNetCoreApp.csproj", "{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8}"
 EndProject
