@@ -14,7 +14,7 @@ Specific to ASP.NET Core project.</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="3.1.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="3.1.1" />
     <PackageReference Include="AspNetMonsters.ApplicationInsights.AspNetCore" Version="1.1.24" />
     <PackageReference Include="Flurl.Http" Version="2.4.2" />
     <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="5.0.0" />
