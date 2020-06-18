@@ -33,7 +33,11 @@ namespace AspNetCoreApp
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRequestResponseLogging();
+            app.UseRequestResponseLogging(opt =>
+            {
+                opt.ExcludePaths.RequestBody.Add("/secret");
+                opt.ExcludePaths.ResponseBody.Add("/secret");
+            });
             app.UseApiExceptionHandler();
 
             app.UseHttpsRedirection();

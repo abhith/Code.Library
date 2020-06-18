@@ -38,7 +38,24 @@ namespace AspNetCoreApp.Controllers
         }
 
         [HttpPost]
-        public IEnumerable<WeatherForecast> Post(SensitiveContent input)
+        [Route("plain")]
+        public IEnumerable<WeatherForecast> NormalContentPost(NormalContent input)
+        {
+            _logger.LogInformation("Posted {@NormalContent}", input);
+
+            var rng = new Random();
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateTime.Now.AddDays(index),
+                TemperatureC = rng.Next(-20, 55),
+                Summary = Summaries[rng.Next(Summaries.Length)]
+            })
+            .ToArray();
+        }
+
+        [HttpPost]
+        [Route("secret")]
+        public IEnumerable<WeatherForecast> SecretContentPost(SensitiveContent input)
         {
             _logger.LogInformation("Posted {@SensitiveContent}", input);
 
