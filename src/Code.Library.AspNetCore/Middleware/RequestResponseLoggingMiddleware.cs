@@ -52,7 +52,7 @@ namespace Code.Library.AspNetCore.Middleware
 
         private async Task LogRequest(HttpContext context)
         {
-            if (_options.ExcludePaths.RequestBody.Any(path => context.Request.Path.Value.Contains(path)))
+            if (_options.ExcludePaths.RequestBody.Any(path => context.Request.Path.Value.Contains(path, System.StringComparison.CurrentCultureIgnoreCase)))
             {
                 _logger.LogInformation("----- Handling HTTP Request {RequestUrl} (***)", context.Request.GetDisplayUrl());
             }
@@ -68,7 +68,7 @@ namespace Code.Library.AspNetCore.Middleware
 
         private async Task LogResponse(HttpContext context)
         {
-            if (_options.ExcludePaths.ResponseBody.Any(path => context.Request.Path.Value.Contains(path)))
+            if (_options.ExcludePaths.ResponseBody.Any(path => context.Request.Path.Value.Contains(path, System.StringComparison.CurrentCultureIgnoreCase)))
             {
                 await _next(context);
                 _logger.LogInformation("----- Handled HTTP Request {RequestUrl} (***)", context.Request.GetDisplayUrl());
