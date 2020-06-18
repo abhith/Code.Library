@@ -1,4 +1,5 @@
-﻿using Microsoft.ApplicationInsights.Extensibility;
+﻿using Destructurama;
+using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Serilog;
@@ -94,6 +95,7 @@ namespace Code.Library.AspNetCore.Helpers
                 .Enrich.WithMachineName()
                 .Enrich.WithProperty("Assembly", $"{name.Name}")
                 .Enrich.WithProperty("Version", $"{name.Version}")
+                .Destructure.UsingAttributes()
                 .WriteTo.File(new RenderedCompactJsonFormatter(),
                     @"logs\log.ndjson", rollingInterval: RollingInterval.Day)
                 // TODO(abhith): find alternative for TelemetryConfiguration.Active
