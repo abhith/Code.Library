@@ -37,6 +37,18 @@ namespace AspNetCoreApp.Controllers
             .ToArray();
         }
 
+        [HttpGet]
+        [Route("logs")]
+        public void Logs()
+        {
+            _logger.LogTrace("First a TRACE");
+            _logger.LogDebug("Then a DEBUG message");
+            _logger.LogInformation("And some INFORMATION");
+            _logger.LogWarning("This is a WARNING");
+            _logger.LogError("There comes an ERROR");
+            _logger.LogCritical("And it reached CRITICAL stage");
+        }
+
         [HttpPost]
         [Route("plain")]
         public IEnumerable<WeatherForecast> NormalContentPost(NormalContent input)
