@@ -6,6 +6,8 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Formatting.Compact;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 
 namespace Code.Library.AspNetCore.Helpers
@@ -26,7 +28,7 @@ namespace Code.Library.AspNetCore.Helpers
 
             diagnosticContext.Set("ContentType", httpContext.Response.ContentType);
             var endpoint = httpContext.GetEndpoint();
-            if (endpoint is object)
+            if (endpoint != null)
             {
                 diagnosticContext.Set("EndpointName", endpoint.DisplayName);
             }
@@ -47,19 +49,19 @@ namespace Code.Library.AspNetCore.Helpers
         /// logged using the provided <paramref name="traceLevel" />.
         /// </summary>
         /// <param name="traceLevel">The level to use for logging "trace" endpoints</param>
-        /// <param name="traceEndointNames">The display name of endpoints to be considered "trace" endpoints</param>
+        /// <param name="traceEndpointNames">The display name of endpoints to be considered "trace" endpoints</param>
         /// <returns></returns>
-        public static Func<HttpContext, double, Exception, LogEventLevel> GetLevel(LogEventLevel traceLevel, params string[] traceEndointNames)
+        public static Func<HttpContext, double, Exception, LogEventLevel> GetLevel(LogEventLevel traceLevel, params string[] traceEndpointNames)
         {
-            if (traceEndointNames is null || traceEndointNames.Length == 0)
+            if (traceEndpointNames is null || traceEndpointNames.Length == 0)
             {
-                throw new ArgumentNullException(nameof(traceEndointNames));
+                throw new ArgumentNullException(nameof(traceEndpointNames));
             }
 
             return (ctx, _, ex) =>
                 IsError(ctx, ex)
                 ? LogEventLevel.Error
-                : IsTraceEndpoint(ctx, traceEndointNames)
+                : IsTraceEndpoint(ctx, traceEndpointNames)
                     ? traceLevel
                     : LogEventLevel.Information;
         }
@@ -68,7 +70,7 @@ namespace Code.Library.AspNetCore.Helpers
         /// Provides standardized, centralized Serilog wire-up for a suite of applications.
         /// </summary>
         /// <param name="loggerConfig">Provide this value from the UseSerilog method param</param>
-        /// <param name="config">IConfiguration settings -- generally read this from appsettings.json</param>
+        /// <param name="configuration">IConfiguration settings -- generally read this from appsettings.json</param>
         /// <remarks>
         /// Sample appsettings
         /// "Serilog": {
@@ -96,6 +98,7 @@ namespace Code.Library.AspNetCore.Helpers
                 .Enrich.WithProperty("Assembly", $"{name.Name}")
                 .Enrich.WithProperty("Version", $"{name.Version}")
                 .Destructure.UsingAttributes()
+                .WriteTo.Console()
                 .WriteTo.File(new RenderedCompactJsonFormatter(),
                     @"logs\log.ndjson", rollingInterval: RollingInterval.Day)
                 // TODO(abhith): find alternative for TelemetryConfiguration.Active
@@ -112,20 +115,10 @@ namespace Code.Library.AspNetCore.Helpers
         private static bool IsError(HttpContext ctx, Exception ex)
             => ex != null || ctx.Response.StatusCode > 499;
 
-        private static bool IsTraceEndpoint(HttpContext ctx, string[] traceEndoints)
+        private static bool IsTraceEndpoint(HttpContext ctx, IEnumerable<string> traceEndpoints)
         {
             var endpoint = ctx.GetEndpoint();
-            if (endpoint is object)
-            {
-                for (var i = 0; i < traceEndoints.Length; i++)
-                {
-                    if (string.Equals(traceEndoints[i], endpoint.DisplayName, StringComparison.OrdinalIgnoreCase))
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
+            return endpoint != null && traceEndpoints.Any(traceEndpoint => string.Equals(traceEndpoint, endpoint.DisplayName, StringComparison.OrdinalIgnoreCase));
         }
     }
 }
