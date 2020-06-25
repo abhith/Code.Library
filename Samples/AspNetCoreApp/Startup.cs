@@ -35,8 +35,8 @@ namespace AspNetCoreApp
 
             app.UseRequestResponseLogging(opt =>
             {
-                opt.ExcludePaths.RequestBody.Add("/secret");
-                opt.ExcludePaths.ResponseBody.Add("/secret");
+                opt.Exclude.RequestBody.Add("/secret");
+                opt.Exclude.ResponseBody.Add("/secret");
             });
             app.UseApiExceptionHandler();
 

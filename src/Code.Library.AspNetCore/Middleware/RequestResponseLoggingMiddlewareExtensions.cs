@@ -29,7 +29,7 @@ namespace Code.Library.AspNetCore.Middleware
                {
                    opts.EnrichDiagnosticContext = SerilogHelper.EnrichFromRequest;
 
-                   if (options.ExcludeHealthChecks)
+                   if (options.Exclude.HealthChecks)
                    {
                        opts.GetLevel = SerilogHelper.GetLevel(LogEventLevel.Verbose, "Health checks");
                    }
