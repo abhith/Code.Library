@@ -1,4 +1,4 @@
-﻿using Code.Library.Domain.Exceptions;
+﻿using Code.Library.Exceptions;
 using Hellang.Middleware.ProblemDetails;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Code.Library.Domain.Exceptions
+namespace Code.Library.Exceptions
 {
     /// <summary>
     /// Exception type for domain exceptions

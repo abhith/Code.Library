@@ -1,4 +1,4 @@
-﻿using Code.Library.Domain.Exceptions;
+﻿using Code.Library.Exceptions;
 using Code.Library.Extensions;
 using MediatR;
 using Microsoft.Extensions.Logging;
