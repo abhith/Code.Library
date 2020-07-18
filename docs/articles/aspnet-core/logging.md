@@ -117,6 +117,10 @@ If `SeqServerUrl` is provided (ex. "http://localhost:5341/"), then seq sink gets
 
 To enable logging to file, set it to `true`. Default value is `false`.
 
+### UseElasticsearchFormatter
+
+Set this to `true` if you want your console logs to written in elasticsearch format, useful in case of hosting in k8s where EFK configured to collect logs. Default value is `false`.
+
 We don't need the default **Logging** configuration in the **appsettings.json** anymore, remove it.
 
 ```json
