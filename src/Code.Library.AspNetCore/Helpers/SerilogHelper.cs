@@ -99,10 +99,15 @@ namespace Code.Library.AspNetCore.Helpers
                 .Enrich.WithProperty("Version", $"{name.Version}")
                 .Destructure.UsingAttributes()
                 .WriteTo.Console()
-                .WriteTo.File(new RenderedCompactJsonFormatter(),
-                    @"logs\log.ndjson", rollingInterval: RollingInterval.Day)
+
                 // TODO(abhith): find alternative for TelemetryConfiguration.Active
                 .WriteTo.ApplicationInsights(TelemetryConfiguration.Active, TelemetryConverter.Traces);
+
+            if (configuration.GetValue<bool>("Serilog:WriteToFile", false))
+            {
+                loggerConfig.WriteTo.File(new RenderedCompactJsonFormatter(),
+                    @"logs\log.ndjson", rollingInterval: RollingInterval.Day);
+            }
 
             var seqServerUrl = configuration["Serilog:SeqServerUrl"];
 

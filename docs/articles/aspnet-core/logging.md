@@ -89,6 +89,8 @@ By doing so, it will generate logs under "logs" folder in the root directory. An
 }
 ```
 
+## Logging Settings
+
 Refine the logs by adding the below to the **appsettings.json**,
 
 ```json
@@ -102,11 +104,18 @@ Refine the logs by adding the below to the **appsettings.json**,
         "Orleans": "Warning"
       }
     },
-    "SeqServerUrl": null
+    "SeqServerUrl": null,
+    "WriteToFile" : false
 }
 ```
 
+### SeqServerUrl
+
 If `SeqServerUrl` is provided (ex. "http://localhost:5341/"), then seq sink gets attached to the Serilog. It's very useful in case of local development.
+
+### WriteToFile
+
+To enable logging to file, set it to `true`. Default value is `false`.
 
 We don't need the default **Logging** configuration in the **appsettings.json** anymore, remove it.
 
