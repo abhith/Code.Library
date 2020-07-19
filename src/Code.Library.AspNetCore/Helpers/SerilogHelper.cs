@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Serilog.Formatting.Elasticsearch;
 
 namespace Code.Library.AspNetCore.Helpers
 {
@@ -98,11 +99,23 @@ namespace Code.Library.AspNetCore.Helpers
                 .Enrich.WithProperty("Assembly", $"{name.Name}")
                 .Enrich.WithProperty("Version", $"{name.Version}")
                 .Destructure.UsingAttributes()
-                .WriteTo.Console()
-                .WriteTo.File(new RenderedCompactJsonFormatter(),
-                    @"logs\log.ndjson", rollingInterval: RollingInterval.Day)
                 // TODO(abhith): find alternative for TelemetryConfiguration.Active
                 .WriteTo.ApplicationInsights(TelemetryConfiguration.Active, TelemetryConverter.Traces);
+
+            if (configuration.GetValue<bool>("Serilog:UseElasticsearchFormatter", false))
+            {
+                loggerConfig.WriteTo.Console(new ElasticsearchJsonFormatter());
+            }
+            else
+            {
+                loggerConfig.WriteTo.Console();
+            }
+
+            if (configuration.GetValue<bool>("Serilog:WriteToFile", false))
+            {
+                loggerConfig.WriteTo.File(new RenderedCompactJsonFormatter(),
+                    @"logs\log.ndjson", rollingInterval: RollingInterval.Day);
+            }
 
             var seqServerUrl = configuration["Serilog:SeqServerUrl"];
 
