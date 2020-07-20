@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Code.Library.AspNetCore;
 using Code.Library.AspNetCore.Extensions;
 using Code.Library.AspNetCore.Middleware;
+using Code.Library.AspNetCore.Middleware.RequestResponseLogging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -37,6 +38,7 @@ namespace AspNetCoreApp
             {
                 opt.Exclude.RequestBody.Add("/secret");
                 opt.Exclude.ResponseBody.Add("/secret");
+                opt.Include.RequestHeaders = true;
             });
             app.UseApiExceptionHandler();
 

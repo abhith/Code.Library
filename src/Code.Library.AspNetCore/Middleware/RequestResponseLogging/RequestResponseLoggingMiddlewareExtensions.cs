@@ -4,7 +4,7 @@ using Serilog;
 using Serilog.Events;
 using System;
 
-namespace Code.Library.AspNetCore.Middleware
+namespace Code.Library.AspNetCore.Middleware.RequestResponseLogging
 {
     public static class RequestResponseLoggingMiddlewareExtensions
     {

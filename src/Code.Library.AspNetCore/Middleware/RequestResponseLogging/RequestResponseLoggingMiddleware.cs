@@ -1,12 +1,15 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Code.Library.AspNetCore.Extensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.IO;
 
-namespace Code.Library.AspNetCore.Middleware
+namespace Code.Library.AspNetCore.Middleware.RequestResponseLogging
 {
     public class RequestResponseLoggingMiddleware
     {
@@ -36,6 +39,17 @@ namespace Code.Library.AspNetCore.Middleware
             }
         }
 
+        private static string GetRequestHeaders(HttpContext context)
+        {
+            var builder = new StringBuilder();
+            foreach (var header in context.Request.Headers)
+            {
+                builder.Append(header.Key).Append(':').AppendLine(header.Value);
+            }
+
+            return builder.ToString();
+        }
+
         private static string ReadStreamInChunks(Stream stream)
         {
             const int readChunkBufferLength = 4096;
@@ -59,16 +73,38 @@ namespace Code.Library.AspNetCore.Middleware
 
         private async Task LogRequest(HttpContext context)
         {
-            if (_options.Exclude.RequestBody.Any(path => context.Request.Path.Value.Contains(path, System.StringComparison.CurrentCultureIgnoreCase)))
+            if (_options.Exclude.RequestBody.Any(path => context.Request.Path.Value.Contains(path, StringComparison.CurrentCultureIgnoreCase)))
             {
-                _logger.LogInformation("----- Handling HTTP Request {RequestUrl} (***)", context.Request.GetDisplayUrl());
+                if (_options.Include.RequestHeaders && context.Request.Headers.Count > 0)
+                {
+                    using (_logger.BeginPropertyScope(("RequestHeaders", GetRequestHeaders(context))))
+                    {
+                        _logger.LogInformation("----- Handling HTTP Request {RequestUrl} (***)", context.Request.GetDisplayUrl());
+                    }
+                }
+                else
+                {
+                    _logger.LogInformation("----- Handling HTTP Request {RequestUrl} (***)", context.Request.GetDisplayUrl());
+                }
             }
             else
             {
                 context.Request.EnableBuffering();
                 await using var requestStream = _recyclableMemoryStreamManager.GetStream();
                 await context.Request.Body.CopyToAsync(requestStream);
-                _logger.LogInformation("----- Handling HTTP Request {RequestUrl} ({@RequestBody})", context.Request.GetDisplayUrl(), ReadStreamInChunks(requestStream));
+
+                if (_options.Include.RequestHeaders && context.Request.Headers.Count > 0)
+                {
+                    using (_logger.BeginPropertyScope(("RequestHeaders", GetRequestHeaders(context))))
+                    {
+                        _logger.LogInformation("----- Handling HTTP Request {RequestUrl} ({@RequestBody})", context.Request.GetDisplayUrl(), ReadStreamInChunks(requestStream));
+                    }
+                }
+                else
+                {
+                    _logger.LogInformation("----- Handling HTTP Request {RequestUrl} ({@RequestBody})", context.Request.GetDisplayUrl(), ReadStreamInChunks(requestStream));
+                }
+
                 context.Request.Body.Position = 0;
             }
         }

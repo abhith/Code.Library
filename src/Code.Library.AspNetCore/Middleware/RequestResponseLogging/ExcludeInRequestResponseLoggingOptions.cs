@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Code.Library.AspNetCore.Middleware
+namespace Code.Library.AspNetCore.Middleware.RequestResponseLogging
 {
     public class ExcludeInRequestResponseLoggingOptions
     {
@@ -20,13 +20,5 @@ namespace Code.Library.AspNetCore.Middleware
         /// Response body will not be logged for matching paths
         /// </summary>
         public ICollection<string> ResponseBody { get; set; } = new List<string>();
-    }
-
-    public class RequestResponseLoggingOptions
-    {
-        /// <summary>
-        /// Excluded areas from logging
-        /// </summary>
-        public ExcludeInRequestResponseLoggingOptions Exclude { get; set; } = new ExcludeInRequestResponseLoggingOptions();
     }
 }
