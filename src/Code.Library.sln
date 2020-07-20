@@ -15,8 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{DAC4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreApp", "..\Samples\AspNetCoreApp\AspNetCoreApp.csproj", "{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreApp.Application", "..\Samples\AspNetCoreApp.Application\AspNetCoreApp.Application.csproj", "{57FFADC6-DA77-4023-BE71-73F18CF597F2}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,17 +41,12 @@ Global
 		{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{57FFADC6-DA77-4023-BE71-73F18CF597F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57FFADC6-DA77-4023-BE71-73F18CF597F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57FFADC6-DA77-4023-BE71-73F18CF597F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57FFADC6-DA77-4023-BE71-73F18CF597F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9BAA59DD-B0BA-42A6-8DDB-3018DE6DCBB8} = {DAC44C37-148D-48FB-BF4C-B7CB9A80E347}
-		{57FFADC6-DA77-4023-BE71-73F18CF597F2} = {DAC44C37-148D-48FB-BF4C-B7CB9A80E347}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {99057C9F-D5BF-42A8-975F-A800668AF79C}
