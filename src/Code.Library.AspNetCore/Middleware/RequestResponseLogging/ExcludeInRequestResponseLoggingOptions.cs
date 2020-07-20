@@ -4,6 +4,9 @@ namespace Code.Library.AspNetCore.Middleware.RequestResponseLogging
 {
     public class ExcludeInRequestResponseLoggingOptions
     {
+        /// <summary>
+        /// This will exclude logging for all endpoints with endpoint name "Health checks". This is enabled by default.
+        /// </summary>
         public bool HealthChecks { get; set; } = true;
 
         /// <summary>

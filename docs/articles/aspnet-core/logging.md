@@ -105,7 +105,8 @@ Refine the logs by adding the below to the **appsettings.json**,
       }
     },
     "SeqServerUrl": null,
-    "WriteToFile" : false
+    "WriteToFile" : false,
+    "UseElasticsearchFormatter": false,
 }
 ```
 
@@ -150,6 +151,32 @@ This will produce log in the following format for each request.
 HTTP "GET" "/hc" responded 200 in 1.3573 ms
 ----- Handling HTTP Request "http://ordering.api.test.empay.ae/hc" ("")
 ```
+
+### Request Response Logging Options
+
+#### Include
+
+##### RequestHeaders
+
+Set this to `true` to enable request headers logging. This is disabled by default.
+
+#### Exclude
+
+##### HealthChecks
+
+This will exclude logging for all endpoints with endpoint name "Health checks". This is enabled by default.
+
+##### Paths
+
+No logs for matching paths. Default values are ["/hc", "/liveness"]
+
+##### RequestBody
+
+Request body will not be logged for matching paths
+
+##### ResponseBody
+
+Response body will not be logged for matching paths
 
 ## Request logging
 
