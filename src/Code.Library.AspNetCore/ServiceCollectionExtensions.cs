@@ -34,13 +34,12 @@ namespace Code.Library.AspNetCore
         {
             var responseBody = string.Empty;
 
-            if (call.Response != null &&
-                call.Response.Content != null)
+            if (call.Response?.Content != null)
             {
-                var ct = call.Response.Content.Headers.ContentType.ToString();
+                var contentType = $"{call.Response.Content.Headers.ContentType}";
                 // avoid logging file downloads
-                if (ct.Contains("application/json") ||
-                    ct.Contains("text/plain"))
+                if (contentType.Contains("application/json") ||
+                    contentType.Contains("text/plain"))
                 {
                     responseBody = await call.Response.Content.ReadAsStringAsync();
                 }
