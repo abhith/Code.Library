@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspNetCoreApp.Models;
+using Flurl.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -22,6 +23,13 @@ namespace AspNetCoreApp.Controllers
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
+        }
+
+        [HttpGet]
+        [Route("flurl")]
+        public async Task Flurl()
+        {
+            await "https://piggyvault.in/swagger/v1/swagger.json".GetJsonAsync();
         }
 
         [HttpGet]
