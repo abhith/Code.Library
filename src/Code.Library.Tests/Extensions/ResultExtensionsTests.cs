@@ -8,6 +8,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using Code.Library.Extensions;
 using FluentAssertions;
 
 namespace Code.Library.Tests.Extensions

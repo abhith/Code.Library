@@ -1,4 +1,5 @@
-﻿using FluentAssertions;
+﻿using Code.Library.Extensions;
+using FluentAssertions;
 using Xunit;
 
 namespace Code.Library.Tests.Extensions
