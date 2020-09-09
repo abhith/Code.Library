@@ -1,10 +1,10 @@
-﻿namespace Code.Library
-{
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel;
-    using System.Data;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 
+namespace Code.Library.Extensions
+{
     /// <summary>
     /// All IEnumerable extensions.
     /// </summary>

@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Linq;
 
-/// <summary>
-/// source:https://github.com/dotnet-architecture/eShopOnContainers
-/// </summary>
 namespace Code.Library.Extensions
 {
     public static class GenericTypeExtensions

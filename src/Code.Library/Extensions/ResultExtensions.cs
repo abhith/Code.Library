@@ -1,7 +1,7 @@
-﻿namespace Code.Library
-{
-    using System;
+﻿using System;
 
+namespace Code.Library.Extensions
+{
     /// <summary>
     /// All Result Model extensions. Reference  https://github.com/vkhorikov/CSharpFunctionalExtensions.
     /// </summary>

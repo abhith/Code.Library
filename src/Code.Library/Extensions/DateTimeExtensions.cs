@@ -1,9 +1,9 @@
-﻿namespace Code.Library
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 
+namespace Code.Library.Extensions
+{
     /// <summary>
     /// All DateTime extensions.
     /// </summary>
@@ -13,7 +13,7 @@
         /// Convert timespan to 12H format string.
         /// </summary>
         /// <param name="timeSpan">Input timespan.</param>
-        /// <returns>Tweleve hour format string.</returns>
+        /// <returns>Twelve hour format string.</returns>
         public static string ConvertTo12H(this TimeSpan timeSpan)
         {
             var dateTime = DateTime.MinValue.Add(timeSpan);
@@ -65,17 +65,6 @@
         {
             var unix = new System.DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
             return unix.AddMilliseconds(value);
-        }
-
-        /// <summary>
-        /// Returns the Arabian Standard Time.
-        /// </summary>
-        /// <param name="date">Input datetime.</param>
-        /// <returns>Arabian Standard Time.</returns>
-        public static DateTime GetArabianStandardTime(this DateTime date)
-        {
-            var tst = TimeZoneInfo.FindSystemTimeZoneById("Arabian Standard Time");
-            return TimeZoneInfo.ConvertTime(date, TimeZoneInfo.Local, tst);
         }
 
         /// <summary>

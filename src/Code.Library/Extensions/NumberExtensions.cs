@@ -1,7 +1,7 @@
-﻿namespace Code.Library
-{
-    using System;
+﻿using System;
 
+namespace Code.Library.Extensions
+{
     /// <summary>
     /// The number helper.
     /// </summary>

@@ -1,7 +1,7 @@
-﻿namespace Code.Library
-{
-    using System.IO;
+﻿using System.IO;
 
+namespace Code.Library.Extensions
+{
     /// <summary>
     /// All file system/directory related extensions.
     /// </summary>
