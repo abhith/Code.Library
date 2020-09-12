@@ -62,6 +62,13 @@ namespace Code.Library.Tests.Extensions
         }
 
         [Fact]
+        public void MaskTests()
+        {
+            "123456789".Mask(3, "****").Should().Be("123****89");
+            "123456789".Mask(3, "****---").Should().Be("123****---");
+        }
+
+        [Fact]
         public void MD5Test()
         {
             string input = "The quick brown fox jumps over the lazy dog";

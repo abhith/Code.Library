@@ -220,6 +220,30 @@ namespace Code.Library.Extensions
         }
 
         /// <summary>
+        /// Mask the string.
+        /// </summary>
+        /// <param name="value">String that need to be masked</param>
+        /// <param name="startIndex">zero index indicating mask start position</param>
+        /// <param name="mask">mask that need to be applied, eg. ***</param>
+        /// <returns>Usage: "123456789".Mask(3, "****") => "123****89"</returns>
+        public static string Mask(this string value, int startIndex, string mask)
+        {
+            if (string.IsNullOrEmpty(value))
+                return string.Empty;
+
+            var result = value;
+            var starLength = mask.Length;
+
+            if (value.Length < startIndex) return result;
+
+            result = value.Insert(startIndex, mask);
+
+            result = result.Length >= (startIndex + (starLength * 2)) ? result.Remove(startIndex + starLength, starLength) : result.Remove(startIndex + starLength, result.Length - (startIndex + starLength));
+
+            return result;
+        }
+
+        /// <summary>
         /// generates MD5.
         /// </summary>
         /// <param name="s"></param>
