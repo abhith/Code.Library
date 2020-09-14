@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Code.Library.Extensions;
+using FluentAssertions;
+using System;
 using System.Globalization;
 using System.Threading;
-using Code.Library.Extensions;
-using FluentAssertions;
 using Xunit;
 
 namespace Code.Library.Tests.Extensions
@@ -126,6 +126,13 @@ namespace Code.Library.Tests.Extensions
             var input = "New Text Document";
             var expected = "new-text-document";
             input.ToFriendlyUrl().Should().BeEquivalentTo(expected);
+        }
+
+        [Fact]
+        public void TruncateAtWordTests()
+        {
+            "This is a long sentence".TruncateAtWord(6).Should().Be("This");
+            "This is a long sentence".TruncateAtWord(7).Should().Be("This is");
         }
 
         [Fact]
