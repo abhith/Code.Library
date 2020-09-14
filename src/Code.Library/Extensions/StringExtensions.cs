@@ -504,11 +504,11 @@ namespace Code.Library.Extensions
         /// <summary>
         /// Truncate string at a word near to the limit specified. Avoid word split.
         /// </summary>
-        /// <param name="input"></param>
+        /// <param name="input">string</param>
         /// <param name="length"></param>
         /// <param name="appendDots"></param>
         /// <returns></returns>
-        public static string TruncateAtWord(string input, int length, bool appendDots)
+        public static string TruncateAtWord(this string input, int length, bool appendDots = false)
         {
             if (input == null || input.Length < length)
                 return input;
