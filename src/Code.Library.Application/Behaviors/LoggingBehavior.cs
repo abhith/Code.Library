@@ -1,8 +1,8 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Code.Library.Extensions;
+﻿using Code.Library.Extensions;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Code.Library.Application.Behaviors
 {
@@ -20,9 +20,9 @@ namespace Code.Library.Application.Behaviors
 
         public async Task<TResponse> Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate<TResponse> next)
         {
-            _logger.LogInformation("----- Handling {CommandName} ({@Command})", request.GetGenericTypeName(), request);
+            _logger.LogInformation("Handling {CommandName} ({@Command})", request.GetGenericTypeName(), request);
             var response = await next();
-            _logger.LogInformation("----- Handled {CommandName} - response: {@Response}", request.GetGenericTypeName(), response);
+            _logger.LogInformation("Handled {CommandName} ({@Response})", request.GetGenericTypeName(), response);
 
             return response;
         }
