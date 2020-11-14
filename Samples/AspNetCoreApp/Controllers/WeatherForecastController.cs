@@ -30,6 +30,7 @@ namespace AspNetCoreApp.Controllers
         public async Task Flurl()
         {
             await "https://piggyvault.in/swagger/v1/swagger.json".GetJsonAsync();
+            await "https://run.mocky.io/v3/43d47200-e383-4a97-ad29-69bfa5ba1588".GetJsonAsync();
         }
 
         [HttpGet]

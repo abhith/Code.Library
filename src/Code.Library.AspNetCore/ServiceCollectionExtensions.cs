@@ -30,23 +30,22 @@ namespace Code.Library.AspNetCore
             return services;
         }
 
-        private static async Task LogFlurlCallsAsync(HttpCall call)
+        private static async Task LogFlurlCallsAsync(FlurlCall call)
         {
             var responseBody = string.Empty;
 
-            if (call.Response?.Content != null)
+            if (call.Response?.ResponseMessage?.Content != null)
             {
-                var contentType = $"{call.Response.Content.Headers.ContentType}";
+                var contentType = $"{call.Response.ResponseMessage.Content.Headers.ContentType}";
                 // avoid logging file downloads
                 if (contentType.Contains("application/json") ||
                     contentType.Contains("text/plain"))
                 {
-                    responseBody = await call.Response.Content.ReadAsStringAsync();
+                    responseBody = await call.Response.ResponseMessage.Content.ReadAsStringAsync();
                 }
             }
 
-            Log.Information("External Request | {Endpoint} {Succeeded} {RequestBody} {HttpStatusCode} {ResponseBody}", call.ToString(), call.Succeeded, call.RequestBody, call.HttpStatus.HasValue ?
-                    (int)call.HttpStatus : default(int?), responseBody);
+            Log.Information("[HTTP] {Endpoint} {Succeeded} {RequestBody} {HttpStatusCode} {ResponseBody}", call.ToString(), call.Succeeded, call.RequestBody, call.Response?.StatusCode, responseBody);
         }
     }
 }
