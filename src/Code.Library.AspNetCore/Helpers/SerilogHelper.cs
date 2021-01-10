@@ -104,17 +104,17 @@ namespace Code.Library.AspNetCore.Helpers
 
             if (configuration.GetValue<bool>("Serilog:UseElasticsearchFormatter", false))
             {
-                loggerConfig.WriteTo.Console(new ElasticsearchJsonFormatter());
+                loggerConfig.WriteTo.Async(a => a.Console(new ElasticsearchJsonFormatter()));
             }
             else
             {
-                loggerConfig.WriteTo.Console();
+                loggerConfig.WriteTo.Async(a => a.Console());
             }
 
             if (configuration.GetValue<bool>("Serilog:WriteToFile", false))
             {
-                loggerConfig.WriteTo.File(new RenderedCompactJsonFormatter(),
-                    @"logs\log.ndjson", rollingInterval: RollingInterval.Day);
+                loggerConfig.WriteTo.Async(a => a.File(new RenderedCompactJsonFormatter(),
+                    @"logs\log.ndjson", rollingInterval: RollingInterval.Day));
             }
 
             var seqServerUrl = configuration["Serilog:SeqServerUrl"];
