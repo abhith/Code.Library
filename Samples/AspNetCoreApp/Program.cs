@@ -1,8 +1,8 @@
-using System;
 using Code.Library.AspNetCore.Helpers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
+using System;
 
 namespace AspNetCoreApp
 {
@@ -14,7 +14,7 @@ namespace AspNetCoreApp
             {
                 webBuilder.UseStartup<Startup>();
             })
-        .UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration.WithSimpleConfiguration(hostingContext.Configuration));
+        .UseSerilog((hostingContext, serviceProvider, loggerConfiguration) => loggerConfiguration.WithSimpleConfiguration(hostingContext.Configuration, serviceProvider));
 
         public static int Main(string[] args)
         {

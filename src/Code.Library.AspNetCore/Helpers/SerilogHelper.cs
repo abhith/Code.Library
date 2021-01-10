@@ -2,14 +2,15 @@
 using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 using Serilog.Events;
 using Serilog.Formatting.Compact;
+using Serilog.Formatting.Elasticsearch;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Serilog.Formatting.Elasticsearch;
 
 namespace Code.Library.AspNetCore.Helpers
 {
@@ -88,7 +89,7 @@ namespace Code.Library.AspNetCore.Helpers
         /// }
         /// </remarks>
         public static void WithSimpleConfiguration(this LoggerConfiguration loggerConfig,
-                  IConfiguration configuration)
+                  IConfiguration configuration, IServiceProvider serviceProvider)
         {
             var name = Assembly.GetEntryAssembly().GetName();
 
@@ -99,8 +100,7 @@ namespace Code.Library.AspNetCore.Helpers
                 .Enrich.WithProperty("Assembly", $"{name.Name}")
                 .Enrich.WithProperty("Version", $"{name.Version}")
                 .Destructure.UsingAttributes()
-                // TODO(abhith): find alternative for TelemetryConfiguration.Active
-                .WriteTo.ApplicationInsights(TelemetryConfiguration.Active, TelemetryConverter.Traces);
+                .WriteTo.ApplicationInsights(serviceProvider.GetRequiredService<TelemetryConfiguration>(), TelemetryConverter.Traces);
 
             if (configuration.GetValue<bool>("Serilog:UseElasticsearchFormatter", false))
             {

@@ -55,6 +55,7 @@ namespace AspNetCoreApp
             services.AddApiExceptionHandler();
             services.AddHealthChecks();
             services.AddFlurlTelemetry();
+            services.AddAppInsight(Configuration, "Code.Library Sample");
         }
     }
 }
