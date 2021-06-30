@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AspNetCoreApp.Application.Queries;
 using AspNetCoreApp.Models;
 using Flurl.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace AspNetCoreApp.Controllers
 {
-    [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController : ApiControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
@@ -26,10 +26,17 @@ namespace AspNetCoreApp.Controllers
         }
 
         [HttpGet]
+        [Route("big-response")]
+        public async Task<ActionResult> BigResponse()
+        {
+            var bigData = await Mediator.Send(new BigResponseQuery());
+            return Ok(bigData);
+        }
+
+        [HttpGet]
         [Route("flurl")]
         public async Task Flurl()
         {
-            await "https://piggyvault.in/swagger/v1/swagger.json".GetJsonAsync();
             await "https://run.mocky.io/v3/43d47200-e383-4a97-ad29-69bfa5ba1588".GetJsonAsync();
         }
 

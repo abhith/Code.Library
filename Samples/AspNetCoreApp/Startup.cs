@@ -1,12 +1,15 @@
+using Code.Library.Application.Behaviors;
 using Code.Library.AspNetCore;
 using Code.Library.AspNetCore.Extensions;
 using Code.Library.AspNetCore.Middleware;
 using Code.Library.AspNetCore.Middleware.RequestResponseLogging;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Reflection;
 
 namespace AspNetCoreApp
 {
@@ -56,6 +59,24 @@ namespace AspNetCoreApp
             services.AddHealthChecks();
             services.AddFlurlTelemetry();
             services.AddAppInsight(Configuration, "Code.Library Sample");
+
+            services.AddApplication();
+        }
+    }
+
+    internal static class CustomExtensionMethods
+    {
+        public static IServiceCollection AddApplication(this IServiceCollection services)
+        {
+            //services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            //services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPerformanceBehavior<,>));
+            //services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(UnhandledExceptionBehavior<,>));
+
+            return services;
         }
     }
 }
