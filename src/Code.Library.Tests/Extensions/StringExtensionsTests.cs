@@ -16,9 +16,19 @@ namespace Code.Library.Tests.Extensions
         public void CleanTest()
         {
             var input = "$7.42 billion";
-
             var output = input.Clean(true);
+            output.Should().Be(input);
 
+            input = "<IMG SRC=&#14; javascript:alert(XSS);>";
+            output = input.Clean();
+            output.Should().BeEmpty();
+
+            input = "</style><script>a=eval;b=alert;a(b(/XSS/ .source));</script>";
+            output = input.Clean();
+            output.Should().Be("a=eval;b=alert;ab/XSS/ .source;");
+
+            input = string.Empty;
+            output = input.Clean();
             output.Should().Be(input);
         }
 
