@@ -13,7 +13,7 @@ namespace Code.Library.Application.Behaviors
     /// <typeparam name="TRequest"></typeparam>
     /// <typeparam name="TResponse"></typeparam>
     /// <remarks>Credits: https://github.com/jasontaylordev/CleanArchitecture</remarks>
-    public class RequestPerformanceBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+    public class RequestPerformanceBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {
         private readonly ILogger<TRequest> _logger;
         private readonly Stopwatch _timer;
